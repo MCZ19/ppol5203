@@ -1,0 +1,1009 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.3.450">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Professor: Tiago Ventura">
+
+<title>PPOL 5203 - Data Science I: Foundations -  PPOL 5203 - Data Science I: Foundations </title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<link href="../site_libs/countdown-0.4.0/countdown.css" rel="stylesheet">
+<script src="../site_libs/countdown-0.4.0/countdown.js"></script>
+
+
+<link rel="stylesheet" href="styles.scss">
+</head>
+
+<body class="nav-sidebar docked slimcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><span style="font-size: 80%;"> PPOL 5203 - Data Science I: Foundations </span></li></ol></nav>
+      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+      </a>
+      <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation docked overflow-auto">
+    <div class="pt-lg-2 mt-2 text-center sidebar-header">
+      <a href="../index.html" class="sidebar-logo-link">
+      <img src="../images/logo5.png" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
+      </a>
+      <div class="sidebar-tools-main">
+    <a href="https://github.com/TiagoVentura/ppol5203" rel="" title="GitHub" class="quarto-navigation-tool px-1" aria-label="GitHub"><i class="bi bi-github"></i></a>
+</div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Home</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../syllabus.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Syllabus</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../schedule.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Schedule</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../finalproject.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Final Project</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+ <span class="menu-text">Materials</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks/week-01.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 1: Intro</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#welcome-to-data-science-i" id="toc-welcome-to-data-science-i" class="nav-link active" data-scroll-target="#welcome-to-data-science-i">Welcome to Data Science I</a>
+  <ul class="collapse">
+  <li><a href="#plans-for-today" id="toc-plans-for-today" class="nav-link" data-scroll-target="#plans-for-today">Plans for Today</a></li>
+  </ul></li>
+  <li><a href="#why-are-we-here" id="toc-why-are-we-here" class="nav-link" data-scroll-target="#why-are-we-here">Why are we here?</a>
+  <ul class="collapse">
+  <li><a href="#rise-of-the-digital-information-age" id="toc-rise-of-the-digital-information-age" class="nav-link" data-scroll-target="#rise-of-the-digital-information-age">Rise of the digital information age</a></li>
+  <li><a href="#real-time-data-mobility-credit-card-usage-expenses" id="toc-real-time-data-mobility-credit-card-usage-expenses" class="nav-link" data-scroll-target="#real-time-data-mobility-credit-card-usage-expenses">Real Time Data: Mobility, Credit Card Usage, Expenses…</a></li>
+  <li><a href="#social-media-data" id="toc-social-media-data" class="nav-link" data-scroll-target="#social-media-data">Social Media Data</a></li>
+  <li><a href="#new-data-formats-image-text-videos.." id="toc-new-data-formats-image-text-videos.." class="nav-link" data-scroll-target="#new-data-formats-image-text-videos..">New Data Formats: Image, text, videos..</a></li>
+  <li><a href="#online-research" id="toc-online-research" class="nav-link" data-scroll-target="#online-research">Online Research</a></li>
+  <li><a href="#powerful-and-cheap-computer-power" id="toc-powerful-and-cheap-computer-power" class="nav-link" data-scroll-target="#powerful-and-cheap-computer-power">Powerful and Cheap Computer Power</a></li>
+  <li><a href="#as-a-consequence" id="toc-as-a-consequence" class="nav-link" data-scroll-target="#as-a-consequence">As a consequence:</a></li>
+  <li><a href="#an-example-data-donation-whatsapp-groups" id="toc-an-example-data-donation-whatsapp-groups" class="nav-link" data-scroll-target="#an-example-data-donation-whatsapp-groups">An example: Data Donation WhatsApp Groups</a></li>
+  <li><a href="#all-the-steps-tools-....-so-far-..." id="toc-all-the-steps-tools-....-so-far-..." class="nav-link" data-scroll-target="#all-the-steps-tools-....-so-far-...">All the steps + Tools <code>....</code> so far <code>...</code></a></li>
+  </ul></li>
+  <li><a href="#discussion-new-questions-vs-social-implications-vs-ethical-challenges" id="toc-discussion-new-questions-vs-social-implications-vs-ethical-challenges" class="nav-link" data-scroll-target="#discussion-new-questions-vs-social-implications-vs-ethical-challenges">Discussion: New Questions vs Social Implications vs Ethical Challenges</a>
+  <ul class="collapse">
+  <li><a href="#data-science-for-public-policy" id="toc-data-science-for-public-policy" class="nav-link" data-scroll-target="#data-science-for-public-policy">Data Science for Public Policy</a></li>
+  <li><a href="#readings-for-this-week" id="toc-readings-for-this-week" class="nav-link" data-scroll-target="#readings-for-this-week">Readings for this week</a></li>
+  <li><a href="#goals-of-the-course" id="toc-goals-of-the-course" class="nav-link" data-scroll-target="#goals-of-the-course">Goals of the course</a></li>
+  </ul></li>
+  <li><a href="#ppol-5203---data-science-i-foundations" id="toc-ppol-5203---data-science-i-foundations" class="nav-link" data-scroll-target="#ppol-5203---data-science-i-foundations">PPOL 5203 - Data Science I: Foundations</a></li>
+  <li><a href="#what-we-will-cover" id="toc-what-we-will-cover" class="nav-link" data-scroll-target="#what-we-will-cover">What we will cover</a>
+  <ul class="collapse">
+  <li><a href="#about-me" id="toc-about-me" class="nav-link" data-scroll-target="#about-me">About me</a></li>
+  <li><a href="#quiz" id="toc-quiz" class="nav-link" data-scroll-target="#quiz"><strong>Quiz!</strong></a></li>
+  <li><a href="#a-comment-from-the-pre-course-survey" id="toc-a-comment-from-the-pre-course-survey" class="nav-link" data-scroll-target="#a-comment-from-the-pre-course-survey">A comment from the pre-course survey</a></li>
+  <li><a href="#your-turn" id="toc-your-turn" class="nav-link" data-scroll-target="#your-turn">Your turn!</a></li>
+  <li><a href="#logistics" id="toc-logistics" class="nav-link" data-scroll-target="#logistics">Logistics</a></li>
+  <li><a href="#tas" id="toc-tas" class="nav-link" data-scroll-target="#tas">TAs</a></li>
+  <li><a href="#evaluation" id="toc-evaluation" class="nav-link" data-scroll-target="#evaluation">Evaluation</a></li>
+  <li><a href="#problem-sets" id="toc-problem-sets" class="nav-link" data-scroll-target="#problem-sets">Problem Sets</a></li>
+  </ul></li>
+  <li><a href="#eod-1159pm" id="toc-eod-1159pm" class="nav-link" data-scroll-target="#eod-1159pm"><span class="red">EOD = 11:59pm!</span></a>
+  <ul class="collapse">
+  <li><a href="#final-project" id="toc-final-project" class="nav-link" data-scroll-target="#final-project">Final Project</a></li>
+  <li><a href="#due-dates-and-points" id="toc-due-dates-and-points" class="nav-link" data-scroll-target="#due-dates-and-points">Due dates and Points:</a></li>
+  <li><a href="#chatgpt" id="toc-chatgpt" class="nav-link" data-scroll-target="#chatgpt">ChatGPT</a></li>
+  </ul></li>
+  <li><a href="#be-mature-and-make-smart-decisions.-you-will-not-be-able-to-cheat-on-a-coding-interview-remember-you-are-a-master-student-now" id="toc-be-mature-and-make-smart-decisions.-you-will-not-be-able-to-cheat-on-a-coding-interview-remember-you-are-a-master-student-now" class="nav-link" data-scroll-target="#be-mature-and-make-smart-decisions.-you-will-not-be-able-to-cheat-on-a-coding-interview-remember-you-are-a-master-student-now"><span class="red">Be mature and make smart decisions. You will not be able to cheat on a coding interview, remember you are a master student now!</span></a></li>
+  <li><a href="#lets-take-a-break" id="toc-lets-take-a-break" class="nav-link" data-scroll-target="#lets-take-a-break">Let’s take a break!</a></li>
+  <li><a href="#survey-results" id="toc-survey-results" class="nav-link" data-scroll-target="#survey-results"><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M249.6 471.5c10.8 3.8 22.4-4.1 22.4-15.5V78.6c0-4.2-1.6-8.4-5-11C247.4 52 202.4 32 144 32C93.5 32 46.3 45.3 18.1 56.1C6.8 60.5 0 71.7 0 83.8V454.1c0 11.9 12.8 20.2 24.1 16.5C55.6 460.1 105.5 448 144 448c33.9 0 79 14 105.6 23.5zm76.8 0C353 462 398.1 448 432 448c38.5 0 88.4 12.1 119.9 22.6c11.3 3.8 24.1-4.6 24.1-16.5V83.8c0-12.1-6.8-23.3-18.1-27.6C529.7 45.3 482.5 32 432 32c-58.4 0-103.4 20-123 35.6c-3.3 2.6-5 6.8-5 11V456c0 11.4 11.7 19.3 22.4 15.5z"></path></svg> Survey Results</a>
+  <ul class="collapse">
+  <li><a href="#summary-of-the-survey" id="toc-summary-of-the-survey" class="nav-link" data-scroll-target="#summary-of-the-survey">Summary of the survey</a></li>
+  </ul></li>
+  <li><a href="#transiton-coding" id="toc-transiton-coding" class="nav-link" data-scroll-target="#transiton-coding"><svg aria-hidden="true" role="img" viewbox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"></path></svg> Transiton: Coding!</a>
+  <ul class="collapse">
+  <li><a href="#set-up-your-course-infra-structure" id="toc-set-up-your-course-infra-structure" class="nav-link" data-scroll-target="#set-up-your-course-infra-structure">Set up your course infra-structure</a></li>
+  <li><a href="#jupyter" id="toc-jupyter" class="nav-link" data-scroll-target="#jupyter">Jupyter:</a></li>
+  <li><a href="#quarto" id="toc-quarto" class="nav-link" data-scroll-target="#quarto">Quarto</a></li>
+  <li><a href="#command-line" id="toc-command-line" class="nav-link" data-scroll-target="#command-line">Command Line</a></li>
+  </ul></li>
+  <li><a href="#see-you-in-next-week" id="toc-see-you-in-next-week" class="nav-link" data-scroll-target="#see-you-in-next-week">See you in next week!</a></li>
+  </ul>
+<div class="quarto-alternate-formats"><h2>Other Formats</h2><ul><li><a href="week-1.html"><i class="bi bi-file-slides"></i>RevealJS</a></li></ul></div></nav>
+    </div>
+<!-- main -->
+<main class="content page-columns page-full" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span style="font-size: 80%;"> PPOL 5203 - Data Science I: Foundations </span></h1>
+<p class="subtitle lead"><span style="font-size: 100%;"> <br>Week 1: Introductions, Installations, IDEs, Command line </span></p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Professor: Tiago Ventura </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="welcome-to-data-science-i" class="level1" data-background-color="#447099">
+<h1 data-background-color="#447099">Welcome to Data Science I</h1>
+<section id="plans-for-today" class="level2">
+<h2 class="anchored" data-anchor-id="plans-for-today">Plans for Today</h2>
+<p><br></p>
+<ul>
+<li><p>Motivating <span class="blue">Data Science for Public Policy</span>, or <span class="blue">Computational Social Science</span>.</p></li>
+<li><p>Goals of the course</p></li>
+<li><p>Introductions</p></li>
+<li><p>Course Logistics</p></li>
+<li><p>IDEs</p>
+<ul>
+<li>Jupyter</li>
+<li>Quarto</li>
+</ul></li>
+<li><p>Introduction to commandline</p></li>
+</ul>
+</section>
+</section>
+<section id="why-are-we-here" class="level1 page-columns page-full" data-background-color="#447099">
+<h1 data-background-color="#447099">Why are we here?</h1>
+<section id="rise-of-the-digital-information-age" class="level2 page-columns page-full">
+<h2 class="anchored" data-anchor-id="rise-of-the-digital-information-age">Rise of the digital information age</h2>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="week1_figs/digital.jpeg" class="img-fluid figure-img" style="width:50.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+
+<div class="no-row-height column-margin column-container"><div class="">
+<p>https://www.washingtonpost.com/wp-dyn/content/graphic/2011/02/11/GR2011021100614.html</p>
+</div></div></section>
+<section id="real-time-data-mobility-credit-card-usage-expenses" class="level2">
+<h2 class="anchored" data-anchor-id="real-time-data-mobility-credit-card-usage-expenses">Real Time Data: Mobility, Credit Card Usage, Expenses…</h2>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="week1_figs/mob_01.png" class="img-fluid figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="social-media-data" class="level2">
+<h2 class="anchored" data-anchor-id="social-media-data">Social Media Data</h2>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="week1_figs/redes.png" class="img-fluid figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="new-data-formats-image-text-videos.." class="level2">
+<h2 class="anchored" data-anchor-id="new-data-formats-image-text-videos..">New Data Formats: Image, text, videos..</h2>
+<div class="columns">
+<div class="column" style="width:50%;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="week1_figs/tweets.png" class="img-fluid figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div><div class="column" style="width:50%;">
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="week1_figs/imagescnn.png" class="img-fluid figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<section id="online-research" class="level2">
+<h2 class="anchored" data-anchor-id="online-research">Online Research</h2>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="week1_figs/survey.png" class="img-fluid figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="powerful-and-cheap-computer-power" class="level2">
+<h2 class="anchored" data-anchor-id="powerful-and-cheap-computer-power">Powerful and Cheap Computer Power</h2>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="week1_figs/collab.png" class="img-fluid figure-img" style="width:80.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="as-a-consequence" class="level2">
+<h2 class="anchored" data-anchor-id="as-a-consequence">As a consequence:</h2>
+<ul>
+<li><p>Abundance of data we can use for research and governments can use to make better decisions</p>
+<ul>
+<li><p>Novel research questions</p></li>
+<li><p>New ways to answer old, long-standing research questions</p></li>
+</ul></li>
+<li><p>New technologies also have social implications and can generate important policy questions.</p>
+<ul>
+<li><p>Privacy issues</p></li>
+<li><p>Use of technology by bad actors.</p></li>
+<li><p>Use of technology by governments to censor/monitor citizens.</p></li>
+<li><p>etc…</p></li>
+</ul></li>
+<li><p>Policy scholars need to be equipped for these challenges</p></li>
+</ul>
+</section>
+<section id="an-example-data-donation-whatsapp-groups" class="level2">
+<h2 class="anchored" data-anchor-id="an-example-data-donation-whatsapp-groups">An example: Data Donation WhatsApp Groups</h2>
+<div class="cell" data-layout-align="center">
+<div class="cell-output-display">
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="week1_figs/wpp.png" class="img-fluid figure-img" style="width:100.0%"></p>
+</figure>
+</div>
+</div>
+</div>
+</section>
+<section id="all-the-steps-tools-....-so-far-..." class="level2">
+<h2 class="anchored" data-anchor-id="all-the-steps-tools-....-so-far-...">All the steps + Tools <code>....</code> so far <code>...</code></h2>
+<p><br></p>
+<ul>
+<li><p><span class="blue">Step 1</span>: Recruiting Participants Online</p>
+<ul>
+<li>Online Panels + Facebook Ads</li>
+</ul></li>
+<li><p><span class="blue">Step 2</span>: Running online Survey</p>
+<ul>
+<li>Qualtrics + R</li>
+</ul></li>
+<li><p><span class="blue">Step 3</span>: Development of Data Donation Pipeline</p>
+<ul>
+<li>JavaScript (JS)</li>
+</ul></li>
+<li><p><span class="blue">Step 4</span>: Analyze the Data</p>
+<ul>
+<li>SQL + Python + R</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="discussion-new-questions-vs-social-implications-vs-ethical-challenges" class="level1">
+<h1>Discussion: New Questions vs Social Implications vs Ethical Challenges</h1>
+<section id="data-science-for-public-policy" class="level2">
+<h2 class="anchored" data-anchor-id="data-science-for-public-policy">Data Science for Public Policy</h2>
+<p><span class="red">Data Scientist for Public Policy</span> focuses on <strong>computational approaches</strong> to solve/understand <strong>Policy Problems</strong>.</p>
+<ul>
+<li><p>Part of a larger and new field called <a href="https://en.wikipedia.org/wiki/Computational_social_science">computational social sciente</a></p></li>
+<li><p>But with a more <span class="red">policy-focus</span>.</p></li>
+<li><p><strong>What is social science?</strong> It refers to a domain of study - social phenomena:</p>
+<ul>
+<li>Encompasses many <strong>scales</strong>: human psychology, language, economic behavior, political systems, policy problems</li>
+<li>Involve many <strong>approaches</strong>: qualitative interviews, statistical analysis, simulations</li>
+</ul></li>
+<li><p><strong>What is Data Science?</strong>:</p>
+<ul>
+<li>Use often large-scale data + algorithms to answer questions</li>
+</ul></li>
+</ul>
+</section>
+<section id="readings-for-this-week" class="level2">
+<h2 class="anchored" data-anchor-id="readings-for-this-week">Readings for this week</h2>
+<p><br></p>
+<p><strong>Bit by Bit: Social Research in the Digital Age</strong> By Mathew Salganik</p>
+<ul>
+<li><p><a href="https://www.bitbybitbook.com/en/1st-ed/introduction/">Introduction</a></p></li>
+<li><p><a href="https://www.bitbybitbook.com/en/1st-ed/observing-behavior/">Observing Behavior</a></p></li>
+</ul>
+<p><a href="https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/training-computational-social-science-phd-students-for-academic-and-nonacademic-careers/1455690939833B9FFCAC664D4E412057">Training Computational Social Science PhD Students for Academic and Non-Academic Careers</a> - Written by me and some colleagues in academia, industry and non-profits</p>
+</section>
+<section id="goals-of-the-course" class="level2">
+<h2 class="anchored" data-anchor-id="goals-of-the-course">Goals of the course</h2>
+<p><br></p>
+<p>The goal of this course is to teach you:</p>
+<ul>
+<li><p><strong>Computational thinking</strong>: how to approach problems and devise solutions from a computational perspective.</p></li>
+<li><p>Get you started on <strong>Python</strong> and a bit of <strong>SQL</strong> for applied data science; lay the foundations for the remainder of the core sequence</p></li>
+<li><p><strong>Workflows and tools:</strong> Git/Github + Commandline.</p></li>
+</ul>
+</section>
+</section>
+<section id="ppol-5203---data-science-i-foundations" class="level1" data-background-color="#447099">
+<h1 data-background-color="#447099">PPOL 5203 - Data Science I: Foundations</h1>
+</section>
+<section id="what-we-will-cover" class="level1">
+<h1>What we will cover</h1>
+<p><img src="week1_figs/schedule_2024.png" class="img-fluid"> # Introductions {background-color=“#447099”}</p>
+<section id="about-me" class="level2">
+<h2 class="anchored" data-anchor-id="about-me">About me</h2>
+<div class="incremental">
+<ul class="incremental">
+<li><p><strong>Professor Tiago Ventura (he/him)</strong></p>
+<ul class="incremental">
+<li>Assistant Professor at McCourt School.</li>
+<li>Political Science Ph.D.</li>
+<li>Postdoc at Center for Social Media and Politics at NYU.</li>
+<li>Researcher at Twitter.</li>
+</ul></li>
+<li><p><strong>Research Interests:</strong></p>
+<ul class="incremental">
+<li>Social media and politics</li>
+<li>Computational methods, NLP and LLMs</li>
+<li>Focus on Global South</li>
+</ul></li>
+<li><p><strong>Outside of work, I enjoy watching soccer and reading sci-fi.</strong></p>
+<ul class="incremental">
+<li><p>Sometimes I enjoy soccer while working!</p></li>
+<li><p>And I am from Brazil!</p></li>
+</ul></li>
+</ul>
+</div>
+</section>
+<section id="quiz" class="level2" data-background-color="#447099">
+<h2 data-background-color="#447099" class="anchored" data-anchor-id="quiz"><strong>Quiz!</strong></h2>
+<p><strong>Which programming language did I use the most at?</strong></p>
+<ul>
+<li><p><strong>PhD</strong></p></li>
+<li><p><strong>Postdoc</strong></p></li>
+<li><p><strong>Twitter</strong></p></li>
+</ul>
+</section>
+<section id="a-comment-from-the-pre-course-survey" class="level2">
+<h2 class="anchored" data-anchor-id="a-comment-from-the-pre-course-survey">A comment from the pre-course survey</h2>
+<blockquote class="blockquote">
+<p>Hi professor Ventura! I noticed that we gonna learn multiple data analysis tool this semester and I am definitely a novice of data science. I am little worried about how can I master all of them without being confused, because some commands might be very similar.</p>
+</blockquote>
+</section>
+<section id="your-turn" class="level2">
+<h2 class="anchored" data-anchor-id="your-turn">Your turn!</h2>
+<ul>
+<li><p>Name</p></li>
+<li><p>(Briefly) what you were up to prior to the DSPP</p></li>
+<li><p>If you could have any data source at your disposal, what would it be?</p></li>
+</ul>
+</section>
+<section id="logistics" class="level2 center">
+<h2 class="center anchored" data-anchor-id="logistics">Logistics</h2>
+<ul>
+<li><p><strong>Communication</strong>: via slack. Join the <a href="https://join.slack.com/t/ppol5203fall2024/shared_invite/zt-2ou5gm0ww-YJUJfR3vTfzN4IuKcULFDQ">channel!</a></p></li>
+<li><p><strong>All materials</strong>: hosted on the class website: <a href="https://tiagoventura.github.io/ppol5203/" class="uri">https://tiagoventura.github.io/ppol5203/</a></p></li>
+<li><p><strong>Syllabus</strong>: also on the website.</p></li>
+<li><p><strong>My Office Hours</strong>: Every thursday from 4 to 6pm. Just stop by!</p></li>
+<li><p><strong>Canvas</strong>: Only for communication! Materials will be hosted in the website!</p></li>
+<li><p><strong>Datacamp</strong>: Additional exercises! I will <span class="red">not</span> assign modules for you!</p></li>
+</ul>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(countdown)</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">countdown</span>(<span class="at">minutes =</span> <span class="dv">5</span>, <span class="at">seconds =</span> <span class="dv">0</span>, </span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>          <span class="at">right =</span> <span class="dv">0</span>, , <span class="at">top=</span><span class="dv">0</span>, </span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>          <span class="at">font_size =</span> <span class="st">"2em"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="countdown" id="timer_ab1c6d3a" data-update-every="1" tabindex="0" style="top:0;right:0;font-size:2em;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section>
+<section id="tas" class="level2 center">
+<h2 class="center anchored" data-anchor-id="tas">TAs</h2>
+<ul>
+<li>Aastha Jha (DSPP Second-Year Student)
+<ul>
+<li>Email: aj935@georgetown.edu</li>
+<li>Office Hours:
+<ul>
+<li>Every Wednesdays, from 1pm to 2pm.</li>
+</ul></li>
+</ul></li>
+<li>Shirui Zhou (DSPP Alumni)
+<ul>
+<li>Email: sz614@georgetown.edu</li>
+<li>Office Hours:
+<ul>
+<li>Every Monday, from 1pm to 2pm</li>
+</ul></li>
+</ul></li>
+</ul>
+</section>
+<section id="evaluation" class="level2">
+<h2 class="anchored" data-anchor-id="evaluation">Evaluation</h2>
+<table class="table">
+<thead>
+<tr class="header">
+<th><strong>Assignment</strong></th>
+<th style="text-align: center;"><strong>Percentage of Grade</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Participation/Attendance</td>
+<td style="text-align: center;">5%</td>
+</tr>
+<tr class="even">
+<td>Coding Discussion</td>
+<td style="text-align: center;">5%</td>
+</tr>
+<tr class="odd">
+<td>Problem sets</td>
+<td style="text-align: center;">50%</td>
+</tr>
+<tr class="even">
+<td>Final Project</td>
+<td style="text-align: center;">40%</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="problem-sets" class="level2">
+<h2 class="anchored" data-anchor-id="problem-sets">Problem Sets</h2>
+<p>Individual submission through GitHub.</p>
+<table class="table">
+<thead>
+<tr class="header">
+<th style="text-align: center;">Assignment</th>
+<th style="text-align: center;">Date Assigned</th>
+<th style="text-align: center;">Date Due</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: center;">No.&nbsp;1</td>
+<td style="text-align: center;">Week 2</td>
+<td style="text-align: center;">Before EOD of Friday of Week 3</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">No.&nbsp;2</td>
+<td style="text-align: center;">Week 4</td>
+<td style="text-align: center;">Before EOD of Friday of Week 5</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">No.&nbsp;3</td>
+<td style="text-align: center;">Week 6</td>
+<td style="text-align: center;">Before EOD of Friday of Week 7</td>
+</tr>
+<tr class="even">
+<td style="text-align: center;">No.&nbsp;4</td>
+<td style="text-align: center;">week 8</td>
+<td style="text-align: center;">Before EOD of Friday of Week 9</td>
+</tr>
+<tr class="odd">
+<td style="text-align: center;">No.&nbsp;5</td>
+<td style="text-align: center;">November 10</td>
+<td style="text-align: center;">Before EOD of Friday of Week 111</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="eod-1159pm" class="level1">
+<h1><span class="red">EOD = 11:59pm!</span></h1>
+<section id="final-project" class="level2">
+<h2 class="anchored" data-anchor-id="final-project">Final Project</h2>
+<ul>
+<li><p><span class="red">You will work on <strong>randomly assigned groups!</strong></span></p></li>
+<li><p>The project is composed of three parts:</p>
+<ul>
+<li>a 2 page project proposal: (which should be discussed and approved by me)</li>
+<li>an in-class presentation,</li>
+<li>A 10-page project report.</li>
+</ul></li>
+</ul>
+</section>
+<section id="due-dates-and-points" class="level2">
+<h2 class="anchored" data-anchor-id="due-dates-and-points">Due dates and Points:</h2>
+<table class="table">
+<thead>
+<tr class="header">
+<th><strong>Requirement</strong></th>
+<th><strong>Due</strong></th>
+<th><strong>Length</strong></th>
+<th><strong>Percentage</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Project Proposal</td>
+<td>October 31</td>
+<td>2 pages</td>
+<td>5%</td>
+</tr>
+<tr class="even">
+<td>Presentation</td>
+<td>December 10</td>
+<td>10-15 minutes</td>
+<td>10%</td>
+</tr>
+<tr class="odd">
+<td>Project Report</td>
+<td>December 17</td>
+<td>10 pages</td>
+<td>25%</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="chatgpt" class="level2">
+<h2 class="anchored" data-anchor-id="chatgpt">ChatGPT</h2>
+<p>You are allowed to use ChatGPT as you would use google in this class. This means:</p>
+<ul>
+<li><p>Do not copy the responses from chatgpt – a lot of them are wrong or will just not run on your computer</p></li>
+<li><p>Use chatgpt as a auxiliary source.</p></li>
+<li><p>If your entire homework comes straight from chatgpt, I will consider it plagiarism.</p></li>
+<li><p>If you use chatgpt, I ask you to mention on your code how chatgpt worked for you.</p></li>
+</ul>
+</section>
+</section>
+<section id="be-mature-and-make-smart-decisions.-you-will-not-be-able-to-cheat-on-a-coding-interview-remember-you-are-a-master-student-now" class="level1">
+<h1><span class="red">Be mature and make smart decisions. You will not be able to cheat on a coding interview, remember you are a master student now!</span></h1>
+</section>
+<section id="lets-take-a-break" class="level1">
+<h1>Let’s take a break!</h1>
+<div class="cell">
+<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">library</span>(countdown)</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="fu">countdown</span>(<span class="at">minutes =</span> <span class="dv">10</span>, <span class="at">seconds =</span> <span class="dv">0</span>, </span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>          <span class="at">left =</span> <span class="dv">0</span>, <span class="at">right =</span> <span class="dv">0</span>,</span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>          <span class="at">top=</span><span class="dv">0</span>,</span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>          <span class="at">padding =</span> <span class="st">"100px"</span>,</span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>          <span class="at">margin =</span> <span class="st">"10%"</span>,</span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>          <span class="at">font_size =</span> <span class="st">"6em"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="cell-output-display">
+<div class="countdown" id="timer_47403256" data-update-every="1" tabindex="0" style="top:0;right:0;left:0;margin:10%;padding:100px;font-size:6em;">
+<div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
+<code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+</div>
+</div>
+</div>
+</section>
+<section id="survey-results" class="level1">
+<h1><svg aria-hidden="true" role="img" viewbox="0 0 576 512" style="height:1em;width:1.12em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M249.6 471.5c10.8 3.8 22.4-4.1 22.4-15.5V78.6c0-4.2-1.6-8.4-5-11C247.4 52 202.4 32 144 32C93.5 32 46.3 45.3 18.1 56.1C6.8 60.5 0 71.7 0 83.8V454.1c0 11.9 12.8 20.2 24.1 16.5C55.6 460.1 105.5 448 144 448c33.9 0 79 14 105.6 23.5zm76.8 0C353 462 398.1 448 432 448c38.5 0 88.4 12.1 119.9 22.6c11.3 3.8 24.1-4.6 24.1-16.5V83.8c0-12.1-6.8-23.3-18.1-27.6C529.7 45.3 482.5 32 432 32c-58.4 0-103.4 20-123 35.6c-3.3 2.6-5 6.8-5 11V456c0 11.4 11.7 19.3 22.4 15.5z"></path></svg> Survey Results</h1>
+<section id="summary-of-the-survey" class="level2">
+<h2 class="anchored" data-anchor-id="summary-of-the-survey">Summary of the survey</h2>
+<ul>
+<li><p>75% of you have <span class="red">some</span> experience with Python.</p></li>
+<li><p>42% of you have <span class="red">some</span> with SQL and 42% have none (which is great for the intro purposes of this course!)</p></li>
+<li><p><span class="red">NONE</span> of you were using primarily Python in your work before!</p>
+<ul>
+<li>30% using R and 30% using Stata.</li>
+</ul></li>
+<li><p>A few still do not have Python/Jupyter/Github in your laptops. If you are having issue after today, talk to Sierra.</p></li>
+<li><p>Main Policy Areas:</p>
+<ul>
+<li>Social Media/Tech (Thank you, my dear students. Not so much for you Elon!)</li>
+<li>International Development (let’s talk war, peace and RCTs)</li>
+<li>Education (Gonna get some data with Professor Johnson)</li>
+</ul></li>
+</ul>
+</section>
+</section>
+<section id="transiton-coding" class="level1">
+<h1><svg aria-hidden="true" role="img" viewbox="0 0 640 512" style="height:1em;width:1.25em;vertical-align:-0.125em;margin-left:auto;margin-right:auto;font-size:inherit;fill:currentColor;overflow:visible;position:relative;"><path d="M64 96c0-35.3 28.7-64 64-64H512c35.3 0 64 28.7 64 64V352H512V96H128V352H64V96zM0 403.2C0 392.6 8.6 384 19.2 384H620.8c10.6 0 19.2 8.6 19.2 19.2c0 42.4-34.4 76.8-76.8 76.8H76.8C34.4 480 0 445.6 0 403.2zM281 209l-31 31 31 31c9.4 9.4 9.4 24.6 0 33.9s-24.6 9.4-33.9 0l-48-48c-9.4-9.4-9.4-24.6 0-33.9l48-48c9.4-9.4 24.6-9.4 33.9 0s9.4 24.6 0 33.9zM393 175l48 48c9.4 9.4 9.4 24.6 0 33.9l-48 48c-9.4 9.4-24.6 9.4-33.9 0s-9.4-24.6 0-33.9l31-31-31-31c-9.4-9.4-9.4-24.6 0-33.9s24.6-9.4 33.9 0z"></path></svg> Transiton: Coding!</h1>
+<section id="set-up-your-course-infra-structure" class="level2">
+<h2 class="anchored" data-anchor-id="set-up-your-course-infra-structure">Set up your course infra-structure</h2>
+<p><a href="https://tiagoventura.github.io/ppol5203/lecture_notes/week-01/course_infrastructure.html">See Course Website</a></p>
+</section>
+<section id="jupyter" class="level2">
+<h2 class="anchored" data-anchor-id="jupyter">Jupyter:</h2>
+<p><span class="red">See Jupyter Notebook in the Class Website</span></p>
+</section>
+<section id="quarto" class="level2">
+<h2 class="anchored" data-anchor-id="quarto">Quarto</h2>
+<p><span class="red">See Quarto Notebook in the Class Website</span></p>
+</section>
+<section id="command-line" class="level2">
+<h2 class="anchored" data-anchor-id="command-line">Command Line</h2>
+<p><span class="red">See Command Line Tutorial in the Class Website</span></p>
+</section>
+</section>
+<section id="see-you-in-next-week" class="level1">
+<h1>See you in next week!</h1>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const isCodeAnnotation = (el) => {
+    for (const clz of el.classList) {
+      if (clz.startsWith('code-annotation-')) {                     
+        return true;
+      }
+    }
+    return false;
+  }
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    text: function(trigger) {
+      const codeEl = trigger.previousElementSibling.cloneNode(true);
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+      let selectedAnnoteEl;
+      const selectorForAnnotation = ( cell, annotation) => {
+        let cellAttr = 'data-code-cell="' + cell + '"';
+        let lineAttr = 'data-code-annotation="' +  annotation + '"';
+        const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+        return selector;
+      }
+      const selectCodeLines = (annoteEl) => {
+        const doc = window.document;
+        const targetCell = annoteEl.getAttribute("data-target-cell");
+        const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+        const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+        const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+        const lineIds = lines.map((line) => {
+          return targetCell + "-" + line;
+        })
+        let top = null;
+        let height = null;
+        let parent = null;
+        if (lineIds.length > 0) {
+            //compute the position of the single el (top and bottom and make a div)
+            const el = window.document.getElementById(lineIds[0]);
+            top = el.offsetTop;
+            height = el.offsetHeight;
+            parent = el.parentElement.parentElement;
+          if (lineIds.length > 1) {
+            const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+            const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+            height = bottom - top;
+          }
+          if (top !== null && height !== null && parent !== null) {
+            // cook up a div (if necessary) and position it 
+            let div = window.document.getElementById("code-annotation-line-highlight");
+            if (div === null) {
+              div = window.document.createElement("div");
+              div.setAttribute("id", "code-annotation-line-highlight");
+              div.style.position = 'absolute';
+              parent.appendChild(div);
+            }
+            div.style.top = top - 2 + "px";
+            div.style.height = height + 4 + "px";
+            let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+            if (gutterDiv === null) {
+              gutterDiv = window.document.createElement("div");
+              gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+              gutterDiv.style.position = 'absolute';
+              const codeCell = window.document.getElementById(targetCell);
+              const gutter = codeCell.querySelector('.code-annotation-gutter');
+              gutter.appendChild(gutterDiv);
+            }
+            gutterDiv.style.top = top - 2 + "px";
+            gutterDiv.style.height = height + 4 + "px";
+          }
+          selectedAnnoteEl = annoteEl;
+        }
+      };
+      const unselectCodeLines = () => {
+        const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+        elementsIds.forEach((elId) => {
+          const div = window.document.getElementById(elId);
+          if (div) {
+            div.remove();
+          }
+        });
+        selectedAnnoteEl = undefined;
+      };
+      // Attach click handler to the DT
+      const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+      for (const annoteDlNode of annoteDls) {
+        annoteDlNode.addEventListener('click', (event) => {
+          const clickedEl = event.target;
+          if (clickedEl !== selectedAnnoteEl) {
+            unselectCodeLines();
+            const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+            if (activeEl) {
+              activeEl.classList.remove('code-annotation-active');
+            }
+            selectCodeLines(clickedEl);
+            clickedEl.classList.add('code-annotation-active');
+          } else {
+            // Unselect the line
+            unselectCodeLines();
+            clickedEl.classList.remove('code-annotation-active');
+          }
+        });
+      }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
