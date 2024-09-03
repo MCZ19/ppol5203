@@ -25,7 +25,7 @@ format:
 
 <br>
 
--   Motivating [Data Science for Public Policy]{.blue}, or [Computational Social Science]{.blue}. 
+-   Motivating [Data Science for Public Policy]{.blue}, or [Computational Social Science]{.blue}.
 
 -   Goals of the course
 
@@ -118,7 +118,6 @@ knitr::include_graphics("week1_figs/collab.png")
 knitr::include_graphics("week1_figs/wpp.png") 
 ```
 
-
 ## All the steps + Tools `....` so far `...`
 
 <br>
@@ -133,23 +132,21 @@ knitr::include_graphics("week1_figs/wpp.png")
 
 -   [Step 3]{.blue}: Development of Data Donation Pipeline
 
-    -   JavaScript (JS) 
+    -   JavaScript (JS)
 
 -   [Step 4]{.blue}: Analyze the Data
 
     -   SQL + Python + R
 
-
 # Discussion: New Questions vs Social Implications vs Ethical Challenges
-
 
 ## Data Science for Public Policy
 
 [Data Scientist for Public Policy]{.red} focuses on **computational approaches** to solve/understand **Policy Problems**.
 
--  Part of a larger and new field called [computational social sciente](https://en.wikipedia.org/wiki/Computational_social_science) 
+-   Part of a larger and new field called [computational social sciente](https://en.wikipedia.org/wiki/Computational_social_science)
 
-- But with a more [policy-focus]{.red}.
+-   But with a more [policy-focus]{.red}.
 
 -   **What is social science?** It refers to a domain of study - social phenomena:
 
@@ -170,7 +167,6 @@ knitr::include_graphics("week1_figs/wpp.png")
 
 -   [Observing Behavior](https://www.bitbybitbook.com/en/1st-ed/observing-behavior/)
 
-
 [Training Computational Social Science PhD Students for Academic and Non-Academic Careers](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/training-computational-social-science-phd-students-for-academic-and-nonacademic-careers/1455690939833B9FFCAC664D4E412057) - Written by me and some colleagues in academia, industry and non-profits
 
 ## Goals of the course
@@ -189,8 +185,7 @@ The goal of this course is to teach you:
 
 # What we will cover
 
-![](week1_figs/schedule_2024.png)
-# Introductions {background-color="#447099"}
+![](week1_figs/schedule_2024.png) \# Introductions {background-color="#447099"}
 
 ## About me
 
@@ -237,7 +232,6 @@ The goal of this course is to teach you:
 
 -   If you could have any data source at your disposal, what would it be?
 
-
 ## Logistics {.center}
 
 -   **Communication**: via slack. Join the [channel!](https://join.slack.com/t/ppol5203fall2024/shared_invite/zt-2ou5gm0ww-YJUJfR3vTfzN4IuKcULFDQ)
@@ -261,15 +255,14 @@ countdown(minutes = 5, seconds = 0,
 
 ## TAs {.center}
 
-- Aastha Jha (DSPP Second-Year Student)
+-   Aastha Jha (DSPP Second-Year Student)
     -   Email: aj935\@georgetown.edu
     -   Office Hours:
-        - Every Wednesdays, from 1pm to 2pm.  
-
-- Shirui Zhou (DSPP Alumni)
+        -   Every Wednesdays, from 1pm to 2pm.
+-   Shirui Zhou (DSPP Alumni)
     -   Email: sz614\@georgetown.edu
     -   Office Hours:
-        - Every Monday, from 1pm to 2pm
+        -   Every Monday, from 1pm to 2pm
 
 ## Evaluation
 
@@ -309,7 +302,7 @@ Individual submission through GitHub.
 | **Requirement**  | **Due**     | **Length**    | **Percentage** |
 |------------------|-------------|---------------|----------------|
 | Project Proposal | October 31  | 2 pages       | 5%             |
-| Presentation     | December 10  | 10-15 minutes | 10%            |
+| Presentation     | December 10 | 10-15 minutes | 10%            |
 | Project Report   | December 17 | 10 pages      | 25%            |
 
 ## ChatGPT

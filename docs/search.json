@@ -109,7 +109,7 @@
     "href": "weeks/week-01.html",
     "title": "Week 01",
     "section": "",
-    "text": "Lectures Notes:\n\nInstructions for setting up the course infra-structure.\nUsing Jupyter Notebooks: html,  notebook \nUsing Quarto for Python and R html,  notebook \nBasics of Command Line: html,  notebook \n\n\n\nSlides\n\nWeek 01:Introduction, Installations, IDEs, Command line\n\n\n\nReadings\nThe readings for this week will be a mix of:\nA more general introduction to data science from a applied perspective (which you can call Data Science and Public Policy, Data Science for Public Good, or Computational Social Science in academic spaces)\nRequired Readings\n\nBit by Bit: Social Research in the Digital Age By Mathew Salganik\nIntroduction\nObserving Behavior\nA Three-Step Guide to Training Computational Social Science Ph.D. Students for Academic and Non-Academic Careers - By Aniket Kesari, Jae Yeon Kim, Sono Shah, Taylor Brown, Tiago Ventura and Tina Law\n\nBest Practices in Programming, IDEs and Files Management:\nRequired Readings\n\nJupyter Notebook for Beginners: A tutorial Pryke, Benjamin - www.dataquest.io\nUsing Python with RStudio and reticulate: here and here\n\nAdditional\n\nMore on RStudio + Reticulate\nR & Python: A Love Story - rstudio.com\nRStudio 1.2 Preview: Reticulated Python\nOn using LaTex to write math in markdown - docx2latex.com"
+    "text": "Lectures Notes:\n\nInstructions for setting up the course infra-structure.\nUsing Jupyter Notebooks: html,  notebook \nUsing Quarto for Python and R html,  notebook \nBasics of Command Line: html,  notebook \n\n\n\nSlides\n\nTBD\n\nWeek 01:Introduction, Installations, IDEs, Command line\n\n\nReadings\nThe readings for this week will cover a more general introduction to data science from a applied perspective (which you can call Data Science and Public Policy, Data Science for Public Good, or Computational Social Science in academic spaces)\nRequired Readings\n\nBit by Bit: Social Research in the Digital Age By Mathew Salganik\nIntroduction\nObserving Behavior\nA Three-Step Guide to Training Computational Social Science Ph.D. Students for Academic and Non-Academic Careers - By Aniket Kesari, Jae Yeon Kim, Sono Shah, Taylor Brown, Tiago Ventura and Tina Law\n\nBest Practices in Programming, IDEs and Files Management:\nRequired Readings\n\nJupyter Notebook for Beginners: A tutorial Pryke, Benjamin - www.dataquest.io\nUsing Python with RStudio and reticulate: here and here\n\nAdditional\n\nMore on RStudio + Reticulate\nR & Python: A Love Story - rstudio.com\nRStudio 1.2 Preview: Reticulated Python\nOn using LaTex to write math in markdown - docx2latex.com"
   },
   {
     "objectID": "finalproject.html",
@@ -192,8 +192,8 @@
     "objectID": "slides/week-1.html#plans-for-today",
     "href": "slides/week-1.html#plans-for-today",
     "title": " PPOL 5203 - Data Science I: Foundations ",
-    "section": "",
-    "text": "Motivating Data Science for Public Policy, or Computational Social Science.\nGoals of the course\nIntroductions\nCourse Logistics\nIDEs\n\nJupyter\nQuarto\n\nIntroduction to commandline"
+    "section": "Plans for Today",
+    "text": "Plans for Today\n\n\nMotivating Data Science for Public Policy, or Computational Social Science.\nGoals of the course\nIntroductions\nCourse Logistics\nIDEs\n\nJupyter\nQuarto\n\nIntroduction to commandline"
   },
   {
     "objectID": "slides/week-1.html#rise-of-the-digital-information-age",
@@ -291,7 +291,7 @@
     "href": "slides/week-1.html#logistics",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Logistics",
-    "text": "Logistics\n\nCommunication: via slack. Join the channel!\nAll materials: hosted on the class website: https://tiagoventura.github.io/ppol5203/\nSyllabus: also on the website.\nMy Office Hours: Every thursday from 4 to 6pm. Just stop by!\nCanvas: Only for communication! Materials will be hosted in the website!\nDatacamp: Additional exercises! I will not assign modules for you!\n\n\nlibrary(countdown)\ncountdown(minutes = 5, seconds = 0, \n          right = 0, , top=0, \n          font_size = \"2em\")\n\n\n−+\n05:00"
+    "text": "Logistics\n\nCommunication: via slack. Join the channel!\nAll materials: hosted on the class website: https://tiagoventura.github.io/ppol5203/\nSyllabus: also on the website.\nMy Office Hours: Every thursday from 4 to 6pm. Just stop by!\nCanvas: Only for communication! Materials will be hosted in the website!\nDatacamp: Additional exercises! I will not assign modules for you!\n\n\n\n\n−+\n05:00"
   },
   {
     "objectID": "slides/week-1.html#ta",
