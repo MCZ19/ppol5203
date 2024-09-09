@@ -94,7 +94,7 @@ If you are having issues setting up these requirements, you should:
 Below you can see a minimal example of a `.qmd` file running Python
 
 ```{r echo = FALSE, comment = ""}
-cat(readr::read_file("minimal_example_python.qmd"))
+cat(readr::read_file("_minimal_example_python.qmd"))
 ```
 
 It contains three important types of content:
@@ -144,7 +144,7 @@ To run the code of a chunck, you can:
 Code blocks are super flexible, and offer many different options for you to customize your code blockls. You can see the full list at <https://yihui.org/knitr/options>. Below you can see the options I use the most:
 
 | Options   | Description                                                                                                                                                                                  |
-|-----------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+|------------|------------------------------------------------------------|
 | `eval`    | Evaluate the code chunk (if false, just echos the code into the output).                                                                                                                     |
 | `echo`    | Include the source code in output                                                                                                                                                            |
 | `output`  | Include the results of executing the code in the output (true, false, or asis to indicate that the output is raw markdown and should not have any of Quarto's standard enclosing markdown).  |

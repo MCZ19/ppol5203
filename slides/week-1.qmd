@@ -10,7 +10,7 @@ format:
     height: 800 #700
     center: true
     slide-number: true
-    incremental: false
+    incremental: true
     chalkboard: 
       buttons: false
     preview-links: auto
@@ -22,8 +22,6 @@ format:
 # Welcome to Data Science I {background-color="#447099"}
 
 ## Plans for Today
-
-<br>
 
 -   Motivating [Data Science for Public Policy]{.blue}, or [Computational Social Science]{.blue}.
 
@@ -52,40 +50,6 @@ knitr::include_graphics("week1_figs/digital.jpeg")
 https://www.washingtonpost.com/wp-dyn/content/graphic/2011/02/11/GR2011021100614.html
 :::
 
-## Real Time Data: Mobility, Credit Card Usage, Expenses...
-
-```{r  echo=FALSE, out.width = "80%", fig.align="center"}
-knitr::include_graphics("week1_figs/mob_01.png") 
-```
-
-## Social Media Data
-
-```{r  echo=FALSE, out.width = "80%", fig.align="center"}
-knitr::include_graphics("week1_figs/redes.png") 
-```
-
-## New Data Formats: Image, text, videos..
-
-::: columns
-::: {.column width="50%"}
-```{r  echo=FALSE, out.width = "100%", fig.align="center"}
-knitr::include_graphics("week1_figs/tweets.png") 
-```
-:::
-
-::: {.column width="50%"}
-```{r  echo=FALSE, out.width = "100%",fig.align="center"}
-knitr::include_graphics("week1_figs/imagescnn.png") 
-```
-:::
-:::
-
-## Online Research
-
-```{r  echo=FALSE, out.width = "80%", fig.align="center"}
-knitr::include_graphics("week1_figs/survey.png") 
-```
-
 ## Powerful and Cheap Computer Power
 
 ```{r  echo=FALSE, out.width = "80%", fig.align="center"}
@@ -110,35 +74,8 @@ knitr::include_graphics("week1_figs/collab.png")
 
     -   etc...
 
--   Policy scholars need to be equipped for these challenges
+-   Policy scholars (but pretty much any researcher) need to be equipped to properly deal with these challenges
 
-## An example: Data Donation WhatsApp Groups
-
-```{r  echo=FALSE, out.width = "100%", fig.align="center"}
-knitr::include_graphics("week1_figs/wpp.png") 
-```
-
-## All the steps + Tools `....` so far `...`
-
-<br>
-
--   [Step 1]{.blue}: Recruiting Participants Online
-
-    -   Online Panels + Facebook Ads
-
--   [Step 2]{.blue}: Running online Survey
-
-    -   Qualtrics + R
-
--   [Step 3]{.blue}: Development of Data Donation Pipeline
-
-    -   JavaScript (JS)
-
--   [Step 4]{.blue}: Analyze the Data
-
-    -   SQL + Python + R
-
-# Discussion: New Questions vs Social Implications vs Ethical Challenges
 
 ## Data Science for Public Policy
 
@@ -156,18 +93,43 @@ knitr::include_graphics("week1_figs/wpp.png")
 -   **What is Data Science?**:
 
     -   Use often large-scale data + algorithms to answer questions
+    
+
+## An example: Data Donation WhatsApp Groups
+
+```{r  echo=FALSE, out.width = "100%", fig.align="center"}
+knitr::include_graphics("week1_figs/wpp.png") 
+```
+
+## All the steps + Tools `....` so far `...`
+
+
+-   [Step 1]{.blue}: Recruiting participants online
+
+    -   Online Panels + Facebook Ads
+
+-   [Step 2]{.blue}: Running online surveys
+
+    -   Qualtrics + R
+
+-   [Step 3]{.blue}: Development of data donation pipeline (with MDI)
+
+    -   JavaScript (JS) + Python 
+
+-   [Step 4]{.blue}: Analyze the data
+
+    -   SQL + Python + R
+
 
 ## Readings for this week
 
-<br>
+- **Bit by Bit: Social Research in the Digital Age** By Mathew Salganik
 
-**Bit by Bit: Social Research in the Digital Age** By Mathew Salganik
+ -   [Introduction](https://www.bitbybitbook.com/en/1st-ed/introduction/)
 
--   [Introduction](https://www.bitbybitbook.com/en/1st-ed/introduction/)
+ -   [Observing Behavior](https://www.bitbybitbook.com/en/1st-ed/observing-behavior/)
 
--   [Observing Behavior](https://www.bitbybitbook.com/en/1st-ed/observing-behavior/)
-
-[Training Computational Social Science PhD Students for Academic and Non-Academic Careers](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/training-computational-social-science-phd-students-for-academic-and-nonacademic-careers/1455690939833B9FFCAC664D4E412057) - Written by me and some colleagues in academia, industry and non-profits
+- [Training Computational Social Science PhD Students for Academic and Non-Academic Careers](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/training-computational-social-science-phd-students-for-academic-and-nonacademic-careers/1455690939833B9FFCAC664D4E412057) - Written by me and some colleagues in academia, industry and non-profits
 
 ## Goals of the course
 
@@ -183,13 +145,14 @@ The goal of this course is to teach you:
 
 # PPOL 5203 - Data Science I: Foundations {background-color="#447099"}
 
-# What we will cover
+## Course Schedule
 
-![](week1_figs/schedule_2024.png) \# Introductions {background-color="#447099"}
+![](week1_figs/schedule_2024.png) 
+
+# Introductions {background-color="#447099"}
 
 ## About me
 
-::: incremental
 -   **Professor Tiago Ventura (he/him)**
 
     -   Assistant Professor at McCourt School.
@@ -208,11 +171,10 @@ The goal of this course is to teach you:
     -   Sometimes I enjoy soccer while working!
 
     -   And I am from Brazil!
-:::
 
 ## **Quiz!** {background-color="#447099"}
 
-**Which programming language did I use the most at?**
+### Which programming language did I use the most at?
 
 -   **PhD**
 
@@ -220,9 +182,12 @@ The goal of this course is to teach you:
 
 -   **Twitter**
 
-## A comment from the pre-course survey
+-  **As a Faculty**
+
+## A comment from the pre-course survey (from last year)
 
 > Hi professor Ventura! I noticed that we gonna learn multiple data analysis tool this semester and I am definitely a novice of data science. I am little worried about how can I master all of them without being confused, because some commands might be very similar.
+
 
 ## Your turn!
 
@@ -233,18 +198,18 @@ The goal of this course is to teach you:
 -   If you could have any data source at your disposal, what would it be?
 
 ## Logistics {.center}
-
--   **Communication**: via slack. Join the [channel!](https://join.slack.com/t/ppol5203fall2024/shared_invite/zt-2ou5gm0ww-YJUJfR3vTfzN4IuKcULFDQ)
+::: incremental
+-   **Communication**: via slack. Join the [workspace!](https://join.slack.com/t/ppol5203fall2024/shared_invite/zt-2ou5gm0ww-YJUJfR3vTfzN4IuKcULFDQ)
 
 -   **All materials**: hosted on the class website: <https://tiagoventura.github.io/ppol5203/>
 
 -   **Syllabus**: also on the website.
 
--   **My Office Hours**: Every thursday from 4 to 6pm. Just stop by!
+-   **My Office Hours**: Every tuesday from 4 to 6pm. Just stop by!
 
--   **Canvas**: Only for communication! Materials will be hosted in the website!
+-   **Canvas**: Only for official communication! Materials will be hosted in the website!
 
--   **Datacamp**: Additional exercises! I will [not]{.red} assign modules for you!
+-   **Datacamp**: Additional exercises! I will assign modules for you! Access our free account [here](https://www.datacamp.com/groups/shared_links/30765dd1c783b864ab9ad885cb08a129b7113054664cddb1446f4e3d46b4605d)
 
 ```{r}
 library(countdown)
@@ -252,6 +217,7 @@ countdown(minutes = 5, seconds = 0,
           right = 0, , top=0, 
           font_size = "2em")
 ```
+:::
 
 ## TAs {.center}
 
@@ -335,21 +301,34 @@ countdown(minutes = 10, seconds = 0,
 
 ## Summary of the survey
 
--   75% of you have [some]{.red} experience with Python.
+-   72% of you have [some]{.red} experience with Python.
 
--   42% of you have [some]{.red} with SQL and 42% have none (which is great for the intro purposes of this course!)
 
--   [NONE]{.red} of you were using primarily Python in your work before!
+-   [Only three]{.red} of you were using primarily Python in your work before!
 
-    -   30% using R and 30% using Stata.
+    -  Most others are using R and Excel!
 
--   A few still do not have Python/Jupyter/Github in your laptops. If you are having issue after today, talk to Sierra.
+-   You all have Python in your laptops, some still do not have a github account.  If you are having issue after today, talk to your TAs.
 
 -   Main Policy Areas:
 
-    -   Social Media/Tech (Thank you, my dear students. Not so much for you Elon!)
-    -   International Development (let's talk war, peace and RCTs)
-    -   Education (Gonna get some data with Professor Johnson)
+    -   Social Media/Tech (Talk to me!)
+    -   Election (aha! great timing for it!)
+    -   Education (Talk with Professor Johnson)
+
+## Open Ended
+
+- Most of you are worried, slightly anxious Python is hard, and you will not be able to keep up.
+
+::: incremental
+
+- Python is definitely harder than excel and stata. 
+
+- But you will be fine!
+
+- **Our approach**: We start slow, cover the basics, and move fast!
+
+::: 
 
 # `r fontawesome::fa("laptop-code")` Transiton: Coding!
 
@@ -361,12 +340,18 @@ countdown(minutes = 10, seconds = 0,
 
 [See Jupyter Notebook in the Class Website]{.red}
 
-## Quarto
-
-[See Quarto Notebook in the Class Website]{.red}
+**Note on my approach on Notebooks:** I will go over quite quickly through the notebooks. You shouls run them by yourselves at a later point!
 
 ## Command Line
 
 [See Command Line Tutorial in the Class Website]{.red}
 
-# See you in next week!
+## Quarto
+
+[See Quarto Notebook in the Class Website]{.red}
+
+## Datacamp Course
+
+[Introduction to Shell](https://app.datacamp.com/learn/courses/introduction-to-shell)
+
+# See you next week!

@@ -109,7 +109,7 @@
     "href": "weeks/week-01.html",
     "title": "Week 01",
     "section": "",
-    "text": "Lectures Notes:\n\nInstructions for setting up the course infra-structure.\nUsing Jupyter Notebooks: html,  notebook \nUsing Quarto for Python and R html,  notebook \nBasics of Command Line: html,  notebook \n\n\n\nSlides\n\nTBD\n\nWeek 01:Introduction, Installations, IDEs, Command line\n\n\nReadings\nThe readings for this week will cover a more general introduction to data science from a applied perspective (which you can call Data Science and Public Policy, Data Science for Public Good, or Computational Social Science in academic spaces)\nRequired Readings\n\nBit by Bit: Social Research in the Digital Age By Mathew Salganik\nIntroduction\nObserving Behavior\nA Three-Step Guide to Training Computational Social Science Ph.D. Students for Academic and Non-Academic Careers - By Aniket Kesari, Jae Yeon Kim, Sono Shah, Taylor Brown, Tiago Ventura and Tina Law\n\nBest Practices in Programming, IDEs and Files Management:\nRequired Readings\n\nJupyter Notebook for Beginners: A tutorial Pryke, Benjamin - www.dataquest.io\nUsing Python with RStudio and reticulate: here and here\n\nAdditional\n\nMore on RStudio + Reticulate\nR & Python: A Love Story - rstudio.com\nRStudio 1.2 Preview: Reticulated Python\nOn using LaTex to write math in markdown - docx2latex.com"
+    "text": "Lectures Notes:\n\nInstructions for setting up the course infra-structure.\nUsing Jupyter Notebooks: html,  notebook \nUsing Quarto for Python and R html,  notebook \nBasics of Command Line: html,  notebook \n\n\n\nSlides\n\nTBD\n\n\n\n\nReadings\nThe readings for this week will cover a more general introduction to data science from a applied perspective (which you can call Data Science and Public Policy, Data Science for Public Good, or Computational Social Science in academic spaces)\nRequired Readings\n\nBit by Bit: Social Research in the Digital Age By Mathew Salganik\nIntroduction\nObserving Behavior\nA Three-Step Guide to Training Computational Social Science Ph.D. Students for Academic and Non-Academic Careers - By Aniket Kesari, Jae Yeon Kim, Sono Shah, Taylor Brown, Tiago Ventura and Tina Law\n\nBest Practices in Programming, IDEs and Files Management:\nRequired Readings\n\nJupyter Notebook for Beginners: A tutorial Pryke, Benjamin - www.dataquest.io\nUsing Python with RStudio and reticulate: here and here\n\nAdditional\n\nMore on RStudio + Reticulate\nR & Python: A Love Story - rstudio.com\nRStudio 1.2 Preview: Reticulated Python\nOn using LaTex to write math in markdown - docx2latex.com"
   },
   {
     "objectID": "finalproject.html",
@@ -193,7 +193,7 @@
     "href": "slides/week-1.html#plans-for-today",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Plans for Today",
-    "text": "Plans for Today\n\n\nMotivating Data Science for Public Policy, or Computational Social Science.\nGoals of the course\nIntroductions\nCourse Logistics\nIDEs\n\nJupyter\nQuarto\n\nIntroduction to commandline"
+    "text": "Plans for Today\n\nMotivating Data Science for Public Policy, or Computational Social Science.\nGoals of the course\nIntroductions\nCourse Logistics\nIDEs\n\nJupyter\nQuarto\n\nIntroduction to commandline"
   },
   {
     "objectID": "slides/week-1.html#rise-of-the-digital-information-age",
@@ -242,7 +242,7 @@
     "href": "slides/week-1.html#as-a-consequence",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "As a consequence:",
-    "text": "As a consequence:\n\nAbundance of data we can use for research and governments can use to make better decisions\n\nNovel research questions\nNew ways to answer old, long-standing research questions\n\nNew technologies also have social implications and can generate important policy questions.\n\nPrivacy issues\nUse of technology by bad actors.\nUse of technology by governments to censor/monitor citizens.\netc…\n\nPolicy scholars need to be equipped for these challenges"
+    "text": "As a consequence:\n\nAbundance of data we can use for research and governments can use to make better decisions\n\nNovel research questions\nNew ways to answer old, long-standing research questions\n\nNew technologies also have social implications and can generate important policy questions.\n\nPrivacy issues\nUse of technology by bad actors.\nUse of technology by governments to censor/monitor citizens.\netc…\n\nPolicy scholars (but pretty much any researcher) need to be equipped to properly deal with these challenges"
   },
   {
     "objectID": "slides/week-1.html#an-example-merging-voter-files-with-twitter-data",
@@ -263,7 +263,7 @@
     "href": "slides/week-1.html#all-the-steps-tools-....-so-far-...",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "All the steps + Tools .... so far ...",
-    "text": "All the steps + Tools .... so far ...\n\n\nStep 1: Recruiting Participants Online\n\nOnline Panels + Facebook Ads\n\nStep 2: Running online Survey\n\nQualtrics + R\n\nStep 3: Development of Data Donation Pipeline\n\nJavaScript (JS)\n\nStep 4: Analyze the Data\n\nSQL + Python + R"
+    "text": "All the steps + Tools .... so far ...\n\nStep 1: Recruiting participants online\n\nOnline Panels + Facebook Ads\n\nStep 2: Running online surveys\n\nQualtrics + R\n\nStep 3: Development of data donation pipeline (with MDI)\n\nJavaScript (JS) + Python\n\nStep 4: Analyze the data\n\nSQL + Python + R"
   },
   {
     "objectID": "slides/week-1.html#data-science-for-public-policy",
@@ -291,7 +291,7 @@
     "href": "slides/week-1.html#logistics",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Logistics",
-    "text": "Logistics\n\nCommunication: via slack. Join the channel!\nAll materials: hosted on the class website: https://tiagoventura.github.io/ppol5203/\nSyllabus: also on the website.\nMy Office Hours: Every thursday from 4 to 6pm. Just stop by!\nCanvas: Only for communication! Materials will be hosted in the website!\nDatacamp: Additional exercises! I will not assign modules for you!\n\n\n\n\n−+\n05:00"
+    "text": "Logistics\n\n\nCommunication: via slack. Join the workspace!\nAll materials: hosted on the class website: https://tiagoventura.github.io/ppol5203/\nSyllabus: also on the website.\nMy Office Hours: Every tuesday from 4 to 6pm. Just stop by!\nCanvas: Only for official communication! Materials will be hosted in the website!\nDatacamp: Additional exercises! I will assign modules for you! Access our free account here\n\n\n\n\n−+\n05:00"
   },
   {
     "objectID": "slides/week-1.html#ta",
@@ -340,14 +340,14 @@
     "href": "slides/week-1.html#about-me",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "About me",
-    "text": "About me\n\n\nProfessor Tiago Ventura (he/him)\n\nAssistant Professor at McCourt School.\nPolitical Science Ph.D.\nPostdoc at Center for Social Media and Politics at NYU.\nResearcher at Twitter.\n\nResearch Interests:\n\nSocial media and politics\nComputational methods, NLP and LLMs\nFocus on Global South\n\nOutside of work, I enjoy watching soccer and reading sci-fi.\n\nSometimes I enjoy soccer while working!\nAnd I am from Brazil!"
+    "text": "About me\n\nProfessor Tiago Ventura (he/him)\n\nAssistant Professor at McCourt School.\nPolitical Science Ph.D.\nPostdoc at Center for Social Media and Politics at NYU.\nResearcher at Twitter.\n\nResearch Interests:\n\nSocial media and politics\nComputational methods, NLP and LLMs\nFocus on Global South\n\nOutside of work, I enjoy watching soccer and reading sci-fi.\n\nSometimes I enjoy soccer while working!\nAnd I am from Brazil!"
   },
   {
     "objectID": "slides/week-1.html#quiz",
     "href": "slides/week-1.html#quiz",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Quiz!",
-    "text": "Quiz!\nWhich programming language did I use the most at?\n\nPhD\nPostdoc\nTwitter"
+    "text": "Quiz!\nWhich programming language did I use the most at?\n\nPhD\nPostdoc\nTwitter\nAs a Faculty"
   },
   {
     "objectID": "slides/week-1.html#a-comment-from-the-pre-course-survey",
@@ -368,14 +368,14 @@
     "href": "slides/week-1.html#summary-of-the-survey",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Summary of the survey",
-    "text": "Summary of the survey\n\n75% of you have some experience with Python.\n42% of you have some with SQL and 42% have none (which is great for the intro purposes of this course!)\nNONE of you were using primarily Python in your work before!\n\n30% using R and 30% using Stata.\n\nA few still do not have Python/Jupyter/Github in your laptops. If you are having issue after today, talk to Sierra.\nMain Policy Areas:\n\nSocial Media/Tech (Thank you, my dear students. Not so much for you Elon!)\nInternational Development (let’s talk war, peace and RCTs)\nEducation (Gonna get some data with Professor Johnson)"
+    "text": "Summary of the survey\n\n72% of you have some experience with Python.\nOnly three of you were using primarily Python in your work before!\n\nMost others are using R and Excel!\n\nYou all have Python in your laptops, some still do not have a github account. If you are having issue after today, talk to your TAs.\nMain Policy Areas:\n\nSocial Media/Tech (Talk to me!)\nElection (aha! great timing for it!)\nEducation (Talk with Professor Johnson)"
   },
   {
     "objectID": "slides/week-1.html#jupyter",
     "href": "slides/week-1.html#jupyter",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Jupyter:",
-    "text": "Jupyter:\nSee Jupyter Notebook in the Class Website"
+    "text": "Jupyter:\nSee Jupyter Notebook in the Class Website\nNote on my approach on Notebooks: I will go over quite quickly through the notebooks. You shouls run them by yourselves at a later point!"
   },
   {
     "objectID": "slides/week-1.html#quarto",
@@ -543,7 +543,7 @@
     "href": "slides/week-1.html#readings-for-this-week",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Readings for this week",
-    "text": "Readings for this week\n\nBit by Bit: Social Research in the Digital Age By Mathew Salganik\n\nIntroduction\nObserving Behavior\n\nTraining Computational Social Science PhD Students for Academic and Non-Academic Careers - Written by me and some colleagues in academia, industry and non-profits"
+    "text": "Readings for this week\n\nBit by Bit: Social Research in the Digital Age By Mathew Salganik\nIntroduction\nObserving Behavior\nTraining Computational Social Science PhD Students for Academic and Non-Academic Careers - Written by me and some colleagues in academia, industry and non-profits"
   },
   {
     "objectID": "slides/week-1.html#tas",
@@ -558,5 +558,40 @@
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Set up your course infra-structure",
     "text": "Set up your course infra-structure\nSee Course Website"
+  },
+  {
+    "objectID": "slides/week-1.html#datacamp-course",
+    "href": "slides/week-1.html#datacamp-course",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Datacamp Course",
+    "text": "Datacamp Course\nIntroduction to Shell"
+  },
+  {
+    "objectID": "slides/week-1.html#a-comment-from-the-pre-course-survey-from-last-year",
+    "href": "slides/week-1.html#a-comment-from-the-pre-course-survey-from-last-year",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "A comment from the pre-course survey (from last year)",
+    "text": "A comment from the pre-course survey (from last year)\n\nHi professor Ventura! I noticed that we gonna learn multiple data analysis tool this semester and I am definitely a novice of data science. I am little worried about how can I master all of them without being confused, because some commands might be very similar."
+  },
+  {
+    "objectID": "slides/week-1.html#open-ended",
+    "href": "slides/week-1.html#open-ended",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Open Ended",
+    "text": "Open Ended\n\nMost of you are worried, slightly anxious Python is hard, and you will not be able to keep up.\n\n\n\nPython is definitely harder than excel and stata.\nBut you will be fine!\nOur approach: We start slow, cover the basics, and move fast!"
+  },
+  {
+    "objectID": "slides/week-1.html#what-we-will-cover",
+    "href": "slides/week-1.html#what-we-will-cover",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "What we will cover",
+    "text": "What we will cover"
+  },
+  {
+    "objectID": "slides/week-1.html#course-schedule",
+    "href": "slides/week-1.html#course-schedule",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Course Schedule",
+    "text": "Course Schedule"
   }
 ]
