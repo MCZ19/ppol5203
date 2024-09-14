@@ -22,6 +22,8 @@ website:
         text: Syllabus
       - href: schedule.qmd
         text: Schedule
+      - href: course_infrastructure.qmd
+        text: Course Tech Info
       #- href: problemset.qmd
       #  text: Problem Sets
       - href: finalproject.qmd
