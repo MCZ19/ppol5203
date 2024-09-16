@@ -13105,7 +13105,7 @@ Tiago Ventura </center> <h1></p>
 <ul>
 <li>Reproducibility in Data Science</li>
 <li>Conceptualize what version control and how it works;</li>
-<li>Basics of <code>git</code> and operating it with command line arguments;</li>
+<li>Basics of <code>Git</code> and operating it with command line arguments;</li>
 <li>Generating repositories on <code>Github</code>;</li>
 <li>Linking local repositories with online remotes;</li>
 <li>Dealing with merge conflicts;</li>
@@ -13221,13 +13221,13 @@ Tiago Ventura </center> <h1></p>
 <ul>
 <li><p>Version control avoids: <code>file1.doc, file1_mod.doc, file1_modagain.doc, file1_mod_thelast.doc, etc..</code></p>
 </li>
-<li><p>Easily handle collaboration</p>
+<li><p>Easily handle collaboration with co-workers (through GitHub)</p>
 </li>
 <li><p>Avoids version file names</p>
 </li>
 <li><p>Allows you to “rewind the tape” to earlier incarnations of your notes, drafts, papers and code</p>
 </li>
-<li><p>It is like Microsoft Word track changes but for your entire project</p>
+<li><p>It is like microsoft Word track changes but for your entire project</p>
 </li>
 </ul>
 <p>Version control is the most complex and most important of the best practices described here for reproducibility in data science. It requires us to learn a tool to perform version control. We will use <code>Git</code> to do so.</p>
@@ -13239,15 +13239,15 @@ Tiago Ventura </center> <h1></p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Git-&amp;-Github">Git &amp; Github<a class="anchor-link" href="#Git-&amp;-Github">&#182;</a></h2><p><strong><code>Git</code></strong>: one of many options for version control in data science. You hardly hear abour other options though as has become the standard for version control</p>
-<p><strong>Github</strong>: is a public remote host for Git repositories. It works as a place where software developers and social scientists make their work available, and where you can contribute to ongoing projects or make public your own.</p>
-<p>In a nutshell, you will <code>git</code> locally, and share and collaborate with others using Github.</p>
-<h3 id="Git-basic-workflow-in-words">Git basic workflow in words<a class="anchor-link" href="#Git-basic-workflow-in-words">&#182;</a></h3><p>Git has three main states that your files can reside in:</p>
+<p><strong>Github</strong>: is a public remote host for <code>Git</code> repositories. It works as a place where software developers and social scientists make their work available, and where you can contribute to ongoing projects or make public your own.</p>
+<p>In a nutshell, you will <code>Git</code> locally, and share and collaborate with others using Github.</p>
+<h3 id="Git-basic-workflow-in-words">Git basic workflow in words<a class="anchor-link" href="#Git-basic-workflow-in-words">&#182;</a></h3><p><code>Git</code> has three main states that your files can reside in:</p>
 <ul>
 <li><strong>Modified</strong> - changed the file but have not committed it to the database yet.</li>
 <li><strong>Staged</strong> - marked a modified file in its current version to go into the next commit snapshot.</li>
 <li><strong>Committed</strong> - data is safely stored in your local database.</li>
 </ul>
-<p>The fundamental Git process can be paraphrased as follows:</p>
+<p>The fundamental <code>Git</code> process can be paraphrased as follows:</p>
 <ul>
 <li><p>You alter files within your working directory.</p>
 </li>
@@ -13303,7 +13303,7 @@ Tiago Ventura </center> <h1></p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Git-in-Practice">Git in Practice<a class="anchor-link" href="#Git-in-Practice">&#182;</a></h2><p>The code below cover what we will do  in class. It shows you the basics of using git for local version control.</p>
+<h2 id="Git-in-Practice">Git in Practice<a class="anchor-link" href="#Git-in-Practice">&#182;</a></h2><p>The code below cover what we will do  in class. It shows you the basics of using <code>git</code> for local version control.</p>
 <h4 id="1)-Create-an-empty-directory-to-be-our-git-walkthrough">1) Create an empty directory to be our git walkthrough<a class="anchor-link" href="#1)-Create-an-empty-directory-to-be-our-git-walkthrough">&#182;</a></h4><p>Open you command line.</p>
 <p>Check your home directory or where you are when you open your terminal</p>
 <ul>
@@ -13314,24 +13314,24 @@ Tiago Ventura </center> <h1></p>
 <ul>
 <li><code>cd gitwalkthrough</code> <em>change working directory</em></li>
 </ul>
-<h4 id="2)-Check-if-you-have-a-git">2) Check if you have a git<a class="anchor-link" href="#2)-Check-if-you-have-a-git">&#182;</a></h4><p>Let's make sure you have a git repository here (you know you do not because you just started this folder)</p>
+<h4 id="2)-Check-if-you-have-a-git">2) Check if you have a git<a class="anchor-link" href="#2)-Check-if-you-have-a-git">&#182;</a></h4><p>Let's make sure you have a <code>git</code> repository here (you know you do not because you just started this folder)</p>
 <ul>
 <li><code>git status</code> <em>get the current status of the repository</em><ul>
 <li>returns: <code>fatal: not a git repository (or any of the parent directories): .git</code></li>
 </ul>
 </li>
 </ul>
-<p>Create your first git repository. This command creates a local version control for this project. This is different from creating a database in the server, like on github</p>
+<p>Create your first <code>git</code> repository. This command creates a local version control for this project. This is different from creating a database in the server, like on github</p>
 <ul>
 <li><code>git init</code> <em>start a new repository from a working directory</em></li>
 </ul>
 <p>If you want to see what is going on behind the hood, this command creates a hidden directory <code>.git</code> in your folder. This directory tracks your version control.</p>
-<h4 id="3)-Tracking-and-staging-new-files">3) Tracking and staging new files<a class="anchor-link" href="#3)-Tracking-and-staging-new-files">&#182;</a></h4><p>Now we have a git repo created, let make our first commit.</p>
+<h4 id="3)-Tracking-and-staging-new-files">3) Tracking and staging new files<a class="anchor-link" href="#3)-Tracking-and-staging-new-files">&#182;</a></h4><p>Now we have a <code>git</code> repo created, let make our first commit.</p>
 <p>First, let's create some random file using the command line. I will use vim as a text editor here.</p>
 <ul>
 <li><code>vim test1.txt</code> <em>to open and edit the file</em></li>
 </ul>
-<p>Remember, git has three basic states: untracked, tracked and stagged files. To move between these states, we use the add command.</p>
+<p>Remember, <code>git</code> has three basic states: untracked, tracked and stagged files. To move between these states, we use the add command.</p>
 <ul>
 <li><code>git status</code> <em>gonna tell us we have a new untracked filed.</em></li>
 <li><code>git add test1.txt</code> <em>start tracking/stage the file test1.txt</em></li>
@@ -13377,7 +13377,7 @@ Tiago Ventura </center> <h1></p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Git:-Branchinch-and-Merging.">Git: Branchinch and Merging.<a class="anchor-link" href="#Git:-Branchinch-and-Merging.">&#182;</a></h2><p>Branching allows us to work on different paths in Git. It is very useful for two purposes:</p>
+<h2 id="Git:-Branchinch-and-Merging.">Git: Branchinch and Merging.<a class="anchor-link" href="#Git:-Branchinch-and-Merging.">&#182;</a></h2><p>Branching allows us to work on different paths in <code>git</code>. It is very useful for two purposes:</p>
 <ul>
 <li><p>Experimenting with code</p>
 </li>
@@ -13424,8 +13424,8 @@ Tiago Ventura </center> <h1></p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Git-Remotes:-Git-+-Github.">Git Remotes: Git + Github.<a class="anchor-link" href="#Git-Remotes:-Git-+-Github.">&#182;</a></h2><p>Most times, you will use git integrated with Github. This is because the way git is more useful is by allowing multiple researchers to write and share code at the same time.</p>
-<p>This is the workflow we willgo through in class. It is usually how I use git in my day to day work. This is also insipiered by a tutorial we developed at the Center for Social Media and Politics (CSMaP), where I worked as a Postdoctoral Researcher.</p>
+<h2 id="Git-Remotes:-Git-+-Github.">Git Remotes: Git + Github.<a class="anchor-link" href="#Git-Remotes:-Git-+-Github.">&#182;</a></h2><p>Most times, you will use <code>git</code> integrated with <code>Github</code>. This is because the way <code>git</code> is more useful is by allowing multiple researchers to write and share code at the same time.</p>
+<p>This is the workflow we will go through in class. It is usually how I use <code>git</code> in my day to day work. This is also insipiered by a tutorial we developed at the Center for Social Media and Politics (CSMaP), where I worked as a Postdoctoral Researcher.</p>
 <h3 id="Starting-a-New-Project">Starting a New Project<a class="anchor-link" href="#Starting-a-New-Project">&#182;</a></h3><p>Before you write any code:</p>
 <ul>
 <li><p>Go to your github, and create a new repository</p>
@@ -13503,7 +13503,7 @@ ADD EXAMPLE FROM CLASS
 <li><code>git checkout "master"</code> : move back to master</li>
 <li><code>vim test1.txt</code>: make some modification and see that the old modification is not here</li>
 <li><code>git add test1.txt</code></li>
-<li><code>git commit -m "new file 1 from master</code>: commit your changes</li>
+<li><code>git commit -m "new file 1"</code> from master commit your changes</li>
 </ul>
 <h4 id="3)-Merge-and-solve-conflict">3) Merge and solve conflict<a class="anchor-link" href="#3)-Merge-and-solve-conflict">&#182;</a></h4><p>Because we are at the master branch, we just need to merge the new branch to the master</p>
 <ul>
@@ -13531,7 +13531,7 @@ ADD EXAMPLE FROM CLASS
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id=".gitignore:-ignoring-specific-files-or-file-types">.gitignore: ignoring specific files or file types<a class="anchor-link" href="#.gitignore:-ignoring-specific-files-or-file-types">&#182;</a></h2><p>Sometimes we do not want to track certain file types.</p>
-<p>For example, Github has an upload rate of 100mb, meaning that we wouldn't want to push really big data sources up to the repository. We might want to avoid uploading <em>any</em> data files to our Github repository for this reason. To do this, we may want to ignore specific file types, such as <code>.csv</code> (comma separated values) or <code>.Rdata</code> (an R data file type). To do this, we need to make a special file that Git reads to tell it which files <em>not</em> to track.</p>
+<p>For example, <code>Github</code> has an upload rate of 100mb, meaning that we wouldn't want to push really big data sources up to the repository. We might want to avoid uploading <em>any</em> data files to our Github repository for this reason. To do this, we may want to ignore specific file types, such as <code>.csv</code> (comma separated values) or <code>.Rdata</code> (an R data file type). To do this, we need to make a special file that Git reads to tell it which files <em>not</em> to track.</p>
 <p>We can exclude these files by adding a <code>.gitignore</code> file to our project folder.</p>
 
 <pre><code>*.ipynb_checkpoints 
@@ -13574,7 +13574,7 @@ ADD EXAMPLE FROM CLASS
 </li>
 <li><code>git whatchanged</code></li>
 </ul>
-<p><strong>Tracking Movement</strong>: If we were to just rename or move a file, Git doesn't necessarily know that it was already tracking that file.</p>
+<p><strong>Tracking Movement</strong>: If we were to just rename or move a file, <code>git</code> doesn't necessarily know that it was already tracking that file.</p>
 <ul>
 <li><code>git mv old-file-location new-file-location</code>: Move files around so that the git history is retained</li>
 <li><code>git mv old-file-name new-file-name</code>: Rename files so that the git history is retained</li>

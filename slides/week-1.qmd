@@ -76,7 +76,6 @@ knitr::include_graphics("week1_figs/collab.png")
 
 -   Policy scholars (but pretty much any researcher) need to be equipped to properly deal with these challenges
 
-
 ## Data Science for Public Policy
 
 [Data Scientist for Public Policy]{.red} focuses on **computational approaches** to solve/understand **Policy Problems**.
@@ -93,7 +92,6 @@ knitr::include_graphics("week1_figs/collab.png")
 -   **What is Data Science?**:
 
     -   Use often large-scale data + algorithms to answer questions
-    
 
 ## An example: Data Donation WhatsApp Groups
 
@@ -102,7 +100,6 @@ knitr::include_graphics("week1_figs/wpp.png")
 ```
 
 ## All the steps + Tools `....` so far `...`
-
 
 -   [Step 1]{.blue}: Recruiting participants online
 
@@ -114,22 +111,21 @@ knitr::include_graphics("week1_figs/wpp.png")
 
 -   [Step 3]{.blue}: Development of data donation pipeline (with MDI)
 
-    -   JavaScript (JS) + Python 
+    -   JavaScript (JS) + Python
 
 -   [Step 4]{.blue}: Analyze the data
 
     -   SQL + Python + R
 
-
 ## Readings for this week
 
-- **Bit by Bit: Social Research in the Digital Age** By Mathew Salganik
+-   **Bit by Bit: Social Research in the Digital Age** By Mathew Salganik
 
- -   [Introduction](https://www.bitbybitbook.com/en/1st-ed/introduction/)
+-   [Introduction](https://www.bitbybitbook.com/en/1st-ed/introduction/)
 
- -   [Observing Behavior](https://www.bitbybitbook.com/en/1st-ed/observing-behavior/)
+-   [Observing Behavior](https://www.bitbybitbook.com/en/1st-ed/observing-behavior/)
 
-- [Training Computational Social Science PhD Students for Academic and Non-Academic Careers](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/training-computational-social-science-phd-students-for-academic-and-nonacademic-careers/1455690939833B9FFCAC664D4E412057) - Written by me and some colleagues in academia, industry and non-profits
+-   [Training Computational Social Science PhD Students for Academic and Non-Academic Careers](https://www.cambridge.org/core/journals/ps-political-science-and-politics/article/training-computational-social-science-phd-students-for-academic-and-nonacademic-careers/1455690939833B9FFCAC664D4E412057) - Written by me and some colleagues in academia, industry and non-profits
 
 ## Goals of the course
 
@@ -147,7 +143,7 @@ The goal of this course is to teach you:
 
 ## Course Schedule
 
-![](week1_figs/schedule_2024.png) 
+![](week1_figs/schedule_2024.png)
 
 # Introductions {background-color="#447099"}
 
@@ -182,12 +178,11 @@ The goal of this course is to teach you:
 
 -   **Twitter**
 
--  **As a Faculty**
+-   **As a Faculty**
 
 ## A comment from the pre-course survey (from last year)
 
 > Hi professor Ventura! I noticed that we gonna learn multiple data analysis tool this semester and I am definitely a novice of data science. I am little worried about how can I master all of them without being confused, because some commands might be very similar.
-
 
 ## Your turn!
 
@@ -198,6 +193,7 @@ The goal of this course is to teach you:
 -   If you could have any data source at your disposal, what would it be?
 
 ## Logistics {.center}
+
 ::: incremental
 -   **Communication**: via slack. Join the [workspace!](https://join.slack.com/t/ppol5203fall2024/shared_invite/zt-2ou5gm0ww-YJUJfR3vTfzN4IuKcULFDQ)
 
@@ -303,12 +299,11 @@ countdown(minutes = 10, seconds = 0,
 
 -   72% of you have [some]{.red} experience with Python.
 
-
 -   [Only three]{.red} of you were using primarily Python in your work before!
 
-    -  Most others are using R and Excel!
+    -   Most others are using R and Excel!
 
--   You all have Python in your laptops, some still do not have a github account.  If you are having issue after today, talk to your TAs.
+-   You all have Python in your laptops, some still do not have a github account. If you are having issue after today, talk to your TAs.
 
 -   Main Policy Areas:
 
@@ -318,17 +313,15 @@ countdown(minutes = 10, seconds = 0,
 
 ## Open Ended
 
-- Most of you are worried, slightly anxious Python is hard, and you will not be able to keep up.
+-   Most of you are worried, slightly anxious Python is hard, and you will not be able to keep up.
 
 ::: incremental
+-   Python is definitely harder than excel and stata.
 
-- Python is definitely harder than excel and stata. 
+-   But you will be fine!
 
-- But you will be fine!
-
-- **Our approach**: We start slow, cover the basics, and move fast!
-
-::: 
+-   **Our approach**: We start slow, cover the basics, and move fast!
+:::
 
 # `r fontawesome::fa("laptop-code")` Transiton: Coding!
 

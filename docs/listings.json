@@ -20,7 +20,9 @@
   },
   {
     "listing": "/problemset.html",
-    "items": []
+    "items": [
+      "/problem_sets/ps01.html"
+    ]
   },
   {
     "listing": "/syllabus.html",
