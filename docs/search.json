@@ -830,7 +830,7 @@
     "href": "slides/week-2.html#create-your-first-repository",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Create your first repository",
-    "text": "Create your first repository\nCreate an empty directory to be our git walkthrough\n\n# check where you are\npwd \n\n# create dir\nmkdir gitwalkthrough\n\n# change cd\n\ncd gitwalkthrough\n\nCheck if you have a git\n\ngit status\n\nStart a repository\n\ngit init\n\nTracking and staging new files: make any changes you want locally on this repo\nThen stage your changes\n\ngit add &lt;file name&gt;\n\nFirst commit\n\ngit commit -m \"add a tag\""
+    "text": "Create your first repository\nCreate an empty directory to be our git walkthrough\n\n# check where you are\npwd \n# create dir\nmkdir gitwalkthrough\n# change cd\ncd gitwalkthrough\n\nCheck if you have a git\n\ngit status\n\nStart a repository\n\ngit init\n\nTracking and staging new files: make any changes you want locally on this repo. Then stage your changes\n\ngit add &lt;file name&gt;\n\nFirst commit\n\ngit commit -m \"add a tag\""
   },
   {
     "objectID": "slides/week-2.html#git-in-practice-ii-time-travel",

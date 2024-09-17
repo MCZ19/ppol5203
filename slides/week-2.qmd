@@ -9,8 +9,8 @@ format:
   revealjs: 
     transition: slide
     background-transition: fade
-    width: 1400 #1050
-    height: 800 #700
+    width: 1600 #1050
+    height: 600 #700
     center: true
     slide-number: true
     incremental: false
@@ -388,12 +388,9 @@ Create an empty directory to be our git walkthrough
 #| eval: false 
 # check where you are
 pwd 
-
 # create dir
 mkdir gitwalkthrough
-
 # change cd
-
 cd gitwalkthrough
 ```
 
@@ -412,9 +409,7 @@ Start a repository
 git init
 ```
 
-Tracking and staging new files: make any changes you want locally on this repo
-
-Then stage your changes
+Tracking and staging new files: make any changes you want locally on this repo. Then stage your changes
 
 ```{python}
 #| eval: false 
@@ -459,7 +454,6 @@ Time travel with checkout
 ```{python}
 #| eval: false 
 git checkout <hash> #to move to a past different snapshot
-
 ```
 
 Check your directory
