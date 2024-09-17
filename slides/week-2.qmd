@@ -36,9 +36,7 @@ format:
 
 
 :::aside
-:::{.fragment}
 *this lecture draws on materials from Simon Munzert [Intro to Data Science](https://github.com/intro-to-data-science-21/lectures/tree/main) + previous iterations of PPOL 5203.*
-:::
 :::
 
 :::
@@ -97,7 +95,7 @@ As you advance on your career as a data scientist:
 
 ## {}
 
-### You need to set up a system to keep track of you work 
+### You need to set up a system to keep track of your work 
 
 - not you.
 
@@ -105,11 +103,9 @@ As you advance on your career as a data scientist:
 
 ## Reproducibility
 
-<br> 
-
 - Reproducibility is fundamental for any scientific project. 
   
-  - If your scientific findings cannot the replicated, it is not science, and you will be in trouble
+  - If your scientific findings cannot be replicated, it is not science, and you will be in trouble.
 
 - In practice, this means your projects need to be:
 
@@ -117,7 +113,7 @@ As you advance on your career as a data scientist:
 
     -   replicable by you (that's the practical reality)
 
-## Best Practices
+## Best Practices (the system)
 
 -   Self Contained Projects
 
@@ -144,8 +140,6 @@ Always consider your work in terms of projects.
 
 
 ## Example of Project Setup
-
-<br>
 
 ```       
 ├── /data

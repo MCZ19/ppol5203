@@ -655,7 +655,7 @@
     "href": "slides/week-2.html#plans-for-today",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Plans for Today",
-    "text": "Plans for Today\n\n\nBest Practices for Data Science Workflow and Reproducibility\nVersion Control (Git and Github)\nIn-Class Exercise\nYour first homework\n\n\n\n\n\nthis lecture draws on materials from Simon Munzert Intro to Data Science + previous iterations of PPOL 5203."
+    "text": "Plans for Today\n\n\nBest Practices for Data Science Workflow and Reproducibility\nVersion Control (Git and Github)\nIn-Class Exercise\nYour first homework\n\n\n\n\nthis lecture draws on materials from Simon Munzert Intro to Data Science + previous iterations of PPOL 5203."
   },
   {
     "objectID": "slides/week-2.html#thats-what-we-generally-look-for-as-data-scientists",
@@ -690,14 +690,14 @@
     "href": "slides/week-2.html#section",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "",
-    "text": "You need to set up a system to keep track of you work\n\nnot you.\nthe system!"
+    "text": "You need to set up a system to keep track of your work\n\nnot you.\nthe system!"
   },
   {
     "objectID": "slides/week-2.html#reproducibility",
     "href": "slides/week-2.html#reproducibility",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Reproducibility",
-    "text": "Reproducibility\n\n\nReproducibility is fundamental for any scientific project.\n\nIf your scientific findings cannot the replicated, it is not science, and you will be in trouble\n\nIn practice, this means your projects need to be:\n\nfully replicated by others (that’s science)\nreplicable by you (that’s the practical reality)"
+    "text": "Reproducibility\n\nReproducibility is fundamental for any scientific project.\n\nIf your scientific findings cannot be replicated, it is not science, and you will be in trouble.\n\nIn practice, this means your projects need to be:\n\nfully replicated by others (that’s science)\nreplicable by you (that’s the practical reality)"
   },
   {
     "objectID": "slides/week-2.html#best-practices",
@@ -718,7 +718,7 @@
     "href": "slides/week-2.html#example-of-project-setup",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Example of Project Setup",
-    "text": "Example of Project Setup\n\n├── /data\n│   ├── /raw      \n│   ├── /processed  \n├── /docs \n├── /code\n|   |── 01_clean_xxx.py\n|   |── 01_analysis_xxx.py\n\n├── /literature      \n\n├── /output      \n│   ├── /tables      \n│   ├── /figures  \n├── /misc \n└── readme.txt"
+    "text": "Example of Project Setup\n├── /data\n│   ├── /raw      \n│   ├── /processed  \n├── /docs \n├── /code\n|   |── 01_clean_xxx.py\n|   |── 01_analysis_xxx.py\n\n├── /literature      \n\n├── /output      \n│   ├── /tables      \n│   ├── /figures  \n├── /misc \n└── readme.txt"
   },
   {
     "objectID": "slides/week-2.html#documentation",
@@ -992,5 +992,12 @@
     "title": "Problem Set 1",
     "section": "",
     "text": "Github Classroom Link"
+  },
+  {
+    "objectID": "slides/week-2.html#best-practices-the-system",
+    "href": "slides/week-2.html#best-practices-the-system",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Best Practices (the system)",
+    "text": "Best Practices (the system)\n\nSelf Contained Projects\nDocumentation\nReadability\nNaming\nPortability\nVersion Control"
   }
 ]
