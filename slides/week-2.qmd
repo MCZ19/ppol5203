@@ -9,7 +9,7 @@ format:
   revealjs: 
     transition: slide
     background-transition: fade
-    width: 1200 #1050
+    width: 1400 #1050
     height: 800 #700
     center: true
     slide-number: true
@@ -270,7 +270,7 @@ knitr::include_graphics("week2_figs/wp.png")
 
 ## Why version control (in theory)?
 
-```{r  echo=FALSE, out.width = "50%", fig.align="center"}
+```{r  echo=FALSE, out.width = "30%", fig.align="center"}
 knitr::include_graphics("week2_figs/final.jpeg") 
 ```
 
