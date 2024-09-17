@@ -665,7 +665,7 @@ Push the changes in your local repository to GitHub:
 #| eval: false
 git push 
 # or with branch
-git push-u origin [branch-name] 
+git push -u origin [branch-name] 
 ```
 
 
