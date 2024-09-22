@@ -4,28 +4,28 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Week\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nWeek 01\n\n\nIntroduction, Installations, IDEs, Command line\n\n\nAugust 29, 2023\n\n\n\n\nWeek 02\n\n\nVersion Control, Workflow and Reproducibility: Or a bit of Git & GitHub\n\n\nSeptember 12, 2023\n\n\n\n\nWeek 03\n\n\nIntro to Python - OOP, Data Types, Control Statements and Functions\n\n\nSeptember 19, 2023\n\n\n\n\nWeek 04\n\n\nPython II: Control Statements, Comprehensions, Nested Lists, and Numpy\n\n\nSeptember 26, 2023\n\n\n\n\nWeek 05\n\n\nNumpy and Intro to Pandas\n\n\nOctober 03, 2023\n\n\n\n\nWeek 06\n\n\nPandas II: Data Wrangling\n\n\nOctober 10, 2023\n\n\n\n\nWeek 07\n\n\nJoining, Tidying and Visualizing Data\n\n\nOctober 17, 2023\n\n\n\n\nWeek 08\n\n\nScraping\n\n\nOctober 24, 2023\n\n\n\n\nWeek 09\n\n\nApis + Selenium\n\n\nOctober 31, 2023\n\n\n\n\nWeek 10\n\n\nStatistical Learning\n\n\nNovember 07, 2023\n\n\n\n\nWeek 11\n\n\nText as Data I: Discovery and Topics\n\n\nNovember 14, 2023\n\n\n\n\nWeek 12\n\n\nText as Data II: Supervised Learning\n\n\nNovember 21, 2023\n\n\n\n\nWeek 13\n\n\nSQL\n\n\nNovember 28, 2023\n\n\n\n\nWeek 14\n\n\nPresentations of Final Projects\n\n\nDecember 05, 2023\n\n\n\n\n\n\nNo matching items"
+    "text": "Week\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nWeek 01\n\n\nIntroduction, Installations, IDEs, Command line\n\n\nSeptember 10, 2023\n\n\n\n\nWeek 02\n\n\nVersion Control, Workflow and Reproducibility: Or a bit of Git & GitHub\n\n\nSeptember 17, 2023\n\n\n\n\nWeek 03\n\n\nIntro to Python - OOP, Data Types, Control Statements and Functions\n\n\nSeptember 24, 2023\n\n\n\n\nWeek 04\n\n\nPython II: Control Statements, Comprehensions, Nested Lists, and Numpy\n\n\nOctober 01, 2023\n\n\n\n\nWeek 05\n\n\nNumpy and Intro to Pandas\n\n\nOctober 08, 2023\n\n\n\n\nWeek 06\n\n\nPandas II: Data Wrangling\n\n\nOctober 15, 2023\n\n\n\n\nWeek 07\n\n\nJoining, Tidying and Visualizing Data\n\n\nOctober 22, 2023\n\n\n\n\nWeek 08\n\n\nScraping\n\n\nOctober 29, 2023\n\n\n\n\nWeek 09\n\n\nApis + Selenium\n\n\nNovember 05, 2023\n\n\n\n\nWeek 10\n\n\nStatistical Learning\n\n\nNovember 12, 2023\n\n\n\n\nWeek 11\n\n\nText as Data I: Discovery and Topics\n\n\nNovember 19, 2023\n\n\n\n\nWeek 12\n\n\nText as Data II: Supervised Learning\n\n\nNovember 26, 2023\n\n\n\n\nWeek 13\n\n\nSQL\n\n\nDecember 03, 2023\n\n\n\n\nWeek 14\n\n\nPresentations of Final Projects\n\n\nDecember 10, 2023\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "schedule.html#weekly-schedule",
     "href": "schedule.html#weekly-schedule",
     "title": "Schedule",
     "section": "",
-    "text": "Week\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nWeek 01\n\n\nIntroduction, Installations, IDEs, Command line\n\n\nAugust 29, 2023\n\n\n\n\nWeek 02\n\n\nVersion Control, Workflow and Reproducibility: Or a bit of Git & GitHub\n\n\nSeptember 12, 2023\n\n\n\n\nWeek 03\n\n\nIntro to Python - OOP, Data Types, Control Statements and Functions\n\n\nSeptember 19, 2023\n\n\n\n\nWeek 04\n\n\nPython II: Control Statements, Comprehensions, Nested Lists, and Numpy\n\n\nSeptember 26, 2023\n\n\n\n\nWeek 05\n\n\nNumpy and Intro to Pandas\n\n\nOctober 03, 2023\n\n\n\n\nWeek 06\n\n\nPandas II: Data Wrangling\n\n\nOctober 10, 2023\n\n\n\n\nWeek 07\n\n\nJoining, Tidying and Visualizing Data\n\n\nOctober 17, 2023\n\n\n\n\nWeek 08\n\n\nScraping\n\n\nOctober 24, 2023\n\n\n\n\nWeek 09\n\n\nApis + Selenium\n\n\nOctober 31, 2023\n\n\n\n\nWeek 10\n\n\nStatistical Learning\n\n\nNovember 07, 2023\n\n\n\n\nWeek 11\n\n\nText as Data I: Discovery and Topics\n\n\nNovember 14, 2023\n\n\n\n\nWeek 12\n\n\nText as Data II: Supervised Learning\n\n\nNovember 21, 2023\n\n\n\n\nWeek 13\n\n\nSQL\n\n\nNovember 28, 2023\n\n\n\n\nWeek 14\n\n\nPresentations of Final Projects\n\n\nDecember 05, 2023\n\n\n\n\n\n\nNo matching items"
+    "text": "Week\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nWeek 01\n\n\nIntroduction, Installations, IDEs, Command line\n\n\nSeptember 10, 2023\n\n\n\n\nWeek 02\n\n\nVersion Control, Workflow and Reproducibility: Or a bit of Git & GitHub\n\n\nSeptember 17, 2023\n\n\n\n\nWeek 03\n\n\nIntro to Python - OOP, Data Types, Control Statements and Functions\n\n\nSeptember 24, 2023\n\n\n\n\nWeek 04\n\n\nPython II: Control Statements, Comprehensions, Nested Lists, and Numpy\n\n\nOctober 01, 2023\n\n\n\n\nWeek 05\n\n\nNumpy and Intro to Pandas\n\n\nOctober 08, 2023\n\n\n\n\nWeek 06\n\n\nPandas II: Data Wrangling\n\n\nOctober 15, 2023\n\n\n\n\nWeek 07\n\n\nJoining, Tidying and Visualizing Data\n\n\nOctober 22, 2023\n\n\n\n\nWeek 08\n\n\nScraping\n\n\nOctober 29, 2023\n\n\n\n\nWeek 09\n\n\nApis + Selenium\n\n\nNovember 05, 2023\n\n\n\n\nWeek 10\n\n\nStatistical Learning\n\n\nNovember 12, 2023\n\n\n\n\nWeek 11\n\n\nText as Data I: Discovery and Topics\n\n\nNovember 19, 2023\n\n\n\n\nWeek 12\n\n\nText as Data II: Supervised Learning\n\n\nNovember 26, 2023\n\n\n\n\nWeek 13\n\n\nSQL\n\n\nDecember 03, 2023\n\n\n\n\nWeek 14\n\n\nPresentations of Final Projects\n\n\nDecember 10, 2023\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "PPOL 5203 - Data Science I: Foundations",
     "section": "",
-    "text": "This first course in the core data science sequence teaches Data Science for Public Policy (DSPP) students how to synthesize disparate, possibly unstructured data in order to draw meaningful insights. Topics covered include the fundamentals of object-oriented programming in Python; literate programming; an introduction to algorithms and data types; data wrangling, visualization, and extraction; an introduction to machine learning methods, and text analysis. In addition, students will be exposed to Git and Github for version control and reproducible research. The objective of the course is to teach students how incorporate data into their decision-making and analysis. No prior programming experience is assumed or required.\nThis is not the first time this course is taught at DSPP. For this reason, several of the materials here are borrowed from previous iterations of this PPOL 564 taught by Dr. Rebecca Johnson and Dr. Eric Dunford"
+    "text": "This first course in the core data science sequence teaches Data Science for Public Policy (DSPP) students how to synthesize disparate, possibly unstructured data in order to draw meaningful insights. Topics covered include the fundamentals of object-oriented programming in Python; literate programming; an introduction to algorithms and data types; data wrangling, visualization, and extraction; an introduction to machine learning methods, and text analysis. In addition, students will be exposed to Git and Github for version control and reproducible research. The objective of the course is to teach students how incorporate data into their decision-making and analysis. No prior programming experience is assumed or required.\nThis is not the first time this course is taught at DSPP. For this reason, several of the materials here are borrowed from previous iterations of this course taught by Dr. Rebecca Johnson and Dr. Eric Dunford"
   },
   {
     "objectID": "index.html#course-description",
     "href": "index.html#course-description",
     "title": "PPOL 5203 - Data Science I: Foundations",
     "section": "",
-    "text": "This first course in the core data science sequence teaches Data Science for Public Policy (DSPP) students how to synthesize disparate, possibly unstructured data in order to draw meaningful insights. Topics covered include the fundamentals of object-oriented programming in Python; literate programming; an introduction to algorithms and data types; data wrangling, visualization, and extraction; an introduction to machine learning methods, and text analysis. In addition, students will be exposed to Git and Github for version control and reproducible research. The objective of the course is to teach students how incorporate data into their decision-making and analysis. No prior programming experience is assumed or required.\nThis is not the first time this course is taught at DSPP. For this reason, several of the materials here are borrowed from previous iterations of this PPOL 564 taught by Dr. Rebecca Johnson and Dr. Eric Dunford"
+    "text": "This first course in the core data science sequence teaches Data Science for Public Policy (DSPP) students how to synthesize disparate, possibly unstructured data in order to draw meaningful insights. Topics covered include the fundamentals of object-oriented programming in Python; literate programming; an introduction to algorithms and data types; data wrangling, visualization, and extraction; an introduction to machine learning methods, and text analysis. In addition, students will be exposed to Git and Github for version control and reproducible research. The objective of the course is to teach students how incorporate data into their decision-making and analysis. No prior programming experience is assumed or required.\nThis is not the first time this course is taught at DSPP. For this reason, several of the materials here are borrowed from previous iterations of this course taught by Dr. Rebecca Johnson and Dr. Eric Dunford"
   },
   {
     "objectID": "index.html#goals",
@@ -39,14 +39,14 @@
     "href": "index.html#instructors-and-tas",
     "title": "PPOL 5203 - Data Science I: Foundations",
     "section": "Instructors and TAs",
-    "text": "Instructors and TAs\n\nInstructor\n\nProfessor: Dr. Tiago Ventura\nPronouns: He/Him\nEmail: tv186@georgetown.edu\nOffice hours:\n\nTime: Every Thursday, 4pm - 6pm\nLocation: 125E, Office Number 766\n\n\n\nWhen should I go to your office hours?\nYou are all welcome to the office hours. You can come to the office hours to:\n\nDrink some coffee;\nTalk about soccer;\nAsk what I am doing research at;\nAsk any question about our class.\n\nAll are valid options! No need to schedule time with me to go to office hours!"
+    "text": "Instructors and TAs\n\nInstructor\n\nProfessor: Dr. Tiago Ventura\nPronouns: He/Him\nEmail: tv186@georgetown.edu\nOffice hours:\n\nTime: Every Thursday, 4pm - 6pm\nLocation: 125E, Office Number 766\n\n\nYou are all welcome to the office hours at any time. You can come to the office hours to:\n\nDrink some coffee;\nTalk about soccer;\nAsk what I am doing research at;\nAsk any question about our class.\n\nAll are valid options! No need to schedule time with me to go to office hours!"
   },
   {
     "objectID": "index.html#teaching-assistants",
     "href": "index.html#teaching-assistants",
     "title": "PPOL 5203 - Data Science I: Foundations",
     "section": "Teaching Assistants:",
-    "text": "Teaching Assistants:\n\nAastha Jha (DSPP Second-Year Student)\n\nEmail: aj935@georgetown.edu\nOffice Hours:\n\nEvery Wednesdays, from 1pm to 2pm.\n\nLocation: TBD\n\n\nShirui Zhou (DSPP Alumni)\n\nEmail: sz614@georgetown.edu\nOffice Hours:\n\nEvery Monday, from 1pm to 2pm\nLocation: TBD\n\n\n\n\nCourse Infra-structure\nClass Website: A class website https://tiagoventura.github.io/ppol5203 will be used throughout the course and should be checked on a regular basis for lecture materials and required readings.\nClass Slack Channel: The class also has a dedicated slack channel (ppol-564-fall-2024.slack.com). The channel serves as an open forum to discuss, collaborate, pose problems/questions, and offer solutions. Students are encouraged to pose any questions they have there as this will provide the professor and TA the means of answering the question so that all can see the response. If you’re unfamiliar with, please consult the following start-up tutorial (https://get.slack.help/hc/en-us/articles/218080037-Getting-started-for-new-members). Please follow the invite link to be added to the Slack channel.\nCanvas: A Canvas site (http://canvas.georgetown.edu) will be used throughout the course and should be checked on a regular basis for announcements. ll announcements for the assignments and classes will be posted on Canvas; they will not be distributed in class or by e-mail. Support for Canvas is available at (202) 687-4949\nNOTE: Students are encouraged to run lecture code on their own machines. If you do not have access to a laptop on which you can install python3, please contact the professor and/or TA for assistance. Only python3 will be used in this course.\nDatacamp: As part of this course, you will have access to a DataCamp classroom that you can use to take Datacamp modules for free. Datacamp courses can be a useful tool for you to practice the concepts we see in class. Although I will not assign specific courses for you,, you can use Datacamp courses to review the topics we cover in class. The lecture notes will cover in details all our in-class discussions. Datacamp courses will be considered additional material."
+    "text": "Teaching Assistants:\n\nAastha Jha (DSPP Second-Year Student)\n\nEmail: aj935@georgetown.edu\nOffice Hours:\n\nEvery Wednesdays, from 1pm to 2pm.\n\nLocation: Room 395\n\n\nShirui Zhou (DSPP Alumni)\n\nEmail: sz614@georgetown.edu\nOffice Hours:\n\nEvery Monday, from 1pm to 2pm\nLocation: via Zoom\n\n\n\n\nCourse Infra-structure\nClass Website: A class website https://tiagoventura.github.io/ppol5203 will be used throughout the course and should be checked on a regular basis for lecture materials and required readings.\nClass Slack Channel: The class also has a dedicated slack channel (ppol-564-fall-2024.slack.com). The channel serves as an open forum to discuss, collaborate, pose problems/questions, and offer solutions. Students are encouraged to pose any questions they have there as this will provide the professor and TA the means of answering the question so that all can see the response. If you’re unfamiliar with, please consult the following start-up tutorial (https://get.slack.help/hc/en-us/articles/218080037-Getting-started-for-new-members). Please follow the invite link to be added to the Slack channel.\nCanvas: A Canvas site (http://canvas.georgetown.edu) will be used throughout the course and should be checked on a regular basis for announcements. ll announcements for the assignments and classes will be posted on Canvas; they will not be distributed in class or by e-mail. Support for Canvas is available at (202) 687-4949\nNOTE: Students are encouraged to run lecture code on their own machines. If you do not have access to a laptop on which you can install python3, please contact the professor and/or TA for assistance. Only python3 will be used in this course.\nDatacamp: As part of this course, you will have access to a DataCamp classroom that you can use to take Datacamp modules for free. Datacamp courses can be a useful tool for you to practice the concepts we see in class. Although I will not assign specific courses for you,, you can use Datacamp courses to review the topics we cover in class. The lecture notes will cover in details all our in-class discussions. Datacamp courses will be considered additional material."
   },
   {
     "objectID": "lecture_notes/week-01/course_infrastructure.html",
@@ -452,7 +452,7 @@
     "href": "syllabus.html#weekly-schedule",
     "title": "Syllabus: PPOL 5203 - Data Science I: Foundations",
     "section": "Weekly Schedule",
-    "text": "Weekly Schedule\n\n\n\n\n\n\nWeek\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nWeek 01\n\n\nIntroduction, Installations, IDEs, Command line\n\n\nAugust 29, 2023\n\n\n\n\nWeek 02\n\n\nVersion Control, Workflow and Reproducibility: Or a bit of Git & GitHub\n\n\nSeptember 12, 2023\n\n\n\n\nWeek 03\n\n\nIntro to Python - OOP, Data Types, Control Statements and Functions\n\n\nSeptember 19, 2023\n\n\n\n\nWeek 04\n\n\nPython II: Control Statements, Comprehensions, Nested Lists, and Numpy\n\n\nSeptember 26, 2023\n\n\n\n\nWeek 05\n\n\nNumpy and Intro to Pandas\n\n\nOctober 03, 2023\n\n\n\n\nWeek 06\n\n\nPandas II: Data Wrangling\n\n\nOctober 10, 2023\n\n\n\n\nWeek 07\n\n\nJoining, Tidying and Visualizing Data\n\n\nOctober 17, 2023\n\n\n\n\nWeek 08\n\n\nScraping\n\n\nOctober 24, 2023\n\n\n\n\nWeek 09\n\n\nApis + Selenium\n\n\nOctober 31, 2023\n\n\n\n\nWeek 10\n\n\nStatistical Learning\n\n\nNovember 07, 2023\n\n\n\n\nWeek 11\n\n\nText as Data I: Discovery and Topics\n\n\nNovember 14, 2023\n\n\n\n\nWeek 12\n\n\nText as Data II: Supervised Learning\n\n\nNovember 21, 2023\n\n\n\n\nWeek 13\n\n\nSQL\n\n\nNovember 28, 2023\n\n\n\n\nWeek 14\n\n\nPresentations of Final Projects\n\n\nDecember 05, 2023\n\n\n\n\n\n\nNo matching items"
+    "text": "Weekly Schedule\n\n\n\n\n\n\nWeek\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nWeek 01\n\n\nIntroduction, Installations, IDEs, Command line\n\n\nSeptember 10, 2023\n\n\n\n\nWeek 02\n\n\nVersion Control, Workflow and Reproducibility: Or a bit of Git & GitHub\n\n\nSeptember 17, 2023\n\n\n\n\nWeek 03\n\n\nIntro to Python - OOP, Data Types, Control Statements and Functions\n\n\nSeptember 24, 2023\n\n\n\n\nWeek 04\n\n\nPython II: Control Statements, Comprehensions, Nested Lists, and Numpy\n\n\nOctober 01, 2023\n\n\n\n\nWeek 05\n\n\nNumpy and Intro to Pandas\n\n\nOctober 08, 2023\n\n\n\n\nWeek 06\n\n\nPandas II: Data Wrangling\n\n\nOctober 15, 2023\n\n\n\n\nWeek 07\n\n\nJoining, Tidying and Visualizing Data\n\n\nOctober 22, 2023\n\n\n\n\nWeek 08\n\n\nScraping\n\n\nOctober 29, 2023\n\n\n\n\nWeek 09\n\n\nApis + Selenium\n\n\nNovember 05, 2023\n\n\n\n\nWeek 10\n\n\nStatistical Learning\n\n\nNovember 12, 2023\n\n\n\n\nWeek 11\n\n\nText as Data I: Discovery and Topics\n\n\nNovember 19, 2023\n\n\n\n\nWeek 12\n\n\nText as Data II: Supervised Learning\n\n\nNovember 26, 2023\n\n\n\n\nWeek 13\n\n\nSQL\n\n\nDecember 03, 2023\n\n\n\n\nWeek 14\n\n\nPresentations of Final Projects\n\n\nDecember 10, 2023\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "syllabus.html#course-requirements",
@@ -515,7 +515,7 @@
     "href": "weeks/week-08.html",
     "title": "Week 08",
     "section": "",
-    "text": "–&gt;"
+    "text": "Parsing Unstructured Data: Scraping Static Websites: html –  Jupyter Notebook"
   },
   {
     "objectID": "slides/week-1.html#an-example-from-my-research-data-donation-whatsapp-groups",
@@ -599,7 +599,7 @@
     "href": "weeks/week-02.html",
     "title": "Week 02",
     "section": "",
-    "text": "Lecture Notes\n\nVersion Control, Workflow and Reproducibility: Or a bit of Git & GitHub: html,  notebook \n\n\n\nSlides\nVersion Control, Workflow and Reproducibility: Or a bit of Git & GitHub\n\n\nPractice Exercises\nLink for practice exercise: https://classroom.github.com/a/epMgGVTy\n\n\n\nReadings\nRequired Readings\n\nThe Plain Person’s Guide to Plain Text Social Science - Healy, Kieran\n\nCh. 1: Introduction;\nCh. 2: Keep a Record;\nCh. 3: Write and Edit;\nCh. 4: Reproduce Work.\n\nPro Git - Chacon & Straub\n\nCh. 1: Getting Started; Read 1.1 - 1.3\nCh. 2: Git Basics; Only read 2.1 - 2.5\nCh. 3: Git Branching\n\n\nAdditional Resources and Suggested Materials\n\nMore on Git/Github in Pro Git:\n\nRead 1.4 - 1.7 for help on installation and commandline\nRead Ch. 6 for more information regarding Git + Github.\n\nCh. 13 Detect Git from RStudio -Happy Git with R - Bryan, Jenny & Jim Hester"
+    "text": "Lecture Notes\n\nVersion Control, Workflow and Reproducibility: Or a bit of Git & GitHub: html,  notebook \n\n\n\nSlides\nVersion Control, Workflow and Reproducibility: Or a bit of Git & GitHub\n\n\nPractice Exercises\nLink for practice exercise: https://classroom.github.com/a/epMgGVTy\n\nSolutions\n\n\n\nReadings\nRequired Readings\n\nThe Plain Person’s Guide to Plain Text Social Science - Healy, Kieran\n\nCh. 1: Introduction;\nCh. 2: Keep a Record;\nCh. 3: Write and Edit;\nCh. 4: Reproduce Work.\n\nPro Git - Chacon & Straub\n\nCh. 1: Getting Started; Read 1.1 - 1.3\nCh. 2: Git Basics; Only read 2.1 - 2.5\nCh. 3: Git Branching\n\n\nAdditional Resources and Suggested Materials\n\nMore on Git/Github in Pro Git:\n\nRead 1.4 - 1.7 for help on installation and commandline\nRead Ch. 6 for more information regarding Git + Github.\n\nCh. 13 Detect Git from RStudio -Happy Git with R - Bryan, Jenny & Jim Hester"
   },
   {
     "objectID": "course_infrastructure.html",
@@ -654,8 +654,8 @@
     "objectID": "slides/week-2.html#plans-for-today",
     "href": "slides/week-2.html#plans-for-today",
     "title": " PPOL 5203 - Data Science I: Foundations ",
-    "section": "Plans for Today",
-    "text": "Plans for Today\n\n\nBest Practices for Data Science Workflow and Reproducibility\nVersion Control (Git and Github)\nIn-Class Exercise\nYour first homework\n\n\n\n\nthis lecture draws on materials from Simon Munzert Intro to Data Science + previous iterations of PPOL 5203."
+    "section": "",
+    "text": "Best Practices for Data Science Workflow and Reproducibility\nVersion Control (Git and Github)\nIn-Class Exercise\nYour first homework\n\n\n\nthis lecture draws on materials from Simon Munzert Intro to Data Science + previous iterations of PPOL 5203."
   },
   {
     "objectID": "slides/week-2.html#thats-what-we-generally-look-for-as-data-scientists",
@@ -886,7 +886,7 @@
     "href": "slides/week-2.html#section-2",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "",
-    "text": "Track your changes:\n\ngit add . \n\nCommit:\n\ngit commit -m 'describe your commit'\n\nPush the changes in your local repository to GitHub:\n\ngit push \n# or with branch\ngit push-u origin [branch-name]"
+    "text": "Track your changes:\n\ngit add . \n\nCommit:\n\ngit commit -m 'describe your commit'\n\nPush the changes in your local repository to GitHub:\n\ngit push \n# or with branch\ngit push -u origin [branch-name]"
   },
   {
     "objectID": "slides/week-2.html#can-anybody-push-to-my-repository",
@@ -921,7 +921,7 @@
     "href": "slides/week-2.html#homework.",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Homework.",
-    "text": "Homework.\nYour homework will be posted today on slack and canvas.\n\nSame structure of the in-class exercise.\nDeadline: September 27, midnight EST.\nQuestions? Come to the office hour or ask on slack.\n\n\n\nData science I: Foundations"
+    "text": "Homework.\nYour homework will be posted today on slack and canvas.\n\nSame structure of the in-class exercise.\nDeadline: September 27, midnight EST.\nQuestions? Come to the office hour or ask on slack."
   },
   {
     "objectID": "slides/week-2.html#readings-for-the-week",
@@ -999,5 +999,313 @@
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Best Practices (the system)",
     "text": "Best Practices (the system)\n\nSelf Contained Projects\nDocumentation\nReadability\nNaming\nPortability\nVersion Control"
+  },
+  {
+    "objectID": "weeks/week-03.html",
+    "href": "weeks/week-03.html",
+    "title": "Week 03",
+    "section": "",
+    "text": "Intro to Python - OOP, Data Types, and Collectors: html,  Jupyter Notebook \nIntro to Python II - Control Statements and Functions: html,  Jupyter Notebook"
+  },
+  {
+    "objectID": "weeks/week-03.html#lectures-notes",
+    "href": "weeks/week-03.html#lectures-notes",
+    "title": "Week 03",
+    "section": "",
+    "text": "Intro to Python - OOP, Data Types, and Collectors: html,  Jupyter Notebook \nIntro to Python II - Control Statements and Functions: html,  Jupyter Notebook"
+  },
+  {
+    "objectID": "weeks/week-03.html#slides",
+    "href": "weeks/week-03.html#slides",
+    "title": "Week 03",
+    "section": "Slides",
+    "text": "Slides\nWeek 3 - Intro do Python: OOP, Control Statements and Functions"
+  },
+  {
+    "objectID": "weeks/week-03.html#in-class-exercise",
+    "href": "weeks/week-03.html#in-class-exercise",
+    "title": "Week 03",
+    "section": "In-Class Exercise",
+    "text": "In-Class Exercise\nSee slides or notebook for the exercise"
+  },
+  {
+    "objectID": "weeks/week-03.html#required-readings",
+    "href": "weeks/week-03.html#required-readings",
+    "title": "Week 03",
+    "section": "Required Readings",
+    "text": "Required Readings\nFrom Miller, Brad, and David Ranum, Problem Solving with Algorithms and Data Structures using Python\n\nGetting Started with Data\nControl Structure\nException Handling\nDefining Functions\n\nFrom Wes McKinney, Python for Data Analysis\n\nChapter 2: Python Language Basics, IPython, and Jupyter Notebooks\nChapter 2: Built-In Data Structures, Functions, and Files\n\nMutable vs Immutable Objects in Python - Mohan, Megha"
+  },
+  {
+    "objectID": "weeks/week-03.html#additional-code",
+    "href": "weeks/week-03.html#additional-code",
+    "title": "Week 03",
+    "section": "Additional Code",
+    "text": "Additional Code\n\nData Carpentry\n\nPython Fundamentals\nRepeated Actions with Loops\nMaking Choices\nCreating Functions\nStoring Multiple Values in Lists"
+  },
+  {
+    "objectID": "slides/week-2.html",
+    "href": "slides/week-2.html",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "",
+    "text": "Best Practices for Data Science Workflow and Reproducibility\nVersion Control (Git and Github)\nIn-Class Exercise\nYour first homework\n\n\n\nthis lecture draws on materials from Simon Munzert Intro to Data Science + previous iterations of PPOL 5203."
+  },
+  {
+    "objectID": "slides/week-3.html#plans-for-today",
+    "href": "slides/week-3.html#plans-for-today",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Plans for Today",
+    "text": "Plans for Today\n\nQuick review of Git and Github\nIn-class exercise about Git\nIntro to Python\n\n101 Object-Oriented Programming\nData Types in Python\nControl statements\nFunctions"
+  },
+  {
+    "objectID": "slides/week-3.html#any-questions",
+    "href": "slides/week-3.html#any-questions",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Any questions?",
+    "text": "Any questions?\n\nGit should be new for you. don’t feel desperate if you struggling with git. Most people do.\nGoogle every time you have a question. That’s a big part of being a data scientist.\ncheck the Cheatsheet and you lecture notes\n\nGithub Cheatsheet (A)\nGithub Cheatsheet (B)"
+  },
+  {
+    "objectID": "slides/week-3.html#python-object-oriented-programming-language",
+    "href": "slides/week-3.html#python-object-oriented-programming-language",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Python: Object-Oriented Programming Language",
+    "text": "Python: Object-Oriented Programming Language\nIn most Python introductions out there, you would start with:\n\nPython as a calculator\nData Types in Python\nObjects\n\n\nWe will take a different route starting with a deeper understanding of Python’s Object-oriented programming"
+  },
+  {
+    "objectID": "slides/week-3.html#python-object-oriented-programming-oop",
+    "href": "slides/week-3.html#python-object-oriented-programming-oop",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Python: Object-oriented programming (OOP)",
+    "text": "Python: Object-oriented programming (OOP)\nPython is an object-oriented programming language (OOP) meaning that the object plays a more fundamental role for how we structure a program.\n\n\n\nPython OOP\n\n# call library\nimport pandas as pd\n\n# Using a Pandas Series method (OOP)\ns = pd.Series([1, 2, 3, 4, 5])\ns.mean()\n\n\nR Function Programming in Practice\n\nvec &lt;- c(1, 2, 3, 4, 5)\nmean(vec)\n\n\nObjects are the core of Python.\nFrom the objects, you will access functions that will make Python work.\nAnd data"
+  },
+  {
+    "objectID": "slides/week-3.html#section",
+    "href": "slides/week-3.html#section",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "",
+    "text": "Track your changes:\n\ngit add . \n\nCommit:\n\ngit commit -m 'describe your commit'\n\nPush the changes in your local repository to GitHub:\n\ngit push \n# or with branch\ngit push -u origin [branch-name] \n\nWhen you do this for this first time, you need to set yo your identity\n\ngit config --global user.name \"Your Name\" \ngit config --global user.email \"your-email@example.com\""
+  },
+  {
+    "objectID": "slides/week-3.html#what-happens-upon-assignment",
+    "href": "slides/week-3.html#what-happens-upon-assignment",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "What happens upon assignment?",
+    "text": "What happens upon assignment?\nAction 1: A reference is assigned to an object, with an id number in memory\n\nid(x)\n\n4526892040"
+  },
+  {
+    "objectID": "slides/week-3.html#section-1",
+    "href": "slides/week-3.html#section-1",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "",
+    "text": "Python OOP\n\n# call library\nimport pandas as pd\n\n# Using a Pandas Series method (OOP)\ns = pd.Series([1, 2, 3, 4, 5])\ns.mean()\n\nR Functional Programming in Practice\n\nvec &lt;- c(1, 2, 3, 4, 5)\nmean(vec)\n\n\nObjects are the core of Python.\nFrom the objects, you will access functions that will make Python work.\nYou can also access data from object."
+  },
+  {
+    "objectID": "slides/week-3.html#section-2",
+    "href": "slides/week-3.html#section-2",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "",
+    "text": "Basics: Creating an object in Python.\n= is the assignment operator in Python. (Different from R)\n\nx = 4"
+  },
+  {
+    "objectID": "slides/week-3.html#on-oop-what-are-these-classes",
+    "href": "slides/week-3.html#on-oop-what-are-these-classes",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "101 on OOP: What are these classes?",
+    "text": "101 on OOP: What are these classes?\n\n\nEvery time we create an object, the objects inherits a class. When we create a object, we are creating an instance of this class.\n\nA class is a blueprint holding of the properties of a particular data structure.\nAn instance is a realization of a particular class. And this instance inherits the characteristics of its class.\n\nMost Important: Classes have two major components:\n\nAttributes: these are constant features, data, a characteristic of the broader class\nMethods: these are actions, behaviors of this class. functions\n\nBoth attributes and methods are accessed through . function."
+  },
+  {
+    "objectID": "slides/week-3.html#tldr-every-object-in-python-has-a-class.-this-class-governs-all-the-properties-of-the-object.",
+    "href": "slides/week-3.html#tldr-every-object-in-python-has-a-class.-this-class-governs-all-the-properties-of-the-object.",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "TLDR: Every object in Python has a class. This class governs all the properties of the object.",
+    "text": "TLDR: Every object in Python has a class. This class governs all the properties of the object.\n\nHow it can be indexed?\nHow can you print?\nHow can you append new elements?\nMutable?\nEverything!"
+  },
+  {
+    "objectID": "slides/week-3.html#section-3",
+    "href": "slides/week-3.html#section-3",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "",
+    "text": "Action 2 An objects type is defined at run time\n\ntype(x)\n\n&lt;class 'int'&gt;"
+  },
+  {
+    "objectID": "slides/week-3.html#data-type",
+    "href": "slides/week-3.html#data-type",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Data Type",
+    "text": "Data Type\nPython comes with a number of built-in data types. Two major data types groups in Python:\n\nScalar types: hold one piece of information, like a digit.\nCollection types: hold multiple pieces of information\n\nThere are two ways of instantiating a data class in Python:\n\nLiterals: syntactic representation in Python, e.g. []\nConstructors: class constructors, e.g. list()"
+  },
+  {
+    "objectID": "slides/week-3.html#scalar",
+    "href": "slides/week-3.html#scalar",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Scalar",
+    "text": "Scalar\n\n\n\n\n\n\n\n\n\n\nType\nDescription\nExample\nLiteral\nConstructor\n\n\n\n\nint\ninteger types\n4\nx = 4\nint(4)\n\n\nfloat\n64-bit floating point numbers\n4.567\nx = 4.567\nfloat(4)\n\n\nbool\nboolean logical values\nTrue\nx = True\nbool(0)\n\n\nNone\nnull object (serves as a valuable place holder)\nNone\nx = None"
+  },
+  {
+    "objectID": "slides/week-3.html#collectors",
+    "href": "slides/week-3.html#collectors",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Collectors",
+    "text": "Collectors\n\n\n\n\n\n\n\n\n\n\n\nType\nDescription\nExample\nMutable\nLiteral\nConstructor\n\n\n\n\nlist\nheterogeneous sequences of objects\n[1,\"2\",True]\n✓\nx = [\"c\",\"a\",\"t\"]\nx = list(\"cat\")\n\n\nstr\nsequences of characters\n\"A word\"\n✘\nx = \"12345\"\nx = str(12345)\n\n\ntuples\nheterogeneous sequence of objects\n(1,2)\n✘\nx = (1,2)\nx = tuple([1,2])\n\n\nsets\nunordered collection of distinct objects\n{1,2}\n✓\nx = {1,2}\nx = set([1,2])\n\n\ndicts\nassociative array of key/value mappings\n{\"a\": 1}\nkeys ✘values ✓\nx = {'a':1}\nx = dict(a = 1)"
+  },
+  {
+    "objectID": "slides/week-3.html#in-class-exercises",
+    "href": "slides/week-3.html#in-class-exercises",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "In-class exercises",
+    "text": "In-class exercises\n\nTab ATab BTab C\n\n\nLet’s practice with lists first. One way to explore data structures is to learn their methods. Check all the methods of a list by running ‘dir()’ on a list object. Let’s explore these functions using the following list object, by answering the below questions. See here for list methods:\n\n\nlist_exercise = [\"Ramy\", \"Victorie\", \"Letty\", \"Robin\", \"Antoine\", \"Griffin\"] \n\n\n\nAdd “Cathy O’Neil” to the list. Insert “Professor Crast” as the first element of the list\n\n\nRemove “Letty” from the list. Also remove the last element of the list.\n\n\nFind the index of the occurrence of the name “Robin”. Count the number of times None appears in the list.\n\n\nCreate a new list with the names in alphabetical order, copy this list as a new list without changing the values of the original list\n\n\nAdd the string “Lovell” to copied_list and ensure that list_exercise remains unchanged.\n\n\n\nLet’s do a similar exercise with Dictionaries. Consider the dictionary below. See here for dictionary methods:\n\n\ndict_exercise = {\"Ramy\": \"India\",\n                  \"Victorie\":\"Haiti\", \n                  \"Letty\":\"England\", \n                  \"Robin\":\"Canton\", \n                  \"Antoine\":\"Nigeria\", \n                  \"Griffin\":\"China\"}\ndict_exercise\n\n\n\nLook up the keys in the dictionary, and store them in a list object called keys\n\n\nAdd yourself, and two other colleagues in this dictionary. The values are the countries the person in the key was born.\n\n\nRemove “Ramy” from the dictionary, and save as another dictionary\n\n\n\nLet’s now play around with some string methods. See the string below from the book “Babel:An Arcane History”. See here for string methods:\n\nbabel = \"That's just what translation is, I think. That's all speaking is. Listening to the other and trying to see past your own biases to glimpse what they're trying to say. Showing yourself to the world, and hoping someone else understands.\"\n\n\nDetermine if the word “Babel” is present in the string.\n\n\nCount how many times the word “translation” appears\n\n\nConvert the entire string to upper case\n\n\nConvert the pronoum “I” to “We” in the entire text.\n\n\nStrip any punctuation (like commas, exclamation marks, etc.) from the string."
+  },
+  {
+    "objectID": "slides/week-3.html#class-part-ii-control-statements-loops-and-functions",
+    "href": "slides/week-3.html#class-part-ii-control-statements-loops-and-functions",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Class Part II: Control Statements, Loops and Functions",
+    "text": "Class Part II: Control Statements, Loops and Functions\nWe will go over some concepts that are very general over any programming language.\n\n\nUsing logical operators for comparisons.\nControl the behavior of code when iterating using control statements.\nExplore iterating through containers using loops\nDefining functions to make code more flexible, debuggable, and readable. (Probably for next week)"
+  },
+  {
+    "objectID": "slides/week-3.html#comparison-operators",
+    "href": "slides/week-3.html#comparison-operators",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Comparison Operators",
+    "text": "Comparison Operators\n\n\n\nOperator\nProperty\n\n\n\n\n==\n(value) equivalence\n\n\n&gt;\ngreater than\n\n\n&lt;\nstrictly less than\n\n\n&lt;=\nless than or equal\n\n\n&gt;\nstrictly greater than\n\n\n&gt;=\ngreater than or equal\n\n\n!=\nNot Equals\n\n\nis\nobject identity\n\n\nis not\nnegated object identity\n\n\nin\nmembership in\n\n\nnot in\nnegated membership in"
+  },
+  {
+    "objectID": "slides/week-3.html#conditional-statements",
+    "href": "slides/week-3.html#conditional-statements",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Conditional Statements",
+    "text": "Conditional Statements\nAny programming language needs statements that controls the sequence of execution of a particular piece of code.\n\nif-else statements\nfor loops\nwhile loops"
+  },
+  {
+    "objectID": "slides/week-3.html#ifelse-statements",
+    "href": "slides/week-3.html#ifelse-statements",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Ifelse Statements",
+    "text": "Ifelse Statements\nDefinition: Conditional execution.\n\nif &lt;logical statement&gt;:\n \n \n  ~~~~ CODE ~~~~\n\n\nelif &lt;logical statement&gt;:\n\n\n  ~~~~ CODE ~~~~\n\n\nelse:\n\n  ~~~~ CODE ~~~~"
+  },
+  {
+    "objectID": "slides/week-3.html#for-loops",
+    "href": "slides/week-3.html#for-loops",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "For loops",
+    "text": "For loops\nDefinition: Taking one item at a time from a collection. We start at the beginning of the collection and mover through it until we reach the end.\nIn python, we can iterate over:\n\nlists\nstrings\ndictionaries\nfile connections\ngrouped pandas df"
+  },
+  {
+    "objectID": "slides/week-3.html#example",
+    "href": "slides/week-3.html#example",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Example:",
+    "text": "Example:\n\n# create a list\nmy_list = [1, 2, 3, 4, 5]\n\n# iterate with a for loop:\nfor m in my_list:\n  print(m)\n\n1\n2\n3\n4\n5"
+  },
+  {
+    "objectID": "slides/week-3.html#while-loops",
+    "href": "slides/week-3.html#while-loops",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "While Loops",
+    "text": "While Loops\n\nWhile loops are all about repetitions. Instead of a sequence, the operation will repeat up according to the conditional statement in the loop.\n\n\n# while loops\nx = 0\nwhile x &lt; 5:\n    print(\"This\")\n    x += 1\n\nThis\nThis\nThis\nThis\nThis"
+  },
+  {
+    "objectID": "slides/week-3.html#the-three-stages-of-git",
+    "href": "slides/week-3.html#the-three-stages-of-git",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "The three stages of Git",
+    "text": "The three stages of Git"
+  },
+  {
+    "objectID": "slides/week-3.html#git-remotes-git-github.",
+    "href": "slides/week-3.html#git-remotes-git-github.",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Git Remotes: Git + Github.",
+    "text": "Git Remotes: Git + Github.\nMost times, you will use git integrated with Github. Github allows multiple researchers to write and share code at the same time.\nThis is my workflow for github.\n\nStarting a New Project. Before you write any code:\n\nGo to your github, and create a new repository\nOpen your terminal, and clone the project\ncd intro your new local folder\n\n\n\n\n# clone\ngit clone &lt;url&gt;\n\n#Move your working directory to this new folder\ncd &lt;project-directory&gt;\n\n#Write code!"
+  },
+  {
+    "objectID": "slides/week-3.html#can-anybody-push-to-my-repository",
+    "href": "slides/week-3.html#can-anybody-push-to-my-repository",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Can anybody push to my repository?",
+    "text": "Can anybody push to my repository?\n\nNo, all repositories are read-only for anonymous users. By default only the owner of the repository has write access. If you can push to your own repo, it’s because you are using one of the supported authentification methods (HTTPS, SSH, …).\n\n\nIf you want to grant someone else privileges to push to your repo, you would need to configure that access in the project settings.\n\n\nTo contribute to projects in which you don’t have push access, you push to your own copy of the repo, then ask for a pull-request. Linux is not a good example for that, because the kernel developers do not use GitHub pull requests.\n\n\n\nsource: https://stackoverflow.com/questions/17442930/can-anybody-push-to-my-project-on-github"
+  },
+  {
+    "objectID": "slides/week-3.html#pull-from-remotes",
+    "href": "slides/week-3.html#pull-from-remotes",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Pull from Remotes",
+    "text": "Pull from Remotes\nTo keep up with your colleague work, you need to first pull their updates from the git repo.\n\n# go to your repo\ncd &lt;gitrepo&gt;\n\n# pull the changes\ngit pull\n\nSee this tutorial"
+  },
+  {
+    "objectID": "slides/week-3.html#some-additional-tasks",
+    "href": "slides/week-3.html#some-additional-tasks",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Some additional tasks:",
+    "text": "Some additional tasks:\n\ncheck the discussion about .gitignore in the lecture notes.\nyou might need to set up an personal token to push things on github, see here\nplay around with gitub: readme, directories, and issues."
+  },
+  {
+    "objectID": "slides/week-3.html#practice",
+    "href": "slides/week-3.html#practice",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": " Practice!",
+    "text": "Practice!\nClick here to setup your github classroom and do the in-class exercise for you to practice."
+  },
+  {
+    "objectID": "slides/week-3.html#section-4",
+    "href": "slides/week-3.html#section-4",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "",
+    "text": "Action 3: Object’s class is instantiated upon assignment. An object is an instance of a particular class.\n\n# what is the class?\ntype(x)\n\n&lt;class 'int'&gt;\n\n\n\n# Access methods (behaviors) using .\nx.bit_length()\n\n3\n\n\n\n# see all methods\ndir(x)\n\n['__abs__', '__add__', '__and__', '__bool__', '__ceil__', '__class__', '__delattr__', '__dir__', '__divmod__', '__doc__', '__eq__', '__float__', '__floor__', '__floordiv__', '__format__', '__ge__', '__getattribute__', '__getnewargs__', '__getstate__', '__gt__', '__hash__', '__index__', '__init__', '__init_subclass__', '__int__', '__invert__', '__le__', '__lshift__', '__lt__', '__mod__', '__mul__', '__ne__', '__neg__', '__new__', '__or__', '__pos__', '__pow__', '__radd__', '__rand__', '__rdivmod__', '__reduce__', '__reduce_ex__', '__repr__', '__rfloordiv__', '__rlshift__', '__rmod__', '__rmul__', '__ror__', '__round__', '__rpow__', '__rrshift__', '__rshift__', '__rsub__', '__rtruediv__', '__rxor__', '__setattr__', '__sizeof__', '__str__', '__sub__', '__subclasshook__', '__truediv__', '__trunc__', '__xor__', 'as_integer_ratio', 'bit_count', 'bit_length', 'conjugate', 'denominator', 'from_bytes', 'imag', 'numerator', 'real', 'to_bytes']"
+  },
+  {
+    "objectID": "slides/week-3.html#object-oriented-programming-oop-vs-functional-programming-language",
+    "href": "slides/week-3.html#object-oriented-programming-oop-vs-functional-programming-language",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Object-oriented programming (OOP) vs Functional Programming Language",
+    "text": "Object-oriented programming (OOP) vs Functional Programming Language\n\nPython is an object-oriented programming language (OOP).\n\nKey concept: it uses “objects” that contains data and methods (functions).\n\nR is a functional programming language\n\nKey concept: treats functions as the first-class citizens, meaning they can be assigned to variables, passed as arguments, and returned by other functions"
+  },
+  {
+    "objectID": "slides/week-3.html#section-5",
+    "href": "slides/week-3.html#section-5",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "",
+    "text": "Create a Class\n\nclass Example():\n  def __init__ (self, name):\n    self.name = name\n  def hello(self):\n    print('Hi, I am ' + self.name)"
+  },
+  {
+    "objectID": "slides/week-3.html#section-6",
+    "href": "slides/week-3.html#section-6",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "",
+    "text": "Instantiate\n\n# Instatiate\nme = Example(name=\"Tiago\")\ntype(me)\n\n&lt;class '__main__.Example'&gt;"
+  },
+  {
+    "objectID": "slides/week-3.html#section-7",
+    "href": "slides/week-3.html#section-7",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "",
+    "text": "Attributes\n\nme.name\n\n'Tiago'"
+  },
+  {
+    "objectID": "slides/week-3.html#section-8",
+    "href": "slides/week-3.html#section-8",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "",
+    "text": "method\n\nme.hello() \n\nHi, I am Tiago"
+  },
+  {
+    "objectID": "weeks/week-08.html#lectures-notes",
+    "href": "weeks/week-08.html#lectures-notes",
+    "title": "Week 08",
+    "section": "",
+    "text": "Parsing Unstructured Data: Scraping Static Websites: html –  Jupyter Notebook"
+  },
+  {
+    "objectID": "weeks/week-09.html",
+    "href": "weeks/week-09.html",
+    "title": "Week 09",
+    "section": "",
+    "text": "APIs html –  Jupyter Notebook \nSelenium html –  Jupyter Notebook"
+  },
+  {
+    "objectID": "weeks/week-09.html#lectures-notes",
+    "href": "weeks/week-09.html#lectures-notes",
+    "title": "Week 09",
+    "section": "",
+    "text": "APIs html –  Jupyter Notebook \nSelenium html –  Jupyter Notebook"
   }
 ]

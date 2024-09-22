@@ -3,7 +3,7 @@ title: "Week 04"
 subtitle: "Python II: Control Statements, Comprehensions, Nested Lists, and Numpy"
 description: ""
 author: "Tiago Ventura"
-date: "09/26/2023"
+date: "10/01/2023"
 #listing:
   # - id: slides
   #   contents:
@@ -34,7 +34,7 @@ date: "09/26/2023"
 tbl-colwidths: [10,50,40]
 ---
 
-<!--## Lectures Notes:
+## Lectures Notes:
 
 We will cover these notebooks
 
@@ -56,9 +56,9 @@ We will cover these notebooks
 
 Download the datasets <a href="/lecture_notes/week-04/data_week4.zip" download> here </a>
 
-<!-- **Conditional on time, we will start pandas:** -->
+**Conditional on time, we will start pandas:** 
 
-<!-- -   [Intro do Pandas](/lecture_notes/week-04/_week_4_file_management.html) -- <a href="/lecture_notes/week-04/_week_4_file_management.ipynb" download> Jupyter Notebook </a> -->
+[Intro do Pandas](/lecture_notes/week-04/_week_4_file_management.html) -- <a href="/lecture_notes/week-04/_week_4_file_management.ipynb" download> Jupyter Notebook </a> 
 
 ## Slides
 
@@ -82,5 +82,4 @@ Download the datasets <a href="/lecture_notes/week-04/data_week4.zip" download> 
 
 -   **Additional Readings**
 
-    -   [for-loop-vs-list-comprehension-vs-high-order-functions](https://medium.com/globant/for-loop-vs-list-comprehension-vs-high-order-functions-a766a8b9cbe1#:~:text=List%20comprehensions%20are%20generally%20faster,great%20choice%20for%20simple%20iterations.)
--->
+    -   [for-loop-vs-list-comprehension-vs-high-order-functions](https://medium.com/globant/for-loop-vs-list-comprehension-vs-high-order-functions-a766a8b9cbe1#:~:text=List%20comprehensions%20are%20generally%20faster,great%20choice%20for%20simple%20iterations.) --\>

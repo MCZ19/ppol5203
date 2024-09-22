@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Tiago Ventura">
-<meta name="dcterms.date" content="2023-10-24">
+<meta name="dcterms.date" content="2023-10-29">
 
 <title>PPOL 5203 - Data Science I: Foundations - Week 08</title>
 <style>
@@ -122,6 +122,18 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../course_infrastructure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Course Tech Info</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../problemset.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Problem Sets</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../finalproject.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Final Project</span></a>
   </div>
@@ -141,6 +153,18 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Week 1: Intro</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks/week-02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 2: Version Control</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks/week-03.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 3: Intro to Python</span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -149,7 +173,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#lectures-notes" id="toc-lectures-notes" class="nav-link active" data-scroll-target="#lectures-notes">Lectures Notes:</a></li>
+  <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
+  <li><a href="#readings" id="toc-readings" class="nav-link" data-scroll-target="#readings">Readings</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -174,7 +206,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">October 24, 2023</p>
+      <p class="date">October 29, 2023</p>
     </div>
   </div>
   
@@ -184,54 +216,55 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<!--# Lectures Notes:
-
--   Parsing Unstructured Data: Scraping Static Websites: [html](/lecture_notes/week-08/_week-07_scraping_static.html) -- <a href="/lecture_notes/week-08/_week-07_scraping_static.ipynb" download> Jupyter Notebook </a>
-
-# Slides
-
--   [Parsing Unstructured Data: Scraping Static Websites](/slides/week-8.html)
-
-# Readings
-
--   On HTMLs
-
-    -   [tags](https://betterprogramming.pub/understanding-html-basics-for-web-scraping-ae351ee0b3f9)
-
-    -   [Anchors and Elements](https://www.semrush.com/blog/html-anchor/)
-
-    -   [Inspecting HTML elements](https://storage.googleapis.com/lds-media/documents/css_selector_vs_xpath.mp4)
-
-    -   [CSS Selector Reference](https://www.w3schools.com/cssref/css_selectors.asp) - w3schools.com
-
--   [Selector Gadget](https://selectorgadget.com/)
-
--   Web Scraping
-
-    -   [Tutorial: A Practical Introduction to Web Scraping in Python](https://realpython.com/python-web-scraping-practical-introduction/)
-    -   [Tutorial: Python Web Scraping Using BeautifulSoup](https://www.dataquest.io/blog/web-scraping-tutorial-python/) - dataquest.io
-    -   [Ultimate Guide to Web Scraping with Python Part 1: Requests and BeautifulSoup](https://www.learndatasci.com/tutorials/ultimate-guide-web-scraping-w-python-requests-and-beautifulsoup/) - LearnDataSci - Martin, Brendan
-    -   On the legality of webscraping
-        -   [Web Scraping and Crawling are Perfectly Legal, Right?](https://benbernardblog.com/web-scraping-and-crawling-are-perfectly-legal-right/)
-    -   [robots.txt](http://www.robotstxt.org/robotstxt.html)
-
--   Changes in the APIs
-
-    -   https://inews.co.uk/news/twitter-researchers-delete-data-unless-pay-2364535
-
-    -   https://www.reddit.com/r/modnews/comments/134tjpe/reddit_data_api_update_changes_to_pushshift_access/
-
-    -   https://www.tiktok.com/legal/page/global/terms-of-service-research-api/en
-
-    -   https://www.bloomberg.com/news/articles/2022-06-23/meta-pulls-support-for-tool-used-to-keep-misinformation-in-check?leadSource=uverify%20wall
-
+<section id="lectures-notes" class="level2">
+<h2 class="anchored" data-anchor-id="lectures-notes">Lectures Notes:</h2>
+<ul>
+<li>Parsing Unstructured Data: Scraping Static Websites: <a href="../lecture_notes/week-08/_week-07_scraping_static.html">html</a> – <a href="../lecture_notes/week-08/_week-07_scraping_static.ipynb" download=""> Jupyter Notebook </a></li>
+</ul>
+</section>
+<section id="slides" class="level1">
+<h1>Slides</h1>
+<ul>
+<li><a href="../slides/week-8.html">Parsing Unstructured Data: Scraping Static Websites</a></li>
+</ul>
+</section>
+<section id="readings" class="level1">
+<h1>Readings</h1>
+<ul>
+<li><p>On HTMLs</p>
+<ul>
+<li><p><a href="https://betterprogramming.pub/understanding-html-basics-for-web-scraping-ae351ee0b3f9">tags</a></p></li>
+<li><p><a href="https://www.semrush.com/blog/html-anchor/">Anchors and Elements</a></p></li>
+<li><p><a href="https://storage.googleapis.com/lds-media/documents/css_selector_vs_xpath.mp4">Inspecting HTML elements</a></p></li>
+<li><p><a href="https://www.w3schools.com/cssref/css_selectors.asp">CSS Selector Reference</a> - w3schools.com</p></li>
+</ul></li>
+<li><p><a href="https://selectorgadget.com/">Selector Gadget</a></p></li>
+<li><p>Web Scraping</p>
+<ul>
+<li><a href="https://realpython.com/python-web-scraping-practical-introduction/">Tutorial: A Practical Introduction to Web Scraping in Python</a></li>
+<li><a href="https://www.dataquest.io/blog/web-scraping-tutorial-python/">Tutorial: Python Web Scraping Using BeautifulSoup</a> - dataquest.io</li>
+<li><a href="https://www.learndatasci.com/tutorials/ultimate-guide-web-scraping-w-python-requests-and-beautifulsoup/">Ultimate Guide to Web Scraping with Python Part 1: Requests and BeautifulSoup</a> - LearnDataSci - Martin, Brendan</li>
+<li>On the legality of webscraping
+<ul>
+<li><a href="https://benbernardblog.com/web-scraping-and-crawling-are-perfectly-legal-right/">Web Scraping and Crawling are Perfectly Legal, Right?</a></li>
+</ul></li>
+<li><a href="http://www.robotstxt.org/robotstxt.html">robots.txt</a></li>
+</ul></li>
+<li><p>Changes in the APIs</p>
+<ul>
+<li><p>https://inews.co.uk/news/twitter-researchers-delete-data-unless-pay-2364535</p></li>
+<li><p>https://www.reddit.com/r/modnews/comments/134tjpe/reddit_data_api_update_changes_to_pushshift_access/</p></li>
+<li><p>https://www.tiktok.com/legal/page/global/terms-of-service-research-api/en</p></li>
+<li><p>https://www.bloomberg.com/news/articles/2022-06-23/meta-pulls-support-for-tool-used-to-keep-misinformation-in-check?leadSource=uverify%20wall</p></li>
+</ul></li>
+</ul>
 <!-- https://www.varonis.com/blog/what-is-oauth -->
 <!-- https://dl.acm.org/doi/pdf/10.1145/3290605.3300683 -->
 <!-- https://dl.acm.org/doi/pdf/10.1145/3290605.3300683 -->
 <!-- https://arxiv.org/abs/2203.10666 -->
-<p>–&gt;</p>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

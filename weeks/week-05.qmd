@@ -3,7 +3,7 @@ title: "Week 05"
 subtitle: "Numpy and Intro to Pandas"
 description: ""
 author: "Tiago Ventura"
-date: "10/03/2023"
+date: "10/08/2023"
 #listing:
   # - id: slides
   #   contents:
@@ -34,7 +34,8 @@ date: "10/03/2023"
 tbl-colwidths: [10,50,40]
 ---
 
-<!--## Lectures Notes:
+
+## Lectures Notes:
 
 Today, we will go over three notebooks:
 
@@ -85,4 +86,3 @@ And all our lecture notes!
     -   [Methods Chaining in Pandas](https://medium.com/@ulriktpedersen/modern-pandas-streamlining-your-workflow-with-method-chaining-f65e75deb193)
 
 -   [Exercises in Pandas](https://github.com/guipsamora/pandas_exercises)
--->

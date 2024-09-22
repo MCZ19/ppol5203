@@ -3,7 +3,7 @@ title: "Week 01"
 subtitle: "Introduction, Installations, IDEs, Command line"
 description: ""
 author: "Tiago Ventura"
-date: "08/29/2023"
+date: "09/10/2023"
 #listing:
   # - id: slides
   #   contents:
@@ -74,8 +74,8 @@ The readings for this week will cover a more general introduction to data scienc
 
 -   More on RStudio + Reticulate
 
-  -   [R & Python: A Love Story](https://rstudio.com/solutions/r-and-python/) - rstudio.com
+-   [R & Python: A Love Story](https://rstudio.com/solutions/r-and-python/) - rstudio.com
 
-  -   [RStudio 1.2 Preview: Reticulated Python](https://blog.rstudio.com/2018/10/09/rstudio-1-2-preview-reticulated-python/)
+-   [RStudio 1.2 Preview: Reticulated Python](https://blog.rstudio.com/2018/10/09/rstudio-1-2-preview-reticulated-python/)
 
-  -   [On using LaTex to write math in markdown](https://docx2latex.com/tutorials/Mathematical-equations-LaTeX.html) - docx2latex.com
+-   [On using LaTex to write math in markdown](https://docx2latex.com/tutorials/Mathematical-equations-LaTeX.html) - docx2latex.com

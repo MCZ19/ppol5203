@@ -18,7 +18,10 @@ You will use the same code block for any language. You just need to change langu
 
 ```{r}
 library(reticulate)
+reticulate::py_config()
 use_python("/Users/tb186/anaconda3/bin/python")
+
+usethis::edit_r_environ()
 ```
 
 ```{python}

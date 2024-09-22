@@ -3,7 +3,7 @@ title: "Week 07"
 subtitle: "Joining, Tidying and Visualizing Data"
 description: ""
 author: "Tiago Ventura"
-date: "10/17/2023"
+date: "10/22/2023"
 #listing:
   # - id: slides
   #   contents:
@@ -34,7 +34,7 @@ date: "10/17/2023"
 tbl-colwidths: [10,50,40]
 ---
 
-<!--# Lectures Notes:
+## Lectures Notes:
 
 -   Pandas - Joining Data : [html](/lecture_notes/week-06/_week-5c-joining_data.html) -- <a href="/lecture_notes/week-06/_week-5c-joining_data.ipynb" download> Jupyter Notebook </a>
 
@@ -71,4 +71,3 @@ Download the datasets <a href="/lecture_notes/week-06/data_week6.zip" download> 
         -   [Bokeh User Guide](https://docs.bokeh.org/en/latest/docs/user_guide.html#userguide)
         -   [Bokeh Tutorial](https://mybinder.org/v2/gh/bokeh/bokeh-notebooks/master?filepath=tutorial%2F00%20-%20Introduction%20and%20Setup.ipynb)
 -   Either [Fundamentals of Data Visualization - Wilke, Claus](https://clauswilke.com/dataviz/) or [Data Visualization: A practical introduction by Kieran Healy](https://socviz.co/index.html#preface) are amazing sources you can consult frequently <br>
--->

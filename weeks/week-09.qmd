@@ -3,7 +3,7 @@ title: "Week 09"
 subtitle: "Apis + Selenium"
 description: ""
 author: "Tiago Ventura"
-date: "10/31/2023"
+date: "11/05/2023"
 #listing:
   # - id: slides
   #   contents:
@@ -34,7 +34,7 @@ date: "10/31/2023"
 tbl-colwidths: [10,50,40]
 ---
 
-<!--# Lectures Notes:
+## Lectures Notes:
 
 -   APIs [html](/lecture_notes/week-09/_week-08_apis.html) -- <a href="/lecture_notes/week-09/_week-08_apis.ipynb" download> Jupyter Notebook </a>
 
@@ -65,4 +65,3 @@ tbl-colwidths: [10,50,40]
 -   [Trielli, Daniel, and Nicholas Diakopoulos. "Search as news curator: The role of Google in shaping attention to news information." In Proceedings of the 2019 CHI Conference on human factors in computing systems, pp. 1-15. 2019.](https://dl.acm.org/doi/pdf/10.1145/3290605.3300683)
 
 -   [Haroon, Muhammad, Anshuman Chhabra, Xin Liu, Prasant Mohapatra, Zubair Shafiq, and Magdalena Wojcieszak. "YouTube, the great radicalizer? Auditing and mitigating ideological biases in YouTube recommendations." arXiv preprint arXiv:2203.10666 (2022).](https://arxiv.org/abs/2203.10666)
--->
