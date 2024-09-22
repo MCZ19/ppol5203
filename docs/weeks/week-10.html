@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Tiago Ventura">
-<meta name="dcterms.date" content="2023-11-07">
+<meta name="dcterms.date" content="2023-11-12">
 
 <title>PPOL 5203 - Data Science I: Foundations - Week 10</title>
 <style>
@@ -122,6 +122,18 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../course_infrastructure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Course Tech Info</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../problemset.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Problem Sets</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../finalproject.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Final Project</span></a>
   </div>
@@ -141,6 +153,18 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Week 1: Intro</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks/week-02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 2: Version Control</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks/week-03.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 3: Intro to Python</span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -149,7 +173,15 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#lecture-notes" id="toc-lecture-notes" class="nav-link active" data-scroll-target="#lecture-notes">Lecture Notes</a></li>
+  <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
+  <li><a href="#readings" id="toc-readings" class="nav-link" data-scroll-target="#readings">Readings</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -174,7 +206,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">November 7, 2023</p>
+      <p class="date">November 12, 2023</p>
     </div>
   </div>
   
@@ -184,33 +216,46 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
+<section id="lecture-notes" class="level2">
+<h2 class="anchored" data-anchor-id="lecture-notes">Lecture Notes</h2>
+<ul>
+<li>Statistical Learning: inference and predictions <a href="../lecture_notes/week-10/_week-9-models.html">html</a> – <a href="../lecture_notes/week-10/_week-9-models.ipynb" download=""> Jupyter Notebook </a></li>
+</ul>
+</section>
+<section id="slides" class="level1">
+<h1>Slides</h1>
+<ul>
+<li><a href="../slides/week-10.html">Statistical Learning: inference and predictions</a></li>
+</ul>
+</section>
+<section id="readings" class="level1">
+<h1>Readings</h1>
+<ul>
+<li><strong>Required Readings</strong>:
+<ul>
+<li><a href="https://www.statlearning.com/">James, Gareth, Daniela Witten, Trevor Hastie, Robert Tibshirani, and Jonathan Taylor, 2023 “An introduction to statistical learning: With applications in python.”</a>
+<ul>
+<li>What is statistical learning? - <strong>James et al.&nbsp;Ch. 2</strong></li>
+<li>Resampling Methods - <strong>James et al.&nbsp;Ch. 5</strong></li>
+</ul></li>
+</ul></li>
+</ul>
+<p><br></p>
+<ul>
+<li><strong>Additional Resources and Suggested Materials</strong>
+<ul>
+<li><a href="https://realpython.com/python-virtual-environments-a-primer/">Python Virtual Environments: A Primer</a> - realpython.com</li>
+<li>Scikit-learn documentation
+<ul>
+<li><a href="https://scikit-learn.org/stable/tutorial/basic/tutorial.html">Models</a></li>
+<li><a href="https://scikit-learn.org/stable/modules/preprocessing.html">Preprocessing</a> - scikit-learn.org</li>
+<li><a href="https://scikit-learn.org/stable/modules/cross_validation.html">Cross-Validation</a> - scikit-learn.org</li>
+</ul></li>
+</ul></li>
+</ul>
 
-<!--# Lecture Notes
 
--   Statistical Learning: inference and predictions [html](/lecture_notes/week-10/_week-9-models.html) -- <a href="/lecture_notes/week-10/_week-9-models.ipynb" download> Jupyter Notebook </a>
-
-# Slides
-
--   [Statistical Learning: inference and predictions](/slides/week-10.html)
-
-# Readings
-
--   **Required Readings**:
-    -   [James, Gareth, Daniela Witten, Trevor Hastie, Robert Tibshirani, and Jonathan Taylor, 2023 "An introduction to statistical learning: With applications in python."](https://www.statlearning.com/)
-        -   What is statistical learning? - **James et al. Ch. 2**
-        -   Resampling Methods - **James et al. Ch. 5**
-
-<br>
-
--   **Additional Resources and Suggested Materials**</font>
-    -   [Python Virtual Environments: A Primer](https://realpython.com/python-virtual-environments-a-primer/) - realpython.com
-    -   Scikit-learn documentation
-        -   [Models](https://scikit-learn.org/stable/tutorial/basic/tutorial.html)
-        -   [Preprocessing](https://scikit-learn.org/stable/modules/preprocessing.html) - scikit-learn.org
-        -   [Cross-Validation](https://scikit-learn.org/stable/modules/cross_validation.html) - scikit-learn.org
--->
-
-
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">

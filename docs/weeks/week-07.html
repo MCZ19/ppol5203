@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Tiago Ventura">
-<meta name="dcterms.date" content="2023-10-17">
+<meta name="dcterms.date" content="2023-10-22">
 
 <title>PPOL 5203 - Data Science I: Foundations - Week 07</title>
 <style>
@@ -122,6 +122,18 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../course_infrastructure.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Course Tech Info</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../problemset.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Problem Sets</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../finalproject.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Final Project</span></a>
   </div>
@@ -141,6 +153,18 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text">Week 1: Intro</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks/week-02.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 2: Version Control</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../weeks/week-03.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Week 3: Intro to Python</span></a>
+  </div>
+</li>
       </ul>
   </li>
     </ul>
@@ -149,7 +173,16 @@ ul.task-list li input[type="checkbox"] {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#lectures-notes" id="toc-lectures-notes" class="nav-link active" data-scroll-target="#lectures-notes">Lectures Notes:</a></li>
+  <li><a href="#datasets" id="toc-datasets" class="nav-link" data-scroll-target="#datasets">Datasets</a></li>
+  <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
+  <li><a href="#readings" id="toc-readings" class="nav-link" data-scroll-target="#readings">Readings</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -174,7 +207,7 @@ ul.task-list li input[type="checkbox"] {
     <div>
     <div class="quarto-title-meta-heading">Published</div>
     <div class="quarto-title-meta-contents">
-      <p class="date">October 17, 2023</p>
+      <p class="date">October 22, 2023</p>
     </div>
   </div>
   
@@ -184,46 +217,60 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<!--# Lectures Notes:
+<section id="lectures-notes" class="level2">
+<h2 class="anchored" data-anchor-id="lectures-notes">Lectures Notes:</h2>
+<ul>
+<li><p>Pandas - Joining Data : <a href="../lecture_notes/week-06/_week-5c-joining_data.html">html</a> – <a href="../lecture_notes/week-06/_week-5c-joining_data.ipynb" download=""> Jupyter Notebook </a></p></li>
+<li><p>Data Visualization: <a href="../lecture_notes/week-07/_week-6-data-visualization.html">html</a> – <a href="../lecture_notes/week-07/_week-6-data-visualization.ipynb" download=""> Jupyter Notebook </a></p></li>
+</ul>
+</section>
+<section id="datasets" class="level2">
+<h2 class="anchored" data-anchor-id="datasets">Datasets</h2>
+<p>Download the datasets <a href="../lecture_notes/week-06/data_week6.zip" download=""> here </a></p>
+</section>
+<section id="slides" class="level2">
+<h2 class="anchored" data-anchor-id="slides">Slides</h2>
+<ul>
+<li><a href="../slides/week-7.html">Joining, Tidying and Visualizing Data</a></li>
+</ul>
+</section>
+<section id="readings" class="level1">
+<h1>Readings</h1>
+<ul>
+<li><strong><em>Required Readings</em></strong>
+<ul>
+<li><p>Theory</p>
+<ul>
+<li><a href="https://serialmentor.com/dataviz/aesthetic-mapping.html">Ch. 2: Visualizing data: Mapping data onto aesthetics</a> - Fundamentals of Data Visualization - Wilke, Claus</li>
+<li><a href="https://serialmentor.com/dataviz/color-basics.html">Ch. 4: Color scales</a> - Fundamentals of Data Visualization - Wilke, Claus</li>
+<li><a href="https://serialmentor.com/dataviz/directory-of-visualizations.html">Ch. 5: Directory of Visualizations</a> - <code>datviz</code>
+<ul>
+<li><a href="https://socviz.co/makeplot.html#makeplot">Grammar of Graphics: How ggplot works</a> by Kieran Healy</li>
+</ul></li>
+</ul></li>
+<li><p>In-Practice</p>
+<ul>
+<li><a href="https://datacarpentry.org/python-ecology-lesson/07-visualization-ggplot-python.html">Making Plots With <code>plotnine</code></a> - i.e.&nbsp;<code>ggplot</code> in Python</li>
+<li><a href="https://jakevdp.github.io/PythonDataScienceHandbook/index.html">Ch. 4: Visualization with Matplotlib</a> - Python Data Science Handbook - VanderPlas, Jake - i.e.&nbsp;<code>matplotlib</code> and <code>seaborn</code> libraries</li>
+</ul></li>
+</ul></li>
+</ul>
+<p><br></p>
+<ul>
+<li><font color="grey"><strong><em>Additional Resources and Suggested Materials</em></strong></font>
+<ul>
+<li><a href="https://python-graph-gallery.com/">The Python Graph Gallery</a></li>
+<li>Bokeh - For interactive Graphics
+<ul>
+<li><a href="https://docs.bokeh.org/en/latest/docs/user_guide.html#userguide">Bokeh User Guide</a></li>
+<li><a href="https://mybinder.org/v2/gh/bokeh/bokeh-notebooks/master?filepath=tutorial%2F00%20-%20Introduction%20and%20Setup.ipynb">Bokeh Tutorial</a></li>
+</ul></li>
+</ul></li>
+<li>Either <a href="https://clauswilke.com/dataviz/">Fundamentals of Data Visualization - Wilke, Claus</a> or <a href="https://socviz.co/index.html#preface">Data Visualization: A practical introduction by Kieran Healy</a> are amazing sources you can consult frequently <br></li>
+</ul>
 
--   Pandas - Joining Data : [html](/lecture_notes/week-06/_week-5c-joining_data.html) -- <a href="/lecture_notes/week-06/_week-5c-joining_data.ipynb" download> Jupyter Notebook </a>
 
--   Data Visualization: [html](/lecture_notes/week-07/_week-6-data-visualization.html) -- <a href="/lecture_notes/week-07/_week-6-data-visualization.ipynb" download> Jupyter Notebook </a>
-
-## Datasets
-
-Download the datasets <a href="/lecture_notes/week-06/data_week6.zip" download> here </a>
-
-## Slides
-
--   [Joining, Tidying and Visualizing Data](/slides/week-7.html)
-
-# Readings
-
--   ***Required Readings***
-    -   Theory
-
-        -   [Ch. 2: Visualizing data: Mapping data onto aesthetics](https://serialmentor.com/dataviz/aesthetic-mapping.html) - Fundamentals of Data Visualization - Wilke, Claus
-        -   [Ch. 4: Color scales](https://serialmentor.com/dataviz/color-basics.html) - Fundamentals of Data Visualization - Wilke, Claus
-        -   [Ch. 5: Directory of Visualizations](https://serialmentor.com/dataviz/directory-of-visualizations.html) - `datviz`
-            -   [Grammar of Graphics: How ggplot works](https://socviz.co/makeplot.html#makeplot) by Kieran Healy
-
-    -   In-Practice
-
-        -   [Making Plots With `plotnine`](https://datacarpentry.org/python-ecology-lesson/07-visualization-ggplot-python.html) - i.e. `ggplot` in Python
-        -   [Ch. 4: Visualization with Matplotlib](https://jakevdp.github.io/PythonDataScienceHandbook/index.html) - Python Data Science Handbook - VanderPlas, Jake - i.e. `matplotlib` and `seaborn` libraries
-
-<br>
-
--   <font color = "grey">***Additional Resources and Suggested Materials***</font>
-    -   [The Python Graph Gallery](https://python-graph-gallery.com/)
-    -   Bokeh - For interactive Graphics
-        -   [Bokeh User Guide](https://docs.bokeh.org/en/latest/docs/user_guide.html#userguide)
-        -   [Bokeh Tutorial](https://mybinder.org/v2/gh/bokeh/bokeh-notebooks/master?filepath=tutorial%2F00%20-%20Introduction%20and%20Setup.ipynb)
--   Either [Fundamentals of Data Visualization - Wilke, Claus](https://clauswilke.com/dataviz/) or [Data Visualization: A practical introduction by Kieran Healy](https://socviz.co/index.html#preface) are amazing sources you can consult frequently <br>
--->
-
-
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
