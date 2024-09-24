@@ -24,15 +24,17 @@ format:
 
 ## Plans for Today
 
--   Quick review of Git and Github 
+-   Quick review of Git and remotes with Github 
 
 -   In-class exercise about Git
 
--   Intro to Python
+-   Introduction to Python
 
-    -   101 Object-Oriented Programming
+    -   Python as an Object-Oriented Programming Language
 
     -   Data Types in Python
+
+- Next week (likely): 
 
     -   Control statements
 
@@ -47,13 +49,20 @@ knitr::include_graphics("week2_figs/git_stages.png")
 ```
     
     
+## Github (Remote Git Repositories)
+
+```{r  echo=FALSE, out.width = "80%", fig.align="center"}
+knitr::include_graphics("week2_figs/git_remotes.png") 
+```
+    
+    
 ## Git Remotes: Git + Github.
 
-Most times, you will use git integrated with Github. Github allows multiple researchers to write and share code at the same time.
+- Most times, you will use git integrated with Github. 
 
-This is my workflow for github.
+- Github allows multiple researchers to write and share code at the same time.
 
-- Starting a New Project. Before you write any code:
+- This is my workflow for github when starting a New Project. Before you write any code:
 
     - Go to your github, and create a new repository
 
@@ -102,6 +111,7 @@ git push -u origin [branch-name]
 
 
 When you do this for this first time, you need to set yo your identity
+
 ```{python}
 #| eval: false
 git config --global user.name "Your Name" 
@@ -124,7 +134,7 @@ source: [https://stackoverflow.com/questions/17442930/can-anybody-push-to-my-pro
 
 ## Pull from Remotes
 
-To keep up with your colleague work, you need to first pull their updates from the git repo.
+To keep up with your colleagues work, you need to first pull their updates from the git repo.
 
 ```{python}
 #| eval: false
@@ -195,7 +205,7 @@ In most Python introductions out there, you would start with:
 -   Objects
 
 ::: fragment
-We will take a different route starting with a deeper understanding of Python's Object-oriented programming
+**We will take a different route starting with a deeper understanding of Python's Object-oriented programming**
 :::
 
 ## Object-oriented programming (OOP) vs Functional Programming Language
@@ -221,10 +231,13 @@ import pandas as pd
 
 # Using a Pandas Series method (OOP)
 s = pd.Series([1, 2, 3, 4, 5])
+
+# create a series object. You use a methods from this object to take the mean
 s.mean()
 
 ```
 
+<br>
 
 #### R Functional Programming in Practice
 
@@ -250,15 +263,17 @@ x = 4
 
 ## What happens upon assignment?
 
+:::fragment
 **Action 1:** A reference is assigned to an object, with an id number in memory
 
 ```{python}
 id(x)
 ```
+:::
 
 ## 
 
-**Action 2** An objects type is defined at run time
+**Action 2** An objects type (class) is defined at run time
 
 ```{python}
 type(x)
@@ -284,37 +299,29 @@ x.bit_length()
 dir(x)
 ```
 
-## 101 on OOP: What are these classes?
+## Object-Oriented Programming: What are these classes?
 
 ::: incremental
--   Every time we create an object, the objects inherits a class. When we create a object, we are creating an instance of this class.
+
+- **Instantiation:** When we create a object, we are creating an instance of this class.
+
+
+- **Inheritance:** Every time we create an object, the objects inherits a class.
+
 
     -   **A class** is a blueprint holding of the properties of a particular data structure.
 
-    -   **An instance** is a realization of a particular class. And this instance inherits the characteristics of its class.
+    -   **An instance** is a realization of a particular class. This instance inherits the characteristics of its class.
 
--   **Most Important:** Classes have two major components:
+-   **Components:** Classes have two major components:
 
     -   **Attributes:** these are constant features, data, a characteristic of the broader class
 
     -   **Methods:** these are actions, behaviors of this class. functions
 
--   Both attributes and methods are accessed through `.` function.
+-   **Polymorphism:** Both attributes and methods are accessed through `.` function, conditional on the class. 
+
 :::
-
-## TLDR: Every object in Python has a class. This class governs all the properties of the object.
-
--   How it can be indexed?
-
--   How can you print?
-
--   How can you append new elements?
-
--   Mutable?
-
--   Everything!
-
-# `r fontawesome::fa("laptop-code")` Coding
 
 ## 
 
@@ -355,7 +362,9 @@ me.hello()
 ```
 
 
-# Data types: native objects in Python
+# `r fontawesome::fa("laptop-code")` Coding
+
+# Data types: Native Classes in Python
 
 ## Data Type
 
@@ -391,6 +400,15 @@ There are two ways of instantiating a data class in Python:
 | `dicts`  | associative array of key/value mappings    |   `{"a": 1}`   | keys ✘<br>values ✓ |    `x = {'a':1}`    | `x = dict(a = 1)`  |
 
 # `r fontawesome::fa("laptop-code")` Coding
+
+## Key concepts
+:::incremental
+- Why, different from R, I should use <class>.<method> to run specific functions, instead of just running the functions on a object `function(obj)`?
+
+- Tuples and Lists are pretty much the same. But tuples are more computationally efficient (storage and speed in accessing it) than lists. Why do you think this is the case?
+
+- Assume I have this dictionary `my_dict = {'a': 4, 'b': 7, 'c': 9.2}`. If I tried to acces the first element of the dictionary with `my_dict[0]`, Python will throw me an error. Why?
+:::
 
 ## In-class exercises
 
