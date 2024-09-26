@@ -9,3 +9,4 @@ lecture_notes/week-11/tweets_congress.csv
 lecture_notes/week-12/tweets_congress.csv
 lecture_notes/week-13/country.sqlite
 **/_old/
+*.csv
