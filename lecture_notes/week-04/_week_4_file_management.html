@@ -13119,7 +13119,7 @@ Tiago Ventura </center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">os</span>
@@ -13132,10 +13132,11 @@ Tiago Ventura </center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># check my working directory</span>
+<span class="n">os</span><span class="o">.</span><span class="n">getcwd</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -13148,13 +13149,13 @@ Tiago Ventura </center> <h1></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[24]:</div>
+    <div class="prompt output_prompt">Out[5]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&#39;/Users/tb186/Dropbox/courses/ppol_5203_fall_2023/lecture_notes/week-04&#39;</pre>
+<pre>&#39;/Users/tb186/Dropbox/courses/ds-1/ppol5203/lecture_notes/week-04&#39;</pre>
 </div>
 
 </div>
@@ -13185,7 +13186,7 @@ Tiago Ventura </center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"redrising.txt"</span><span class="p">,</span><span class="n">mode</span><span class="o">=</span><span class="s1">'r'</span><span class="p">,</span><span class="n">encoding</span><span class="o">=</span><span class="s1">'UTF-8'</span><span class="p">)</span>
@@ -13206,7 +13207,7 @@ Tiago Ventura </center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">type</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
@@ -13222,7 +13223,7 @@ Tiago Ventura </center> <h1></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[26]:</div>
+    <div class="prompt output_prompt">Out[7]:</div>
 
 
 
@@ -13239,7 +13240,7 @@ Tiago Ventura </center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">file_</span> <span class="o">=</span> <span class="n">file</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
@@ -13256,7 +13257,7 @@ Tiago Ventura </center> <h1></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[36]:</div>
+    <div class="prompt output_prompt">Out[8]:</div>
 
 
 
@@ -13273,7 +13274,7 @@ Tiago Ventura </center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Once we've read through the items, the file object is empty</span>
@@ -13314,7 +13315,7 @@ Tiago Ventura </center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">file</span><span class="o">.</span><span class="n">close</span><span class="p">()</span>
@@ -13402,7 +13403,7 @@ Tiago Ventura </center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">file</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"redrising.txt"</span><span class="p">,</span><span class="n">mode</span><span class="o">=</span><span class="s1">'rt'</span><span class="p">,</span><span class="n">encoding</span><span class="o">=</span><span class="s1">'UTF-8'</span><span class="p">)</span>
@@ -13419,7 +13420,7 @@ Tiago Ventura </center> <h1></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[10]:</div>
+    <div class="prompt output_prompt">Out[11]:</div>
 
 
 
@@ -13455,7 +13456,7 @@ Tiago Ventura </center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Is the file closed?</span>
@@ -13472,7 +13473,7 @@ Tiago Ventura </center> <h1></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[11]:</div>
+    <div class="prompt output_prompt">Out[12]:</div>
 
 
 
@@ -13542,7 +13543,7 @@ Tiago Ventura </center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">f</span> <span class="o">=</span> <span class="nb">open</span><span class="p">(</span><span class="s1">'redrising.txt'</span><span class="p">,</span><span class="n">mode</span><span class="o">=</span><span class="s2">"rt"</span><span class="p">,</span><span class="n">encoding</span><span class="o">=</span><span class="s1">'utf-8'</span><span class="p">)</span>
@@ -14147,11 +14148,11 @@ Neat!
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[53]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Write the rows with the .writerows() method</span>
-<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"student_data.csv"</span><span class="p">,</span><span class="n">mode</span><span class="o">=</span><span class="s1">'w'</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
+<span class="k">with</span> <span class="nb">open</span><span class="p">(</span><span class="s2">"student_data_write.csv"</span><span class="p">,</span><span class="n">mode</span><span class="o">=</span><span class="s1">'w'</span><span class="p">)</span> <span class="k">as</span> <span class="n">file</span><span class="p">:</span>
     <span class="n">csv_file</span> <span class="o">=</span> <span class="n">csv</span><span class="o">.</span><span class="n">writer</span><span class="p">(</span><span class="n">file</span><span class="p">)</span>
     <span class="n">csv_file</span><span class="o">.</span><span class="n">writerows</span><span class="p">(</span><span class="n">student_data</span><span class="p">)</span>
 </pre></div>
@@ -14163,7 +14164,7 @@ Neat!
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[54]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>jupyter<span class="w"> </span>nbconvert<span class="w"> </span>_week_4_file_management.ipynb<span class="w"> </span>--to<span class="w"> </span>html<span class="w"> </span>--template<span class="w"> </span>classic
@@ -14184,7 +14185,7 @@ Neat!
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[NbConvertApp] Converting notebook _week_4_file_management.ipynb to html
-[NbConvertApp] Writing 316085 bytes to _week_4_file_management.html
+[NbConvertApp] Writing 316318 bytes to _week_4_file_management.html
 </pre>
 </div>
 </div>

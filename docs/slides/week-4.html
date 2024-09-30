@@ -204,7 +204,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../weeks/week-04.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Week 4: From Nested Collectors to DataFrames</span></a>
+ <span class="menu-text">Week 4: Intro to Python II</span></a>
   </div>
 </li>
       </ul>
@@ -222,7 +222,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#plans-for-today" id="toc-plans-for-today" class="nav-link active" data-scroll-target="#plans-for-today">Plans for Today</a></li>
   <li><a href="#follow-up-with-the-lecture-notes-and-readings.-most-coding-will-be-there" id="toc-follow-up-with-the-lecture-notes-and-readings.-most-coding-will-be-there" class="nav-link" data-scroll-target="#follow-up-with-the-lecture-notes-and-readings.-most-coding-will-be-there">Follow up with the lecture notes and readings. Most coding will be there!</a>
   <ul class="collapse">
-  <li><a href="#in-class-exercise-solve-on-the-lecture-notes" id="toc-in-class-exercise-solve-on-the-lecture-notes" class="nav-link" data-scroll-target="#in-class-exercise-solve-on-the-lecture-notes">In Class-Exercise (Solve on the Lecture Notes)</a></li>
+  <li><a href="#in-class-exercise-use-the-lecture-notes-to-solve" id="toc-in-class-exercise-use-the-lecture-notes-to-solve" class="nav-link" data-scroll-target="#in-class-exercise-use-the-lecture-notes-to-solve">In Class-Exercise (Use the Lecture Notes to solve)</a></li>
   </ul></li>
   <li><a href="#class-website-httpstiagoventura.github.ioppol5203weeksweek-04.html" id="toc-class-website-httpstiagoventura.github.ioppol5203weeksweek-04.html" class="nav-link" data-scroll-target="#class-website-httpstiagoventura.github.ioppol5203weeksweek-04.html">Class Website: https://tiagoventura.github.io/ppol5203/weeks/week-04.html</a>
   <ul class="collapse">
@@ -234,7 +234,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example">Example:</a></li>
   <li><a href="#while-loops" id="toc-while-loops" class="nav-link" data-scroll-target="#while-loops">While Loops</a></li>
   </ul></li>
-  <li><a href="#notebook-for-control-statements" id="toc-notebook-for-control-statements" class="nav-link" data-scroll-target="#notebook-for-control-statements">Notebook for Control Statements</a></li>
   <li><a href="#user-defined-functions" id="toc-user-defined-functions" class="nav-link" data-scroll-target="#user-defined-functions">User Defined Functions</a>
   <ul class="collapse">
   <li><a href="#how-do-we-start-coding" id="toc-how-do-we-start-coding" class="nav-link" data-scroll-target="#how-do-we-start-coding">How do we start coding?</a></li>
@@ -254,12 +253,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#all-methods-from-the-library-as-independent-functions" id="toc-all-methods-from-the-library-as-independent-functions" class="nav-link" data-scroll-target="#all-methods-from-the-library-as-independent-functions">All methods from the library as independent functions</a></li>
   <li><a href="#comprehensions" id="toc-comprehensions" class="nav-link" data-scroll-target="#comprehensions">Comprehensions</a>
   <ul class="collapse">
-  <li><a href="#comparaed-a-loop" id="toc-comparaed-a-loop" class="nav-link" data-scroll-target="#comparaed-a-loop">Comparaed a loop</a></li>
+  <li><a href="#compared-to-a-loop" id="toc-compared-to-a-loop" class="nav-link" data-scroll-target="#compared-to-a-loop">Compared to a loop</a></li>
   </ul></li>
   <li><a href="#why-it-matters" id="toc-why-it-matters" class="nav-link" data-scroll-target="#why-it-matters">Why it matters?</a></li>
-  </ul></li>
-  <li><a href="#notebook-for-comprehensions" id="toc-notebook-for-comprehensions" class="nav-link" data-scroll-target="#notebook-for-comprehensions">Notebook for Comprehensions</a>
-  <ul class="collapse">
   <li><a href="#generators" id="toc-generators" class="nav-link" data-scroll-target="#generators">Generators</a></li>
   <li><a href="#example-of-generators" id="toc-example-of-generators" class="nav-link" data-scroll-target="#example-of-generators">Example of Generators</a></li>
   </ul></li>
@@ -289,7 +285,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
 <h1 class="title"><span style="font-size: 100%;"> PPOL 5203 - Data Science I: Foundations </span></h1>
-<p class="subtitle lead"><span style="font-size: 100%;"> Week 4: Intro to Python II - Loops, Functions, Control Statements, Comprehensions, and Nested Lists</span></p>
+<p class="subtitle lead"><span style="font-size: 100%;"> Week 4: Intro to Python II: Scaling up your code - Iteration, Comprehension and Functions</span></p>
 </div>
 
 
@@ -336,8 +332,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </section>
 <section id="follow-up-with-the-lecture-notes-and-readings.-most-coding-will-be-there" class="level1" data-background-color="#fb6767">
 <h1 data-background-color="#fb6767">Follow up with the lecture notes and readings. Most coding will be there!</h1>
-<section id="in-class-exercise-solve-on-the-lecture-notes" class="level2">
-<h2 class="anchored" data-anchor-id="in-class-exercise-solve-on-the-lecture-notes">In Class-Exercise (Solve on the Lecture Notes)</h2>
+<section id="in-class-exercise-use-the-lecture-notes-to-solve" class="level2">
+<h2 class="anchored" data-anchor-id="in-class-exercise-use-the-lecture-notes-to-solve">In Class-Exercise (Use the Lecture Notes to solve)</h2>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
 <ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" aria-current="page">Tab A</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false">Tab B</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-3-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-3" role="tab" aria-controls="tabset-1-3" aria-selected="false">Tab C</a></li></ul>
 <div class="tab-content">
@@ -421,7 +417,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ul class="incremental">
 <li><p>Using logical operators for comparisons.</p></li>
 <li><p>Control the behavior of code when iterating using control statements.</p></li>
-<li><p>Explore iterating through containers using loops</p></li>
+<li><p>Explore iterating using loops (scale up your coding skilss)</p></li>
 <li><p>Defining functions to make code more flexible, debuggable, and readable.</p></li>
 </ul>
 </div>
@@ -563,9 +559,6 @@ This</code></pre>
 </div>
 </section>
 </section>
-<section id="notebook-for-control-statements" class="level1">
-<h1><a href="../lecture_notes/week-03/_week-03_iter_control_functions.html">Notebook for Control Statements</a></h1>
-</section>
 <section id="user-defined-functions" class="level1" data-background-color="#447099">
 <h1 data-background-color="#447099">User Defined Functions</h1>
 <section id="how-do-we-start-coding" class="level2">
@@ -653,7 +646,7 @@ This</code></pre>
 <h1>Let’s take a break (10min)</h1>
 <div class="cell">
 <div class="cell-output-display">
-<div class="countdown" id="timer_cfb42980" data-update-every="1" tabindex="0" style="top:0;right:0;left:0;margin:10%;padding:100px;font-size:6em;">
+<div class="countdown" id="timer_52047773" data-update-every="1" tabindex="0" style="top:0;right:0;left:0;margin:10%;padding:100px;font-size:6em;">
 <div class="countdown-controls"><button class="countdown-bump-down">−</button><button class="countdown-bump-up">+</button></div>
 <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
 </div>
@@ -666,9 +659,8 @@ This</code></pre>
 <li><p>Importing libraries in Python</p></li>
 <li><p>Comprehension and Generators</p></li>
 <li><p>File management in Python</p></li>
-<li><p>Numpy</p></li>
+<li><p>Data as Nested Lists</p></li>
 </ul>
-<p>Notice, we have lecture notes for each of these topics! Read them!!</p>
 </section>
 <section id="importing-librarys-in-python" class="level2">
 <h2 class="anchored" data-anchor-id="importing-librarys-in-python">Importing librarys in Python</h2>
@@ -756,11 +748,11 @@ This</code></pre>
 <section id="comprehensions" class="level2">
 <h2 class="anchored" data-anchor-id="comprehensions">Comprehensions</h2>
 <ul>
-<li>Provide a readable and effective way to construct new sequences (such as lists, sets, dictionaries, etc.) based on a sequence of elements</li>
+<li>Provide a readable and efficient way to construct new sequences (such as lists, sets, dictionaries, etc.) based on a sequence of elements</li>
 </ul>
 <p><img src="https://python-3-patterns-idioms-test.readthedocs.io/en/latest/_images/listComprehensions.gif" class="img-fluid"></p>
-<section id="comparaed-a-loop" class="level3">
-<h3 class="anchored" data-anchor-id="comparaed-a-loop">Comparaed a loop</h3>
+<section id="compared-to-a-loop" class="level3">
+<h3 class="anchored" data-anchor-id="compared-to-a-loop">Compared to a loop</h3>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb24"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb24-1"><a href="#cb24-1" aria-hidden="true" tabindex="-1"></a>a_list <span class="op">=</span>[<span class="dv">0</span>, <span class="dv">1</span>, <span class="dv">2</span>, <span class="dv">3</span>, <span class="dv">4</span>, <span class="st">"hey"</span>]</span>
 <span id="cb24-2"><a href="#cb24-2" aria-hidden="true" tabindex="-1"></a>result <span class="op">=</span> []</span>
@@ -781,13 +773,10 @@ This</code></pre>
 <li><p>Elegant and cleaner way to perform iterations</p></li>
 <li><p>Automatically create new objects – no need to a container in the loop</p></li>
 <li><p>Flexible: allows working with lists, dictionaries, and sets</p></li>
-<li><p>Faster than loops.</p></li>
+<li><p>Faster than loops (but not much in a way that makes you avoid loops)</p></li>
 </ul>
 </div>
 </section>
-</section>
-<section id="notebook-for-comprehensions" class="level1">
-<h1><a href="../lecture_notes/week-04/_week_4_comprehension_generators.html">Notebook for Comprehensions</a></h1>
 <section id="generators" class="level2">
 <h2 class="anchored" data-anchor-id="generators">Generators</h2>
 <p>Python has this very nice data type called <strong>generators</strong>. We use these functions a lot, but hardly talk about them.</p>
@@ -816,7 +805,6 @@ This</code></pre>
 <h1><a href="../lecture_notes/week-04/_week_4_comprehension_generators.html">Notebook for Generators</a></h1>
 <section id="file-management-in-python" class="level2">
 <h2 class="anchored" data-anchor-id="file-management-in-python">File Management in Python</h2>
-<p><br></p>
 <section id="main-question-how-do-we-read-files-from-our-computer-in-python" class="level3">
 <h3 class="anchored" data-anchor-id="main-question-how-do-we-read-files-from-our-computer-in-python">Main question: how do we read files from our computer in python?</h3>
 <ul>

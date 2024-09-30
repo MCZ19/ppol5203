@@ -45,9 +45,10 @@ format:
 
 # Follow up with the lecture notes and readings. Most coding will be there! {background-color="#fb6767"}
 
-## In Class-Exercise (Solve on the Lecture Notes)
+## In Class-Exercise (Use the Lecture Notes to solve)
 
 ::: panel-tabset
+
 ### Tab A
 
 Let's practice with lists first. One way to explore data structures is to learn their methods. Check all the methods of a list by running 'dir()' on a list object. Let's explore these functions using the following list object, by answering the below questions. See [here](https://www.w3schools.com/python/python_ref_list.asp) for list methods:
@@ -266,7 +267,7 @@ We will go over some concepts that are very general for any programming language
 
 -   Control the behavior of code when iterating using control statements.
 
--   Explore iterating through containers using loops
+-   Explore iterating using loops (scale up your coding skilss)
 
 -   Defining functions to make code more flexible, debuggable, and readable. 
 :::
@@ -358,8 +359,6 @@ while x < 5:
     x += 1
 ```
 
-# [Notebook for Control Statements](/lecture_notes/week-03/_week-03_iter_control_functions.html)
-
 # User Defined Functions {background-color="#447099"}
 
 ## How do we start coding?
@@ -426,7 +425,6 @@ def square(x):
 <br>
 
 ```{r}
-
 square <- function(x){
 #  Takes the square of a number
 #  input: int object
@@ -472,9 +470,7 @@ For the second part of this lecture, we will see:
 
 -   File management in Python
 
--   Numpy
-
-Notice, we have lecture notes for each of these topics! Read them!!
+-   Data as Nested Lists
 
 ## Importing librarys in Python
 
@@ -551,11 +547,11 @@ factorial(5)
 
 ## Comprehensions
 
--   Provide a readable and effective way to construct new sequences (such as lists, sets, dictionaries, etc.) based on a sequence of elements
+-   Provide a readable and efficient way to construct new sequences (such as lists, sets, dictionaries, etc.) based on a sequence of elements
 
 ![](https://python-3-patterns-idioms-test.readthedocs.io/en/latest/_images/listComprehensions.gif)
 
-### Comparaed a loop
+### Compared to a loop
 
 ```{python}
 a_list =[0, 1, 2, 3, 4, "hey"]
@@ -575,10 +571,9 @@ result
 
 -   Flexible: allows working with lists, dictionaries, and sets
 
--   Faster than loops.
+-   Faster than loops (but not much in a way that makes you avoid loops)
 :::
 
-# [Notebook for Comprehensions](/lecture_notes/week-04/_week_4_comprehension_generators.html)
 
 ## Generators
 
@@ -609,8 +604,6 @@ But we will see some pre-built "generators" that will be useful for us:
 # [Notebook for Generators](/lecture_notes/week-04/_week_4_comprehension_generators.html)
 
 ## File Management in Python
-
-<br>
 
 ### Main question: how do we read files from our computer in python?
 
@@ -647,7 +640,6 @@ But we will see some pre-built "generators" that will be useful for us:
 -   **with()**: wrapper for open and close that allows alias.
 
 # [Notebook for File Management](/lecture_notes/week-04/_week_4_file_management.html)
-
 
 # Data as Nested Lists
 
