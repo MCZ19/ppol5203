@@ -192,8 +192,8 @@
     "objectID": "slides/week-1.html#plans-for-today",
     "href": "slides/week-1.html#plans-for-today",
     "title": " PPOL 5203 - Data Science I: Foundations ",
-    "section": "Plans for Today",
-    "text": "Plans for Today\n\nMotivating Data Science for Public Policy, or Computational Social Science.\nGoals of the course\nIntroductions\nCourse Logistics\nIDEs\n\nJupyter\nQuarto\n\nIntroduction to commandline"
+    "section": "",
+    "text": "Motivating Data Science for Public Policy, or Computational Social Science.\nGoals of the course\nIntroductions\nCourse Logistics\nIDEs\n\nJupyter\nQuarto\n\nIntroduction to commandline"
   },
   {
     "objectID": "slides/week-1.html#rise-of-the-digital-information-age",
@@ -291,7 +291,7 @@
     "href": "slides/week-1.html#logistics",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Logistics",
-    "text": "Logistics\n\n\nCommunication: via slack. Join the workspace!\nAll materials: hosted on the class website: https://tiagoventura.github.io/ppol5203/\nSyllabus: also on the website.\nMy Office Hours: Every tuesday from 4 to 6pm. Just stop by!\nCanvas: Only for official communication! Materials will be hosted in the website!\nDatacamp: Additional exercises! I will assign modules for you! Access our free account here\n\n\n\n\n−+\n05:00"
+    "text": "Logistics\n\n\nCommunication: via slack. Join the workspace!\nAll materials: hosted on the class website: https://tiagoventura.github.io/ppol5203/\nSyllabus: also on the website.\nMy Office Hours: Every tuesday from 4 to 6pm. Just stop by!\nCanvas: Only for official communication! Materials will be hosted in the website!\nDatacamp: Additional exercises! I will assign modules for you! Access our free account here\n\n\nlibrary(countdown)\ncountdown(minutes = 5, seconds = 0, \n          right = 0, , top=0, \n          font_size = \"2em\")\n\n\n−+\n05:00"
   },
   {
     "objectID": "slides/week-1.html#ta",
@@ -347,7 +347,7 @@
     "href": "slides/week-1.html#quiz",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Quiz!",
-    "text": "Quiz!\nWhich programming language did I use the most at?\n\nPhD\nPostdoc\nTwitter\nAs a Faculty"
+    "text": "Quiz!\n\nWhich programming language did I use the most at?\n\nPhD\nPostdoc\nTwitter\nAs a Faculty"
   },
   {
     "objectID": "slides/week-1.html#a-comment-from-the-pre-course-survey",
@@ -452,7 +452,7 @@
     "href": "syllabus.html#weekly-schedule",
     "title": "Syllabus: PPOL 5203 - Data Science I: Foundations",
     "section": "Weekly Schedule",
-    "text": "Weekly Schedule\n\n\n\n\n\n\nWeek\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nWeek 01\n\n\nIntroduction, Installations, IDEs, Command line\n\n\nSeptember 10, 2023\n\n\n\n\nWeek 02\n\n\nVersion Control, Workflow and Reproducibility: Or a bit of Git & GitHub\n\n\nSeptember 17, 2023\n\n\n\n\nWeek 03\n\n\nIntro to Python - OOP, Data Types, Control Statements and Functions\n\n\nSeptember 24, 2023\n\n\n\n\nWeek 04\n\n\nIntro to Python II - Loops, Functions, Control Statements, Comprehensions, and Nested Lists\n\n\nOctober 01, 2023\n\n\n\n\nWeek 05\n\n\nNumpy and Intro to Pandas\n\n\nOctober 08, 2023\n\n\n\n\nWeek 06\n\n\nPandas II: Data Wrangling\n\n\nOctober 15, 2023\n\n\n\n\nWeek 07\n\n\nJoining, Tidying and Visualizing Data\n\n\nOctober 22, 2023\n\n\n\n\nWeek 08\n\n\nScraping\n\n\nOctober 29, 2023\n\n\n\n\nWeek 09\n\n\nApis + Selenium\n\n\nNovember 05, 2023\n\n\n\n\nWeek 10\n\n\nStatistical Learning\n\n\nNovember 12, 2023\n\n\n\n\nWeek 11\n\n\nText as Data I: Discovery and Topics\n\n\nNovember 19, 2023\n\n\n\n\nWeek 12\n\n\nText as Data II: Supervised Learning\n\n\nNovember 26, 2023\n\n\n\n\nWeek 13\n\n\nSQL\n\n\nDecember 03, 2023\n\n\n\n\nWeek 14\n\n\nPresentations of Final Projects\n\n\nDecember 10, 2023\n\n\n\n\n\n\nNo matching items"
+    "text": "Weekly Schedule\n\n\n\n\n\n\nWeek\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nWeek 01\n\n\nIntroduction, Installations, IDEs, Command line\n\n\nSeptember 10, 2023\n\n\n\n\nWeek 02\n\n\nVersion Control, Workflow and Reproducibility: Or a bit of Git & GitHub\n\n\nSeptember 17, 2023\n\n\n\n\nWeek 03\n\n\nIntro to Python - OOP, Data Types, Control Statements and Functions\n\n\nSeptember 24, 2023\n\n\n\n\nWeek 04\n\n\nWeek 4: Intro to Python II: Scaling up your code - Iteration, Comprehension and Functions \n\n\nOctober 01, 2023\n\n\n\n\nWeek 05\n\n\nNumpy and Intro to Pandas\n\n\nOctober 08, 2023\n\n\n\n\nWeek 06\n\n\nPandas II: Data Wrangling\n\n\nOctober 15, 2023\n\n\n\n\nWeek 07\n\n\nJoining, Tidying and Visualizing Data\n\n\nOctober 22, 2023\n\n\n\n\nWeek 08\n\n\nScraping\n\n\nOctober 29, 2023\n\n\n\n\nWeek 09\n\n\nApis + Selenium\n\n\nNovember 05, 2023\n\n\n\n\nWeek 10\n\n\nStatistical Learning\n\n\nNovember 12, 2023\n\n\n\n\nWeek 11\n\n\nText as Data I: Discovery and Topics\n\n\nNovember 19, 2023\n\n\n\n\nWeek 12\n\n\nText as Data II: Supervised Learning\n\n\nNovember 26, 2023\n\n\n\n\nWeek 13\n\n\nSQL\n\n\nDecember 03, 2023\n\n\n\n\nWeek 14\n\n\nPresentations of Final Projects\n\n\nDecember 10, 2023\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "syllabus.html#course-requirements",
@@ -1053,8 +1053,8 @@
     "objectID": "slides/week-3.html#plans-for-today",
     "href": "slides/week-3.html#plans-for-today",
     "title": " PPOL 5203 - Data Science I: Foundations ",
-    "section": "Plans for Today",
-    "text": "Plans for Today\n\nQuick review of Git and remotes with Github\nIn-class exercise about Git\nIntroduction to Python\n\nPython as an Object-Oriented Programming Language\nData Types in Python\n\nNext week (likely):\n\nControl statements\nFunctions"
+    "section": "",
+    "text": "Quick review of Git and remotes with Github\nIn-class exercise about Git\nIntroduction to Python\n\nPython as an Object-Oriented Programming Language\nData Types in Python\n\nNext week (likely):\n\nControl statements\nFunctions"
   },
   {
     "objectID": "slides/week-3.html#any-questions",
@@ -1089,14 +1089,14 @@
     "href": "slides/week-3.html#what-happens-upon-assignment",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "What happens upon assignment?",
-    "text": "What happens upon assignment?\n\nAction 1: A reference is assigned to an object, with an id number in memory\n\nid(x)\n\n4532478984"
+    "text": "What happens upon assignment?\n\nAction 1: A reference is assigned to an object, with an id number in memory\n\nid(x)\n\n5019018248"
   },
   {
     "objectID": "slides/week-3.html#section-1",
     "href": "slides/week-3.html#section-1",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "",
-    "text": "Python OOP\n\n# call library\nimport pandas as pd\n\n# Using a Pandas Series method (OOP)\ns = pd.Series([1, 2, 3, 4, 5])\n\n# create a series object. You use a methods from this object to take the mean\ns.mean()\n\n\nR Functional Programming in Practice\n\nvec &lt;- c(1, 2, 3, 4, 5)\nmean(vec)\n\n\nObjects are the core of Python.\nFrom the objects, you will access functions that will make Python work.\nYou can also access data from object."
+    "text": "Python OOP\n\n# call library\nimport pandas as pd\n\n# Using a Pandas Series method (OOP)\ns = pd.Series([1, 2, 3, 4, 5])\n\n# create a series object. You use a methods from this object to take the mean\ns.mean()\n\n\n\n\nR Functional Programming in Practice\n\nvec &lt;- c(1, 2, 3, 4, 5)\nmean(vec)\n\n\nObjects are the core of Python.\nFrom the objects, you will access functions that will make Python work.\nYou can also access data from object."
   },
   {
     "objectID": "slides/week-3.html#section-2",
@@ -1501,8 +1501,8 @@
     "objectID": "slides/week-4.html#plans-for-today",
     "href": "slides/week-4.html#plans-for-today",
     "title": " PPOL 5203 - Data Science I: Foundations ",
-    "section": "",
-    "text": "Start slow with the in-class exercise from last week.\nFinish Part I of Intro to Python.\n\nControl statements (if, for and while loops)\nFunctions\n\nIntro do Python - Part II.\n\nImporting librarys in Python\nList Comprehension + Generators\nFile Management\nDatas as Nested Lists"
+    "section": "Plans for Today",
+    "text": "Plans for Today\n\nStart slow with the in-class exercise from last week.\nFinish Part I of Intro to Python.\n\nControl statements (if, for and while loops)\nFunctions\n\nIntro do Python - Part II.\n\nImporting librarys in Python\nList Comprehension + Generators\nFile Management\nData as Nested Lists"
   },
   {
     "objectID": "slides/week-4.html#in-class-exercise-solve-on-the-lecture-notes",
@@ -1516,7 +1516,7 @@
     "href": "slides/week-4.html#class-part-ii-control-statements-loops-and-functions",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Class Part II: Control Statements, Loops and Functions",
-    "text": "Class Part II: Control Statements, Loops and Functions\nWe will go over some concepts that are very general for any programming language.\n\n\nUsing logical operators for comparisons.\nControl the behavior of code when iterating using control statements.\nExplore iterating using loops (scale up your coding skilss)\nDefining functions to make code more flexible, debuggable, and readable."
+    "text": "Class Part II: Control Statements, Loops and Functions\nWe will go over some concepts that are very general for any programming language.\n\n\nLogical Operators: to make comparisons\nControl statements: to control the behavior of your code\nIterations: repeat, repeat, scale-up!\nUser-Defined Functions: to make code more flexible, debuggable, and readable."
   },
   {
     "objectID": "slides/week-4.html#comparison-operators",
@@ -1530,7 +1530,7 @@
     "href": "slides/week-4.html#control-statements",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Control Statements",
-    "text": "Control Statements\nAny programming language needs statements that controls the sequence of execution of a particular piece of code.\n\nif-else statements\nfor loops\nwhile loops"
+    "text": "Control Statements\nAny programming language needs statements that controls the sequence of execution of a particular piece of code. We will see three main types:\n\nif-else statements\nfor loops\nwhile loops"
   },
   {
     "objectID": "slides/week-4.html#ifelse-statements",
@@ -1572,14 +1572,14 @@
     "href": "slides/week-4.html#problems-with-this-approach",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Problems with this approach",
-    "text": "Problems with this approach\n\n\nLack of general utility.\nNeed to edit/copy/paste your code every time you want to reuse it.\nNeed to re-write the code when you need to make small extenstion\nLikely to raise errors"
+    "text": "Problems with this approach\n\n\nLack of general utility.\nNeed to edit/copy/paste your code every time you want to reuse it.\nNeed to re-write the code when you need to make small extension\nLikely to raise errors"
   },
   {
     "objectID": "slides/week-4.html#functions",
     "href": "slides/week-4.html#functions",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Functions",
-    "text": "Functions\n\n\ndef square(x):\n  '''\n  Takes the square of a number\n  input: int object\n  outpur: int object\n  '''\n  y = x*x\n  return y\n\n\nThe code block above has the following elements:\n\ndef: keyword for generating a function\ndocstring: to explain your function\narguments: things we want to feed into the function and do something to.\nreturn: keyword for returning a specific value from a function"
+    "text": "Functions\n\ndef square(x):\n  '''\n  Takes the square of a number\n  input: int object\n  outpur: int object\n  '''\n  y = x*x\n  return y\n\n\nThe code block above has the following elements:\n\ndef: keyword for generating a function\ndocstring: to explain your function\narguments: things we want to feed into the function and do something to.\nreturn: keyword for returning a specific value from a function"
   },
   {
     "objectID": "slides/week-4.html#comparing-python-and-r",
@@ -1607,7 +1607,7 @@
     "href": "slides/week-4.html#importing-librarys-in-python",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Importing librarys in Python",
-    "text": "Importing librarys in Python\n\n\nThe beauty of open-sourced programming languages is being able to stand on the shoulders of other colleagues. That’s what we do when we import a python library.\nTo import a library in Python, you need to explicitly tell python to do it. This works like the library function in R in theory, but not in practice (Because Python is a OOP language!)\nPython allows you to import:\n\nThe full library with the original name\nThe full library with an alias\nSome functions from the library\nAll methods from the library as independent functions"
+    "text": "Importing librarys in Python\n\n\nTo import a library in Python, you need to explicitly tell python to do it. This works like the library function in R in theory, but not in practice (Because Python is a OOP language!)\nPython allows you to import:\n\nThe full library with the original name\nThe full library with an alias\nSome functions from the library\nAll methods from the library as independent functions"
   },
   {
     "objectID": "slides/week-4.html#the-full-library-and-its-functions",
@@ -1642,7 +1642,7 @@
     "href": "slides/week-4.html#comprehensions",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Comprehensions",
-    "text": "Comprehensions\n\nProvide a readable and efficient way to construct new sequences (such as lists, sets, dictionaries, etc.) based on a sequence of elements\n\n\n\nCompared to a loop\n\na_list =[0, 1, 2, 3, 4, \"hey\"]\nresult = []\nfor e in a_list:\n    if type(e) == int:  # use int for Python 3\n        result.append(e**2)\nresult\n\n[0, 1, 4, 9, 16]"
+    "text": "Comprehensions\n\nProvide a readable and efficient way to construct new sequences (such as lists, sets, dictionaries, etc.) based on a sequence of elements\n\n\nCompared to a loop\n\na_list =[0, 1, 2, 3, 4, \"hey\"]\nresult = []\nfor e in a_list:\n    if type(e) == int:  # use int for Python 3\n        result.append(e**2)\nresult\n\n[0, 1, 4, 9, 16]"
   },
   {
     "objectID": "slides/week-4.html#why-it-matters",
@@ -1663,14 +1663,14 @@
     "href": "slides/week-4.html#example-of-generators",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Example of Generators",
-    "text": "Example of Generators\nYou can build your own generators. That’s a bit advanced, and you probably will not need to use for our purposes\nBut we will see some pre-built “generators” that will be useful for us:\n\n\nrange(): generate the corresponding sequence of integers. Commonly used with for loops.\nzip(): syncs two series of numbers up into tuples.\nenumerate(): generates an index and value tuple’s pairing"
+    "text": "Example of Generators\nYou can build your own generators. That’s a bit advanced, and you probably will not need to use for our purposes. But we will see some pre-built “generators” that will be useful for us:\n\n\nrange(): generate the corresponding sequence of integers. Commonly used with for loops.\nzip(): syncs two series of numbers up into tuples.\nenumerate(): generates an index and value tuple’s pairing"
   },
   {
     "objectID": "slides/week-4.html#file-management-in-python",
     "href": "slides/week-4.html#file-management-in-python",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "File Management in Python",
-    "text": "File Management in Python\n\nMain question: how do we read files from our computer in python?\n\nconnection management: open(), close()\nReading/writing files\nusing with to manage connections.\nReading .csvs"
+    "text": "File Management in Python\nMain question: how do we read files from our computer in python?\n\nconnection management: open(), close()\nReading/writing files\nusing with to manage connections.\nReading .csvs"
   },
   {
     "objectID": "slides/week-4.html#tldr",
@@ -1712,7 +1712,7 @@
     "href": "slides/week-4.html#why-should-you-learn-holds-python-together",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Why should you learn? Holds Python together!",
-    "text": "Why should you learn? Holds Python together!"
+    "text": "Why should you learn? Holds Python together!\n\n\n\n\nData science I: Foundations"
   },
   {
     "objectID": "slides/week-4.html#efficiency",
@@ -1755,5 +1755,19 @@
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "In Class-Exercise (Use the Lecture Notes to solve)",
     "text": "In Class-Exercise (Use the Lecture Notes to solve)\n\nTab ATab BTab C\n\n\nLet’s practice with lists first. One way to explore data structures is to learn their methods. Check all the methods of a list by running ‘dir()’ on a list object. Let’s explore these functions using the following list object, by answering the below questions. See here for list methods:\n\n\nlist_exercise = [\"Ramy\", \"Victorie\", \"Letty\", \"Robin\", \"Antoine\", \"Griffin\"] \n\n\n\nAdd “Cathy O’Neil” to the list. Insert “Professor Crast” as the first element of the list\n\n\nRemove “Letty” from the list. Also remove the last element of the list.\n\n\nFind the index of the occurrence of the name “Robin”. Count the number of times None appears in the list.\n\n\nCreate a new list with the names in alphabetical order, copy this list as a new list without changing the values of the original list\n\n\nAdd the string “Lovell” to copied_list and ensure that list_exercise remains unchanged.\n\n\n\nLet’s do a similar exercise with Dictionaries. Consider the dictionary below. See here for dictionary methods:\n\n\ndict_exercise = {\"Ramy\": \"India\",\n                  \"Victorie\":\"Haiti\", \n                  \"Letty\":\"England\", \n                  \"Robin\":\"Canton\", \n                  \"Antoine\":\"Nigeria\", \n                  \"Griffin\":\"China\"}\ndict_exercise\n\n\n\nLook up the keys in the dictionary, and store them in a list object called keys\n\n\nAdd yourself, and two other colleagues in this dictionary. The values are the countries the person in the key was born.\n\n\nRemove “Ramy” from the dictionary, and save as another dictionary\n\n\n\nLet’s now play around with some string methods. See the string below from the book “Babel:An Arcane History”. See here for string methods:\n\nbabel = \"That's just what translation is, I think. That's all speaking is. Listening to the other and trying to see past your own biases to glimpse what they're trying to say. Showing yourself to the world, and hoping someone else understands.\"\n\n\nDetermine if the word “Babel” is present in the string.\n\n\nCount how many times the word “translation” appears\n\n\nConvert the entire string to upper case\n\n\nConvert the pronoum “I” to “We” in the entire text.\n\n\nStrip any punctuation (like commas, exclamation marks, etc.) from the string."
+  },
+  {
+    "objectID": "slides/week-3.html",
+    "href": "slides/week-3.html",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "",
+    "text": "Quick review of Git and remotes with Github\nIn-class exercise about Git\nIntroduction to Python\n\nPython as an Object-Oriented Programming Language\nData Types in Python\n\nNext week (likely):\n\nControl statements\nFunctions"
+  },
+  {
+    "objectID": "slides/week-4.html#i-am-already-all-confused-about-loops.-why-do-i-need-to-learn-something-else",
+    "href": "slides/week-4.html#i-am-already-all-confused-about-loops.-why-do-i-need-to-learn-something-else",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "I am already all confused about loops. Why do I need to learn something else?",
+    "text": "I am already all confused about loops. Why do I need to learn something else?\n\n\nElegant and cleaner way to perform iterations. Which means: a lot of people use it!\nAutomatically create new objects – no need to a container in the loop\nFlexible: allows working with lists, dictionaries, and sets\nFaster than loops (but not much in a way that makes you avoid loops)"
   }
 ]

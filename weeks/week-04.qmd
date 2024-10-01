@@ -72,7 +72,6 @@ Download the datasets <a href="/lecture_notes/week-04/data_week4.zip" download> 
 
     -   [File Management System](https://wesmckinney.com/book/python-builtin.html#files_os)
 
-
 -   **Additional Readings**
 
     -   [for-loop-vs-list-comprehension-vs-high-order-functions](https://medium.com/globant/for-loop-vs-list-comprehension-vs-high-order-functions-a766a8b9cbe1#:~:text=List%20comprehensions%20are%20generally%20faster,great%20choice%20for%20simple%20iterations.)

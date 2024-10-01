@@ -6,7 +6,7 @@ format:
   revealjs: 
     transition: slide
     background-transition: fade
-    width: 1200 #1050
+    width: 1600 #1050
     height: 800 #700
     center: true
     slide-number: true

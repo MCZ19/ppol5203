@@ -13,7 +13,7 @@ format:
     code-line-numbers: false
     width: 1600
     height: 900
-    center: false
+    center: true
     slide-number: true
     incremental: false
     chalkboard: 
@@ -25,7 +25,7 @@ format:
 
 ## Plans for Today
 
-- Start slow with the in-class exercise from last week. 
+-   Start slow with the in-class exercise from last week.
 
 -   Finish Part I of Intro to Python.
 
@@ -41,14 +41,14 @@ format:
 
     -   File Management
 
-    -   Datas as Nested Lists
+    -   Data as Nested Lists
 
-# Follow up with the lecture notes and readings. Most coding will be there! {background-color="#fb6767"}
+
+# In Class Exercise
 
 ## In Class-Exercise (Use the Lecture Notes to solve)
 
 ::: panel-tabset
-
 ### Tab A
 
 Let's practice with lists first. One way to explore data structures is to learn their methods. Check all the methods of a list by running 'dir()' on a list object. Let's explore these functions using the following list object, by answering the below questions. See [here](https://www.w3schools.com/python/python_ref_list.asp) for list methods:
@@ -254,22 +254,24 @@ print(babel)
 ```
 :::
 
-# Class Website: [https://tiagoventura.github.io/ppol5203/weeks/week-04.html](https://tiagoventura.github.io/ppol5203/weeks/week-04.html)
+# Intro do Python II
 
+# Class Website: <https://tiagoventura.github.io/ppol5203/weeks/week-04.html>
+
+# Follow up with the lecture notes and readings. Most coding will be there! {background-color="#fb6767"}
 
 ## Class Part II: Control Statements, Loops and Functions
-
 
 We will go over some concepts that are very general for any programming language.
 
 ::: incremental
--   Using logical operators for comparisons.
+-   **Logical Operators**: to make comparisons
 
--   Control the behavior of code when iterating using control statements.
+-   **Control statements**: to control the behavior of your code
 
--   Explore iterating using loops (scale up your coding skilss)
+-   **Iterations**: repeat, repeat, scale-up!
 
--   Defining functions to make code more flexible, debuggable, and readable. 
+-   **User-Defined Functions**:  to make code more flexible, debuggable, and readable.
 :::
 
 ## Comparison Operators
@@ -290,7 +292,7 @@ We will go over some concepts that are very general for any programming language
 
 ## Control Statements
 
-Any programming language needs statements that controls the sequence of execution of a particular piece of code.
+Any programming language needs statements that controls the sequence of execution of a particular piece of code. We will see three main types:
 
 -   if-else statements
 -   for loops
@@ -376,13 +378,11 @@ while x < 5:
 ::: incremental
 -   Lack of general utility.
 -   Need to edit/copy/paste your code every time you want to **reuse it.**
--   Need to re-write the code when you need to make small extenstion
+-   Need to re-write the code when you need to make small extension
 -   Likely to raise errors
 :::
 
 ## Functions
-
-<br>
 
 ```{python}
 #| eval: false
@@ -444,7 +444,7 @@ return(y)
 
 -   lambda functions
 
-# [Notebook for Functions](/lecture_notes/week-03/_week-03_iter_control_functions.html)
+# [Notebook for Control statements and Functions](/lecture_notes/week-03/_week-03_iter_control_functions.html)
 
 # Let's take a break (10min)
 
@@ -458,7 +458,6 @@ countdown(minutes = 10, seconds = 0,
           margin = "10%",
           font_size = "6em")
 ```
-
 
 ## Intro to Python - Part II.
 
@@ -475,8 +474,6 @@ For the second part of this lecture, we will see:
 ## Importing librarys in Python
 
 ::: incremental
--   The beauty of open-sourced programming languages is being able to stand on the shoulders of other colleagues. That's what we do when we import a python library.
-
 -   To import a library in Python, you need to explicitly tell python to do it. This works like the **library** function in R in theory, but not in practice (Because Python is a OOP language!)
 
 -   Python allows you to import:
@@ -562,10 +559,10 @@ for e in a_list:
 result
 ```
 
-## Why it matters?
+## I am already all confused about loops. Why do I need to learn something else?
 
 ::: incremental
--   Elegant and cleaner way to perform iterations
+-   Elegant and cleaner way to perform iterations. Which means: a lot of people use it!
 
 -   Automatically create new objects -- no need to a container in the loop
 
@@ -574,13 +571,12 @@ result
 -   Faster than loops (but not much in a way that makes you avoid loops)
 :::
 
-
 ## Generators
 
 Python has this very nice data type called **generators**. We use these functions a lot, but hardly talk about them.
 
 ::: incremental
--   **Purpose:** Generators allow for generating a sequence of values at each time. In other words, it allows you to create iterators in Python. 
+-   **Purpose:** Generators allow for generating a sequence of values at each time. In other words, it allows you to create iterators in Python.
 
 -   **Main Advantage:** do not have to create the entire sequence at once and allocate memory
 
@@ -589,9 +585,7 @@ Python has this very nice data type called **generators**. We use these function
 
 ## Example of Generators
 
-You can build your own generators. That's a bit advanced, and you probably will not need to use for our purposes
-
-But we will see some pre-built "generators" that will be useful for us:
+You can build your own generators. That's a bit advanced, and you probably will not need to use for our purposes. But we will see some pre-built "generators" that will be useful for us:
 
 ::: incremental
 -   `range()`: generate the corresponding sequence of integers. Commonly used with for loops.
@@ -601,7 +595,22 @@ But we will see some pre-built "generators" that will be useful for us:
 -   `enumerate()`: generates an index and value tuple's pairing
 :::
 
-# [Notebook for Generators](/lecture_notes/week-04/_week_4_comprehension_generators.html)
+# [Notebook for Comprehension and Generators](/lecture_notes/week-04/_week_4_comprehension_generators.html)
+
+
+# Let's take another break (5min)
+
+```{r}
+#| echo: false
+library(countdown)
+countdown(minutes = 10, seconds = 0, 
+          left = 0, right = 0,
+          top=0,
+          padding = "100px",
+          margin = "10%",
+          font_size = "6em")
+```
+
 
 ## File Management in Python
 
@@ -665,8 +674,6 @@ print(data)
 
 ```
 
-
-
 ## Here comes numpy ...
 
 <br>
@@ -682,5 +689,3 @@ source: [Python Programming for Data Science](https://www.tomasbeuzen.com/python
 <br>
 
 ![](week4_figs/numpy_dc.png){fig-align="center"}
-
-
