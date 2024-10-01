@@ -23,17 +23,34 @@ format:
     theme: [simple, custom.scss]
 ---
 
-## Plans for Today
+## Where we are ....
+
+-  We started with the basics of being a data scientist:
+  
+   - Commandline
+   
+   - Reproducibility + Data Workflow
+   
+   - Version Control
+   
+- Now, we are going over the primitives of Python as your main DS tool: 
+
+  - Python as a OOP language
+  
+  - Native Data Types in Python
+
+## Plans for today
+
 
 -   Start slow with the in-class exercise from last week.
 
--   Finish Part I of Intro to Python.
+-   Scaling up your python skills:
 
     -   Control statements (if, for and while loops)
 
     -   Functions
 
--   Intro do Python - Part II.
+-  Intro do Python - Part II.
 
     -   Importing librarys in Python
 
@@ -43,8 +60,6 @@ format:
 
     -   Data as Nested Lists
 
-
-# In Class Exercise
 
 ## In Class-Exercise (Use the Lecture Notes to solve)
 

@@ -1501,8 +1501,8 @@
     "objectID": "slides/week-4.html#plans-for-today",
     "href": "slides/week-4.html#plans-for-today",
     "title": " PPOL 5203 - Data Science I: Foundations ",
-    "section": "Plans for Today",
-    "text": "Plans for Today\n\nStart slow with the in-class exercise from last week.\nFinish Part I of Intro to Python.\n\nControl statements (if, for and while loops)\nFunctions\n\nIntro do Python - Part II.\n\nImporting librarys in Python\nList Comprehension + Generators\nFile Management\nData as Nested Lists"
+    "section": "Plans for today",
+    "text": "Plans for today\n\nStart slow with the in-class exercise from last week.\nScaling up your python skills:\n\nControl statements (if, for and while loops)\nFunctions\n\nIntro do Python - Part II.\n\nImporting librarys in Python\nList Comprehension + Generators\nFile Management\nData as Nested Lists"
   },
   {
     "objectID": "slides/week-4.html#in-class-exercise-solve-on-the-lecture-notes",
@@ -1769,5 +1769,12 @@
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "I am already all confused about loops. Why do I need to learn something else?",
     "text": "I am already all confused about loops. Why do I need to learn something else?\n\n\nElegant and cleaner way to perform iterations. Which means: a lot of people use it!\nAutomatically create new objects – no need to a container in the loop\nFlexible: allows working with lists, dictionaries, and sets\nFaster than loops (but not much in a way that makes you avoid loops)"
+  },
+  {
+    "objectID": "slides/week-4.html#where-we-are-.",
+    "href": "slides/week-4.html#where-we-are-.",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Where we are ….",
+    "text": "Where we are ….\n\nWe started with the basics of being a data scientist:\n\nCommandline\nReproducibility + Data Workflow\nVersion Control\n\nNow, we are going over the primitives of Python as your main DS tool:\n\nPython as a OOP language\nNative Data Types in Python"
   }
 ]
