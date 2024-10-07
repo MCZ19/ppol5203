@@ -1,6 +1,6 @@
 ---
 title: "Week 04"
-subtitle: "Week 4: Intro to Python II: Scaling up your code - Iteration, Comprehension and Functions "
+subtitle: "Intro to Python II: Scaling up your code - Iteration, Comprehension and Functions "
 description: ""
 author: "Tiago Ventura"
 date: "10/01/2023"

@@ -1,0 +1,244 @@
+---
+title: "<span style = 'font-size: 100%;'> PPOL 5203 - Data Science I: Foundations </span>"
+subtitle: "<span style = 'font-size: 100%;'> Week 4: Numpy and Intro do Pandas </span>"
+author: "Professor: Tiago Ventura"
+date: "09/19/2023"
+execute: 
+  echo: true
+  error: true
+format:
+  revealjs: 
+    transition: slide
+    background-transition: fade
+    code-line-numbers: false
+    width: 1600
+    height: 900
+    center: false
+    slide-number: true
+    incremental: false
+    chalkboard: 
+      buttons: false
+    preview-links: auto
+    footer: "Data science I: Foundations"
+    theme: [simple, custom.scss]
+---
+## Where we are ....
+
+
+## Plans for Today
+
+-   Discuss your final project.
+
+-   File Management in Python
+
+-   Data as Nested Lists: Motivating Numpy
+
+-   Numpy
+
+-   Intro do Pandas
+
+    -   Series
+
+    -   Acesssing Pandas elements
+
+    -   Creating DataFrames
+
+## Final Project
+
+::: incremental
+-   **What is it?** A data science project, applying concepts learned throughout the course.
+
+-   Involves collecting data, cleaning and analyzing it, and presenting your findings
+
+-   The project is composed of three parts:
+
+    -   a 2 page project proposal: (which should be discussed and approved by me)
+
+    -   an in-class presentation,
+
+    -   A 10-page project report.
+:::
+
+## Deadlines and Logistics
+
+
+| **Requirement**  | **Due**     | **Length**    | **Percentage** |
+|------------------|-------------|---------------|----------------|
+| Project Proposal | November 15  | 2 pages       | 5%             |
+| Presentation     | December 10  | 10-15 minutes | 10%            |
+| Project Report   | December 17 | 10 pages      | 25%            |
+
+
+::: incremental
+-   Groups of three students. You pick your groups.
+
+-   Before November 8, you should have meet with me to discuss your proposal.
+
+-   At lest one hour before our meeting, send me a draft of your proposal.
+
+-   Send me an email with your group and when you are going to my office hours.
+
+-   Our meeting should be before October 26
+:::
+
+# More information: <https://tiagoventura.github.io/ppol5203/finalproject.html>
+
+# Numpy
+
+## Motivating Numpy
+
+So far, all our datatypes are geared towards kind of uni dimensional data.
+
+-   string: sequence of words
+
+-   list: sequence of heterogeneous elements
+
+-   dictionaries: key-value combinations.
+
+## Nested Lists
+
+```{python}
+# Read in the gapminder data 
+import csv
+with open("../lecture_notes/week-04/gapminder.csv",mode="rt") as file:
+    data = [row for row in csv.reader(file)]
+
+
+```
+
+```{python}
+# let's see the data
+
+print(data)
+
+```
+
+<br>
+
+**This is a hard to work with data structure. Why??**
+
+## Here comes numpy ...
+
+<br>
+
+![](week4_figs/numpy_arrays.png){fig-align="center"}
+
+::: aside
+source: [Python Programming for Data Science](https://www.tomasbeuzen.com/python-programming-for-data-science/README.html)
+:::
+
+## Why should you learn? Holds Python together!
+
+<br>
+
+![](week4_figs/numpy_dc.png){fig-align="center"}
+
+## Efficiency
+
+-   Numpy leans toward less flexibility and more efficiency.
+
+-   Lists gives you more flexibility and less efficiency.
+
+-   Allows for easy vectorization of functions
+
+-   Broadcasting for working with arrays with different dimensions
+
+## Materials
+
+-   [Notebook for numpy](/lecture_notes/week-04/_week_4_numpy.html)
+
+-   [Documentation](https://numpy.org/doc/stable/)
+
+-   [Cheatsheet Numpy](https://images.datacamp.com/image/upload/v1676302459/Marketing/Blog/Numpy_Cheat_Sheet.pdf)
+
+# Pandas
+
+## Why Pandas?
+
+::: incremental
+-   `numpy` offers a great flexibility and efficiency when dealing with data matrices.
+
+-   Great for Mathematical operations.
+
+-   Bad for data wrangling tasks (Numpy only accepts the same data type)
+
+-   The `pandas` package was designed to deal with this limitation by providing data structures to deal with retangular heterogenous data type.
+
+-   Main Data Structure: Series and DataFrames
+:::
+
+## Pandas Series
+
+A `pandas` series is a **one-dimensional** labeled array.
+
+::: incremental
+-   Capable of holding different data types (e.g. integer, boolean, strings, etc.).
+
+-   It holds two key components:
+
+    -   **index**: names in the axis
+    -   **values**: values in the series
+
+-   
+
+-   At it's core, a `Pandas` `Series` is nothing but a **column** in an excel sheet or an R `data.frame`.\
+:::
+
+## Pandas Series Constructor
+
+```{python}
+import pandas as pd
+s = pd.Series(["Argentina", "France", "Germany","Spain", "Italy", "Brazil"],
+                 index=[2022, 2018, 2014, 2010, 2006, 2002])
+print(s)
+```
+
+You can feed to the constructor:
+
+-   list
+
+-   dictionaries
+
+-   scalar values
+
+-   ndarray
+
+## Pandas DataFrames
+
+A pandas`DataFrame` is a two dimensional, relational data structure with the capacity to handle heterogeneous data types.
+
+-   **relational**: each column value contained within a row entry corresponds with the same observation.
+
+-   **two dimensional**: a matrix data structure
+
+-   **heterogeneous**: different data types can be contained across each column series.
+
+## Constructor
+
+```{python}
+import pandas as pd
+# create a simple series
+series = pd.Series(["Argentina", "France", "Germany","Spain", "Italy", "Brazil"],
+                 index=[2022, 2018, 2014, 2010, 2006, 2002])
+# create the dataframe
+df = pd.DataFrame(series)
+print(df)
+```
+
+# Pandas DataFrames vs R Dataframes
+
+## Important concepts:
+
+-   Indexing for Accessing Data Frames in Python
+    -   No implict indexing (**d\[1,2\]**) will throw you an error.
+    -   .iloc\[\] = use the numerical index position to call to locations in the DataFrame.
+    -   .loc\[\] = use the labels to call to the location in the data frame.
+-   Creating Dataframes
+    -   row-wise: using a list of dictionaries
+    -   column-wise: using a dictionaries of lists
+
+# [Notebook for Pandas](/lecture_notes/week-05/_week_5a_intro_to_pandas.html)
+
+# In-class Exercise: your homework.
+
+# Survey: Start, Stop, Continue. [Answer here](https://forms.gle/q2Dd2iaUJpnky4ok6)
