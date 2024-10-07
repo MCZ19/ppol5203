@@ -1,6 +1,6 @@
 ---
 title: "<span style = 'font-size: 100%;'> PPOL 5203 - Data Science I: Foundations </span>"
-subtitle: "<span style = 'font-size: 100%;'> Week 4: Numpy and Intro do Pandas </span>"
+subtitle: "<span style = 'font-size: 100%;'> Week 4: From Nested lists to Dataframes - Numpy and Intro do Pandas </span>"
 author: "Professor: Tiago Ventura"
 date: "09/19/2023"
 execute: 
@@ -13,7 +13,7 @@ format:
     code-line-numbers: false
     width: 1600
     height: 900
-    center: false
+    center: true
     slide-number: true
     incremental: false
     chalkboard: 
@@ -24,10 +24,17 @@ format:
 ---
 ## Where we are ....
 
+-   We started with the basics of being a data scientist:
+
+-   Then we moved over  the primitives of Python as your main DS tool:
+
+    -   Python as a OOP language, Native Data Types in Python
+    
+    -   Loops, functions, generators, comprehension....
+    
+- Today we start our journey working with tabular data - a favorite of social scientists!    
 
 ## Plans for Today
-
--   Discuss your final project.
 
 -   File Management in Python
 
@@ -42,6 +49,229 @@ format:
     -   Acesssing Pandas elements
 
     -   Creating DataFrames
+    
+-   Discuss your final project.
+    
+## File Management in Python
+
+### Main question: how do we read files from our computer in python?
+
+-   Connection management:`open()`, `close()`
+-   Reading/writing files 
+-   Using `with()` to manage connections.
+
+## Summary
+
+-   **open()**: opens a **connection** with files on our system.
+
+    -   **open()** returns a special item type \*\_io.TextIOWrapper\*
+    -   This item is a iterator. We need to go through to convert inputs to a objectin python.
+
+-   **close()**: closes the connection.
+
+-   **write()**: writes files on your system. Also line by line.
+
+-   **with()**: wrapper for open and close that allows alias.
+
+
+## Example:
+
+```{python}
+#| eval: false
+# Load libraries
+import csv # convert a .csv to a nested list
+import os  # library for managing our operating system. 
+
+# Read in the gapminder data 
+with open("gapminder.csv", mode="rt") as file:
+    data = [row for row in csv.reader(file)]
+
+```
+
+## TLDR:
+
+-   Most often we will use high-level functions from Pandas to load data into Python objects.
+
+-   Why are we learning these tools then?
+
+    -   Very pythonic
+
+    -   No direct equivalent in R or Stata
+
+    -   Important when working non-tabular data - text, json, images, etc..
+
+-   **Reading:** Check Section 3.3 of [Python for Data Analysis](https://wesmckinney.com/book/python-builtin.html) to learn more about the topics covered in the notebook.
+
+- [Notebook for File Management](/lecture_notes/week-04/_week_4_file_management.html)
+
+# From Nested Data to Dataframes: Motivating Numpy
+
+## Motivating Numpy
+
+So far, all our datatypes we saw are geared more or less towards unidimensional data.
+
+-   string: sequence of words
+
+-   list: sequence of heterogeneous elements
+
+-   dictionaries: key-value combinations.
+
+## Tabular data
+
+![](week4_figs/rectangular_data.png){fig-align="center"}
+
+
+## Nested Lists
+
+```{python}
+# Read in the gapminder data 
+import csv
+with open("../lecture_notes/week-04/gapminder.csv",mode="rt") as file:
+    data = [row for row in csv.reader(file)]
+
+
+```
+
+## Quizz: What is wrong here?
+
+```{python}
+# let's see the data
+
+print(data)
+
+```
+
+<br>
+
+
+## Here comes numpy ...
+
+<br>
+
+![](week4_figs/numpy_arrays.png){fig-align="center"}
+
+::: aside
+source: [Python Programming for Data Science](https://www.tomasbeuzen.com/python-programming-for-data-science/README.html)
+:::
+
+## Why should you learn? Holds Python together!
+
+<br>
+
+![](week4_figs/numpy_dc.png){fig-align="center"}
+
+## Efficiency
+
+-   Numpy leans toward less flexibility and more efficiency.
+
+-   Lists gives you more flexibility and less efficiency.
+
+-   Allows for easy vectorization of functions
+
+-   Broadcasting for working with arrays with different dimensions
+
+## Materials
+
+-   [Notebook for numpy](/lecture_notes/week-04/_week_4_numpy.html)
+
+-   [Documentation](https://numpy.org/doc/stable/)
+
+-   [Cheatsheet Numpy](https://images.datacamp.com/image/upload/v1676302459/Marketing/Blog/Numpy_Cheat_Sheet.pdf)
+
+## Coding:
+
+- [Data as Nested lists](/lecture_notes/week-04/_week_4_nested_lists.html) 
+
+- [Notebook for Numpy](/lecture_notes/week-04/_week_4_numpy.html)
+
+
+# Pandas
+
+## Why Pandas?
+
+::: incremental
+-   `numpy` offers a great flexibility and efficiency when dealing with data matrices.
+
+-   Really efficient for mathematical operations.
+
+-   Pretty bad for data wrangling tasks ~> `numpy` only accepts the same data type
+
+-   The `pandas` package was designed to solve this limitation by providing data structures to deal with rectangular heterogeneous data type.
+
+-   Main Data Structures: Series and DataFrames
+:::
+
+## Pandas Series
+
+A `pandas` series is a **one-dimensional** labeled array.
+
+::: incremental
+-   Capable of holding different data types (e.g. integer, boolean, strings, etc.).
+
+-   It holds two key components:
+
+    -   **index**: names in the axis
+    -   **values**: values in the series
+
+-   A `Pandas:Series` is nothing but a **column** in an excel sheet or an R `data.frame`.
+
+:::
+
+## Pandas Series Constructor
+
+```{python}
+import pandas as pd
+s = pd.Series(["Argentina", "France", "Germany","Spain", "Italy", "Brazil"],
+                 index=[2022, 2018, 2014, 2010, 2006, 2002])
+print(s)
+```
+
+You can feed to the constructor:
+
+-   list
+
+-   dictionaries
+
+-   scalar values
+
+-   ndarray
+
+## Pandas DataFrames
+
+A `pandas DataFrame` is a two dimensional, relational data structure with the capacity to handle heterogeneous data types.
+
+-   **relational**: each column value contained within a row entry corresponds with the same observation.
+
+-   **two dimensional**: a matrix data structure
+
+-   **heterogeneous**: different data types can be contained across each column series.
+
+## Constructor
+
+```{python}
+import pandas as pd
+# create a simple series
+series = pd.Series(["Argentina", "France", "Germany","Spain", "Italy", "Brazil"],
+                 index=[2022, 2018, 2014, 2010, 2006, 2002])
+# create the dataframe
+df = pd.DataFrame(series)
+print(df)
+```
+
+# Pandas DataFrames vs R Dataframes
+
+## Important concepts:
+
+-   Creating Dataframes
+    -   row-wise: using a list of dictionaries
+    -   column-wise: using a dictionaries of lists
+
+-   Indexing for accessing Data Frames in Python
+    -   No implicit indexing (**d\[1,2\]**) will throw you an error.
+    -   .iloc\[\] = use the numerical index position to call to locations in the DataFrame.
+    -   .loc\[\] = use the labels to call to the location in the data frame.    
+
+# [Notebook for Pandas](/lecture_notes/week-05/_week_5a_intro_to_pandas.html)
 
 ## Final Project
 
@@ -83,162 +313,4 @@ format:
 
 # More information: <https://tiagoventura.github.io/ppol5203/finalproject.html>
 
-# Numpy
-
-## Motivating Numpy
-
-So far, all our datatypes are geared towards kind of uni dimensional data.
-
--   string: sequence of words
-
--   list: sequence of heterogeneous elements
-
--   dictionaries: key-value combinations.
-
-## Nested Lists
-
-```{python}
-# Read in the gapminder data 
-import csv
-with open("../lecture_notes/week-04/gapminder.csv",mode="rt") as file:
-    data = [row for row in csv.reader(file)]
-
-
-```
-
-```{python}
-# let's see the data
-
-print(data)
-
-```
-
-<br>
-
-**This is a hard to work with data structure. Why??**
-
-## Here comes numpy ...
-
-<br>
-
-![](week4_figs/numpy_arrays.png){fig-align="center"}
-
-::: aside
-source: [Python Programming for Data Science](https://www.tomasbeuzen.com/python-programming-for-data-science/README.html)
-:::
-
-## Why should you learn? Holds Python together!
-
-<br>
-
-![](week4_figs/numpy_dc.png){fig-align="center"}
-
-## Efficiency
-
--   Numpy leans toward less flexibility and more efficiency.
-
--   Lists gives you more flexibility and less efficiency.
-
--   Allows for easy vectorization of functions
-
--   Broadcasting for working with arrays with different dimensions
-
-## Materials
-
--   [Notebook for numpy](/lecture_notes/week-04/_week_4_numpy.html)
-
--   [Documentation](https://numpy.org/doc/stable/)
-
--   [Cheatsheet Numpy](https://images.datacamp.com/image/upload/v1676302459/Marketing/Blog/Numpy_Cheat_Sheet.pdf)
-
-# Pandas
-
-## Why Pandas?
-
-::: incremental
--   `numpy` offers a great flexibility and efficiency when dealing with data matrices.
-
--   Great for Mathematical operations.
-
--   Bad for data wrangling tasks (Numpy only accepts the same data type)
-
--   The `pandas` package was designed to deal with this limitation by providing data structures to deal with retangular heterogenous data type.
-
--   Main Data Structure: Series and DataFrames
-:::
-
-## Pandas Series
-
-A `pandas` series is a **one-dimensional** labeled array.
-
-::: incremental
--   Capable of holding different data types (e.g. integer, boolean, strings, etc.).
-
--   It holds two key components:
-
-    -   **index**: names in the axis
-    -   **values**: values in the series
-
--   
-
--   At it's core, a `Pandas` `Series` is nothing but a **column** in an excel sheet or an R `data.frame`.\
-:::
-
-## Pandas Series Constructor
-
-```{python}
-import pandas as pd
-s = pd.Series(["Argentina", "France", "Germany","Spain", "Italy", "Brazil"],
-                 index=[2022, 2018, 2014, 2010, 2006, 2002])
-print(s)
-```
-
-You can feed to the constructor:
-
--   list
-
--   dictionaries
-
--   scalar values
-
--   ndarray
-
-## Pandas DataFrames
-
-A pandas`DataFrame` is a two dimensional, relational data structure with the capacity to handle heterogeneous data types.
-
--   **relational**: each column value contained within a row entry corresponds with the same observation.
-
--   **two dimensional**: a matrix data structure
-
--   **heterogeneous**: different data types can be contained across each column series.
-
-## Constructor
-
-```{python}
-import pandas as pd
-# create a simple series
-series = pd.Series(["Argentina", "France", "Germany","Spain", "Italy", "Brazil"],
-                 index=[2022, 2018, 2014, 2010, 2006, 2002])
-# create the dataframe
-df = pd.DataFrame(series)
-print(df)
-```
-
-# Pandas DataFrames vs R Dataframes
-
-## Important concepts:
-
--   Indexing for Accessing Data Frames in Python
-    -   No implict indexing (**d\[1,2\]**) will throw you an error.
-    -   .iloc\[\] = use the numerical index position to call to locations in the DataFrame.
-    -   .loc\[\] = use the labels to call to the location in the data frame.
--   Creating Dataframes
-    -   row-wise: using a list of dictionaries
-    -   column-wise: using a dictionaries of lists
-
-# [Notebook for Pandas](/lecture_notes/week-05/_week_5a_intro_to_pandas.html)
-
 # In-class Exercise: your homework.
-
-# Survey: Start, Stop, Continue. [Answer here](https://forms.gle/q2Dd2iaUJpnky4ok6)

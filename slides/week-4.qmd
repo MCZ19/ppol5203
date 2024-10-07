@@ -25,22 +25,21 @@ format:
 
 ## Where we are ....
 
--  We started with the basics of being a data scientist:
-  
-   - Commandline
-   
-   - Reproducibility + Data Workflow
-   
-   - Version Control
-   
-- Now, we are going over the primitives of Python as your main DS tool: 
+-   We started with the basics of being a data scientist:
 
-  - Python as a OOP language
-  
-  - Native Data Types in Python
+    -   Commandline
+
+    -   Reproducibility + Data Workflow
+
+    -   Version Control
+
+-   Now, we are going over the primitives of Python as your main DS tool:
+
+    -   Python as a OOP language
+
+    -   Native data types in Python
 
 ## Plans for today
-
 
 -   Start slow with the in-class exercise from last week.
 
@@ -50,7 +49,7 @@ format:
 
     -   Functions
 
--  Intro do Python - Part II.
+-   Intro do Python - Part II.
 
     -   Importing librarys in Python
 
@@ -59,7 +58,6 @@ format:
     -   File Management
 
     -   Data as Nested Lists
-
 
 ## In Class-Exercise (Use the Lecture Notes to solve)
 
@@ -286,7 +284,7 @@ We will go over some concepts that are very general for any programming language
 
 -   **Iterations**: repeat, repeat, scale-up!
 
--   **User-Defined Functions**:  to make code more flexible, debuggable, and readable.
+-   **User-Defined Functions**: to make code more flexible, debuggable, and readable.
 :::
 
 ## Comparison Operators
@@ -612,7 +610,6 @@ You can build your own generators. That's a bit advanced, and you probably will 
 
 # [Notebook for Comprehension and Generators](/lecture_notes/week-04/_week_4_comprehension_generators.html)
 
-
 # Let's take another break (5min)
 
 ```{r}
@@ -625,7 +622,6 @@ countdown(minutes = 10, seconds = 0,
           margin = "10%",
           font_size = "6em")
 ```
-
 
 ## File Management in Python
 

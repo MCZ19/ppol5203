@@ -1,6 +1,6 @@
 ---
 title: "Week 05"
-subtitle: "Numpy and Intro to Pandas"
+subtitle: "From Nested lists to Dataframes: Numpy and Intro to Pandas"
 description: ""
 author: "Tiago Ventura"
 date: "10/08/2023"
