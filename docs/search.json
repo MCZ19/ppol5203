@@ -1886,8 +1886,8 @@
     "objectID": "slides/week-5.html#where-we-are-.",
     "href": "slides/week-5.html#where-we-are-.",
     "title": " PPOL 5203 - Data Science I: Foundations ",
-    "section": "",
-    "text": "We started with the basics of being a data scientist\nThen we moved over to the primitives of Python as your main DS tool:\n\nOOP, Native Data Types in Python\nPython Libraries, Loops, Functions, Generators, Comprehension….\n\nToday we start our journey working with tabular data - a favorite of social scientists!"
+    "section": "Where we are ….",
+    "text": "Where we are ….\n\nWe started with the basics of being a data scientist\nThen we moved over to the primitives of Python as your main DS tool:\n\nOOP, Native Data Types in Python\nPython Libraries, Loops, Functions, Generators, Comprehension….\n\nToday we start our journey working with tabular data - a favorite of social scientists!"
   },
   {
     "objectID": "slides/week-5.html#file-management-in-python",
