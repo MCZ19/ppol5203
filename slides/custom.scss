@@ -48,8 +48,13 @@ code.sourceCode {
 }
 
 code {
-  font-size: 1.2em;
+  font-size: 1.0em;
   /* or try font-size: xx-large; */
+}
+
+/* Increase font size of R output */
+code.output {
+  font-size: 4.2em;
 }
 
 .larger-font {

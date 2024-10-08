@@ -4,14 +4,14 @@
     "href": "schedule.html",
     "title": "Schedule",
     "section": "",
-    "text": "Week\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nWeek 01\n\n\nIntroduction, Installations, IDEs, Command line\n\n\nSeptember 10, 2023\n\n\n\n\nWeek 02\n\n\nVersion Control, Workflow and Reproducibility: Or a bit of Git & GitHub\n\n\nSeptember 17, 2023\n\n\n\n\nWeek 03\n\n\nIntro to Python - OOP, Data Types, Control Statements and Functions\n\n\nSeptember 24, 2023\n\n\n\n\nWeek 04\n\n\nIntro to Python II: Scaling up your code - Iteration, Comprehension and Functions \n\n\nOctober 01, 2023\n\n\n\n\nWeek 05\n\n\nNumpy and Intro to Pandas\n\n\nOctober 08, 2023\n\n\n\n\nWeek 06\n\n\nPandas II: Data Wrangling\n\n\nOctober 15, 2023\n\n\n\n\nWeek 07\n\n\nJoining, Tidying and Visualizing Data\n\n\nOctober 22, 2023\n\n\n\n\nWeek 08\n\n\nScraping\n\n\nOctober 29, 2023\n\n\n\n\nWeek 09\n\n\nApis + Selenium\n\n\nNovember 05, 2023\n\n\n\n\nWeek 10\n\n\nStatistical Learning\n\n\nNovember 12, 2023\n\n\n\n\nWeek 11\n\n\nText as Data I: Discovery and Topics\n\n\nNovember 19, 2023\n\n\n\n\nWeek 12\n\n\nText as Data II: Supervised Learning\n\n\nNovember 26, 2023\n\n\n\n\nWeek 13\n\n\nSQL\n\n\nDecember 03, 2023\n\n\n\n\nWeek 14\n\n\nPresentations of Final Projects\n\n\nDecember 10, 2023\n\n\n\n\n\n\nNo matching items"
+    "text": "Week\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nWeek 01\n\n\nIntroduction, Installations, IDEs, Command line\n\n\nSeptember 10, 2023\n\n\n\n\nWeek 02\n\n\nVersion Control, Workflow and Reproducibility: Or a bit of Git & GitHub\n\n\nSeptember 17, 2023\n\n\n\n\nWeek 03\n\n\nIntro to Python - OOP, Data Types, Control Statements and Functions\n\n\nSeptember 24, 2023\n\n\n\n\nWeek 04\n\n\nIntro to Python II: Scaling up your code - Iteration, Comprehension and Functions \n\n\nOctober 01, 2023\n\n\n\n\nWeek 05\n\n\nFrom Nested lists to Dataframes: Numpy and Intro to Pandas\n\n\nOctober 08, 2023\n\n\n\n\nWeek 06\n\n\nPandas II: Data Wrangling\n\n\nOctober 15, 2023\n\n\n\n\nWeek 07\n\n\nJoining, Tidying and Visualizing Data\n\n\nOctober 22, 2023\n\n\n\n\nWeek 08\n\n\nScraping\n\n\nOctober 29, 2023\n\n\n\n\nWeek 09\n\n\nApis + Selenium\n\n\nNovember 05, 2023\n\n\n\n\nWeek 10\n\n\nStatistical Learning\n\n\nNovember 12, 2023\n\n\n\n\nWeek 11\n\n\nText as Data I: Discovery and Topics\n\n\nNovember 19, 2023\n\n\n\n\nWeek 12\n\n\nText as Data II: Supervised Learning\n\n\nNovember 26, 2023\n\n\n\n\nWeek 13\n\n\nSQL\n\n\nDecember 03, 2023\n\n\n\n\nWeek 14\n\n\nPresentations of Final Projects\n\n\nDecember 10, 2023\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "schedule.html#weekly-schedule",
     "href": "schedule.html#weekly-schedule",
     "title": "Schedule",
     "section": "",
-    "text": "Week\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nWeek 01\n\n\nIntroduction, Installations, IDEs, Command line\n\n\nSeptember 10, 2023\n\n\n\n\nWeek 02\n\n\nVersion Control, Workflow and Reproducibility: Or a bit of Git & GitHub\n\n\nSeptember 17, 2023\n\n\n\n\nWeek 03\n\n\nIntro to Python - OOP, Data Types, Control Statements and Functions\n\n\nSeptember 24, 2023\n\n\n\n\nWeek 04\n\n\nIntro to Python II: Scaling up your code - Iteration, Comprehension and Functions \n\n\nOctober 01, 2023\n\n\n\n\nWeek 05\n\n\nNumpy and Intro to Pandas\n\n\nOctober 08, 2023\n\n\n\n\nWeek 06\n\n\nPandas II: Data Wrangling\n\n\nOctober 15, 2023\n\n\n\n\nWeek 07\n\n\nJoining, Tidying and Visualizing Data\n\n\nOctober 22, 2023\n\n\n\n\nWeek 08\n\n\nScraping\n\n\nOctober 29, 2023\n\n\n\n\nWeek 09\n\n\nApis + Selenium\n\n\nNovember 05, 2023\n\n\n\n\nWeek 10\n\n\nStatistical Learning\n\n\nNovember 12, 2023\n\n\n\n\nWeek 11\n\n\nText as Data I: Discovery and Topics\n\n\nNovember 19, 2023\n\n\n\n\nWeek 12\n\n\nText as Data II: Supervised Learning\n\n\nNovember 26, 2023\n\n\n\n\nWeek 13\n\n\nSQL\n\n\nDecember 03, 2023\n\n\n\n\nWeek 14\n\n\nPresentations of Final Projects\n\n\nDecember 10, 2023\n\n\n\n\n\n\nNo matching items"
+    "text": "Week\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nWeek 01\n\n\nIntroduction, Installations, IDEs, Command line\n\n\nSeptember 10, 2023\n\n\n\n\nWeek 02\n\n\nVersion Control, Workflow and Reproducibility: Or a bit of Git & GitHub\n\n\nSeptember 17, 2023\n\n\n\n\nWeek 03\n\n\nIntro to Python - OOP, Data Types, Control Statements and Functions\n\n\nSeptember 24, 2023\n\n\n\n\nWeek 04\n\n\nIntro to Python II: Scaling up your code - Iteration, Comprehension and Functions \n\n\nOctober 01, 2023\n\n\n\n\nWeek 05\n\n\nFrom Nested lists to Dataframes: Numpy and Intro to Pandas\n\n\nOctober 08, 2023\n\n\n\n\nWeek 06\n\n\nPandas II: Data Wrangling\n\n\nOctober 15, 2023\n\n\n\n\nWeek 07\n\n\nJoining, Tidying and Visualizing Data\n\n\nOctober 22, 2023\n\n\n\n\nWeek 08\n\n\nScraping\n\n\nOctober 29, 2023\n\n\n\n\nWeek 09\n\n\nApis + Selenium\n\n\nNovember 05, 2023\n\n\n\n\nWeek 10\n\n\nStatistical Learning\n\n\nNovember 12, 2023\n\n\n\n\nWeek 11\n\n\nText as Data I: Discovery and Topics\n\n\nNovember 19, 2023\n\n\n\n\nWeek 12\n\n\nText as Data II: Supervised Learning\n\n\nNovember 26, 2023\n\n\n\n\nWeek 13\n\n\nSQL\n\n\nDecember 03, 2023\n\n\n\n\nWeek 14\n\n\nPresentations of Final Projects\n\n\nDecember 10, 2023\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
@@ -452,7 +452,7 @@
     "href": "syllabus.html#weekly-schedule",
     "title": "Syllabus: PPOL 5203 - Data Science I: Foundations",
     "section": "Weekly Schedule",
-    "text": "Weekly Schedule\n\n\n\n\n\n\nWeek\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nWeek 01\n\n\nIntroduction, Installations, IDEs, Command line\n\n\nSeptember 10, 2023\n\n\n\n\nWeek 02\n\n\nVersion Control, Workflow and Reproducibility: Or a bit of Git & GitHub\n\n\nSeptember 17, 2023\n\n\n\n\nWeek 03\n\n\nIntro to Python - OOP, Data Types, Control Statements and Functions\n\n\nSeptember 24, 2023\n\n\n\n\nWeek 04\n\n\nIntro to Python II: Scaling up your code - Iteration, Comprehension and Functions \n\n\nOctober 01, 2023\n\n\n\n\nWeek 05\n\n\nNumpy and Intro to Pandas\n\n\nOctober 08, 2023\n\n\n\n\nWeek 06\n\n\nPandas II: Data Wrangling\n\n\nOctober 15, 2023\n\n\n\n\nWeek 07\n\n\nJoining, Tidying and Visualizing Data\n\n\nOctober 22, 2023\n\n\n\n\nWeek 08\n\n\nScraping\n\n\nOctober 29, 2023\n\n\n\n\nWeek 09\n\n\nApis + Selenium\n\n\nNovember 05, 2023\n\n\n\n\nWeek 10\n\n\nStatistical Learning\n\n\nNovember 12, 2023\n\n\n\n\nWeek 11\n\n\nText as Data I: Discovery and Topics\n\n\nNovember 19, 2023\n\n\n\n\nWeek 12\n\n\nText as Data II: Supervised Learning\n\n\nNovember 26, 2023\n\n\n\n\nWeek 13\n\n\nSQL\n\n\nDecember 03, 2023\n\n\n\n\nWeek 14\n\n\nPresentations of Final Projects\n\n\nDecember 10, 2023\n\n\n\n\n\n\nNo matching items"
+    "text": "Weekly Schedule\n\n\n\n\n\n\nWeek\n\n\nTopic\n\n\nDate\n\n\n\n\n\n\nWeek 01\n\n\nIntroduction, Installations, IDEs, Command line\n\n\nSeptember 10, 2023\n\n\n\n\nWeek 02\n\n\nVersion Control, Workflow and Reproducibility: Or a bit of Git & GitHub\n\n\nSeptember 17, 2023\n\n\n\n\nWeek 03\n\n\nIntro to Python - OOP, Data Types, Control Statements and Functions\n\n\nSeptember 24, 2023\n\n\n\n\nWeek 04\n\n\nIntro to Python II: Scaling up your code - Iteration, Comprehension and Functions \n\n\nOctober 01, 2023\n\n\n\n\nWeek 05\n\n\nFrom Nested lists to Dataframes: Numpy and Intro to Pandas\n\n\nOctober 08, 2023\n\n\n\n\nWeek 06\n\n\nPandas II: Data Wrangling\n\n\nOctober 15, 2023\n\n\n\n\nWeek 07\n\n\nJoining, Tidying and Visualizing Data\n\n\nOctober 22, 2023\n\n\n\n\nWeek 08\n\n\nScraping\n\n\nOctober 29, 2023\n\n\n\n\nWeek 09\n\n\nApis + Selenium\n\n\nNovember 05, 2023\n\n\n\n\nWeek 10\n\n\nStatistical Learning\n\n\nNovember 12, 2023\n\n\n\n\nWeek 11\n\n\nText as Data I: Discovery and Topics\n\n\nNovember 19, 2023\n\n\n\n\nWeek 12\n\n\nText as Data II: Supervised Learning\n\n\nNovember 26, 2023\n\n\n\n\nWeek 13\n\n\nSQL\n\n\nDecember 03, 2023\n\n\n\n\nWeek 14\n\n\nPresentations of Final Projects\n\n\nDecember 10, 2023\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "syllabus.html#course-requirements",
@@ -1642,7 +1642,7 @@
     "href": "slides/week-4.html#comprehensions",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Comprehensions",
-    "text": "Comprehensions\n\nProvide a readable and efficient way to construct new sequences (such as lists, sets, dictionaries, etc.) based on a sequence of elements\n\n\nCompared to a loop\n\na_list =[0, 1, 2, 3, 4, \"hey\"]\nresult = []\nfor e in a_list:\n    if type(e) == int:  # use int for Python 3\n        result.append(e**2)\nresult\n\n[0, 1, 4, 9, 16]"
+    "text": "Comprehensions\n\nProvide a readable and efficient way to construct new sequences (such as lists, sets, dictionaries, etc.) based on a sequence of elements\n\n\n\nCompared to a loop\n\na_list =[0, 1, 2, 3, 4, \"hey\"]\nresult = []\nfor e in a_list:\n    if type(e) == int:  # use int for Python 3\n        result.append(e**2)\nresult\n\n[0, 1, 4, 9, 16]"
   },
   {
     "objectID": "slides/week-4.html#why-it-matters",
@@ -1670,7 +1670,7 @@
     "href": "slides/week-4.html#file-management-in-python",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "File Management in Python",
-    "text": "File Management in Python\nMain question: how do we read files from our computer in python?\n\nconnection management: open(), close()\nReading/writing files\nusing with to manage connections.\nReading .csvs"
+    "text": "File Management in Python\n\nMain question: how do we read files from our computer in python?\n\nconnection management: open(), close()\nReading/writing files\nusing with to manage connections.\nReading .csvs"
   },
   {
     "objectID": "slides/week-4.html#tldr",
@@ -1712,7 +1712,7 @@
     "href": "slides/week-4.html#why-should-you-learn-holds-python-together",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Why should you learn? Holds Python together!",
-    "text": "Why should you learn? Holds Python together!\n\n\n\n\nData science I: Foundations"
+    "text": "Why should you learn? Holds Python together!"
   },
   {
     "objectID": "slides/week-4.html#efficiency",
@@ -1733,7 +1733,7 @@
     "href": "slides/week-4.html",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "",
-    "text": "Start slow with the in-class exercise from last week.\nFinish Part I of Intro to Python.\n\nControl statements (if, for and while loops)\nFunctions\n\nIntro do Python - Part II.\n\nImporting librarys in Python\nList Comprehension + Generators\nFile Management\nDatas as Nested Lists"
+    "text": "We started with the basics of being a data scientist:\n\nCommandline\nReproducibility + Data Workflow\nVersion Control\n\nNow, we are going over the primitives of Python as your main DS tool:\n\nPython as a OOP language\nNative data types in Python"
   },
   {
     "objectID": "slides/week-4.html#or-motivating-numpy",
@@ -1774,22 +1774,22 @@
     "objectID": "slides/week-4.html#where-we-are-.",
     "href": "slides/week-4.html#where-we-are-.",
     "title": " PPOL 5203 - Data Science I: Foundations ",
-    "section": "Where we are ….",
-    "text": "Where we are ….\n\nWe started with the basics of being a data scientist:\n\nCommandline\nReproducibility + Data Workflow\nVersion Control\n\nNow, we are going over the primitives of Python as your main DS tool:\n\nPython as a OOP language\nNative Data Types in Python"
+    "section": "",
+    "text": "We started with the basics of being a data scientist:\n\nCommandline\nReproducibility + Data Workflow\nVersion Control\n\nNow, we are going over the primitives of Python as your main DS tool:\n\nPython as a OOP language\nNative data types in Python"
   },
   {
     "objectID": "slides/week-5.html#plans-for-today",
     "href": "slides/week-5.html#plans-for-today",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Plans for Today",
-    "text": "Plans for Today\n\nFile Management in Python\nData as Nested Lists: Motivating Numpy\nNumpy\nIntro do Pandas\n\nSeries\nAcesssing Pandas elements\nCreating DataFrames\n\nDiscuss your final project."
+    "text": "Plans for Today\n\nFile Management in Python (Most pythonic way to load data in Python)\nData as Nested Lists: Motivating Numpy\nNumpy\nIntro do Pandas\n\nSeries\nAcesssing Pandas elements\nCreating DataFrames\n\nDiscuss your final project."
   },
   {
     "objectID": "slides/week-5.html#final-project",
     "href": "slides/week-5.html#final-project",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Final Project",
-    "text": "Final Project\n\n\nWhat is it? A data science project, applying concepts learned throughout the course.\nInvolves collecting data, cleaning and analyzing it, and presenting your findings\nThe project is composed of three parts:\n\na 2 page project proposal: (which should be discussed and approved by me)\nan in-class presentation,\nA 10-page project report."
+    "text": "Final Project\n\nWhat is it? A data science project, applying concepts learned throughout the course.\nInvolves collecting data, cleaning and analyzing it, and presenting your findings\nThe project is composed of three parts:\n\na 2 page project proposal: (which should be discussed and approved by me)\nan in-class presentation,\nA 10-page project report."
   },
   {
     "objectID": "slides/week-5.html#deadlines-and-logistics",
@@ -1803,7 +1803,7 @@
     "href": "slides/week-5.html#motivating-numpy",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Motivating Numpy",
-    "text": "Motivating Numpy\nSo far, all our datatypes we saw are geared more or less towards unidimensional data.\n\nstring: sequence of words\nlist: sequence of heterogeneous elements\ndictionaries: key-value combinations."
+    "text": "Motivating Numpy\nSo far, all the data structures we saw are geared towards unidimensional data.\n\nstring: sequence of words\nlist: sequence of heterogeneous elements\ndictionaries: key-value combinations."
   },
   {
     "objectID": "slides/week-5.html#nested-lists",
@@ -1817,7 +1817,7 @@
     "href": "slides/week-5.html#here-comes-numpy",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Here comes numpy …",
-    "text": "Here comes numpy …\n\n\n\n\n\n\n\n\nsource: Python Programming for Data Science"
+    "text": "Here comes numpy …\n\nPython has no native data structure to work with tabular data (!!!!).\nNumpy:\n\nIntroduces arrays (numerical matrices) to the Python world.\nOptimizes for mathematical operations with matrices.\n\n\n\n\n\n\n\n\n\nsource: Python Programming for Data Science"
   },
   {
     "objectID": "slides/week-5.html#why-should-you-learn-holds-python-together",
@@ -1845,21 +1845,21 @@
     "href": "slides/week-5.html#why-pandas",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Why Pandas?",
-    "text": "Why Pandas?\n\n\nnumpy offers a great flexibility and efficiency when dealing with data matrices.\nReally efficient for mathematical operations.\nPretty bad for data wrangling tasks ~&gt; numpy only accepts the same data type\nThe pandas package was designed to solve this limitation by providing data structures to deal with rectangular heterogeneous data type.\nMain Data Structures: Series and DataFrames"
+    "text": "Why Pandas?\n\n\nNumpy offers a great flexibility and efficiency when dealing with data matrices.\nReally efficient for mathematical operations.\nPretty bad for data wrangling tasks ~&gt; numpy only accepts the same data type\nThe pandas package was designed to solve this limitation by providing data structures to deal with rectangular & heterogeneous data types.\nMain Data Structures: pd.series() and pd.DataFrames()"
   },
   {
     "objectID": "slides/week-5.html#pandas-series",
     "href": "slides/week-5.html#pandas-series",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Pandas Series",
-    "text": "Pandas Series\nA pandas series is a one-dimensional labeled array.\n\n\nCapable of holding different data types (e.g. integer, boolean, strings, etc.).\nIt holds two key components:\n\nindex: names in the axis\nvalues: values in the series\n\nA Pandas:Series is nothing but a column in an excel sheet or an R data.frame."
+    "text": "Pandas Series\nA pandas series is a one-dimensional labeled array.\n\n\nCapable of holding different data types (e.g. integer, boolean, strings, etc.).\nIt holds two key components:\n\nindex: names in the axis\nvalues: values in the series\n\nA pandas series is nothing but a column in an excel sheet or an R data.frame (with an index)"
   },
   {
     "objectID": "slides/week-5.html#pandas-series-constructor",
     "href": "slides/week-5.html#pandas-series-constructor",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Pandas Series Constructor",
-    "text": "Pandas Series Constructor\n\nimport pandas as pd\ns = pd.Series([\"Argentina\", \"France\", \"Germany\",\"Spain\", \"Italy\", \"Brazil\"],\n                 index=[2022, 2018, 2014, 2010, 2006, 2002])\nprint(s)\n\n2022    Argentina\n2018       France\n2014      Germany\n2010        Spain\n2006        Italy\n2002       Brazil\ndtype: object\n\n\nYou can feed to the constructor:\n\nlist\ndictionaries\nscalar values\nndarray"
+    "text": "Pandas Series Constructor\n\nimport pandas as pd\n\ns = pd.Series([\"Argentina\", \"France\", \"Germany\",\"Spain\", \"Italy\", \"Brazil\"],\n                 index=[2022, 2018, 2014, 2010, 2006, 2002])\nprint(s)\n\n2022    Argentina\n2018       France\n2014      Germany\n2010        Spain\n2006        Italy\n2002       Brazil\ndtype: object\n\n\n\nYou can feed to the constructor:\n\nlist\ndictionaries\nscalar values\nndarray"
   },
   {
     "objectID": "slides/week-5.html#pandas-dataframes",
@@ -1873,7 +1873,7 @@
     "href": "slides/week-5.html#constructor",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Constructor",
-    "text": "Constructor\n\nimport pandas as pd\n# create a simple series\nseries = pd.Series([\"Argentina\", \"France\", \"Germany\",\"Spain\", \"Italy\", \"Brazil\"],\n                 index=[2022, 2018, 2014, 2010, 2006, 2002])\n# create the dataframe\ndf = pd.DataFrame(series)\nprint(df)\n\n              0\n2022  Argentina\n2018     France\n2014    Germany\n2010      Spain\n2006      Italy\n2002     Brazil"
+    "text": "Constructor\n\nimport pandas as pd\n# create a simple series\nseries = pd.Series([\"Argentina\", \"France\", \"Germany\",\"Spain\", \"Italy\", \"Brazil\"],\n                 index=[2022, 2018, 2014, 2010, 2006, 2002])\n# create the dataframe\ndf = pd.DataFrame(series)\nprint(df)\n\n              0\n2022  Argentina\n2018     France\n2014    Germany\n2010      Spain\n2006      Italy\n2002     Brazil\n\n\n\nWe will discuss:\n\nusing lists of dictionaries to build dataframes row-wise\nusing dictionary of lists dataframes column-wise"
   },
   {
     "objectID": "slides/week-5.html#important-concepts",
@@ -1886,29 +1886,29 @@
     "objectID": "slides/week-5.html#where-we-are-.",
     "href": "slides/week-5.html#where-we-are-.",
     "title": " PPOL 5203 - Data Science I: Foundations ",
-    "section": "Where we are ….",
-    "text": "Where we are ….\n\nWe started with the basics of being a data scientist:\nThen we moved over the primitives of Python as your main DS tool:\n\nPython as a OOP language, Native Data Types in Python\nLoops, functions, generators, comprehension….\n\nToday we start our journey working with tabular data - a favorite of social scientists!"
+    "section": "",
+    "text": "We started with the basics of being a data scientist\nThen we moved over to the primitives of Python as your main DS tool:\n\nOOP, Native Data Types in Python\nPython Libraries, Loops, Functions, Generators, Comprehension….\n\nToday we start our journey working with tabular data - a favorite of social scientists!"
   },
   {
     "objectID": "slides/week-5.html#file-management-in-python",
     "href": "slides/week-5.html#file-management-in-python",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "File Management in Python",
-    "text": "File Management in Python\nMain question: how do we read files from our computer in python?\n\nConnection management:open(), close()\nReading/writing files\nUsing with() to manage connections."
+    "text": "File Management in Python\nMain question: how do we read files from our computer into our Python Environment?\n\nConnection management:\n\nopen(), iterate over, and close()\n\nReading/writing files\nUsing with() to manage connections."
   },
   {
     "objectID": "slides/week-5.html#tldr",
     "href": "slides/week-5.html#tldr",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "TLDR:",
-    "text": "TLDR:\n\nMost often we will use high-level functions from Pandas to load data into Python objects.\nWhy are we learning these tools then?\n\nVery pythonic\nNo direct equivalent in R or Stata\nImportant when working non-tabular data - text, json, images, etc..\n\nReading: Check Section 3.3 of Python for Data Analysis to learn more about the topics covered in the notebook.\nNotebook for File Management"
+    "text": "TLDR:\n\nMost often we will use high-level functions from Pandas to load data into Python objects.\nWhy are we learning these tools then?\n\nVery pythonic ~ see in other people’s code\nNo direct equivalent in R or Stata\nImportant when working non-tabular data - text, json, images, etc..\n\nReading: Check Section 3.3 of Python for Data Analysis to learn more about the topics covered in the notebook.\nNotebook for File Management"
   },
   {
     "objectID": "slides/week-5.html#summary",
     "href": "slides/week-5.html#summary",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Summary",
-    "text": "Summary\n\nopen(): opens a connection with files on our system.\n\nopen() returns a special item type *_io.TextIOWrapper*\nThis item is a iterator. We need to go through to convert inputs to a objectin python.\n\nclose(): closes the connection.\nwrite(): writes files on your system. Also line by line.\nwith(): wrapper for open and close that allows alias."
+    "text": "Summary\n\nopen(): opens a connection with files on our system.\n\nopen() returns a special item type *_io.TextIOWrapper*\nThis item is a iterator. We need to go through to convert inputs to a object in python.\n\nclose(): closes the connection.\nwrite(): writes files on your system. Also line by line, as in open()\nwith(): wrapper for open and close that allows alias."
   },
   {
     "objectID": "slides/week-5.html#tabular-data",
@@ -1937,5 +1937,54 @@
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Example:",
     "text": "Example:\n\n# Load libraries\nimport csv # convert a .csv to a nested list\nimport os  # library for managing our operating system. \n\n# Read in the gapminder data \nwith open(\"gapminder.csv\", mode=\"rt\") as file:\n    data = [row for row in csv.reader(file)]"
+  },
+  {
+    "objectID": "slides/week-5.html#summary-of-file-management",
+    "href": "slides/week-5.html#summary-of-file-management",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Summary of file management",
+    "text": "Summary of file management\n\nopen(): opens a connection with files on our system.\n\nopen() returns a special item type *_io.TextIOWrapper*\nThis item is a iterator. We need to go through to convert inputs to a object in python.\n\nclose(): closes the connection.\nwrite(): writes files on your system. Also line by line, as in open()\nwith(): wrapper for open and close that allows alias."
+  },
+  {
+    "objectID": "slides/week-5.html#file-management-how-do-we-read-files-from-our-computer-into-our-python-environment",
+    "href": "slides/week-5.html#file-management-how-do-we-read-files-from-our-computer-into-our-python-environment",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "File Management: How do we read files from our computer into our Python Environment?",
+    "text": "File Management: How do we read files from our computer into our Python Environment?\n\nConnection management functions:\n\nopen(), iterate over, and close()\n\nReading/writing files\nUsing with() to manage connections."
+  },
+  {
+    "objectID": "slides/week-5.html#quizz",
+    "href": "slides/week-5.html#quizz",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Quizz",
+    "text": "Quizz\nLook at this tabular data organized as Nested List. What is “wrong” here?\n\n# let's see the data\nprint(data)\n\n[['country', 'lifeExp', 'gdpPercap'], ['Guinea_Bissau', '39.21', '652.157'], ['Bolivia', '52.505', '2961.229'], ['Austria', '73.103', '20411.916'], ['Malawi', '43.352', '575.447'], ['Finland', '72.992', '17473.723'], ['North_Korea', '63.607', '2591.853'], ['Malaysia', '64.28', '5406.038'], ['Hungary', '69.393', '10888.176'], ['Congo', '52.502', '3312.788'], ['Morocco', '57.609', '2447.909'], ['Germany', '73.444', '20556.684'], ['Ecuador', '62.817', '5733.625'], ['Kuwait', '68.922', '65332.91'], ['New_Zealand', '73.989', '17262.623'], ['Mauritania', '52.302', '1356.671'], ['Uganda', '47.619', '810.384'], ['Equatorial Guinea', '42.96', '2469.167'], ['Croatia', '70.056', '9331.712'], ['Indonesia', '54.336', '1741.365'], ['Canada', '74.903', '22410.746'], ['Comoros', '52.382', '1314.38'], ['Montenegro', '70.299', '7208.065'], ['Slovenia', '71.601', '14074.582'], ['Trinidad and Tobago', '66.828', '7866.872'], ['Poland', '70.177', '8416.554'], ['Lesotho', '50.007', '780.553'], ['Italy', '74.014', '16245.209'], ['Tunisia', '60.721', '3477.21'], ['Kenya', '52.681', '1200.416'], ['Gambia', '44.401', '680.133'], ['Bosnia and Herzegovina', '67.708', '3484.779'], ['Libya', '59.304', '12013.579'], ['Greece', '73.733', '13969.037'], ['Ghana', '52.341', '1044.582'], ['Peru', '58.859', '5613.844'], ['Turkey', '59.696', '4469.453'], ['Reunion', '66.644', '4898.398'], ['Sri_Lanka', '66.526', '1854.731'], ['Cambodia', '47.903', '675.368'], ['Bulgaria', '69.744', '6384.055'], ['Lebanon', '65.866', '7269.216'], ['Togo', '51.499', '1153.82'], ['Yemen', '46.78', '1569.275'], ['Jamaica', '68.749', '6197.645'], ['Swaziland', '49.002', '3163.352'], ['Chile', '67.431', '6703.289'], ['Israel', '73.646', '14160.936'], ['Algeria', '59.03', '4426.026'], ['Czech_Republic', '71.511', '13920.011'], ['Djibouti', '46.381', '2697.833'], ['Singapore', '71.22', '17425.382'], ['Nigeria', '43.581', '1488.309'], ['Bangladesh', '49.834', '817.559'], ['DRC', '44.544', '648.343'], ['Cuba', '71.045', '6283.259'], ['Namibia', '53.491', '3675.582'], ['Sudan', '48.401', '1835.01'], ['Syria', '61.346', '3009.288'], ['Rwanda', '41.482', '675.669'], ['Puerto Rico', '72.739', '10863.164'], ['Albania', '68.433', '3255.367'], ['Vietnam', '57.48', '1017.713'], ['Mozambique', '40.38', '542.278'], ['Mali', '43.413', '673.093'], ['Saudi Arabia', '58.679', '20261.744'], ['Liberia', '42.476', '604.814'], ['Madagascar', '47.771', '1335.595'], ['Chad', '46.774', '1165.454'], ['Gabon', '51.221', '11529.865'], ['Mauritius', '64.953', '4768.942'], ['Zambia', '45.996', '1358.199'], ['Romania', '68.291', '7300.17'], ['Dominican Republic', '61.554', '2844.856'], ['Egypt', '56.243', '3074.031'], ['Senegal', '50.626', '1533.122'], ['Oman', '58.443', '12138.562'], ['Zimbabwe', '52.663', '635.858'], ['Botswana', '54.598', '5031.504'], [\"Cote d'Ivoire\", '48.436', '1912.825'], ['Afghanistan', '37.479', '802.675'], ['Mexico', '65.409', '7724.113'], ['Sao Tome and Principe', '57.896', '1382.782'], ['Myanmar', '53.322', '439.333'], ['Switzerland', '75.565', '27074.334'], ['United Kingdom', '73.923', '19380.473'], ['Japan', '74.827', '17750.87'], ['El Salvador', '59.633', '4431.847'], ['India', '53.166', '1057.296'], ['Thailand', '62.2', '3045.966'], ['Bahrain', '65.606', '18077.664'], ['Australia', '74.663', '19980.596'], ['Mongolia', '55.89', '1692.805'], ['Nepal', '48.986', '782.729'], ['Iran', '58.637', '7376.583'], ['Honduras', '57.921', '2834.413'], ['Guinea', '43.24', '776.067'], ['Venezuela', '66.581', '10088.516'], ['Iceland', '76.511', '20531.422'], ['Somalia', '40.989', '1140.793'], ['Burundi', '44.817', '471.663'], ['Panama', '67.802', '5754.827'], ['Costa Rica', '70.181', '5448.611'], ['Philippines', '60.967', '2174.771'], ['Denmark', '74.37', '21671.825'], ['Benin', '48.78', '1155.395'], ['Eritrea', '45.999', '541.003'], ['Belgium', '73.642', '19900.758'], ['West Bank and Gaza', '60.329', '3759.997'], ['South_Korea', '65.001', '8217.318'], ['Ethiopia', '44.476', '509.115'], ['Guatemala', '56.729', '4015.403'], ['Colombia', '63.898', '4195.343'], ['Cameroon', '48.129', '1774.634'], ['United States', '73.478', '26261.151'], ['Pakistan', '54.882', '1439.271'], ['China', '61.785', '1488.308'], ['Sierra Leone', '36.769', '1072.819'], ['Slovak Republic', '70.696', '10415.531'], ['Tanzania', '47.912', '849.281'], ['Paraguay', '66.809', '3239.607'], ['Argentina', '69.06', '8955.554'], ['Spain', '74.203', '14029.826'], ['Netherlands', '75.648', '21748.852'], ['France', '74.349', '18833.57'], ['Niger', '44.559', '781.077'], ['Central African Republic', '43.867', '958.785'], ['Serbia', '68.551', '9305.049'], ['Iraq', '56.582', '7811.809'], ['Uruguay', '70.782', '7100.133'], ['Angola', '37.883', '3607.101'], ['Sweden', '76.177', '19943.126'], ['Nicaragua', '58.349', '3424.656'], ['South Africa', '53.993', '7247.431'], ['Burkina Faso', '44.694', '843.991'], ['Haiti', '50.165', '1620.739'], ['Norway', '75.843', '26747.307'], ['Taiwan', '70.337', '10224.807'], ['Portugal', '70.42', '11354.092'], ['Jordan', '59.786', '3128.121'], ['Ireland', '73.017', '15758.606'], ['Brazil', '62.239', '5829.317']]"
+  },
+  {
+    "objectID": "slides/week-5.html#why-should-you-learn-numpy-holds-python-together",
+    "href": "slides/week-5.html#why-should-you-learn-numpy-holds-python-together",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Why should you learn Numpy? Holds Python together!",
+    "text": "Why should you learn Numpy? Holds Python together!"
+  },
+  {
+    "objectID": "slides/week-5.html#motivation",
+    "href": "slides/week-5.html#motivation",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Motivation",
+    "text": "Motivation\n\n\nNumpy offers a great flexibility and efficiency when dealing with data matrices.\nReally efficient for mathematical operations.\nPretty bad for data wrangling tasks ~&gt; numpy only accepts the same data type\nThe pandas package was designed to solve this limitation by providing data structures to deal with rectangular & heterogeneous data types.\nMain Data Structures: pd.series() and pd.DataFrames()"
+  },
+  {
+    "objectID": "lecture_notes/week-05/Untitled.html",
+    "href": "lecture_notes/week-05/Untitled.html",
+    "title": "PPOL 5203 - Data Science I: Foundations",
+    "section": "",
+    "text": "import numpy as np\ndef my_function(arr):\n    return arr ** 2 + 2 * arr + 1  # Element-wise operations\n\narr = np.array([1, 2, 3, 4])\nprint(my_function(arr)) \n\n[ 4  9 16 25]\n\n\n\ndef scalar_function(x):\n    return x ** 2 + 2 * x + 1\n\n# Applying scalar_function to a NumPy array directly will not work:\narr = np.array([1, 2, 3, 4])\n# This would raise an error because scalar_function is not vectorized\nprint(scalar_function(arr))\n\n[ 4  9 16 25]"
+  },
+  {
+    "objectID": "slides/week-5.html",
+    "href": "slides/week-5.html",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "",
+    "text": "We started with the basics of being a data scientist\nThen we moved over to the primitives of Python as your main DS tool:\n\nOOP, Native Data Types in Python\nPython Libraries, Loops, Functions, Generators, Comprehension….\n\nToday we start our journey working with tabular data - a favorite of social scientists!"
   }
 ]
