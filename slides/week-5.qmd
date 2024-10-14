@@ -2,7 +2,7 @@
 title: "<span style = 'font-size: 100%;'> PPOL 5203 - Data Science I: Foundations </span>"
 subtitle: "<span style = 'font-size: 100%;'> Week 4: From Nested Lists to Dataframes - Numpy and Intro do Pandas </span>"
 author: "Professor: Tiago Ventura"
-date: "09/19/2023"
+date: "10/08/2024"
 execute: 
   echo: true
   error: true
@@ -22,6 +22,7 @@ format:
     footer: "Data science I: Foundations"
     theme: [simple, custom.scss]
 ---
+
 ## Where we are ....
 
 -   We started with the basics of being a data scientist
@@ -29,10 +30,10 @@ format:
 -   Then we moved over to the primitives of Python as your main DS tool:
 
     -   OOP, Native Data Types in Python
-    
+
     -   Python Libraries, Loops, Functions, Generators, Comprehension....
-    
-- Today we start our journey working with tabular data - a favorite of social scientists!    
+
+-   Today we start our journey working with tabular data - a favorite of social scientists!
 
 ## Plans for Today
 
@@ -49,16 +50,16 @@ format:
     -   Acesssing Pandas elements
 
     -   Creating DataFrames
-    
+
 -   Discuss your final project.
-    
+
 ## File Management: How do we read files from our computer into our Python Environment?
 
 -   Connection management functions:
 
-     - `open()`, iterate over, and `close()`
+    -   `open()`, iterate over, and `close()`
 
--   Reading/writing files 
+-   Reading/writing files
 
 -   Using `with()` to manage connections.
 
@@ -74,7 +75,6 @@ format:
 -   **write()**: writes files on your system. Also line by line, as in **open()**
 
 -   **with()**: wrapper for open and close that allows alias.
-
 
 ## Example:
 
@@ -96,7 +96,7 @@ with open("gapminder.csv", mode="rt") as file:
 
 -   Why are we learning these tools then?
 
-    -   Very pythonic ~ see in other people's code
+    -   Very pythonic \~ see in other people's code
 
     -   No direct equivalent in R or Stata
 
@@ -104,7 +104,7 @@ with open("gapminder.csv", mode="rt") as file:
 
 -   **Reading:** Check Section 3.3 of [Python for Data Analysis](https://wesmckinney.com/book/python-builtin.html) to learn more about the topics covered in the notebook.
 
-- [Notebook for File Management](/lecture_notes/week-04/_week_4_file_management.html)
+-   [Notebook for File Management](/lecture_notes/week-04/_week_4_file_management.html)
 
 # From Nested Data to Dataframes: Motivating Numpy
 
@@ -121,7 +121,6 @@ So far, all the data structures we saw are geared towards unidimensional data.
 ## Tabular data
 
 ![](week4_figs/rectangular_data.png){fig-align="center"}
-
 
 ## Nested Lists
 
@@ -144,15 +143,14 @@ print(data)
 
 ```
 
-
 ## Here comes numpy ...
 
-- Python has **no native data structure** to work with tabular data (!!!!). 
+-   Python has **no native data structure** to work with tabular data (!!!!).
 
-- **Numpy**: 
+-   **Numpy**:
 
-   - Introduces arrays (numerical matrices) to the Python world. 
-   - Optimizes for mathematical operations with matrices.
+    -   Introduces arrays (numerical matrices) to the Python world.
+    -   Optimizes for mathematical operations with matrices.
 
 ![](week4_figs/numpy_arrays.png){fig-align="center"}
 
@@ -186,10 +184,9 @@ source: [Python Programming for Data Science](https://www.tomasbeuzen.com/python
 
 ## Coding:
 
-- [Data as Nested lists](/lecture_notes/week-04/_week_4_nested_lists.html) 
+-   [Data as Nested lists](/lecture_notes/week-04/_week_4_nested_lists.html)
 
-- [Notebook for Numpy](/lecture_notes/week-04/_week_4_numpy.html)
-
+-   [Notebook for Numpy](/lecture_notes/week-04/_week_4_numpy.html)
 
 # Pandas
 
@@ -200,7 +197,7 @@ source: [Python Programming for Data Science](https://www.tomasbeuzen.com/python
 
 -   Really efficient for mathematical operations.
 
--   Pretty bad for data wrangling tasks ~> **numpy** only accepts the same data type
+-   Pretty bad for data wrangling tasks \~\> **numpy** only accepts the same data type
 
 -   The `pandas` package was designed to solve this limitation by providing data structures to deal with rectangular & heterogeneous data types.
 
@@ -220,7 +217,6 @@ A **pandas series** is a **one-dimensional** labeled array.
     -   **values**: values in the series
 
 -   A **pandas series** is nothing but a **column** in an excel sheet or an R `data.frame` (with an index)
-
 :::
 
 ## Pandas Series Constructor
@@ -233,15 +229,15 @@ s = pd.Series(["Argentina", "France", "Germany","Spain", "Italy", "Brazil"],
 print(s)
 ```
 
-- You can feed to the constructor:
+-   You can feed to the constructor:
 
-   -   list
+    -   list
 
-   -   dictionaries
+    -   dictionaries
 
-   -   scalar values
+    -   scalar values
 
-   -   ndarray
+    -   ndarray
 
 ## Pandas DataFrames
 
@@ -265,11 +261,11 @@ df = pd.DataFrame(series)
 print(df)
 ```
 
-- We will discuss: 
+-   We will discuss:
 
-  - using **lists of dictionaries** to build dataframes **row-wise**
-  
-  - using **dictionary of lists** dataframes **column-wise**
+    -   using **lists of dictionaries** to build dataframes **row-wise**
+
+    -   using **dictionary of lists** dataframes **column-wise**
 
 # Pandas DataFrames vs R Dataframes
 
@@ -278,11 +274,10 @@ print(df)
 -   Creating Dataframes
     -   row-wise: using a list of dictionaries
     -   column-wise: using a dictionaries of lists
-
 -   Indexing for accessing Data Frames in Python
     -   No implicit indexing (**d\[1,2\]**) will throw you an error.
     -   .iloc\[\] = use the numerical index position to call to locations in the DataFrame.
-    -   .loc\[\] = use the labels to call to the location in the data frame.    
+    -   .loc\[\] = use the labels to call to the location in the data frame.
 
 # [Notebook for Pandas](/lecture_notes/week-05/_week_5a_intro_to_pandas.html)
 
@@ -300,16 +295,13 @@ print(df)
 
     -   A 10-page project report.
 
-
 ## Deadlines and Logistics
 
-
-| **Requirement**  | **Due**     | **Length**    | **Percentage** |
-|------------------|-------------|---------------|----------------|
-| Project Proposal | **November 15**  | 2 pages       | 5%             |
-| Presentation     | December 10  | 10-15 minutes | 10%            |
-| Project Report   | December 17 | 10 pages      | 25%            |
-
+| **Requirement**  | **Due**         | **Length**    | **Percentage** |
+|------------------|-----------------|---------------|----------------|
+| Project Proposal | **November 15** | 2 pages       | 5%             |
+| Presentation     | December 10     | 10-15 minutes | 10%            |
+| Project Report   | December 17     | 10 pages      | 25%            |
 
 ::: incremental
 -   Groups of three students. You pick your groups.
