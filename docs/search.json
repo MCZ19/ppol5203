@@ -1313,14 +1313,14 @@
     "href": "weeks/week-06.html",
     "title": "Week 06",
     "section": "",
-    "text": "Today, we will go over three notebooks and you have a additional notebook to work by yourselves:\n\nPandas - Data Loading and Writing: html –  Jupyter Notebook \nPandas - data wrangling: html –  Jupyter Notebook \nPandas - Joining Data : html –  Jupyter Notebook \nPandas Miscellaneous: html –  Jupyter Notebook"
+    "text": "Today, we will go over three notebooks and you have a additional notebook to work by yourselves:\n\nPandas - data loading: html –  Jupyter Notebook \nPandas - data wrangling: html –  Jupyter Notebook \nPandas - Joining Data : html –  Jupyter Notebook \nPandas Miscellaneous: html –  Jupyter Notebook"
   },
   {
     "objectID": "weeks/week-06.html#lectures-notes",
     "href": "weeks/week-06.html#lectures-notes",
     "title": "Week 06",
     "section": "",
-    "text": "Today, we will go over three notebooks and you have a additional notebook to work by yourselves:\n\nPandas - Data Loading and Writing: html –  Jupyter Notebook \nPandas - data wrangling: html –  Jupyter Notebook \nPandas - Joining Data : html –  Jupyter Notebook \nPandas Miscellaneous: html –  Jupyter Notebook"
+    "text": "Today, we will go over three notebooks and you have a additional notebook to work by yourselves:\n\nPandas - data loading: html –  Jupyter Notebook \nPandas - data wrangling: html –  Jupyter Notebook \nPandas - Joining Data : html –  Jupyter Notebook \nPandas Miscellaneous: html –  Jupyter Notebook"
   },
   {
     "objectID": "weeks/week-06.html#datasets",
@@ -2083,7 +2083,7 @@
     "href": "slides/week-7.html#more-dimensions",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "More dimensions",
-    "text": "More dimensions\nWe often want map more variables into the graph. We do this exploring new aesthetics."
+    "text": "More dimensions\n\nWe often want map more variables into the graph. We do this exploring new aesthetics."
   },
   {
     "objectID": "slides/week-7.html#color-aesthetics-to-distinguish",
@@ -2118,7 +2118,7 @@
     "href": "slides/week-7.html#major-components-of-the-grammar-of-graphics",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Major Components of the Grammar of Graphics",
-    "text": "Major Components of the Grammar of Graphics\n\nplotnine/ggplot2 graphs have three key steps\n\nData Step: The raw data that you want to plot.\nGeometries step: The geometric shapes that will represent the data.\nAesthetics &lt;aes()&gt; step: Aesthetics of the geometric and statistical objects, such as position, color, size, shape, and transparency\n\nAdditional:\n\nFacets: to produce create subplots based on specific variable\nannotations: labels, titles, subtitles, captions.\nCoordinates & Scales: some additional functions to adjust aesthetics you are mapping (change colors, size, alpha, scale of x and y coordinates)\nTheme: Control the finer presentation details like font size, background color, grid line styles, etc."
+    "text": "Major Components of the Grammar of Graphics\n\nplotnine/ggplot2 graphs have three key steps\n\nData Step: The raw data that you want to plot.\nGeometries step: The geometric shapes that will represent the data.\nAesthetics &lt;aes()&gt; step: Aesthetics of the geometric and statistical objects, such as position, color, size, shape, and transparency\n\n\n\nAdditional Components of the Grammar of Graphics:\n\nFacets: to produce create subplots based on specific variable\nannotations: labels, titles, subtitles, captions.\nCoordinates & Scales: some additional functions to adjust aesthetics you are mapping (change colors, size, alpha, scale of x and y coordinates)\n\n-   Theme: Control the finer presentation details like font size, background color, grid line styles, etc."
   },
   {
     "objectID": "slides/week-7.html#gapminder",
@@ -2132,7 +2132,7 @@
     "href": "slides/week-7.html#section",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "",
-    "text": "ggplot (data = &lt;DATA&gt;)\n+\ngeom_&lt;representation&gt; (aes (&lt;aesthethics&gt;) )"
+    "text": "ggplot (data = &lt;DATA&gt;)\n\n\n+\n\n\ngeom_&lt;representation&gt; (aes (&lt;aesthethics&gt;) )"
   },
   {
     "objectID": "slides/week-7.html#section-2",
@@ -2146,14 +2146,14 @@
     "href": "slides/week-7.html#section-3",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "",
-    "text": "ggplot(data = &lt;DATA&gt;)\n+\ngeom_&lt;representation&gt;(aes(&lt;aesthethics&gt;))\n+\ngeom_&lt;representation&gt;(aes(&lt;aesthethics&gt;))\n+\nscale_&lt;aesthetics&gt;()\n+\ntheme_&lt;&gt;\n+\nfacet_&lt;&gt;\n+\nlabels"
+    "text": "ggplot(data = &lt;DATA&gt;)\n\n\n+\n\n\ngeom_&lt;representation&gt;(aes(&lt;aesthethics&gt;))\n\n\n+\n\n\ngeom_&lt;representation&gt;(aes(&lt;aesthethics&gt;))\n\n\n+\n\n\nscale_&lt;aesthetics&gt;()\n\n\n+\n\n\ntheme_&lt;&gt;\n\n\n+\n\n\nfacet_&lt;&gt;\n\n\n+\n\n\nlabels"
   },
   {
     "objectID": "slides/week-7.html#where-we-are",
     "href": "slides/week-7.html#where-we-are",
     "title": " PPOL 5203 - Data Science I: Foundations ",
-    "section": "Where we are…",
-    "text": "Where we are…\n\nWe started with the basics of being a data scientist\nWe moved over to the primitives of Python as your main DS tool\nThen we started our journey working with tabular data:\n\nNumpy for matrices\nPandas for heterogeneous dataframes\nPandas Data Wrangling Methods"
+    "section": "",
+    "text": "We started with the basics of being a data scientist\nWe moved over to the primitives of Python as your main DS tool\nThen we started our journey working with tabular data:\n\nNumpy for matrices\nPandas for heterogeneous dataframes\nPandas Data Wrangling Methods"
   },
   {
     "objectID": "slides/week-7.html#mid-semester-survey",
@@ -2182,5 +2182,12 @@
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Mid-Semester Survey",
     "text": "Mid-Semester Survey\nContinue Doing \n\nIn class exercise\nComparison between Python and R\n“more in-class assignments - we are already started and I like that. And of course, the break in between helps too.”"
+  },
+  {
+    "objectID": "slides/week-7.html",
+    "href": "slides/week-7.html",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "",
+    "text": "We started with the basics of being a data scientist\nWe moved over to the primitives of Python as your main DS tool\nThen we started our journey working with tabular data:\n\nNumpy for matrices\nPandas for heterogeneous dataframes\nPandas Data Wrangling Methods"
   }
 ]

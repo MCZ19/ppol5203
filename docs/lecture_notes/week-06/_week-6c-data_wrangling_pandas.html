@@ -13121,7 +13121,7 @@ Tiago Ventura</center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[2]:</div>
+<div class="prompt input_prompt">In&nbsp;[91]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
@@ -13221,7 +13221,7 @@ Tiago Ventura</center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[93]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># load worldcup datasets</span>
@@ -13236,7 +13236,7 @@ Tiago Ventura</center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[94]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># see wc data</span>
@@ -13253,7 +13253,7 @@ Tiago Ventura</center> <h1></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[28]:</div>
+    <div class="prompt output_prompt">Out[94]:</div>
 
 
 
@@ -13365,7 +13365,7 @@ Tiago Ventura</center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[95]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># see matched data</span>
@@ -13382,7 +13382,7 @@ Tiago Ventura</center> <h1></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[21]:</div>
+    <div class="prompt output_prompt">Out[95]:</div>
 
 
 
@@ -13591,7 +13591,7 @@ Tiago Ventura</center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[96]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">wc</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"WorldCupMatches.csv"</span><span class="p">)</span>
@@ -13628,7 +13628,7 @@ Tiago Ventura</center> <h1></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[23]:</div>
+    <div class="prompt output_prompt">Out[96]:</div>
 
 
 
@@ -13724,10 +13724,11 @@ Tiago Ventura</center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[99]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">wc</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"WorldCupMatches.csv"</span><span class="p">)</span>
+
 <span class="c1"># select columns</span>
 <span class="n">wc_10</span> <span class="o">=</span> <span class="p">(</span> <span class="c1"># encapsulate</span>
             <span class="n">wc</span><span class="o">.</span><span class="n">filter</span><span class="p">([</span><span class="s1">'Year'</span><span class="p">,</span><span class="s1">'Home Team Name'</span><span class="p">,</span><span class="s1">'Away Team Name'</span><span class="p">])</span><span class="o">.</span>
@@ -13752,86 +13753,25 @@ Tiago Ventura</center> <h1></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[29]:</div>
+    <div class="prompt output_prompt">Out[99]:</div>
 
 
 
-<div class="output_html rendered_html output_subarea output_execute_result"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
 
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>country</th>
-      <th>n</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>7</th>
-      <td>Brazil</td>
-      <td>108</td>
-    </tr>
-    <tr>
-      <th>39</th>
-      <td>Italy</td>
-      <td>83</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Argentina</td>
-      <td>81</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>England</td>
-      <td>62</td>
-    </tr>
-    <tr>
-      <th>29</th>
-      <td>Germany FR</td>
-      <td>62</td>
-    </tr>
-    <tr>
-      <th>26</th>
-      <td>France</td>
-      <td>61</td>
-    </tr>
-    <tr>
-      <th>66</th>
-      <td>Spain</td>
-      <td>59</td>
-    </tr>
-    <tr>
-      <th>45</th>
-      <td>Mexico</td>
-      <td>54</td>
-    </tr>
-    <tr>
-      <th>47</th>
-      <td>Netherlands</td>
-      <td>54</td>
-    </tr>
-    <tr>
-      <th>74</th>
-      <td>Uruguay</td>
-      <td>52</td>
-    </tr>
-  </tbody>
-</table>
-</div></div>
+<div class="output_text output_subarea output_execute_result">
+<pre>country
+Algeria       14
+Angola         3
+Argentina     81
+Australia     13
+Austria       29
+Belgium       43
+Bolivia        6
+Brazil       108
+Bulgaria      26
+Cameroon      23
+dtype: int64</pre>
+</div>
 
 </div>
 
@@ -13859,7 +13799,7 @@ To understand pipes, you should always remember: **data in, data out**. That's w
 <li>Eliminates intermediate variables </li>
 <li>Can improve code readability</li>
 <li>Memory efficiency by eliminating intermediate variables</li>
-<li>Makes easies to add steps anywhere in the sequence of operations</li>
+<li>Makes easier to add steps anywhere in the sequence of operations</li>
 </ul>
 <p>Keep in mind pipes also have some disadvantages. In my view, specially when working in notebook in which you do not execute line by line, pipes can make codes a bit harder to debug and also embed errors that could be more easily perceived by examining intermediate variables.</p>
 
@@ -13906,7 +13846,7 @@ To understand pipes, you should always remember: **data in, data out**. That's w
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[100]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># load worldcup dataset</span>
@@ -13921,7 +13861,7 @@ To understand pipes, you should always remember: **data in, data out**. That's w
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[31]:</div>
+<div class="prompt input_prompt">In&nbsp;[101]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## simple index for columns</span>
@@ -13938,7 +13878,7 @@ To understand pipes, you should always remember: **data in, data out**. That's w
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[31]:</div>
+    <div class="prompt output_prompt">Out[101]:</div>
 
 
 
@@ -13966,7 +13906,7 @@ Name: Year, Length: 20, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[102]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## using dot method</span>
@@ -13983,7 +13923,7 @@ Name: Year, Length: 20, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[32]:</div>
+    <div class="prompt output_prompt">Out[102]:</div>
 
 
 
@@ -14011,7 +13951,7 @@ Name: Year, Length: 20, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[33]:</div>
+<div class="prompt input_prompt">In&nbsp;[103]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## using .loc method</span>
@@ -14028,7 +13968,7 @@ Name: Year, Length: 20, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[33]:</div>
+    <div class="prompt output_prompt">Out[103]:</div>
 
 
 
@@ -14064,7 +14004,7 @@ Name: Year, Length: 20, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[105]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">wc</span><span class="p">[[</span><span class="s2">"Winner"</span><span class="p">,</span><span class="s2">"Year"</span><span class="p">]]</span>
@@ -14080,7 +14020,7 @@ Name: Year, Length: 20, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[34]:</div>
+    <div class="prompt output_prompt">Out[105]:</div>
 
 
 
@@ -14183,7 +14123,7 @@ Name: Year, Length: 20, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[106]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># .loc for a single or multiple columns</span>
@@ -14200,7 +14140,7 @@ Name: Year, Length: 20, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[35]:</div>
+    <div class="prompt output_prompt">Out[106]:</div>
 
 
 
@@ -14307,7 +14247,7 @@ Name: Year, Length: 20, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[107]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># iloc for numeric positions</span>
@@ -14324,7 +14264,7 @@ Name: Year, Length: 20, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[36]:</div>
+    <div class="prompt output_prompt">Out[107]:</div>
 
 
 
@@ -14436,7 +14376,7 @@ Name: Year, Length: 20, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[108]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># simple filter</span>
@@ -14453,7 +14393,7 @@ Name: Year, Length: 20, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[37]:</div>
+    <div class="prompt output_prompt">Out[108]:</div>
 
 
 
@@ -14556,7 +14496,7 @@ Name: Year, Length: 20, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[109]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># like parameter. In R: data %&gt;% select(contains("Away"))</span>
@@ -14573,7 +14513,7 @@ Name: Year, Length: 20, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[38]:</div>
+    <div class="prompt output_prompt">Out[109]:</div>
 
 
 
@@ -14700,7 +14640,7 @@ Name: Year, Length: 20, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[110]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># starts with</span>
@@ -14717,7 +14657,7 @@ Name: Year, Length: 20, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[39]:</div>
+    <div class="prompt output_prompt">Out[110]:</div>
 
 
 
@@ -14824,7 +14764,7 @@ Name: Year, Length: 20, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[111]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># ends with</span>
@@ -14841,7 +14781,7 @@ Name: Year, Length: 20, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[40]:</div>
+    <div class="prompt output_prompt">Out[111]:</div>
 
 
 
@@ -14951,46 +14891,10 @@ Name: Year, Length: 20, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[112]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">wc</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="o">~</span><span class="n">wc</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s2">"Year"</span><span class="p">,</span> <span class="s2">"Country"</span><span class="p">])]</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[41]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>Index([&#39;Winner&#39;, &#39;Runners-Up&#39;, &#39;Third&#39;, &#39;Fourth&#39;, &#39;GoalsScored&#39;,
-       &#39;QualifiedTeams&#39;, &#39;MatchesPlayed&#39;, &#39;Attendance&#39;],
-      dtype=&#39;object&#39;)</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[42]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Indexing: Bit too much?!</span>
-<span class="c1"># .isin returns a boolean.</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## select all but "Year" and "Country"</span>
 <span class="n">wc</span><span class="p">[</span><span class="n">wc</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="o">~</span><span class="n">wc</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s2">"Year"</span><span class="p">,</span> <span class="s2">"Country"</span><span class="p">])]]</span>
 </pre></div>
 
@@ -15004,7 +14908,7 @@ Name: Year, Length: 20, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[42]:</div>
+    <div class="prompt output_prompt">Out[112]:</div>
 
 
 
@@ -15171,7 +15075,44 @@ Name: Year, Length: 20, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
+<div class="prompt input_prompt">In&nbsp;[113]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Indexing: Bit too much?!</span>
+<span class="c1"># .isin returns a boolean.</span>
+<span class="n">wc</span><span class="o">.</span><span class="n">columns</span><span class="p">[</span><span class="o">~</span><span class="n">wc</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s2">"Year"</span><span class="p">,</span> <span class="s2">"Country"</span><span class="p">])]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[113]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>Index([&#39;Winner&#39;, &#39;Runners-Up&#39;, &#39;Third&#39;, &#39;Fourth&#39;, &#39;GoalsScored&#39;,
+       &#39;QualifiedTeams&#39;, &#39;MatchesPlayed&#39;, &#39;Attendance&#39;],
+      dtype=&#39;object&#39;)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[114]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># What is going on here?</span>
@@ -15188,7 +15129,7 @@ Name: Year, Length: 20, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[43]:</div>
+    <div class="prompt output_prompt">Out[114]:</div>
 
 
 
@@ -15216,7 +15157,7 @@ bol_col is an array of booleans. If you throw them directly as a index,  Pandas 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[44]:</div>
+<div class="prompt input_prompt">In&nbsp;[115]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># loc methods</span>
@@ -15233,7 +15174,7 @@ bol_col is an array of booleans. If you throw them directly as a index,  Pandas 
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[44]:</div>
+    <div class="prompt output_prompt">Out[115]:</div>
 
 
 
@@ -15400,21 +15341,70 @@ bol_col is an array of booleans. If you throw them directly as a index,  Pandas 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[45]:</div>
+<div class="prompt input_prompt">In&nbsp;[119]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># indexing -&gt; error</span>
 <span class="n">bol_col</span> <span class="o">=</span> <span class="o">~</span><span class="n">wc</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">isin</span><span class="p">([</span><span class="s2">"Year"</span><span class="p">,</span> <span class="s2">"Country"</span><span class="p">])</span>
+<span class="n">bol_col</span>
+<span class="n">wc</span><span class="p">[</span><span class="n">bol_col</span><span class="p">]</span>
 </pre></div>
 
     </div>
 </div>
 </div>
 
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_text output_error">
+<pre>
+<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
+<span class="ansi-red-fg">ValueError</span>                                Traceback (most recent call last)
+Cell <span class="ansi-green-fg">In[119], line 4</span>
+<span class="ansi-green-intense-fg ansi-bold">      2</span> bol_col <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(98,98,98)">~</span>wc<span style="color: rgb(98,98,98)">.</span>columns<span style="color: rgb(98,98,98)">.</span>isin([<span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">Year</span><span style="color: rgb(175,0,0)">&#34;</span>, <span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">Country</span><span style="color: rgb(175,0,0)">&#34;</span>])
+<span class="ansi-green-intense-fg ansi-bold">      3</span> bol_col
+<span class="ansi-green-fg">----&gt; 4</span> wc[bol_col]
+
+File <span class="ansi-green-fg">~/anaconda3/lib/python3.11/site-packages/pandas/core/frame.py:3798</span>, in <span class="ansi-cyan-fg">DataFrame.__getitem__</span><span class="ansi-blue-fg">(self, key)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3796</span> <span style="color: rgb(95,135,135)"># Do we have a (boolean) 1d indexer?</span>
+<span class="ansi-green-intense-fg ansi-bold">   3797</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> com<span style="color: rgb(98,98,98)">.</span>is_bool_indexer(key):
+<span class="ansi-green-fg">-&gt; 3798</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_getitem_bool_array(key)
+<span class="ansi-green-intense-fg ansi-bold">   3800</span> <span style="color: rgb(95,135,135)"># We are left with two options: a single key, and a collection of keys,</span>
+<span class="ansi-green-intense-fg ansi-bold">   3801</span> <span style="color: rgb(95,135,135)"># We interpret tuples as collections only for non-MultiIndex</span>
+<span class="ansi-green-intense-fg ansi-bold">   3802</span> is_single_key <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">isinstance</span>(key, <span style="color: rgb(0,135,0)">tuple</span>) <span class="ansi-bold" style="color: rgb(175,0,255)">or</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> is_list_like(key)
+
+File <span class="ansi-green-fg">~/anaconda3/lib/python3.11/site-packages/pandas/core/frame.py:3845</span>, in <span class="ansi-cyan-fg">DataFrame._getitem_bool_array</span><span class="ansi-blue-fg">(self, key)</span>
+<span class="ansi-green-intense-fg ansi-bold">   3839</span>     warnings<span style="color: rgb(98,98,98)">.</span>warn(
+<span class="ansi-green-intense-fg ansi-bold">   3840</span>         <span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">Boolean Series key will be reindexed to match DataFrame index.</span><span style="color: rgb(175,0,0)">&#34;</span>,
+<span class="ansi-green-intense-fg ansi-bold">   3841</span>         <span class="ansi-bold" style="color: rgb(215,95,95)">UserWarning</span>,
+<span class="ansi-green-intense-fg ansi-bold">   3842</span>         stacklevel<span style="color: rgb(98,98,98)">=</span>find_stack_level(),
+<span class="ansi-green-intense-fg ansi-bold">   3843</span>     )
+<span class="ansi-green-intense-fg ansi-bold">   3844</span> <span class="ansi-bold" style="color: rgb(0,135,0)">elif</span> <span style="color: rgb(0,135,0)">len</span>(key) <span style="color: rgb(98,98,98)">!=</span> <span style="color: rgb(0,135,0)">len</span>(<span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>index):
+<span class="ansi-green-fg">-&gt; 3845</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">raise</span> <span class="ansi-bold" style="color: rgb(215,95,95)">ValueError</span>(
+<span class="ansi-green-intense-fg ansi-bold">   3846</span>         <span style="color: rgb(175,0,0)">f</span><span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)">Item wrong length </span><span class="ansi-bold" style="color: rgb(175,95,135)">{</span><span style="color: rgb(0,135,0)">len</span>(key)<span class="ansi-bold" style="color: rgb(175,95,135)">}</span><span style="color: rgb(175,0,0)"> instead of </span><span class="ansi-bold" style="color: rgb(175,95,135)">{</span><span style="color: rgb(0,135,0)">len</span>(<span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>index)<span class="ansi-bold" style="color: rgb(175,95,135)">}</span><span style="color: rgb(175,0,0)">.</span><span style="color: rgb(175,0,0)">&#34;</span>
+<span class="ansi-green-intense-fg ansi-bold">   3847</span>     )
+<span class="ansi-green-intense-fg ansi-bold">   3849</span> <span style="color: rgb(95,135,135)"># check_bool_indexer will throw exception if Series key cannot</span>
+<span class="ansi-green-intense-fg ansi-bold">   3850</span> <span style="color: rgb(95,135,135)"># be reindexed to match DataFrame rows</span>
+<span class="ansi-green-intense-fg ansi-bold">   3851</span> key <span style="color: rgb(98,98,98)">=</span> check_bool_indexer(<span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>index, key)
+
+<span class="ansi-red-fg">ValueError</span>: Item wrong length 10 instead of 20.</pre>
+</div>
+</div>
+
+</div>
+</div>
+
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[120]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># With .loc, it works</span>
@@ -15431,7 +15421,7 @@ bol_col is an array of booleans. If you throw them directly as a index,  Pandas 
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[46]:</div>
+    <div class="prompt output_prompt">Out[120]:</div>
 
 
 
@@ -15605,7 +15595,7 @@ bol_col is an array of booleans. If you throw them directly as a index,  Pandas 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[47]:</div>
+<div class="prompt input_prompt">In&nbsp;[121]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">wc</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">[</span><span class="s2">"Year"</span><span class="p">])</span>
@@ -15621,7 +15611,7 @@ bol_col is an array of booleans. If you throw them directly as a index,  Pandas 
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[47]:</div>
+    <div class="prompt output_prompt">Out[121]:</div>
 
 
 
@@ -15800,7 +15790,7 @@ bol_col is an array of booleans. If you throw them directly as a index,  Pandas 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[122]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># see here why you need the argument columns</span>
@@ -15808,6 +15798,162 @@ bol_col is an array of booleans. If you throw them directly as a index,  Pandas 
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Help on function drop in module pandas.core.frame:
+
+drop(self, labels: &#39;IndexLabel&#39; = None, *, axis: &#39;Axis&#39; = 0, index: &#39;IndexLabel&#39; = None, columns: &#39;IndexLabel&#39; = None, level: &#39;Level&#39; = None, inplace: &#39;bool&#39; = False, errors: &#39;IgnoreRaise&#39; = &#39;raise&#39;) -&gt; &#39;DataFrame | None&#39;
+    Drop specified labels from rows or columns.
+    
+    Remove rows or columns by specifying label names and corresponding
+    axis, or by specifying directly index or column names. When using a
+    multi-index, labels on different levels can be removed by specifying
+    the level. See the `user guide &lt;advanced.shown_levels&gt;`
+    for more information about the now unused levels.
+    
+    Parameters
+    ----------
+    labels : single label or list-like
+        Index or column labels to drop. A tuple will be used as a single
+        label and not treated as a list-like.
+    axis : {0 or &#39;index&#39;, 1 or &#39;columns&#39;}, default 0
+        Whether to drop labels from the index (0 or &#39;index&#39;) or
+        columns (1 or &#39;columns&#39;).
+    index : single label or list-like
+        Alternative to specifying axis (``labels, axis=0``
+        is equivalent to ``index=labels``).
+    columns : single label or list-like
+        Alternative to specifying axis (``labels, axis=1``
+        is equivalent to ``columns=labels``).
+    level : int or level name, optional
+        For MultiIndex, level from which the labels will be removed.
+    inplace : bool, default False
+        If False, return a copy. Otherwise, do operation
+        inplace and return None.
+    errors : {&#39;ignore&#39;, &#39;raise&#39;}, default &#39;raise&#39;
+        If &#39;ignore&#39;, suppress error and only existing labels are
+        dropped.
+    
+    Returns
+    -------
+    DataFrame or None
+        DataFrame without the removed index or column labels or
+        None if ``inplace=True``.
+    
+    Raises
+    ------
+    KeyError
+        If any of the labels is not found in the selected axis.
+    
+    See Also
+    --------
+    DataFrame.loc : Label-location based indexer for selection by label.
+    DataFrame.dropna : Return DataFrame with labels on given axis omitted
+        where (all or any) data are missing.
+    DataFrame.drop_duplicates : Return DataFrame with duplicate rows
+        removed, optionally only considering certain columns.
+    Series.drop : Return Series with specified index labels removed.
+    
+    Examples
+    --------
+    &gt;&gt;&gt; df = pd.DataFrame(np.arange(12).reshape(3, 4),
+    ...                   columns=[&#39;A&#39;, &#39;B&#39;, &#39;C&#39;, &#39;D&#39;])
+    &gt;&gt;&gt; df
+       A  B   C   D
+    0  0  1   2   3
+    1  4  5   6   7
+    2  8  9  10  11
+    
+    Drop columns
+    
+    &gt;&gt;&gt; df.drop([&#39;B&#39;, &#39;C&#39;], axis=1)
+       A   D
+    0  0   3
+    1  4   7
+    2  8  11
+    
+    &gt;&gt;&gt; df.drop(columns=[&#39;B&#39;, &#39;C&#39;])
+       A   D
+    0  0   3
+    1  4   7
+    2  8  11
+    
+    Drop a row by index
+    
+    &gt;&gt;&gt; df.drop([0, 1])
+       A  B   C   D
+    2  8  9  10  11
+    
+    Drop columns and/or rows of MultiIndex DataFrame
+    
+    &gt;&gt;&gt; midx = pd.MultiIndex(levels=[[&#39;lama&#39;, &#39;cow&#39;, &#39;falcon&#39;],
+    ...                              [&#39;speed&#39;, &#39;weight&#39;, &#39;length&#39;]],
+    ...                      codes=[[0, 0, 0, 1, 1, 1, 2, 2, 2],
+    ...                             [0, 1, 2, 0, 1, 2, 0, 1, 2]])
+    &gt;&gt;&gt; df = pd.DataFrame(index=midx, columns=[&#39;big&#39;, &#39;small&#39;],
+    ...                   data=[[45, 30], [200, 100], [1.5, 1], [30, 20],
+    ...                         [250, 150], [1.5, 0.8], [320, 250],
+    ...                         [1, 0.8], [0.3, 0.2]])
+    &gt;&gt;&gt; df
+                    big     small
+    lama    speed   45.0    30.0
+            weight  200.0   100.0
+            length  1.5     1.0
+    cow     speed   30.0    20.0
+            weight  250.0   150.0
+            length  1.5     0.8
+    falcon  speed   320.0   250.0
+            weight  1.0     0.8
+            length  0.3     0.2
+    
+    Drop a specific index combination from the MultiIndex
+    DataFrame, i.e., drop the combination ``&#39;falcon&#39;`` and
+    ``&#39;weight&#39;``, which deletes only the corresponding row
+    
+    &gt;&gt;&gt; df.drop(index=(&#39;falcon&#39;, &#39;weight&#39;))
+                    big     small
+    lama    speed   45.0    30.0
+            weight  200.0   100.0
+            length  1.5     1.0
+    cow     speed   30.0    20.0
+            weight  250.0   150.0
+            length  1.5     0.8
+    falcon  speed   320.0   250.0
+            length  0.3     0.2
+    
+    &gt;&gt;&gt; df.drop(index=&#39;cow&#39;, columns=&#39;small&#39;)
+                    big
+    lama    speed   45.0
+            weight  200.0
+            length  1.5
+    falcon  speed   320.0
+            weight  1.0
+            length  0.3
+    
+    &gt;&gt;&gt; df.drop(index=&#39;length&#39;, level=1)
+                    big     small
+    lama    speed   45.0    30.0
+            weight  200.0   100.0
+    cow     speed   30.0    20.0
+            weight  250.0   150.0
+    falcon  speed   320.0   250.0
+            weight  1.0     0.8
+
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
@@ -15846,7 +15992,7 @@ bol_col is an array of booleans. If you throw them directly as a index,  Pandas 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[123]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># With built in math operations</span>
@@ -15860,7 +16006,7 @@ bol_col is an array of booleans. If you throw them directly as a index,  Pandas 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[124]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">wc</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
@@ -15876,7 +16022,7 @@ bol_col is an array of booleans. If you throw them directly as a index,  Pandas 
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[49]:</div>
+    <div class="prompt output_prompt">Out[124]:</div>
 
 
 
@@ -15994,7 +16140,7 @@ bol_col is an array of booleans. If you throw them directly as a index,  Pandas 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[126]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## with numpy</span>
@@ -16008,7 +16154,7 @@ bol_col is an array of booleans. If you throw them directly as a index,  Pandas 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[127]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">wc</span><span class="p">[[</span><span class="s2">"Year"</span><span class="p">,</span> <span class="s2">"Winner"</span><span class="p">,</span> <span class="s2">"Country"</span><span class="p">,</span> <span class="s2">"winner_and_hoster"</span><span class="p">]]</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
@@ -16024,7 +16170,7 @@ bol_col is an array of booleans. If you throw them directly as a index,  Pandas 
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[51]:</div>
+    <div class="prompt output_prompt">Out[127]:</div>
 
 
 
@@ -16108,7 +16254,7 @@ bol_col is an array of booleans. If you throw them directly as a index,  Pandas 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[52]:</div>
+<div class="prompt input_prompt">In&nbsp;[130]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># with an apply method + function</span>
@@ -16126,7 +16272,7 @@ bol_col is an array of booleans. If you throw them directly as a index,  Pandas 
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[52]:</div>
+    <div class="prompt output_prompt">Out[130]:</div>
 
 
 
@@ -16258,19 +16404,21 @@ bol_col is an array of booleans. If you throw them directly as a index,  Pandas 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="prompt input_prompt">In&nbsp;[133]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## when the winner was also hosting the world cup?</span>
-<span class="p">(</span><span class="n">wc</span><span class="o">.</span>
+<span class="p">(</span>
+<span class="n">wc</span><span class="o">.</span>
  <span class="c1"># multiple variables</span>
- <span class="n">assign</span><span class="p">(</span><span class="n">final</span><span class="o">=</span> <span class="n">wc</span><span class="o">.</span><span class="n">Winner</span> <span class="o">+</span> <span class="s2">" vs "</span> <span class="o">+</span> <span class="n">wc</span><span class="p">[</span><span class="s1">'Runners-Up'</span><span class="p">],</span>
+ <span class="n">assign</span><span class="p">(</span><span class="n">final</span> <span class="o">=</span> <span class="n">wc</span><span class="o">.</span><span class="n">Winner</span> <span class="o">+</span> <span class="s2">" vs "</span> <span class="o">+</span> <span class="n">wc</span><span class="p">[</span><span class="s1">'Runners-Up'</span><span class="p">],</span>
         <span class="n">winner_and_hoster_np</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">wc</span><span class="o">.</span><span class="n">Winner</span><span class="o">==</span><span class="n">wc</span><span class="o">.</span><span class="n">Country</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="kc">False</span><span class="p">),</span> 
         <span class="n">av_goals_matches</span> <span class="o">=</span> <span class="k">lambda</span> <span class="n">x</span><span class="p">:</span> <span class="n">x</span><span class="p">[</span><span class="s2">"GoalsScored"</span><span class="p">]</span><span class="o">/</span><span class="n">x</span><span class="p">[</span><span class="s2">"MatchesPlayed"</span><span class="p">],</span> 
         <span class="p">)</span><span class="o">.</span>
-  <span class="c1">#allows for methods chaining</span>
- <span class="nb">filter</span><span class="p">([</span><span class="s2">"Year"</span><span class="p">,</span> <span class="s2">"Winner"</span><span class="p">,</span> <span class="s2">"Country"</span><span class="p">,</span> <span class="s2">"final"</span><span class="p">,</span> <span class="s2">"winner_and_hoster_np"</span><span class="p">,</span> <span class="s2">"av_goals_matches"</span><span class="p">])</span><span class="o">.</span>
- <span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
+<span class="c1">##allows for methods chaining</span>
+    <span class="nb">filter</span><span class="p">([</span><span class="s2">"Year"</span><span class="p">,</span> <span class="s2">"Winner"</span><span class="p">,</span> <span class="s2">"Country"</span><span class="p">,</span> <span class="s2">"final"</span><span class="p">,</span>
+            <span class="s2">"winner_and_hoster_np"</span><span class="p">,</span> <span class="s2">"av_goals_matches"</span><span class="p">])</span><span class="o">.</span>
+    <span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -16283,7 +16431,7 @@ bol_col is an array of booleans. If you throw them directly as a index,  Pandas 
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[53]:</div>
+    <div class="prompt output_prompt">Out[133]:</div>
 
 
 
@@ -16379,7 +16527,7 @@ bol_col is an array of booleans. If you throw them directly as a index,  Pandas 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="prompt input_prompt">In&nbsp;[136]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Notice calling the recently created variable final</span>
@@ -16401,7 +16549,7 @@ bol_col is an array of booleans. If you throw them directly as a index,  Pandas 
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[54]:</div>
+    <div class="prompt output_prompt">Out[136]:</div>
 
 
 
@@ -16502,7 +16650,7 @@ bol_col is an array of booleans. If you throw them directly as a index,  Pandas 
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="prompt input_prompt">In&nbsp;[137]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># will throw an error</span>
@@ -16548,7 +16696,7 @@ File <span class="ansi-green-fg">pandas/_libs/hashtable_class_helper.pxi:5753</s
 The above exception was the direct cause of the following exception:
 
 <span class="ansi-red-fg">KeyError</span>                                  Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[56], line 4</span>
+Cell <span class="ansi-green-fg">In[137], line 4</span>
 <span class="ansi-green-intense-fg ansi-bold">      1</span> <span style="color: rgb(95,135,135)"># will throw an error</span>
 <span class="ansi-green-intense-fg ansi-bold">      2</span> (wc<span style="color: rgb(98,98,98)">.</span>
 <span class="ansi-green-intense-fg ansi-bold">      3</span>  assign(final<span style="color: rgb(98,98,98)">=</span> wc<span style="color: rgb(98,98,98)">.</span>Winner <span style="color: rgb(98,98,98)">+</span> <span style="color: rgb(175,0,0)">&#34;</span><span style="color: rgb(175,0,0)"> vs </span><span style="color: rgb(175,0,0)">&#34;</span> <span style="color: rgb(98,98,98)">+</span> wc[<span style="color: rgb(175,0,0)">&#39;</span><span style="color: rgb(175,0,0)">Runners-Up</span><span style="color: rgb(175,0,0)">&#39;</span>],
@@ -16596,7 +16744,7 @@ File <span class="ansi-green-fg">~/anaconda3/lib/python3.11/site-packages/pandas
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[139]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Pandas: renaming variables using the rename method</span>
@@ -16613,7 +16761,7 @@ File <span class="ansi-green-fg">~/anaconda3/lib/python3.11/site-packages/pandas
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[57]:</div>
+    <div class="prompt output_prompt">Out[139]:</div>
 
 
 
@@ -16707,7 +16855,7 @@ File <span class="ansi-green-fg">~/anaconda3/lib/python3.11/site-packages/pandas
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="prompt input_prompt">In&nbsp;[140]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="p">{</span><span class="n">col</span><span class="p">:</span> <span class="n">col</span><span class="o">.</span><span class="n">lower</span><span class="p">()</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">wc</span><span class="o">.</span><span class="n">columns</span><span class="p">}</span>
@@ -16723,7 +16871,7 @@ File <span class="ansi-green-fg">~/anaconda3/lib/python3.11/site-packages/pandas
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[58]:</div>
+    <div class="prompt output_prompt">Out[140]:</div>
 
 
 
@@ -16751,7 +16899,7 @@ File <span class="ansi-green-fg">~/anaconda3/lib/python3.11/site-packages/pandas
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[59]:</div>
+<div class="prompt input_prompt">In&nbsp;[142]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># we can use dictionary comprehension to apply functions in all</span>
@@ -16768,7 +16916,7 @@ File <span class="ansi-green-fg">~/anaconda3/lib/python3.11/site-packages/pandas
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[59]:</div>
+    <div class="prompt output_prompt">Out[142]:</div>
 
 
 
@@ -16892,7 +17040,7 @@ File <span class="ansi-green-fg">~/anaconda3/lib/python3.11/site-packages/pandas
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="prompt input_prompt">In&nbsp;[143]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Or for only a set of the columns by given them as inputs</span>
@@ -16909,7 +17057,7 @@ File <span class="ansi-green-fg">~/anaconda3/lib/python3.11/site-packages/pandas
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[60]:</div>
+    <div class="prompt output_prompt">Out[143]:</div>
 
 
 
@@ -17055,13 +17203,842 @@ File <span class="ansi-green-fg">~/anaconda3/lib/python3.11/site-packages/pandas
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[144]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## add your solutions here</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># read</span>
+<span class="n">acled_sa</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"acled_south_america.csv"</span><span class="p">)</span>
+<span class="n">acled_sa</span><span class="o">.</span><span class="n">columns</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[144]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>Index([&#39;event_id_cnty&#39;, &#39;event_date&#39;, &#39;year&#39;, &#39;time_precision&#39;,
+       &#39;disorder_type&#39;, &#39;event_type&#39;, &#39;sub_event_type&#39;, &#39;actor1&#39;,
+       &#39;assoc_actor_1&#39;, &#39;inter1&#39;, &#39;actor2&#39;, &#39;assoc_actor_2&#39;, &#39;inter2&#39;,
+       &#39;interaction&#39;, &#39;civilian_targeting&#39;, &#39;iso&#39;, &#39;region&#39;, &#39;country&#39;,
+       &#39;admin1&#39;, &#39;admin2&#39;, &#39;admin3&#39;, &#39;location&#39;, &#39;latitude&#39;, &#39;longitude&#39;,
+       &#39;geo_precision&#39;, &#39;source&#39;, &#39;source_scale&#39;, &#39;notes&#39;, &#39;fatalities&#39;,
+       &#39;tags&#39;, &#39;timestamp&#39;],
+      dtype=&#39;object&#39;)</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[146]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 2</span>
+<span class="n">colnames</span> <span class="o">=</span> <span class="n">acled_sa</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">like</span><span class="o">=</span><span class="s2">"event"</span><span class="p">)</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span> <span class="o">+</span> <span class="n">acled_sa</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">like</span><span class="o">=</span><span class="s2">"actor"</span><span class="p">)</span><span class="o">.</span><span class="n">columns</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
+<span class="n">acled_sa</span><span class="p">[</span><span class="n">colnames</span><span class="p">]</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[146]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>event_id_cnty</th>
+      <th>event_date</th>
+      <th>event_type</th>
+      <th>sub_event_type</th>
+      <th>actor1</th>
+      <th>assoc_actor_1</th>
+      <th>actor2</th>
+      <th>assoc_actor_2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GUF216</td>
+      <td>29 September 2023</td>
+      <td>Protests</td>
+      <td>Peaceful protest</td>
+      <td>Protesters (French Guiana)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>ARG14050</td>
+      <td>29 September 2023</td>
+      <td>Protests</td>
+      <td>Peaceful protest</td>
+      <td>Protesters (Argentina)</td>
+      <td>CGT: General Confederation of Labour; CTA: Arg...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>ARG14057</td>
+      <td>29 September 2023</td>
+      <td>Protests</td>
+      <td>Peaceful protest</td>
+      <td>Protesters (Argentina)</td>
+      <td>Labor Group (Argentina)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>ARG14104</td>
+      <td>29 September 2023</td>
+      <td>Protests</td>
+      <td>Peaceful protest</td>
+      <td>Protesters (Argentina)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>BOL4911</td>
+      <td>29 September 2023</td>
+      <td>Protests</td>
+      <td>Peaceful protest</td>
+      <td>Protesters (Bolivia)</td>
+      <td>Labor Group (Bolivia)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>167582</th>
+      <td>VEN8468</td>
+      <td>01 January 2018</td>
+      <td>Protests</td>
+      <td>Excessive force against protesters</td>
+      <td>Protesters (Venezuela)</td>
+      <td>Women (Venezuela)</td>
+      <td>Military Forces of Venezuela (1999-) GNB: Vene...</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>167583</th>
+      <td>BRA31568</td>
+      <td>01 January 2018</td>
+      <td>Explosions/Remote violence</td>
+      <td>Remote explosive/landmine/IED</td>
+      <td>Unidentified Gang (Brazil)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>167584</th>
+      <td>VEN15145</td>
+      <td>01 January 2018</td>
+      <td>Violence against civilians</td>
+      <td>Attack</td>
+      <td>Unidentified Armed Group (Venezuela)</td>
+      <td>NaN</td>
+      <td>Civilians (Venezuela)</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>167585</th>
+      <td>COL12093</td>
+      <td>01 January 2018</td>
+      <td>Violence against civilians</td>
+      <td>Attack</td>
+      <td>Unidentified Armed Group (Colombia)</td>
+      <td>NaN</td>
+      <td>Civilians (Colombia)</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>167586</th>
+      <td>COL3347</td>
+      <td>01 January 2018</td>
+      <td>Explosions/Remote violence</td>
+      <td>Remote explosive/landmine/IED</td>
+      <td>Unidentified Armed Group (Colombia)</td>
+      <td>NaN</td>
+      <td>Civilians (Colombia)</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+<p>167587 rows × 8 columns</p>
+</div></div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[147]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># another solution</span>
+<span class="n">acled_sa</span><span class="o">.</span><span class="n">filter</span><span class="p">(</span><span class="n">regex</span><span class="o">=</span><span class="s2">"event|actor"</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[147]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>event_id_cnty</th>
+      <th>event_date</th>
+      <th>event_type</th>
+      <th>sub_event_type</th>
+      <th>actor1</th>
+      <th>assoc_actor_1</th>
+      <th>actor2</th>
+      <th>assoc_actor_2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GUF216</td>
+      <td>29 September 2023</td>
+      <td>Protests</td>
+      <td>Peaceful protest</td>
+      <td>Protesters (French Guiana)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>ARG14050</td>
+      <td>29 September 2023</td>
+      <td>Protests</td>
+      <td>Peaceful protest</td>
+      <td>Protesters (Argentina)</td>
+      <td>CGT: General Confederation of Labour; CTA: Arg...</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>ARG14057</td>
+      <td>29 September 2023</td>
+      <td>Protests</td>
+      <td>Peaceful protest</td>
+      <td>Protesters (Argentina)</td>
+      <td>Labor Group (Argentina)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>ARG14104</td>
+      <td>29 September 2023</td>
+      <td>Protests</td>
+      <td>Peaceful protest</td>
+      <td>Protesters (Argentina)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>BOL4911</td>
+      <td>29 September 2023</td>
+      <td>Protests</td>
+      <td>Peaceful protest</td>
+      <td>Protesters (Bolivia)</td>
+      <td>Labor Group (Bolivia)</td>
+      <td>NaN</td>
+      <td>NaN</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[148]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># rename</span>
+<span class="n">acled_sa</span> <span class="o">=</span> <span class="n">acled_sa</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="n">col</span><span class="p">:</span> <span class="n">col</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">"event"</span><span class="p">,</span> <span class="s2">"event_acled_south_america"</span><span class="p">)</span> <span class="k">for</span> <span class="n">col</span> <span class="ow">in</span> <span class="n">acled_sa</span><span class="o">.</span><span class="n">columns</span><span class="p">})</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="n">acled_sa</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[148]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>event_acled_south_america_id_cnty</th>
+      <th>event_acled_south_america_date</th>
+      <th>year</th>
+      <th>time_precision</th>
+      <th>disorder_type</th>
+      <th>event_acled_south_america_type</th>
+      <th>sub_event_acled_south_america_type</th>
+      <th>actor1</th>
+      <th>assoc_actor_1</th>
+      <th>inter1</th>
+      <th>...</th>
+      <th>location</th>
+      <th>latitude</th>
+      <th>longitude</th>
+      <th>geo_precision</th>
+      <th>source</th>
+      <th>source_scale</th>
+      <th>notes</th>
+      <th>fatalities</th>
+      <th>tags</th>
+      <th>timestamp</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GUF216</td>
+      <td>29 September 2023</td>
+      <td>2023</td>
+      <td>1</td>
+      <td>Demonstrations</td>
+      <td>Protests</td>
+      <td>Peaceful protest</td>
+      <td>Protesters (French Guiana)</td>
+      <td>NaN</td>
+      <td>6</td>
+      <td>...</td>
+      <td>Saint-Laurent-du-Maroni</td>
+      <td>5.5010</td>
+      <td>-54.0294</td>
+      <td>1</td>
+      <td>France Info</td>
+      <td>International</td>
+      <td>On 29 September 2023, in Saint-Laurent-du-Maro...</td>
+      <td>0</td>
+      <td>crowd size=around 100</td>
+      <td>1696264529</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>ARG14050</td>
+      <td>29 September 2023</td>
+      <td>2023</td>
+      <td>1</td>
+      <td>Demonstrations</td>
+      <td>Protests</td>
+      <td>Peaceful protest</td>
+      <td>Protesters (Argentina)</td>
+      <td>CGT: General Confederation of Labour; CTA: Arg...</td>
+      <td>6</td>
+      <td>...</td>
+      <td>Buenos Aires - Comuna 1</td>
+      <td>-34.6036</td>
+      <td>-58.3817</td>
+      <td>1</td>
+      <td>Diario Jornada; La Prensa (Argentina)</td>
+      <td>National</td>
+      <td>On 29 September 2023, in Buenos Aires - Comuna...</td>
+      <td>0</td>
+      <td>crowd size=no report</td>
+      <td>1696273132</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>ARG14057</td>
+      <td>29 September 2023</td>
+      <td>2023</td>
+      <td>1</td>
+      <td>Demonstrations</td>
+      <td>Protests</td>
+      <td>Peaceful protest</td>
+      <td>Protesters (Argentina)</td>
+      <td>Labor Group (Argentina)</td>
+      <td>6</td>
+      <td>...</td>
+      <td>Cordoba</td>
+      <td>-31.4355</td>
+      <td>-64.2009</td>
+      <td>1</td>
+      <td>La Voz del Interior (Argentina)</td>
+      <td>Subnational</td>
+      <td>On 29 September 2023, in Cordoba (Capital, Cor...</td>
+      <td>0</td>
+      <td>crowd size=no report</td>
+      <td>1696273132</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>ARG14104</td>
+      <td>29 September 2023</td>
+      <td>2023</td>
+      <td>1</td>
+      <td>Demonstrations</td>
+      <td>Protests</td>
+      <td>Peaceful protest</td>
+      <td>Protesters (Argentina)</td>
+      <td>NaN</td>
+      <td>6</td>
+      <td>...</td>
+      <td>La Plata - Villa Elvira</td>
+      <td>-34.9294</td>
+      <td>-57.9192</td>
+      <td>1</td>
+      <td>Diario El Dia</td>
+      <td>Subnational</td>
+      <td>On 29 September 2023, in La Plata - Villa Elvi...</td>
+      <td>0</td>
+      <td>crowd size=no report</td>
+      <td>1696273132</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>BOL4911</td>
+      <td>29 September 2023</td>
+      <td>2023</td>
+      <td>1</td>
+      <td>Demonstrations</td>
+      <td>Protests</td>
+      <td>Peaceful protest</td>
+      <td>Protesters (Bolivia)</td>
+      <td>Labor Group (Bolivia)</td>
+      <td>6</td>
+      <td>...</td>
+      <td>Sucre</td>
+      <td>-19.0333</td>
+      <td>-65.2627</td>
+      <td>1</td>
+      <td>Correo del Sur</td>
+      <td>Subnational</td>
+      <td>On 29 September 2023, in Sucre (Chuquisaca), u...</td>
+      <td>0</td>
+      <td>crowd size=no report</td>
+      <td>1696273132</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 31 columns</p>
+</div></div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 4</span>
+<span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="p">(</span><span class="n">acled_sa</span><span class="o">.</span>
+     <span class="n">assign</span><span class="p">(</span><span class="n">fatality_bin</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">acled_sa</span><span class="p">[</span><span class="s2">"fatalities"</span><span class="p">]</span><span class="o">&gt;</span><span class="mi">0</span><span class="p">,</span> <span class="mi">1</span><span class="p">,</span> <span class="mi">0</span><span class="p">),</span> 
+            <span class="n">full_location</span> <span class="o">=</span> <span class="n">acled_sa</span><span class="p">[</span><span class="s2">"region"</span><span class="p">]</span><span class="o">+</span> <span class="s2">"-"</span> <span class="o">+</span> <span class="n">acled_sa</span><span class="p">[</span><span class="s2">"country"</span><span class="p">],</span> 
+            <span class="n">inter_recoded</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">acled_sa</span><span class="p">[</span><span class="s2">"inter1"</span><span class="p">]</span><span class="o">==</span><span class="n">acled_sa</span><span class="p">[</span><span class="s2">"inter1"</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span> <span class="s2">"Median Value"</span><span class="p">,</span> 
+                            <span class="n">np</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">acled_sa</span><span class="p">[</span><span class="s2">"inter1"</span><span class="p">]</span><span class="o">&gt;</span><span class="n">acled_sa</span><span class="p">[</span><span class="s2">"inter1"</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">(),</span> 
+                                          <span class="s2">"Higher Median"</span><span class="p">,</span> <span class="s2">"Below Median"</span><span class="p">))</span>
+           <span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[57]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>event_acled_south_america_id_cnty</th>
+      <th>event_acled_south_america_date</th>
+      <th>year</th>
+      <th>time_precision</th>
+      <th>disorder_type</th>
+      <th>event_acled_south_america_type</th>
+      <th>sub_event_acled_south_america_type</th>
+      <th>actor1</th>
+      <th>assoc_actor_1</th>
+      <th>inter1</th>
+      <th>...</th>
+      <th>geo_precision</th>
+      <th>source</th>
+      <th>source_scale</th>
+      <th>notes</th>
+      <th>fatalities</th>
+      <th>tags</th>
+      <th>timestamp</th>
+      <th>fatality_bin</th>
+      <th>full_location</th>
+      <th>inter_recoded</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>GUF216</td>
+      <td>29 September 2023</td>
+      <td>2023</td>
+      <td>1</td>
+      <td>Demonstrations</td>
+      <td>Protests</td>
+      <td>Peaceful protest</td>
+      <td>Protesters (French Guiana)</td>
+      <td>NaN</td>
+      <td>6</td>
+      <td>...</td>
+      <td>1</td>
+      <td>France Info</td>
+      <td>International</td>
+      <td>On 29 September 2023, in Saint-Laurent-du-Maro...</td>
+      <td>0</td>
+      <td>crowd size=around 100</td>
+      <td>1696264529</td>
+      <td>0</td>
+      <td>South America-French Guiana</td>
+      <td>Median Value</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>ARG14050</td>
+      <td>29 September 2023</td>
+      <td>2023</td>
+      <td>1</td>
+      <td>Demonstrations</td>
+      <td>Protests</td>
+      <td>Peaceful protest</td>
+      <td>Protesters (Argentina)</td>
+      <td>CGT: General Confederation of Labour; CTA: Arg...</td>
+      <td>6</td>
+      <td>...</td>
+      <td>1</td>
+      <td>Diario Jornada; La Prensa (Argentina)</td>
+      <td>National</td>
+      <td>On 29 September 2023, in Buenos Aires - Comuna...</td>
+      <td>0</td>
+      <td>crowd size=no report</td>
+      <td>1696273132</td>
+      <td>0</td>
+      <td>South America-Argentina</td>
+      <td>Median Value</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>ARG14057</td>
+      <td>29 September 2023</td>
+      <td>2023</td>
+      <td>1</td>
+      <td>Demonstrations</td>
+      <td>Protests</td>
+      <td>Peaceful protest</td>
+      <td>Protesters (Argentina)</td>
+      <td>Labor Group (Argentina)</td>
+      <td>6</td>
+      <td>...</td>
+      <td>1</td>
+      <td>La Voz del Interior (Argentina)</td>
+      <td>Subnational</td>
+      <td>On 29 September 2023, in Cordoba (Capital, Cor...</td>
+      <td>0</td>
+      <td>crowd size=no report</td>
+      <td>1696273132</td>
+      <td>0</td>
+      <td>South America-Argentina</td>
+      <td>Median Value</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>ARG14104</td>
+      <td>29 September 2023</td>
+      <td>2023</td>
+      <td>1</td>
+      <td>Demonstrations</td>
+      <td>Protests</td>
+      <td>Peaceful protest</td>
+      <td>Protesters (Argentina)</td>
+      <td>NaN</td>
+      <td>6</td>
+      <td>...</td>
+      <td>1</td>
+      <td>Diario El Dia</td>
+      <td>Subnational</td>
+      <td>On 29 September 2023, in La Plata - Villa Elvi...</td>
+      <td>0</td>
+      <td>crowd size=no report</td>
+      <td>1696273132</td>
+      <td>0</td>
+      <td>South America-Argentina</td>
+      <td>Median Value</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>BOL4911</td>
+      <td>29 September 2023</td>
+      <td>2023</td>
+      <td>1</td>
+      <td>Demonstrations</td>
+      <td>Protests</td>
+      <td>Peaceful protest</td>
+      <td>Protesters (Bolivia)</td>
+      <td>Labor Group (Bolivia)</td>
+      <td>6</td>
+      <td>...</td>
+      <td>1</td>
+      <td>Correo del Sur</td>
+      <td>Subnational</td>
+      <td>On 29 September 2023, in Sucre (Chuquisaca), u...</td>
+      <td>0</td>
+      <td>crowd size=no report</td>
+      <td>1696273132</td>
+      <td>0</td>
+      <td>South America-Bolivia</td>
+      <td>Median Value</td>
+    </tr>
+  </tbody>
+</table>
+<p>5 rows × 34 columns</p>
+</div></div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[149]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># solutions using np.select</span>
+<span class="n">median_value</span> <span class="o">=</span> <span class="n">acled_sa</span><span class="p">[</span><span class="s2">"inter1"</span><span class="p">]</span><span class="o">.</span><span class="n">median</span><span class="p">()</span>
+
+<span class="c1"># Define the conditions</span>
+<span class="n">conditions</span> <span class="o">=</span> <span class="p">[</span>
+    <span class="n">acled_sa</span><span class="p">[</span><span class="s1">'inter1'</span><span class="p">]</span> <span class="o">&lt;</span> <span class="n">median_value</span><span class="p">,</span>
+    <span class="n">acled_sa</span><span class="p">[</span><span class="s1">'inter1'</span><span class="p">]</span> <span class="o">==</span> <span class="n">median_value</span><span class="p">,</span>
+    <span class="n">acled_sa</span><span class="p">[</span><span class="s1">'inter1'</span><span class="p">]</span> <span class="o">&gt;</span> <span class="n">median_value</span>
+<span class="p">]</span>
+
+<span class="c1"># Define the  output values</span>
+<span class="n">choices</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'below median'</span><span class="p">,</span> <span class="s1">'at median'</span><span class="p">,</span> <span class="s1">'above median'</span><span class="p">]</span>
+
+<span class="c1"># Use np.select </span>
+<span class="n">acled_sa</span><span class="p">[</span><span class="s1">'inter_recoded'</span><span class="p">]</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">select</span><span class="p">(</span><span class="n">conditions</span><span class="p">,</span> <span class="n">choices</span><span class="p">,</span> <span class="n">default</span><span class="o">=</span><span class="s1">'N/A'</span><span class="p">)</span>
+
+<span class="c1"># see</span>
+<span class="n">acled_sa</span><span class="o">.</span><span class="n">filter</span><span class="p">([</span><span class="s2">"inter1"</span><span class="p">,</span> <span class="s2">"inter_recoded"</span><span class="p">])</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[149]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>inter1</th>
+      <th>inter_recoded</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>6</td>
+      <td>at median</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>6</td>
+      <td>at median</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>6</td>
+      <td>at median</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>6</td>
+      <td>at median</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>6</td>
+      <td>at median</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+
+</div>
+
 </div>
 </div>
 
@@ -17113,7 +18090,7 @@ File <span class="ansi-green-fg">~/anaconda3/lib/python3.11/site-packages/pandas
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[61]:</div>
+<div class="prompt input_prompt">In&nbsp;[150]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># index based implementation</span>
@@ -17130,7 +18107,7 @@ File <span class="ansi-green-fg">~/anaconda3/lib/python3.11/site-packages/pandas
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[61]:</div>
+    <div class="prompt output_prompt">Out[150]:</div>
 
 
 
@@ -17345,7 +18322,7 @@ File <span class="ansi-green-fg">~/anaconda3/lib/python3.11/site-packages/pandas
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[63]:</div>
+<div class="prompt input_prompt">In&nbsp;[152]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># or with multiple condition</span>
@@ -17362,7 +18339,7 @@ File <span class="ansi-green-fg">~/anaconda3/lib/python3.11/site-packages/pandas
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[63]:</div>
+    <div class="prompt output_prompt">Out[152]:</div>
 
 
 
@@ -17561,7 +18538,7 @@ File <span class="ansi-green-fg">~/anaconda3/lib/python3.11/site-packages/pandas
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[64]:</div>
+<div class="prompt input_prompt">In&nbsp;[153]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># see this</span>
@@ -17578,7 +18555,7 @@ File <span class="ansi-green-fg">~/anaconda3/lib/python3.11/site-packages/pandas
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[64]:</div>
+    <div class="prompt output_prompt">Out[153]:</div>
 
 
 
@@ -17613,7 +18590,7 @@ Name: Year, Length: 20, dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[66]:</div>
+<div class="prompt input_prompt">In&nbsp;[155]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># pretty much the same + column names if you wish</span>
@@ -17630,7 +18607,7 @@ Name: Year, Length: 20, dtype: bool</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[66]:</div>
+    <div class="prompt output_prompt">Out[155]:</div>
 
 
 
@@ -17837,7 +18814,7 @@ Name: Year, Length: 20, dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[67]:</div>
+<div class="prompt input_prompt">In&nbsp;[156]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">wc</span><span class="o">.</span><span class="n">query</span><span class="p">(</span><span class="s1">'Year&lt;1990 &amp; Year&gt;1940'</span><span class="p">)</span>
@@ -17853,7 +18830,7 @@ Name: Year, Length: 20, dtype: bool</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[67]:</div>
+    <div class="prompt output_prompt">Out[156]:</div>
 
 
 
@@ -18066,7 +19043,7 @@ Name: Year, Length: 20, dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[68]:</div>
+<div class="prompt input_prompt">In&nbsp;[157]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Pandas: drop duplicative entries for a specific variable</span>
@@ -18084,7 +19061,7 @@ Name: Year, Length: 20, dtype: bool</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[68]:</div>
+    <div class="prompt output_prompt">Out[157]:</div>
 
 
 
@@ -18306,11 +19283,11 @@ Name: Year, Length: 20, dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[69]:</div>
+<div class="prompt input_prompt">In&nbsp;[159]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Pandas: randomly sample N number of rows from the data</span>
-<span class="n">wc</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">wc</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -18323,7 +19300,7 @@ Name: Year, Length: 20, dtype: bool</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[69]:</div>
+    <div class="prompt output_prompt">Out[159]:</div>
 
 
 
@@ -18361,21 +19338,6 @@ Name: Year, Length: 20, dtype: bool</pre>
   </thead>
   <tbody>
     <tr>
-      <th>10</th>
-      <td>1978</td>
-      <td>Argentina</td>
-      <td>Argentina</td>
-      <td>Netherlands</td>
-      <td>Brazil</td>
-      <td>Italy</td>
-      <td>102</td>
-      <td>16</td>
-      <td>38</td>
-      <td>1.545.791</td>
-      <td>2.684211</td>
-      <td>True</td>
-    </tr>
-    <tr>
       <th>7</th>
       <td>1966</td>
       <td>England</td>
@@ -18391,19 +19353,139 @@ Name: Year, Length: 20, dtype: bool</pre>
       <td>True</td>
     </tr>
     <tr>
-      <th>15</th>
-      <td>1998</td>
-      <td>France</td>
-      <td>France</td>
+      <th>3</th>
+      <td>1950</td>
       <td>Brazil</td>
-      <td>Croatia</td>
+      <td>Uruguay</td>
+      <td>Brazil</td>
+      <td>Sweden</td>
+      <td>Spain</td>
+      <td>88</td>
+      <td>13</td>
+      <td>22</td>
+      <td>1.045.246</td>
+      <td>4.000000</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>1978</td>
+      <td>Argentina</td>
+      <td>Argentina</td>
       <td>Netherlands</td>
+      <td>Brazil</td>
+      <td>Italy</td>
+      <td>102</td>
+      <td>16</td>
+      <td>38</td>
+      <td>1.545.791</td>
+      <td>2.684211</td>
+      <td>True</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>1958</td>
+      <td>Sweden</td>
+      <td>Brazil</td>
+      <td>Sweden</td>
+      <td>France</td>
+      <td>Germany FR</td>
+      <td>126</td>
+      <td>16</td>
+      <td>35</td>
+      <td>819.810</td>
+      <td>3.600000</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1938</td>
+      <td>France</td>
+      <td>Italy</td>
+      <td>Hungary</td>
+      <td>Brazil</td>
+      <td>Sweden</td>
+      <td>84</td>
+      <td>15</td>
+      <td>18</td>
+      <td>375.700</td>
+      <td>4.666667</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>1974</td>
+      <td>Germany</td>
+      <td>Germany FR</td>
+      <td>Netherlands</td>
+      <td>Poland</td>
+      <td>Brazil</td>
+      <td>97</td>
+      <td>16</td>
+      <td>38</td>
+      <td>1.865.753</td>
+      <td>2.552632</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>1986</td>
+      <td>Mexico</td>
+      <td>Argentina</td>
+      <td>Germany FR</td>
+      <td>France</td>
+      <td>Belgium</td>
+      <td>132</td>
+      <td>24</td>
+      <td>52</td>
+      <td>2.394.031</td>
+      <td>2.538462</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>1962</td>
+      <td>Chile</td>
+      <td>Brazil</td>
+      <td>Czechoslovakia</td>
+      <td>Chile</td>
+      <td>Yugoslavia</td>
+      <td>89</td>
+      <td>16</td>
+      <td>32</td>
+      <td>893.172</td>
+      <td>2.781250</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>1994</td>
+      <td>USA</td>
+      <td>Brazil</td>
+      <td>Italy</td>
+      <td>Sweden</td>
+      <td>Bulgaria</td>
+      <td>141</td>
+      <td>24</td>
+      <td>52</td>
+      <td>3.587.538</td>
+      <td>2.711538</td>
+      <td>False</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>2014</td>
+      <td>Brazil</td>
+      <td>Germany</td>
+      <td>Argentina</td>
+      <td>Netherlands</td>
+      <td>Brazil</td>
       <td>171</td>
       <td>32</td>
       <td>64</td>
-      <td>2.785.100</td>
+      <td>3.386.810</td>
       <td>2.671875</td>
-      <td>True</td>
+      <td>False</td>
     </tr>
   </tbody>
 </table>
@@ -18451,7 +19533,7 @@ Name: Year, Length: 20, dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[70]:</div>
+<div class="prompt input_prompt">In&nbsp;[160]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># map + dictionary to recode to create a dummy for certain country</span>
@@ -18479,7 +19561,7 @@ Name: Year, Length: 20, dtype: bool</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[70]:</div>
+    <div class="prompt output_prompt">Out[160]:</div>
 
 
 
@@ -18617,7 +19699,7 @@ Name: Year, Length: 20, dtype: bool</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[71]:</div>
+<div class="prompt input_prompt">In&nbsp;[161]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># apply + function to recode</span>
@@ -18641,7 +19723,7 @@ Name: Year, Length: 20, dtype: bool</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[71]:</div>
+    <div class="prompt output_prompt">Out[161]:</div>
 
 
 
@@ -18671,7 +19753,7 @@ Name: Winner, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[72]:</div>
+<div class="prompt input_prompt">In&nbsp;[163]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># apply + function to recode</span>
@@ -18700,11 +19782,11 @@ Name: Winner, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[75]:</div>
+<div class="prompt input_prompt">In&nbsp;[165]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># using apply inside of assign</span>
-<span class="n">wc</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">winner_uruguay</span><span class="o">=</span><span class="n">wc</span><span class="p">[</span><span class="s1">'Winner'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">get_dummies</span><span class="p">,</span> <span class="n">country</span><span class="o">=</span><span class="s2">"Uruguay"</span><span class="p">))</span>
+<span class="n">wc</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">winner_germany</span><span class="o">=</span><span class="n">wc</span><span class="p">[</span><span class="s1">'Winner'</span><span class="p">]</span><span class="o">.</span><span class="n">apply</span><span class="p">(</span><span class="n">get_dummies</span><span class="p">,</span> <span class="n">country</span><span class="o">=</span><span class="s2">"Germany"</span><span class="p">))</span>
 </pre></div>
 
     </div>
@@ -18717,7 +19799,7 @@ Name: Winner, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[75]:</div>
+    <div class="prompt output_prompt">Out[165]:</div>
 
 
 
@@ -18753,6 +19835,7 @@ Name: Winner, dtype: int64</pre>
       <th>winner_and_hoster</th>
       <th>brazil_winner</th>
       <th>winner_uruguay</th>
+      <th>winner_germany</th>
     </tr>
   </thead>
   <tbody>
@@ -18771,7 +19854,8 @@ Name: Winner, dtype: int64</pre>
       <td>3.888889</td>
       <td>True</td>
       <td>0.0</td>
-      <td>1</td>
+      <td>1.0</td>
+      <td>0</td>
     </tr>
     <tr>
       <th>1</th>
@@ -18787,6 +19871,7 @@ Name: Winner, dtype: int64</pre>
       <td>363.000</td>
       <td>4.117647</td>
       <td>True</td>
+      <td>0.0</td>
       <td>0.0</td>
       <td>0</td>
     </tr>
@@ -18805,6 +19890,7 @@ Name: Winner, dtype: int64</pre>
       <td>4.666667</td>
       <td>False</td>
       <td>0.0</td>
+      <td>0.0</td>
       <td>0</td>
     </tr>
     <tr>
@@ -18822,7 +19908,8 @@ Name: Winner, dtype: int64</pre>
       <td>4.000000</td>
       <td>False</td>
       <td>0.0</td>
-      <td>1</td>
+      <td>1.0</td>
+      <td>0</td>
     </tr>
     <tr>
       <th>4</th>
@@ -18839,10 +19926,12 @@ Name: Winner, dtype: int64</pre>
       <td>5.384615</td>
       <td>False</td>
       <td>0.0</td>
+      <td>0.0</td>
       <td>0</td>
     </tr>
     <tr>
       <th>...</th>
+      <td>...</td>
       <td>...</td>
       <td>...</td>
       <td>...</td>
@@ -18873,6 +19962,7 @@ Name: Winner, dtype: int64</pre>
       <td>2.671875</td>
       <td>True</td>
       <td>0.0</td>
+      <td>NaN</td>
       <td>0</td>
     </tr>
     <tr>
@@ -18890,6 +19980,7 @@ Name: Winner, dtype: int64</pre>
       <td>2.515625</td>
       <td>False</td>
       <td>1.0</td>
+      <td>NaN</td>
       <td>0</td>
     </tr>
     <tr>
@@ -18907,6 +19998,7 @@ Name: Winner, dtype: int64</pre>
       <td>2.296875</td>
       <td>False</td>
       <td>0.0</td>
+      <td>NaN</td>
       <td>0</td>
     </tr>
     <tr>
@@ -18924,6 +20016,7 @@ Name: Winner, dtype: int64</pre>
       <td>2.265625</td>
       <td>False</td>
       <td>0.0</td>
+      <td>NaN</td>
       <td>0</td>
     </tr>
     <tr>
@@ -18941,11 +20034,12 @@ Name: Winner, dtype: int64</pre>
       <td>2.671875</td>
       <td>False</td>
       <td>0.0</td>
-      <td>0</td>
+      <td>NaN</td>
+      <td>1</td>
     </tr>
   </tbody>
 </table>
-<p>20 rows × 14 columns</p>
+<p>20 rows × 15 columns</p>
 </div></div>
 
 </div>
@@ -18994,7 +20088,7 @@ Name: Winner, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[76]:</div>
+<div class="prompt input_prompt">In&nbsp;[167]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># create a new variable</span>
@@ -19012,7 +20106,7 @@ Name: Winner, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[76]:</div>
+    <div class="prompt output_prompt">Out[167]:</div>
 
 
 
@@ -19154,7 +20248,7 @@ Name: Winner, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[77]:</div>
+<div class="prompt input_prompt">In&nbsp;[168]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># notice we can easily use np.where with assign</span>
@@ -19171,7 +20265,7 @@ Name: Winner, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[77]:</div>
+    <div class="prompt output_prompt">Out[168]:</div>
 
 
 
@@ -19414,7 +20508,7 @@ Name: Winner, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[78]:</div>
+<div class="prompt input_prompt">In&nbsp;[169]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># using string methods</span>
@@ -19435,7 +20529,7 @@ Name: Winner, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[78]:</div>
+    <div class="prompt output_prompt">Out[169]:</div>
 
 
 
@@ -19536,7 +20630,7 @@ Name: Winner, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[79]:</div>
+<div class="prompt input_prompt">In&nbsp;[170]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># step one: create a list of conditions</span>
@@ -19564,7 +20658,7 @@ Name: Winner, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[79]:</div>
+    <div class="prompt output_prompt">Out[170]:</div>
 
 
 
@@ -19685,7 +20779,7 @@ Name: Winner, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[80]:</div>
+<div class="prompt input_prompt">In&nbsp;[171]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># load worldcup dataset</span>
@@ -19707,13 +20801,13 @@ Name: Winner, dtype: int64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[80]:</div>
+    <div class="prompt output_prompt">Out[171]:</div>
 
 
 
 
 <div class="output_text output_subarea output_execute_result">
-<pre>&lt;pandas.core.groupby.generic.DataFrameGroupBy object at 0x292c6c950&gt;</pre>
+<pre>&lt;pandas.core.groupby.generic.DataFrameGroupBy object at 0x16c15a210&gt;</pre>
 </div>
 
 </div>
@@ -19732,7 +20826,7 @@ Name: Winner, dtype: int64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[81]:</div>
+<div class="prompt input_prompt">In&nbsp;[172]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Iteration for groups</span>
@@ -19773,7 +20867,7 @@ Uruguay
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>/var/folders/jy/10_nyhkn3nv_rrbnd8f_fr940000gp/T/ipykernel_43345/2794934486.py:2: FutureWarning: In a future version of pandas, a length 1 tuple will be returned when iterating over a groupby with a grouper equal to a list of length 1. Don&#39;t supply a list with a single grouper to avoid this warning.
+<pre>/var/folders/jy/10_nyhkn3nv_rrbnd8f_fr940000gp/T/ipykernel_52085/2794934486.py:2: FutureWarning: In a future version of pandas, a length 1 tuple will be returned when iterating over a groupby with a grouper equal to a list of length 1. Don&#39;t supply a list with a single grouper to avoid this warning.
   for group, data in g:
 </pre>
 </div>
@@ -19785,7 +20879,7 @@ Uruguay
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[82]:</div>
+<div class="prompt input_prompt">In&nbsp;[173]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># iteration for data grouped</span>
@@ -19872,7 +20966,7 @@ Uruguay
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>/var/folders/jy/10_nyhkn3nv_rrbnd8f_fr940000gp/T/ipykernel_43345/4250474981.py:2: FutureWarning: In a future version of pandas, a length 1 tuple will be returned when iterating over a groupby with a grouper equal to a list of length 1. Don&#39;t supply a list with a single grouper to avoid this warning.
+<pre>/var/folders/jy/10_nyhkn3nv_rrbnd8f_fr940000gp/T/ipykernel_52085/4250474981.py:2: FutureWarning: In a future version of pandas, a length 1 tuple will be returned when iterating over a groupby with a grouper equal to a list of length 1. Don&#39;t supply a list with a single grouper to avoid this warning.
   for group, data in g:
 </pre>
 </div>
@@ -19892,7 +20986,7 @@ Uruguay
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[83]:</div>
+<div class="prompt input_prompt">In&nbsp;[73]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">g</span><span class="o">.</span><span class="n">get_group</span><span class="p">(</span><span class="s2">"Argentina"</span><span class="p">)</span>
@@ -19908,7 +21002,7 @@ Uruguay
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[83]:</div>
+    <div class="prompt output_prompt">Out[73]:</div>
 
 
 
@@ -19997,7 +21091,7 @@ Uruguay
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[84]:</div>
+<div class="prompt input_prompt">In&nbsp;[174]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># mean of all numeric variables grouping by winners</span>
@@ -20018,7 +21112,7 @@ Uruguay
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>/var/folders/jy/10_nyhkn3nv_rrbnd8f_fr940000gp/T/ipykernel_43345/2212436017.py:2: FutureWarning: The default value of numeric_only in DataFrameGroupBy.mean is deprecated. In a future version, numeric_only will default to False. Either specify numeric_only or select only columns which should be valid for the function.
+<pre>/var/folders/jy/10_nyhkn3nv_rrbnd8f_fr940000gp/T/ipykernel_52085/2212436017.py:2: FutureWarning: The default value of numeric_only in DataFrameGroupBy.mean is deprecated. In a future version, numeric_only will default to False. Either specify numeric_only or select only columns which should be valid for the function.
   wc.groupby([&#34;Winner&#34;]).mean()
 </pre>
 </div>
@@ -20026,7 +21120,7 @@ Uruguay
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[84]:</div>
+    <div class="prompt output_prompt">Out[174]:</div>
 
 
 
@@ -20145,7 +21239,7 @@ Uruguay
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[85]:</div>
+<div class="prompt input_prompt">In&nbsp;[176]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># With a specific input</span>
@@ -20162,7 +21256,7 @@ Uruguay
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[85]:</div>
+    <div class="prompt output_prompt">Out[176]:</div>
 
 
 
@@ -20197,7 +21291,7 @@ Name: GoalsScored, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[86]:</div>
+<div class="prompt input_prompt">In&nbsp;[177]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># reseting the index</span>
@@ -20214,7 +21308,7 @@ Name: GoalsScored, dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[86]:</div>
+    <div class="prompt output_prompt">Out[177]:</div>
 
 
 
@@ -20298,7 +21392,7 @@ Name: GoalsScored, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[87]:</div>
+<div class="prompt input_prompt">In&nbsp;[178]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## as_index=false</span>
@@ -20315,7 +21409,7 @@ Name: GoalsScored, dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[87]:</div>
+    <div class="prompt output_prompt">Out[178]:</div>
 
 
 
@@ -20516,7 +21610,7 @@ Name: GoalsScored, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[88]:</div>
+<div class="prompt input_prompt">In&nbsp;[179]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># max goal by team as home team</span>
@@ -20538,7 +21632,7 @@ Name: GoalsScored, dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[88]:</div>
+    <div class="prompt output_prompt">Out[179]:</div>
 
 
 
@@ -20633,11 +21727,10 @@ Name: GoalsScored, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[89]:</div>
+<div class="prompt input_prompt">In&nbsp;[180]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># number of matches as home team</span>
-<span class="c1"># max goal by team as home team</span>
 <span class="p">(</span><span class="n">wc_matches</span>
      <span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">"Home Team Name"</span><span class="p">],</span> <span class="n">as_index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
      <span class="p">[</span><span class="s2">"Home Team Name"</span><span class="p">]</span>
@@ -20656,7 +21749,7 @@ Name: GoalsScored, dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[89]:</div>
+    <div class="prompt output_prompt">Out[180]:</div>
 
 
 
@@ -20766,7 +21859,7 @@ Name: GoalsScored, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[90]:</div>
+<div class="prompt input_prompt">In&nbsp;[181]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">wc</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">"Winner"</span><span class="p">])[</span><span class="s2">"GoalsScored"</span><span class="p">]</span><span class="o">.</span><span class="n">agg</span><span class="p">([</span><span class="s2">"mean"</span><span class="p">,</span><span class="s2">"std"</span><span class="p">,</span><span class="s2">"median"</span><span class="p">])</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
@@ -20782,7 +21875,7 @@ Name: GoalsScored, dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[90]:</div>
+    <div class="prompt output_prompt">Out[181]:</div>
 
 
 
@@ -20894,7 +21987,7 @@ Name: GoalsScored, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[91]:</div>
+<div class="prompt input_prompt">In&nbsp;[182]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">mean_add_50</span><span class="p">(</span><span class="n">x</span><span class="p">):</span>
@@ -20913,7 +22006,7 @@ Name: GoalsScored, dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[91]:</div>
+    <div class="prompt output_prompt">Out[182]:</div>
 
 
 
@@ -21032,7 +22125,7 @@ Name: GoalsScored, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[92]:</div>
+<div class="prompt input_prompt">In&nbsp;[183]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="n">wc</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">"Winner"</span><span class="p">])[</span><span class="s2">"GoalsScored"</span><span class="p">]</span><span class="o">.</span>
@@ -21054,7 +22147,7 @@ Name: GoalsScored, dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[92]:</div>
+    <div class="prompt output_prompt">Out[183]:</div>
 
 
 
@@ -21176,7 +22269,7 @@ Name: GoalsScored, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[93]:</div>
+<div class="prompt input_prompt">In&nbsp;[184]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="p">(</span><span class="n">wc</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">"Country"</span><span class="p">])[</span><span class="s2">"GoalsScored"</span><span class="p">]</span><span class="o">.</span> 
@@ -21195,7 +22288,7 @@ Name: GoalsScored, dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[93]:</div>
+    <div class="prompt output_prompt">Out[184]:</div>
 
 
 
@@ -21305,7 +22398,7 @@ Name: GoalsScored, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[94]:</div>
+<div class="prompt input_prompt">In&nbsp;[185]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">wc</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">"Winner"</span><span class="p">,</span> <span class="s2">"Year"</span><span class="p">])[</span><span class="s2">"GoalsScored"</span><span class="p">]</span><span class="o">.</span><span class="n">mean</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
@@ -21321,7 +22414,7 @@ Name: GoalsScored, dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[94]:</div>
+    <div class="prompt output_prompt">Out[185]:</div>
 
 
 
@@ -21400,7 +22493,7 @@ Name: GoalsScored, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[95]:</div>
+<div class="prompt input_prompt">In&nbsp;[186]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># create a new column</span>
@@ -21418,7 +22511,7 @@ Name: GoalsScored, dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[95]:</div>
+    <div class="prompt output_prompt">Out[186]:</div>
 
 
 
@@ -21446,13 +22539,13 @@ Name: GoalsScored, Length: 20, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[96]:</div>
+<div class="prompt input_prompt">In&nbsp;[188]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># easily combined with assign</span>
 <span class="c1"># create a new column</span>
 <span class="p">(</span><span class="n">wc</span><span class="o">.</span><span class="n">assign</span><span class="p">(</span><span class="n">goals_score_wc_mean_wc</span><span class="o">=</span><span class="n">wc</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s2">"Winner"</span><span class="p">])[</span><span class="s2">"GoalsScored"</span><span class="p">]</span><span class="o">.</span>
-    <span class="n">transform</span><span class="p">(</span><span class="s2">"mean"</span><span class="p">)))</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+    <span class="n">transform</span><span class="p">(</span><span class="s2">"mean"</span><span class="p">)))</span>
 </pre></div>
 
     </div>
@@ -21465,7 +22558,7 @@ Name: GoalsScored, Length: 20, dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[96]:</div>
+    <div class="prompt output_prompt">Out[188]:</div>
 
 
 
@@ -21571,8 +22664,93 @@ Name: GoalsScored, Length: 20, dtype: float64</pre>
       <td>768.607</td>
       <td>117.333333</td>
     </tr>
+    <tr>
+      <th>...</th>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+      <td>...</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>1998</td>
+      <td>France</td>
+      <td>France</td>
+      <td>Brazil</td>
+      <td>Croatia</td>
+      <td>Netherlands</td>
+      <td>171</td>
+      <td>32</td>
+      <td>64</td>
+      <td>2.785.100</td>
+      <td>171.000000</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>2002</td>
+      <td>Korea/Japan</td>
+      <td>Brazil</td>
+      <td>Germany</td>
+      <td>Turkey</td>
+      <td>Korea Republic</td>
+      <td>161</td>
+      <td>32</td>
+      <td>64</td>
+      <td>2.705.197</td>
+      <td>122.400000</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>2006</td>
+      <td>Germany</td>
+      <td>Italy</td>
+      <td>France</td>
+      <td>Germany</td>
+      <td>Portugal</td>
+      <td>147</td>
+      <td>32</td>
+      <td>64</td>
+      <td>3.359.439</td>
+      <td>111.750000</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>2010</td>
+      <td>South Africa</td>
+      <td>Spain</td>
+      <td>Netherlands</td>
+      <td>Germany</td>
+      <td>Uruguay</td>
+      <td>145</td>
+      <td>32</td>
+      <td>64</td>
+      <td>3.178.856</td>
+      <td>145.000000</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>2014</td>
+      <td>Brazil</td>
+      <td>Germany</td>
+      <td>Argentina</td>
+      <td>Netherlands</td>
+      <td>Brazil</td>
+      <td>171</td>
+      <td>32</td>
+      <td>64</td>
+      <td>3.386.810</td>
+      <td>171.000000</td>
+    </tr>
   </tbody>
 </table>
+<p>20 rows × 11 columns</p>
 </div></div>
 
 </div>
@@ -21583,7 +22761,7 @@ Name: GoalsScored, Length: 20, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[97]:</div>
+<div class="prompt input_prompt">In&nbsp;[189]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># also: very useful with lambda functions</span>
@@ -21600,7 +22778,7 @@ Name: GoalsScored, Length: 20, dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[97]:</div>
+    <div class="prompt output_prompt">Out[189]:</div>
 
 
 
@@ -21635,7 +22813,7 @@ Name: GoalsScored, Length: 20, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[98]:</div>
+<div class="prompt input_prompt">In&nbsp;[190]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Pandas: sort values by a column variable (ascending)</span>
@@ -21652,7 +22830,7 @@ Name: GoalsScored, Length: 20, dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[98]:</div>
+    <div class="prompt output_prompt">Out[190]:</div>
 
 
 
@@ -21738,7 +22916,7 @@ Name: GoalsScored, Length: 20, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[99]:</div>
+<div class="prompt input_prompt">In&nbsp;[90]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Pandas: sort values by a column variable (descending)</span>
@@ -21755,7 +22933,7 @@ Name: GoalsScored, Length: 20, dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[99]:</div>
+    <div class="prompt output_prompt">Out[90]:</div>
 
 
 
@@ -21841,7 +23019,7 @@ Name: GoalsScored, Length: 20, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[100]:</div>
+<div class="prompt input_prompt">In&nbsp;[191]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Pandas: sort values by more than one column variable </span>
@@ -21858,7 +23036,7 @@ Name: GoalsScored, Length: 20, dtype: float64</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[100]:</div>
+    <div class="prompt output_prompt">Out[191]:</div>
 
 
 
@@ -21970,6 +23148,351 @@ Name: GoalsScored, Length: 20, dtype: float64</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
+<div class="prompt input_prompt">In&nbsp;[59]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 1</span>
+<span class="n">acled_sa</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"acled_south_america.csv"</span><span class="p">)</span>
+<span class="n">acled_sa</span><span class="p">[</span><span class="s2">"event_type"</span><span class="p">]</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">()</span><span class="o">.</span><span class="n">to_list</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[59]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[&#39;Protests&#39;,
+ &#39;Battles&#39;,
+ &#39;Strategic developments&#39;,
+ &#39;Violence against civilians&#39;,
+ &#39;Riots&#39;,
+ &#39;Explosions/Remote violence&#39;]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 2</span>
+<span class="p">(</span><span class="n">acled_sa</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">"year"</span><span class="p">,</span> <span class="n">as_index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+     <span class="p">[</span><span class="s2">"year"</span><span class="p">]</span>
+     <span class="o">.</span><span class="n">size</span><span class="p">()</span>
+        <span class="p">)</span>       
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[60]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>year</th>
+      <th>size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>2018</td>
+      <td>28758</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2019</td>
+      <td>26441</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>2020</td>
+      <td>26615</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>2021</td>
+      <td>30190</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>2022</td>
+      <td>32039</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>2023</td>
+      <td>23544</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[61]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 3 </span>
+<span class="p">(</span><span class="n">acled_sa</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">"event_type"</span><span class="p">,</span> <span class="n">as_index</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+     <span class="p">[</span><span class="s2">"event_type"</span><span class="p">]</span>
+     <span class="o">.</span><span class="n">size</span><span class="p">()</span>
+     <span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">"size"</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+     <span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+        <span class="p">)</span>    
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[61]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>event_type</th>
+      <th>size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Protests</td>
+      <td>80850</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Battles</td>
+      <td>34042</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Violence against civilians</td>
+      <td>30001</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Riots</td>
+      <td>13447</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Strategic developments</td>
+      <td>6917</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Explosions/Remote violence</td>
+      <td>2330</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[62]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">acled_sa</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s2">"country"</span><span class="p">,</span> <span class="n">as_index</span><span class="o">=</span><span class="kc">False</span><span class="p">)[</span><span class="s2">"fatalities"</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="s2">"fatalities"</span><span class="p">,</span> <span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[62]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>country</th>
+      <th>fatalities</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>2</th>
+      <td>Brazil</td>
+      <td>35842</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>Colombia</td>
+      <td>10553</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>Venezuela</td>
+      <td>8824</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>Peru</td>
+      <td>231</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>Paraguay</td>
+      <td>132</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>Ecuador</td>
+      <td>130</td>
+    </tr>
+    <tr>
+      <th>0</th>
+      <td>Argentina</td>
+      <td>117</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Chile</td>
+      <td>108</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Bolivia</td>
+      <td>88</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>Suriname</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>Guyana</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>Uruguay</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>French Guiana</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>Falkland Islands</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
 <div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
@@ -21977,6 +23500,38 @@ Name: GoalsScored, Length: 20, dtype: float64</pre>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[101]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>jupyter<span class="w"> </span>nbconvert<span class="w"> </span>_week-6c-data_wrangling_pandas.ipynb<span class="w"> </span>--to<span class="w"> </span>html<span class="w"> </span>--template<span class="w"> </span>classic
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[NbConvertApp] Converting notebook _week-6c-data_wrangling_pandas.ipynb to html
+[NbConvertApp] Writing 513144 bytes to _week-6c-data_wrangling_pandas.html
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 

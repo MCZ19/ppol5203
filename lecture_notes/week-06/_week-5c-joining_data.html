@@ -13101,7 +13101,7 @@ Tiago Ventura</center> <h1></p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <p><strong>In this Notebook we cover</strong></p>
-<p>This is our last notebook of data wrangling with <code>Pandas</code>. We will manly cover:</p>
+<p>This is our last notebook of data wrangling with <code>Pandas</code>. We will  cover:</p>
 <ul>
 <li>Tidy Data</li>
 <li>Joining Methods in Pandas</li>
@@ -13127,7 +13127,7 @@ Tiago Ventura</center> <h1></p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Tidy-Data">Tidy Data<a class="anchor-link" href="#Tidy-Data">&#182;</a></h2><p>Data can be organized in many different ways and can target many different concepts. Having an consistent and well-established procedures for data organization will make your workflow will faster, more efficient and less prone to errors.</p>
+<h2 id="Tidy-Data">Tidy Data<a class="anchor-link" href="#Tidy-Data">&#182;</a></h2><p>Data can be organized in many different ways and can target many different concepts. Having an consistent and well-established procedure for data organization will make your workflow, faster, more efficient and less prone to errors.</p>
 <p>On tasks related to data visualization and data wrangling, we will often try to organize our datasets following a <code>tidy data format</code> proposed by <a href="https://vita.had.co.nz/papers/tidy-data.pdf">Hadley Wickham in his 2014 article</a>.</p>
 <p>Consider the following 4 ways to organize the same data (<em>example pulled from <a href="https://r4ds.had.co.nz/tidy-data.html">R4DS</a></em>).</p>
 
@@ -13353,10 +13353,7 @@ Tiago Ventura</center> <h1></p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<div class="alert alert-block alert-info">
-
-**Of the data examples outlined above, only the first could be considered `tidy` by this definition.**
-</div><h3 id="What-makes-a-data-tidy?">What makes a data tidy?<a class="anchor-link" href="#What-makes-a-data-tidy?">&#182;</a></h3><p>Three interrelated rules which make a dataset <strong>tidy</strong>:
+<h3 id="What-makes-a-data-tidy?">What makes a data tidy?<a class="anchor-link" href="#What-makes-a-data-tidy?">&#182;</a></h3><p>Three interrelated rules which make a dataset <strong>tidy</strong>:
 <br><br></p>
 <ol>
 <li><strong>Each variable must have its own column.</strong></li>
@@ -13368,7 +13365,10 @@ Tiago Ventura</center> <h1></p>
 <li><strong>Each value must have its own cell.</strong></li>
 </ol>
 <p><img src="https://d33wubrfki0l68.cloudfront.net/6f1ddb544fc5c69a2478e444ab8112fb0eea23f8/91adc/images/tidy-1.png" alt="Image drawn from Grolemund and Wickham 2017"></p>
+<div class="alert alert-block alert-info">
 
+**Of the data examples outlined above, only the first could be considered `tidy` by this definition.**
+</div>
 </div>
 </div>
 </div>
@@ -13384,7 +13384,7 @@ Tiago Ventura</center> <h1></p>
 </ul>
 <div class="alert alert-block alert-info">
 
-You don't need to be convinced in theory of these advantages. You will get in practice the tasty of working with tidy format data **The most important thing for you to have now is to follow a consistent strategy to organize your datasets, and apply these procedures across the board!**
+You don't need to be convinced in theory of these advantages. You will get in practice the taste of working with tidy format data **The most important thing for you to have now is to follow a consistent strategy to organize your datasets, and apply these procedures across the board!**
 
 </div>
 </div>
@@ -13401,7 +13401,7 @@ You don't need to be convinced in theory of these advantages. You will get in pr
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">base_url</span> <span class="o">=</span> <span class="s2">"https://github.com/byuidatascience/data4python4ds/raw/master/data-raw/"</span>
@@ -13420,7 +13420,7 @@ You don't need to be convinced in theory of these advantages. You will get in pr
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[36]:</div>
+<div class="prompt input_prompt">In&nbsp;[4]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># see</span>
@@ -13437,7 +13437,7 @@ You don't need to be convinced in theory of these advantages. You will get in pr
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[36]:</div>
+    <div class="prompt output_prompt">Out[4]:</div>
 
 
 
@@ -13518,19 +13518,6 @@ You don't need to be convinced in theory of these advantages. You will get in pr
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -13567,7 +13554,7 @@ You don't need to be convinced in theory of these advantages. You will get in pr
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[38]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># untidy - wide</span>
@@ -13603,7 +13590,7 @@ You don't need to be convinced in theory of these advantages. You will get in pr
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># tidy - from wide to long</span>
@@ -13620,7 +13607,7 @@ You don't need to be convinced in theory of these advantages. You will get in pr
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[39]:</div>
+    <div class="prompt output_prompt">Out[6]:</div>
 
 
 
@@ -13872,7 +13859,7 @@ melt(frame: &#39;DataFrame&#39;, id_vars=None, value_vars=None, var_name=None, v
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[40]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#untidy</span>
@@ -13916,7 +13903,7 @@ melt(frame: &#39;DataFrame&#39;, id_vars=None, value_vars=None, var_name=None, v
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[41]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#tidy</span>
@@ -13924,9 +13911,97 @@ melt(frame: &#39;DataFrame&#39;, id_vars=None, value_vars=None, var_name=None, v
     <span class="n">index</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'country'</span><span class="p">,</span> <span class="s1">'year'</span><span class="p">],</span> 
     <span class="n">columns</span> <span class="o">=</span> <span class="s1">'type'</span><span class="p">,</span> 
     <span class="n">values</span> <span class="o">=</span> <span class="s1">'count'</span><span class="p">)</span>
+<span class="c1"># see</span>
+<span class="n">table2_tidy</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[14]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>type</th>
+      <th>country</th>
+      <th>year</th>
+      <th>cases</th>
+      <th>population</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Afghanistan</td>
+      <td>1999</td>
+      <td>745</td>
+      <td>19987071</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Afghanistan</td>
+      <td>2000</td>
+      <td>2666</td>
+      <td>20595360</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>Brazil</td>
+      <td>1999</td>
+      <td>37737</td>
+      <td>172006362</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>Brazil</td>
+      <td>2000</td>
+      <td>80488</td>
+      <td>174504898</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>China</td>
+      <td>1999</td>
+      <td>212258</td>
+      <td>1272915272</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>China</td>
+      <td>2000</td>
+      <td>213766</td>
+      <td>1280428583</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+
+</div>
+
 </div>
 </div>
 
@@ -14106,105 +14181,6 @@ pivot_table(data: &#39;DataFrame&#39;, values=None, index=None, columns=None, ag
 </div>
 
 </div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[43]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">table2_tidy</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[43]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th>type</th>
-      <th>country</th>
-      <th>year</th>
-      <th>cases</th>
-      <th>population</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Afghanistan</td>
-      <td>1999</td>
-      <td>745</td>
-      <td>19987071</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Afghanistan</td>
-      <td>2000</td>
-      <td>2666</td>
-      <td>20595360</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Brazil</td>
-      <td>1999</td>
-      <td>37737</td>
-      <td>172006362</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Brazil</td>
-      <td>2000</td>
-      <td>80488</td>
-      <td>174504898</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>China</td>
-      <td>1999</td>
-      <td>212258</td>
-      <td>1272915272</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>China</td>
-      <td>2000</td>
-      <td>213766</td>
-      <td>1280428583</td>
-    </tr>
-  </tbody>
-</table>
-</div></div>
-
-</div>
-
-</div>
-</div>
-
-</div>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
@@ -14215,7 +14191,7 @@ pivot_table(data: &#39;DataFrame&#39;, values=None, index=None, columns=None, ag
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[46]:</div>
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># we need to separate rate</span>
@@ -14232,7 +14208,7 @@ pivot_table(data: &#39;DataFrame&#39;, values=None, index=None, columns=None, ag
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[46]:</div>
+    <div class="prompt output_prompt">Out[15]:</div>
 
 
 
@@ -14315,7 +14291,7 @@ pivot_table(data: &#39;DataFrame&#39;, values=None, index=None, columns=None, ag
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[48]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># simple string</span>
@@ -14350,7 +14326,7 @@ world
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[49]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># with pandas</span>
@@ -14364,7 +14340,7 @@ world
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[50]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">table3</span>
@@ -14380,7 +14356,7 @@ world
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[50]:</div>
+    <div class="prompt output_prompt">Out[18]:</div>
 
 
 
@@ -14478,7 +14454,7 @@ world
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[51]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># all to upper</span>
@@ -14492,7 +14468,7 @@ world
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># length</span>
@@ -14500,7 +14476,6 @@ world
 
 <span class="c1"># find </span>
 <span class="n">table3</span><span class="p">[</span><span class="s2">"country_brazil_"</span><span class="p">]</span><span class="o">=</span><span class="n">table3</span><span class="p">[</span><span class="s2">"country"</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">find</span><span class="p">(</span><span class="s2">"Brazil"</span><span class="p">)</span>
-
 
 <span class="c1"># replace</span>
 <span class="n">table3</span><span class="p">[</span><span class="s2">"country_brazil"</span><span class="p">]</span><span class="o">=</span><span class="n">table3</span><span class="p">[</span><span class="s2">"country"</span><span class="p">]</span><span class="o">.</span><span class="n">str</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s2">"Brazil"</span><span class="p">,</span> <span class="s2">"BR"</span><span class="p">)</span>
@@ -14522,7 +14497,7 @@ world
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[54]:</div>
+    <div class="prompt output_prompt">Out[20]:</div>
 
 
 
@@ -14551,10 +14526,10 @@ world
       <th>population</th>
       <th>country_upper</th>
       <th>country_length</th>
+      <th>country_brazil_</th>
       <th>country_brazil</th>
       <th>century</th>
       <th>years</th>
-      <th>country_brazil_</th>
     </tr>
   </thead>
   <tbody>
@@ -14567,10 +14542,10 @@ world
       <td>19987071</td>
       <td>AFGHANISTAN</td>
       <td>11</td>
+      <td>-1</td>
       <td>Afghanistan</td>
       <td>19</td>
       <td>99</td>
-      <td>-1</td>
     </tr>
     <tr>
       <th>1</th>
@@ -14581,10 +14556,10 @@ world
       <td>20595360</td>
       <td>AFGHANISTAN</td>
       <td>11</td>
+      <td>-1</td>
       <td>Afghanistan</td>
       <td>20</td>
       <td>00</td>
-      <td>-1</td>
     </tr>
     <tr>
       <th>2</th>
@@ -14595,10 +14570,10 @@ world
       <td>172006362</td>
       <td>BRAZIL</td>
       <td>6</td>
+      <td>0</td>
       <td>BR</td>
       <td>19</td>
       <td>99</td>
-      <td>0</td>
     </tr>
     <tr>
       <th>3</th>
@@ -14609,10 +14584,10 @@ world
       <td>174504898</td>
       <td>BRAZIL</td>
       <td>6</td>
+      <td>0</td>
       <td>BR</td>
       <td>20</td>
       <td>00</td>
-      <td>0</td>
     </tr>
     <tr>
       <th>4</th>
@@ -14623,10 +14598,10 @@ world
       <td>1272915272</td>
       <td>CHINA</td>
       <td>5</td>
+      <td>-1</td>
       <td>China</td>
       <td>19</td>
       <td>99</td>
-      <td>-1</td>
     </tr>
     <tr>
       <th>5</th>
@@ -14637,10 +14612,10 @@ world
       <td>1280428583</td>
       <td>CHINA</td>
       <td>5</td>
+      <td>-1</td>
       <td>China</td>
       <td>20</td>
       <td>00</td>
-      <td>-1</td>
     </tr>
   </tbody>
 </table>
@@ -14663,7 +14638,7 @@ world
 <li><p>B) Data comes from different sources. As a researcher, you are being creative and augmenting the information at your hand to answer a policy question.</p>
 </li>
 </ul>
-<p>Database normalization works as an <span style='color:blue'> **constraint**</span>, a guardrail to protect your data infrastructure. The second reason for why joining methods matter is primarily an <span style='color:red'> **opportunity** </span>. Keep always your eyes open for creative ways to connect data sources. Very critical research ideas might emerge from data augmentation from joining initially conceived unrelated datasets.</p>
+<p>Database normalization works as an <span style='color:blue'> **constraint**</span>, a guardrail to protect your data infrastructure. The second reason for why joining methods matter is primarily an <span style='color:red'> **opportunity** </span>. Keep always your eyes open for creative ways to connect data sources. Very critical research ideas might emerge from data augmentation from joining unrelated datasets.</p>
 <h3 id="pandas-methods:"><code>pandas</code> methods:<a class="anchor-link" href="#pandas-methods:">&#182;</a></h3><p><code>pandas</code> comes baked in with a fully functional method (<code>pd.merge</code>) to join data. However, we'll use the <code>SQL</code> language when talking about joins to stay consistent with <code>SQL</code> and <code>R Tidyverse</code>.</p>
 <p>Let's start creating two tables for us to play around with <code>pandas</code> join methods</p>
 
@@ -14672,7 +14647,7 @@ world
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Two fake data frames</span>
@@ -14812,7 +14787,7 @@ world
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># chaining datasets</span>
@@ -14829,7 +14804,7 @@ world
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[56]:</div>
+    <div class="prompt output_prompt">Out[22]:</div>
 
 
 
@@ -14887,7 +14862,7 @@ world
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[58]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># calling the construct</span>
@@ -14904,7 +14879,7 @@ world
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[58]:</div>
+    <div class="prompt output_prompt">Out[23]:</div>
 
 
 
@@ -14975,7 +14950,7 @@ world
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># chaining datasets</span>
@@ -14992,7 +14967,7 @@ world
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[15]:</div>
+    <div class="prompt output_prompt">Out[24]:</div>
 
 
 
@@ -15063,7 +15038,7 @@ world
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[59]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># chaining datasets</span>
@@ -15080,7 +15055,7 @@ world
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[59]:</div>
+    <div class="prompt output_prompt">Out[25]:</div>
 
 
 
@@ -15156,7 +15131,7 @@ world
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># chaining datasets</span>
@@ -15173,7 +15148,7 @@ world
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[17]:</div>
+    <div class="prompt output_prompt">Out[26]:</div>
 
 
 
@@ -15232,7 +15207,7 @@ world
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># rename datasets</span>
@@ -15257,7 +15232,7 @@ world
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[60]:</div>
+    <div class="prompt output_prompt">Out[27]:</div>
 
 
 
@@ -15319,7 +15294,7 @@ world
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">)</span>
@@ -15564,7 +15539,7 @@ merge(left: &#39;DataFrame | Series&#39;, right: &#39;DataFrame | Series&#39;, h
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[61]:</div>
+<div class="prompt input_prompt">In&nbsp;[29]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># full of NAS because the second columnes do not have the same name</span>
@@ -15582,7 +15557,7 @@ merge(left: &#39;DataFrame | Series&#39;, right: &#39;DataFrame | Series&#39;, h
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[61]:</div>
+    <div class="prompt output_prompt">Out[29]:</div>
 
 
 
@@ -15667,7 +15642,7 @@ merge(left: &#39;DataFrame | Series&#39;, right: &#39;DataFrame | Series&#39;, h
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[62]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">data_x</span><span class="p">,</span><span class="n">data_y</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">)</span>
@@ -15683,7 +15658,7 @@ merge(left: &#39;DataFrame | Series&#39;, right: &#39;DataFrame | Series&#39;, h
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[62]:</div>
+    <div class="prompt output_prompt">Out[30]:</div>
 
 
 
@@ -15753,7 +15728,7 @@ merge(left: &#39;DataFrame | Series&#39;, right: &#39;DataFrame | Series&#39;, h
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">data_x</span><span class="p">,</span><span class="n">data_y</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span><span class="o">.</span><span class="n">sort_index</span><span class="p">()</span>
@@ -15769,7 +15744,7 @@ merge(left: &#39;DataFrame | Series&#39;, right: &#39;DataFrame | Series&#39;, h
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[22]:</div>
+    <div class="prompt output_prompt">Out[31]:</div>
 
 
 
@@ -15853,7 +15828,7 @@ merge(left: &#39;DataFrame | Series&#39;, right: &#39;DataFrame | Series&#39;, h
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">data_x</span><span class="p">,</span><span class="n">data_y</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span> <span class="n">keys</span><span class="o">=</span><span class="p">[</span><span class="s2">"data_x"</span><span class="p">,</span><span class="s2">"data_y"</span><span class="p">])</span>
@@ -15869,7 +15844,7 @@ merge(left: &#39;DataFrame | Series&#39;, right: &#39;DataFrame | Series&#39;, h
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[23]:</div>
+    <div class="prompt output_prompt">Out[32]:</div>
 
 
 
@@ -15956,7 +15931,7 @@ merge(left: &#39;DataFrame | Series&#39;, right: &#39;DataFrame | Series&#39;, h
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">concat</span><span class="p">([</span><span class="n">data_x</span><span class="p">,</span><span class="n">data_y</span><span class="p">],</span><span class="n">axis</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="n">ignore_index</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
@@ -15972,7 +15947,7 @@ merge(left: &#39;DataFrame | Series&#39;, right: &#39;DataFrame | Series&#39;, h
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[24]:</div>
+    <div class="prompt output_prompt">Out[33]:</div>
 
 
 
@@ -16077,6 +16052,51 @@ merge(left: &#39;DataFrame | Series&#39;, right: &#39;DataFrame | Series&#39;, h
 </pre></div>
 
     </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>jupyter<span class="w"> </span>nbconvert<span class="w"> </span>_week-5c-joining_data.ipynb<span class="w"> </span>--to<span class="w"> </span>html<span class="w"> </span>--template<span class="w"> </span>classic
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[NbConvertApp] Converting notebook _week-5c-joining_data.ipynb to html
+[NbConvertApp] Writing 364757 bytes to _week-5c-joining_data.html
+</pre>
+</div>
+</div>
+
 </div>
 </div>
 
