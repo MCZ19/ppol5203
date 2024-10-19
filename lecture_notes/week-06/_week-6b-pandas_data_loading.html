@@ -13127,7 +13127,7 @@ Tiago Ventura</center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># import modules</span>
@@ -13143,7 +13143,7 @@ Tiago Ventura</center> <h1></p>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Data-in-and-Data-out-in-Pandas">Data in and Data out in <code>Pandas</code><a class="anchor-link" href="#Data-in-and-Data-out-in-Pandas">&#182;</a></h2><p>In our class on file managements, we saw how to use connection managament tools in Python (<code>open()</code>, <code>close()</code>, <code>with()</code>) to load data stored locally into our Python environments. That process usually involved accessing a locally stored data row by row, and import the data a nested container (list or dictionary).</p>
+<h2 id="Data-in-and-Data-out-in-Pandas">Data in and Data out in <code>Pandas</code><a class="anchor-link" href="#Data-in-and-Data-out-in-Pandas">&#182;</a></h2><p>In our class on file management, we saw how to use connection managament tools in Python (<code>open()</code>, <code>close()</code>, <code>with()</code>) to load data stored locally into our Python environments. That process usually involved accessing a locally stored data row by row, and import the data a nested container (list or dictionary).</p>
 <p>Today, we will see the use of high-level functions from Pandas that facilitate the process of loading data into our Python environment. We will focus on data input and output using pandas, though there are numerous tools in other libraries to help with reading and writing data in various formats.</p>
 <h3 id="pandas-methods"><code>pandas</code> methods<a class="anchor-link" href="#pandas-methods">&#182;</a></h3><p><code>pandas</code> contains a variety of methods for reading in various data types.</p>
 <table>
@@ -13264,7 +13264,7 @@ Tiago Ventura</center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="prompt input_prompt">In&nbsp;[58]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># read a csv </span>
@@ -13272,6 +13272,194 @@ Tiago Ventura</center> <h1></p>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[59]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">d</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[59]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Year</th>
+      <th>Datetime</th>
+      <th>Stage</th>
+      <th>Stadium</th>
+      <th>City</th>
+      <th>Home Team Name</th>
+      <th>Home Team Goals</th>
+      <th>Away Team Goals</th>
+      <th>Away Team Name</th>
+      <th>Win conditions</th>
+      <th>Attendance</th>
+      <th>Half-time Home Goals</th>
+      <th>Half-time Away Goals</th>
+      <th>Referee</th>
+      <th>Assistant 1</th>
+      <th>Assistant 2</th>
+      <th>RoundID</th>
+      <th>MatchID</th>
+      <th>Home Team Initials</th>
+      <th>Away Team Initials</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1930</td>
+      <td>13 Jul 1930 - 15:00</td>
+      <td>Group 1</td>
+      <td>Pocitos</td>
+      <td>Montevideo</td>
+      <td>France</td>
+      <td>4</td>
+      <td>1</td>
+      <td>Mexico</td>
+      <td></td>
+      <td>4444.0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>LOMBARDI Domingo (URU)</td>
+      <td>CRISTOPHE Henry (BEL)</td>
+      <td>REGO Gilberto (BRA)</td>
+      <td>201</td>
+      <td>1096</td>
+      <td>FRA</td>
+      <td>MEX</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1930</td>
+      <td>13 Jul 1930 - 15:00</td>
+      <td>Group 4</td>
+      <td>Parque Central</td>
+      <td>Montevideo</td>
+      <td>USA</td>
+      <td>3</td>
+      <td>0</td>
+      <td>Belgium</td>
+      <td></td>
+      <td>18346.0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>MACIAS Jose (ARG)</td>
+      <td>MATEUCCI Francisco (URU)</td>
+      <td>WARNKEN Alberto (CHI)</td>
+      <td>201</td>
+      <td>1090</td>
+      <td>USA</td>
+      <td>BEL</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1930</td>
+      <td>14 Jul 1930 - 12:45</td>
+      <td>Group 2</td>
+      <td>Parque Central</td>
+      <td>Montevideo</td>
+      <td>Yugoslavia</td>
+      <td>2</td>
+      <td>1</td>
+      <td>Brazil</td>
+      <td></td>
+      <td>24059.0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>TEJADA Anibal (URU)</td>
+      <td>VALLARINO Ricardo (URU)</td>
+      <td>BALWAY Thomas (FRA)</td>
+      <td>201</td>
+      <td>1093</td>
+      <td>YUG</td>
+      <td>BRA</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1930</td>
+      <td>14 Jul 1930 - 14:50</td>
+      <td>Group 3</td>
+      <td>Pocitos</td>
+      <td>Montevideo</td>
+      <td>Romania</td>
+      <td>3</td>
+      <td>1</td>
+      <td>Peru</td>
+      <td></td>
+      <td>2549.0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>WARNKEN Alberto (CHI)</td>
+      <td>LANGENUS Jean (BEL)</td>
+      <td>MATEUCCI Francisco (URU)</td>
+      <td>201</td>
+      <td>1098</td>
+      <td>ROU</td>
+      <td>PER</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1930</td>
+      <td>15 Jul 1930 - 16:00</td>
+      <td>Group 1</td>
+      <td>Parque Central</td>
+      <td>Montevideo</td>
+      <td>Argentina</td>
+      <td>1</td>
+      <td>0</td>
+      <td>France</td>
+      <td></td>
+      <td>23409.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>REGO Gilberto (BRA)</td>
+      <td>SAUCEDO Ulises (BOL)</td>
+      <td>RADULESCU Constantin (ROU)</td>
+      <td>201</td>
+      <td>1085</td>
+      <td>ARG</td>
+      <td>FRA</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+
+</div>
+
 </div>
 </div>
 
@@ -13286,7 +13474,7 @@ Tiago Ventura</center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[6]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># asking for help</span>
@@ -13720,7 +13908,7 @@ read_csv(filepath_or_buffer: &#39;FilePath | ReadCsvBuffer[bytes] | ReadCsvBuffe
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[7]:</div>
+<div class="prompt input_prompt">In&nbsp;[31]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># export as stata file</span>
@@ -13741,7 +13929,7 @@ read_csv(filepath_or_buffer: &#39;FilePath | ReadCsvBuffer[bytes] | ReadCsvBuffe
 
 
 <div class="output_subarea output_stream output_stderr output_text">
-<pre>/var/folders/jy/10_nyhkn3nv_rrbnd8f_fr940000gp/T/ipykernel_74509/3669814853.py:2: InvalidColumnName: 
+<pre>/var/folders/jy/10_nyhkn3nv_rrbnd8f_fr940000gp/T/ipykernel_50502/3669814853.py:2: InvalidColumnName: 
 Not all pandas column names were valid Stata variable names.
 The following replacements have been made:
 
@@ -13772,11 +13960,11 @@ alphanumerics and underscores, no Stata reserved words)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># load back again</span>
-<span class="n">d_state</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_stata</span><span class="p">(</span><span class="s2">"worldcupmatches.dta"</span><span class="p">)</span>
+<span class="n">d_stata</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_stata</span><span class="p">(</span><span class="s2">"worldcupmatches.dta"</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13786,11 +13974,11 @@ alphanumerics and underscores, no Stata reserved words)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[33]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># see the data</span>
-<span class="n">d_state</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+<span class="n">d_stata</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -13803,7 +13991,7 @@ alphanumerics and underscores, no Stata reserved words)
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[10]:</div>
+    <div class="prompt output_prompt">Out[33]:</div>
 
 
 
@@ -13982,11 +14170,11 @@ alphanumerics and underscores, no Stata reserved words)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># to csv</span>
-<span class="n">d_state</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">"wordlcupmatches_.csv"</span><span class="p">)</span>
+<span class="n">d_stata</span><span class="o">.</span><span class="n">to_csv</span><span class="p">(</span><span class="s2">"wordlcupmatches_.csv"</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -13997,11 +14185,11 @@ alphanumerics and underscores, no Stata reserved words)
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Practice">Practice<a class="anchor-link" href="#Practice">&#182;</a></h2><p>Explore the arguments of <code>pd.read_csv()</code> methods. Open the csv with the following options:</p>
+<h2 id="Practice">Practice<a class="anchor-link" href="#Practice">&#182;</a></h2><p>Explore the arguments of <code>pd.read_csv()</code> methods. Open the <code>WorldCupMatches.csv</code> with the following options:</p>
 <ul>
 <li>using comma as separator, </li>
 <li>indexing by year, </li>
-<li>selecting only a smallet set of columns</li>
+<li>selecting only a smaller set of columns</li>
 <li>open only 10 rows after skipping the first 50</li>
 <li>parsing all dates as datetimes</li>
 </ul>
@@ -14011,10 +14199,443 @@ alphanumerics and underscores, no Stata reserved words)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># your answer here</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">help</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>Help on function read_csv in module pandas.io.parsers.readers:
+
+read_csv(filepath_or_buffer: &#39;FilePath | ReadCsvBuffer[bytes] | ReadCsvBuffer[str]&#39;, *, sep: &#39;str | None | lib.NoDefault&#39; = &lt;no_default&gt;, delimiter: &#39;str | None | lib.NoDefault&#39; = None, header: &#34;int | Sequence[int] | None | Literal[&#39;infer&#39;]&#34; = &#39;infer&#39;, names: &#39;Sequence[Hashable] | None | lib.NoDefault&#39; = &lt;no_default&gt;, index_col: &#39;IndexLabel | Literal[False] | None&#39; = None, usecols=None, squeeze: &#39;bool | None&#39; = None, prefix: &#39;str | lib.NoDefault&#39; = &lt;no_default&gt;, mangle_dupe_cols: &#39;bool&#39; = True, dtype: &#39;DtypeArg | None&#39; = None, engine: &#39;CSVEngine | None&#39; = None, converters=None, true_values=None, false_values=None, skipinitialspace: &#39;bool&#39; = False, skiprows=None, skipfooter: &#39;int&#39; = 0, nrows: &#39;int | None&#39; = None, na_values=None, keep_default_na: &#39;bool&#39; = True, na_filter: &#39;bool&#39; = True, verbose: &#39;bool&#39; = False, skip_blank_lines: &#39;bool&#39; = True, parse_dates=None, infer_datetime_format: &#39;bool&#39; = False, keep_date_col: &#39;bool&#39; = False, date_parser=None, dayfirst: &#39;bool&#39; = False, cache_dates: &#39;bool&#39; = True, iterator: &#39;bool&#39; = False, chunksize: &#39;int | None&#39; = None, compression: &#39;CompressionOptions&#39; = &#39;infer&#39;, thousands: &#39;str | None&#39; = None, decimal: &#39;str&#39; = &#39;.&#39;, lineterminator: &#39;str | None&#39; = None, quotechar: &#39;str&#39; = &#39;&#34;&#39;, quoting: &#39;int&#39; = 0, doublequote: &#39;bool&#39; = True, escapechar: &#39;str | None&#39; = None, comment: &#39;str | None&#39; = None, encoding: &#39;str | None&#39; = None, encoding_errors: &#39;str | None&#39; = &#39;strict&#39;, dialect: &#39;str | csv.Dialect | None&#39; = None, error_bad_lines: &#39;bool | None&#39; = None, warn_bad_lines: &#39;bool | None&#39; = None, on_bad_lines=None, delim_whitespace: &#39;bool&#39; = False, low_memory=True, memory_map: &#39;bool&#39; = False, float_precision: &#34;Literal[&#39;high&#39;, &#39;legacy&#39;] | None&#34; = None, storage_options: &#39;StorageOptions&#39; = None) -&gt; &#39;DataFrame | TextFileReader&#39;
+    Read a comma-separated values (csv) file into DataFrame.
+    
+    Also supports optionally iterating or breaking of the file
+    into chunks.
+    
+    Additional help can be found in the online docs for
+    `IO Tools &lt;https://pandas.pydata.org/pandas-docs/stable/user_guide/io.html&gt;`_.
+    
+    Parameters
+    ----------
+    filepath_or_buffer : str, path object or file-like object
+        Any valid string path is acceptable. The string could be a URL. Valid
+        URL schemes include http, ftp, s3, gs, and file. For file URLs, a host is
+        expected. A local file could be: file://localhost/path/to/table.csv.
+    
+        If you want to pass in a path object, pandas accepts any ``os.PathLike``.
+    
+        By file-like object, we refer to objects with a ``read()`` method, such as
+        a file handle (e.g. via builtin ``open`` function) or ``StringIO``.
+    sep : str, default &#39;,&#39;
+        Delimiter to use. If sep is None, the C engine cannot automatically detect
+        the separator, but the Python parsing engine can, meaning the latter will
+        be used and automatically detect the separator by Python&#39;s builtin sniffer
+        tool, ``csv.Sniffer``. In addition, separators longer than 1 character and
+        different from ``&#39;\s+&#39;`` will be interpreted as regular expressions and
+        will also force the use of the Python parsing engine. Note that regex
+        delimiters are prone to ignoring quoted data. Regex example: ``&#39;\r\t&#39;``.
+    delimiter : str, default ``None``
+        Alias for sep.
+    header : int, list of int, None, default &#39;infer&#39;
+        Row number(s) to use as the column names, and the start of the
+        data.  Default behavior is to infer the column names: if no names
+        are passed the behavior is identical to ``header=0`` and column
+        names are inferred from the first line of the file, if column
+        names are passed explicitly then the behavior is identical to
+        ``header=None``. Explicitly pass ``header=0`` to be able to
+        replace existing names. The header can be a list of integers that
+        specify row locations for a multi-index on the columns
+        e.g. [0,1,3]. Intervening rows that are not specified will be
+        skipped (e.g. 2 in this example is skipped). Note that this
+        parameter ignores commented lines and empty lines if
+        ``skip_blank_lines=True``, so ``header=0`` denotes the first line of
+        data rather than the first line of the file.
+    names : array-like, optional
+        List of column names to use. If the file contains a header row,
+        then you should explicitly pass ``header=0`` to override the column names.
+        Duplicates in this list are not allowed.
+    index_col : int, str, sequence of int / str, or False, optional, default ``None``
+      Column(s) to use as the row labels of the ``DataFrame``, either given as
+      string name or column index. If a sequence of int / str is given, a
+      MultiIndex is used.
+    
+      Note: ``index_col=False`` can be used to force pandas to *not* use the first
+      column as the index, e.g. when you have a malformed file with delimiters at
+      the end of each line.
+    usecols : list-like or callable, optional
+        Return a subset of the columns. If list-like, all elements must either
+        be positional (i.e. integer indices into the document columns) or strings
+        that correspond to column names provided either by the user in `names` or
+        inferred from the document header row(s). If ``names`` are given, the document
+        header row(s) are not taken into account. For example, a valid list-like
+        `usecols` parameter would be ``[0, 1, 2]`` or ``[&#39;foo&#39;, &#39;bar&#39;, &#39;baz&#39;]``.
+        Element order is ignored, so ``usecols=[0, 1]`` is the same as ``[1, 0]``.
+        To instantiate a DataFrame from ``data`` with element order preserved use
+        ``pd.read_csv(data, usecols=[&#39;foo&#39;, &#39;bar&#39;])[[&#39;foo&#39;, &#39;bar&#39;]]`` for columns
+        in ``[&#39;foo&#39;, &#39;bar&#39;]`` order or
+        ``pd.read_csv(data, usecols=[&#39;foo&#39;, &#39;bar&#39;])[[&#39;bar&#39;, &#39;foo&#39;]]``
+        for ``[&#39;bar&#39;, &#39;foo&#39;]`` order.
+    
+        If callable, the callable function will be evaluated against the column
+        names, returning names where the callable function evaluates to True. An
+        example of a valid callable argument would be ``lambda x: x.upper() in
+        [&#39;AAA&#39;, &#39;BBB&#39;, &#39;DDD&#39;]``. Using this parameter results in much faster
+        parsing time and lower memory usage.
+    squeeze : bool, default False
+        If the parsed data only contains one column then return a Series.
+    
+        .. deprecated:: 1.4.0
+            Append ``.squeeze(&#34;columns&#34;)`` to the call to ``read_csv`` to squeeze
+            the data.
+    prefix : str, optional
+        Prefix to add to column numbers when no header, e.g. &#39;X&#39; for X0, X1, ...
+    
+        .. deprecated:: 1.4.0
+           Use a list comprehension on the DataFrame&#39;s columns after calling ``read_csv``.
+    mangle_dupe_cols : bool, default True
+        Duplicate columns will be specified as &#39;X&#39;, &#39;X.1&#39;, ...&#39;X.N&#39;, rather than
+        &#39;X&#39;...&#39;X&#39;. Passing in False will cause data to be overwritten if there
+        are duplicate names in the columns.
+    
+        .. deprecated:: 1.5.0
+            Not implemented, and a new argument to specify the pattern for the
+            names of duplicated columns will be added instead
+    dtype : Type name or dict of column -&gt; type, optional
+        Data type for data or columns. E.g. {&#39;a&#39;: np.float64, &#39;b&#39;: np.int32,
+        &#39;c&#39;: &#39;Int64&#39;}
+        Use `str` or `object` together with suitable `na_values` settings
+        to preserve and not interpret dtype.
+        If converters are specified, they will be applied INSTEAD
+        of dtype conversion.
+    
+        .. versionadded:: 1.5.0
+    
+            Support for defaultdict was added. Specify a defaultdict as input where
+            the default determines the dtype of the columns which are not explicitly
+            listed.
+    engine : {&#39;c&#39;, &#39;python&#39;, &#39;pyarrow&#39;}, optional
+        Parser engine to use. The C and pyarrow engines are faster, while the python engine
+        is currently more feature-complete. Multithreading is currently only supported by
+        the pyarrow engine.
+    
+        .. versionadded:: 1.4.0
+    
+            The &#34;pyarrow&#34; engine was added as an *experimental* engine, and some features
+            are unsupported, or may not work correctly, with this engine.
+    converters : dict, optional
+        Dict of functions for converting values in certain columns. Keys can either
+        be integers or column labels.
+    true_values : list, optional
+        Values to consider as True.
+    false_values : list, optional
+        Values to consider as False.
+    skipinitialspace : bool, default False
+        Skip spaces after delimiter.
+    skiprows : list-like, int or callable, optional
+        Line numbers to skip (0-indexed) or number of lines to skip (int)
+        at the start of the file.
+    
+        If callable, the callable function will be evaluated against the row
+        indices, returning True if the row should be skipped and False otherwise.
+        An example of a valid callable argument would be ``lambda x: x in [0, 2]``.
+    skipfooter : int, default 0
+        Number of lines at bottom of file to skip (Unsupported with engine=&#39;c&#39;).
+    nrows : int, optional
+        Number of rows of file to read. Useful for reading pieces of large files.
+    na_values : scalar, str, list-like, or dict, optional
+        Additional strings to recognize as NA/NaN. If dict passed, specific
+        per-column NA values.  By default the following values are interpreted as
+        NaN: &#39;&#39;, &#39;#N/A&#39;, &#39;#N/A N/A&#39;, &#39;#NA&#39;, &#39;-1.#IND&#39;, &#39;-1.#QNAN&#39;, &#39;-NaN&#39;, &#39;-nan&#39;,
+        &#39;1.#IND&#39;, &#39;1.#QNAN&#39;, &#39;&lt;NA&gt;&#39;, &#39;N/A&#39;, &#39;NA&#39;, &#39;NULL&#39;, &#39;NaN&#39;, &#39;n/a&#39;,
+        &#39;nan&#39;, &#39;null&#39;.
+    keep_default_na : bool, default True
+        Whether or not to include the default NaN values when parsing the data.
+        Depending on whether `na_values` is passed in, the behavior is as follows:
+    
+        * If `keep_default_na` is True, and `na_values` are specified, `na_values`
+          is appended to the default NaN values used for parsing.
+        * If `keep_default_na` is True, and `na_values` are not specified, only
+          the default NaN values are used for parsing.
+        * If `keep_default_na` is False, and `na_values` are specified, only
+          the NaN values specified `na_values` are used for parsing.
+        * If `keep_default_na` is False, and `na_values` are not specified, no
+          strings will be parsed as NaN.
+    
+        Note that if `na_filter` is passed in as False, the `keep_default_na` and
+        `na_values` parameters will be ignored.
+    na_filter : bool, default True
+        Detect missing value markers (empty strings and the value of na_values). In
+        data without any NAs, passing na_filter=False can improve the performance
+        of reading a large file.
+    verbose : bool, default False
+        Indicate number of NA values placed in non-numeric columns.
+    skip_blank_lines : bool, default True
+        If True, skip over blank lines rather than interpreting as NaN values.
+    parse_dates : bool or list of int or names or list of lists or dict, default False
+        The behavior is as follows:
+    
+        * boolean. If True -&gt; try parsing the index.
+        * list of int or names. e.g. If [1, 2, 3] -&gt; try parsing columns 1, 2, 3
+          each as a separate date column.
+        * list of lists. e.g.  If [[1, 3]] -&gt; combine columns 1 and 3 and parse as
+          a single date column.
+        * dict, e.g. {&#39;foo&#39; : [1, 3]} -&gt; parse columns 1, 3 as date and call
+          result &#39;foo&#39;
+    
+        If a column or index cannot be represented as an array of datetimes,
+        say because of an unparsable value or a mixture of timezones, the column
+        or index will be returned unaltered as an object data type. For
+        non-standard datetime parsing, use ``pd.to_datetime`` after
+        ``pd.read_csv``. To parse an index or column with a mixture of timezones,
+        specify ``date_parser`` to be a partially-applied
+        :func:`pandas.to_datetime` with ``utc=True``. See
+        :ref:`io.csv.mixed_timezones` for more.
+    
+        Note: A fast-path exists for iso8601-formatted dates.
+    infer_datetime_format : bool, default False
+        If True and `parse_dates` is enabled, pandas will attempt to infer the
+        format of the datetime strings in the columns, and if it can be inferred,
+        switch to a faster method of parsing them. In some cases this can increase
+        the parsing speed by 5-10x.
+    keep_date_col : bool, default False
+        If True and `parse_dates` specifies combining multiple columns then
+        keep the original columns.
+    date_parser : function, optional
+        Function to use for converting a sequence of string columns to an array of
+        datetime instances. The default uses ``dateutil.parser.parser`` to do the
+        conversion. Pandas will try to call `date_parser` in three different ways,
+        advancing to the next if an exception occurs: 1) Pass one or more arrays
+        (as defined by `parse_dates`) as arguments; 2) concatenate (row-wise) the
+        string values from the columns defined by `parse_dates` into a single array
+        and pass that; and 3) call `date_parser` once for each row using one or
+        more strings (corresponding to the columns defined by `parse_dates`) as
+        arguments.
+    dayfirst : bool, default False
+        DD/MM format dates, international and European format.
+    cache_dates : bool, default True
+        If True, use a cache of unique, converted dates to apply the datetime
+        conversion. May produce significant speed-up when parsing duplicate
+        date strings, especially ones with timezone offsets.
+    
+        .. versionadded:: 0.25.0
+    iterator : bool, default False
+        Return TextFileReader object for iteration or getting chunks with
+        ``get_chunk()``.
+    
+        .. versionchanged:: 1.2
+    
+           ``TextFileReader`` is a context manager.
+    chunksize : int, optional
+        Return TextFileReader object for iteration.
+        See the `IO Tools docs
+        &lt;https://pandas.pydata.org/pandas-docs/stable/io.html#io-chunking&gt;`_
+        for more information on ``iterator`` and ``chunksize``.
+    
+        .. versionchanged:: 1.2
+    
+           ``TextFileReader`` is a context manager.
+    compression : str or dict, default &#39;infer&#39;
+        For on-the-fly decompression of on-disk data. If &#39;infer&#39; and &#39;filepath_or_buffer&#39; is
+        path-like, then detect compression from the following extensions: &#39;.gz&#39;,
+        &#39;.bz2&#39;, &#39;.zip&#39;, &#39;.xz&#39;, &#39;.zst&#39;, &#39;.tar&#39;, &#39;.tar.gz&#39;, &#39;.tar.xz&#39; or &#39;.tar.bz2&#39;
+        (otherwise no compression).
+        If using &#39;zip&#39; or &#39;tar&#39;, the ZIP file must contain only one data file to be read in.
+        Set to ``None`` for no decompression.
+        Can also be a dict with key ``&#39;method&#39;`` set
+        to one of {``&#39;zip&#39;``, ``&#39;gzip&#39;``, ``&#39;bz2&#39;``, ``&#39;zstd&#39;``, ``&#39;tar&#39;``} and other
+        key-value pairs are forwarded to
+        ``zipfile.ZipFile``, ``gzip.GzipFile``,
+        ``bz2.BZ2File``, ``zstandard.ZstdDecompressor`` or
+        ``tarfile.TarFile``, respectively.
+        As an example, the following could be passed for Zstandard decompression using a
+        custom compression dictionary:
+        ``compression={&#39;method&#39;: &#39;zstd&#39;, &#39;dict_data&#39;: my_compression_dict}``.
+    
+            .. versionadded:: 1.5.0
+                Added support for `.tar` files.
+    
+        .. versionchanged:: 1.4.0 Zstandard support.
+    
+    thousands : str, optional
+        Thousands separator.
+    decimal : str, default &#39;.&#39;
+        Character to recognize as decimal point (e.g. use &#39;,&#39; for European data).
+    lineterminator : str (length 1), optional
+        Character to break file into lines. Only valid with C parser.
+    quotechar : str (length 1), optional
+        The character used to denote the start and end of a quoted item. Quoted
+        items can include the delimiter and it will be ignored.
+    quoting : int or csv.QUOTE_* instance, default 0
+        Control field quoting behavior per ``csv.QUOTE_*`` constants. Use one of
+        QUOTE_MINIMAL (0), QUOTE_ALL (1), QUOTE_NONNUMERIC (2) or QUOTE_NONE (3).
+    doublequote : bool, default ``True``
+       When quotechar is specified and quoting is not ``QUOTE_NONE``, indicate
+       whether or not to interpret two consecutive quotechar elements INSIDE a
+       field as a single ``quotechar`` element.
+    escapechar : str (length 1), optional
+        One-character string used to escape other characters.
+    comment : str, optional
+        Indicates remainder of line should not be parsed. If found at the beginning
+        of a line, the line will be ignored altogether. This parameter must be a
+        single character. Like empty lines (as long as ``skip_blank_lines=True``),
+        fully commented lines are ignored by the parameter `header` but not by
+        `skiprows`. For example, if ``comment=&#39;#&#39;``, parsing
+        ``#empty\na,b,c\n1,2,3`` with ``header=0`` will result in &#39;a,b,c&#39; being
+        treated as the header.
+    encoding : str, optional
+        Encoding to use for UTF when reading/writing (ex. &#39;utf-8&#39;). `List of Python
+        standard encodings
+        &lt;https://docs.python.org/3/library/codecs.html#standard-encodings&gt;`_ .
+    
+        .. versionchanged:: 1.2
+    
+           When ``encoding`` is ``None``, ``errors=&#34;replace&#34;`` is passed to
+           ``open()``. Otherwise, ``errors=&#34;strict&#34;`` is passed to ``open()``.
+           This behavior was previously only the case for ``engine=&#34;python&#34;``.
+    
+        .. versionchanged:: 1.3.0
+    
+           ``encoding_errors`` is a new argument. ``encoding`` has no longer an
+           influence on how encoding errors are handled.
+    
+    encoding_errors : str, optional, default &#34;strict&#34;
+        How encoding errors are treated. `List of possible values
+        &lt;https://docs.python.org/3/library/codecs.html#error-handlers&gt;`_ .
+    
+        .. versionadded:: 1.3.0
+    
+    dialect : str or csv.Dialect, optional
+        If provided, this parameter will override values (default or not) for the
+        following parameters: `delimiter`, `doublequote`, `escapechar`,
+        `skipinitialspace`, `quotechar`, and `quoting`. If it is necessary to
+        override values, a ParserWarning will be issued. See csv.Dialect
+        documentation for more details.
+    error_bad_lines : bool, optional, default ``None``
+        Lines with too many fields (e.g. a csv line with too many commas) will by
+        default cause an exception to be raised, and no DataFrame will be returned.
+        If False, then these &#34;bad lines&#34; will be dropped from the DataFrame that is
+        returned.
+    
+        .. deprecated:: 1.3.0
+           The ``on_bad_lines`` parameter should be used instead to specify behavior upon
+           encountering a bad line instead.
+    warn_bad_lines : bool, optional, default ``None``
+        If error_bad_lines is False, and warn_bad_lines is True, a warning for each
+        &#34;bad line&#34; will be output.
+    
+        .. deprecated:: 1.3.0
+           The ``on_bad_lines`` parameter should be used instead to specify behavior upon
+           encountering a bad line instead.
+    on_bad_lines : {&#39;error&#39;, &#39;warn&#39;, &#39;skip&#39;} or callable, default &#39;error&#39;
+        Specifies what to do upon encountering a bad line (a line with too many fields).
+        Allowed values are :
+    
+            - &#39;error&#39;, raise an Exception when a bad line is encountered.
+            - &#39;warn&#39;, raise a warning when a bad line is encountered and skip that line.
+            - &#39;skip&#39;, skip bad lines without raising or warning when they are encountered.
+    
+        .. versionadded:: 1.3.0
+    
+        .. versionadded:: 1.4.0
+    
+            - callable, function with signature
+              ``(bad_line: list[str]) -&gt; list[str] | None`` that will process a single
+              bad line. ``bad_line`` is a list of strings split by the ``sep``.
+              If the function returns ``None``, the bad line will be ignored.
+              If the function returns a new list of strings with more elements than
+              expected, a ``ParserWarning`` will be emitted while dropping extra elements.
+              Only supported when ``engine=&#34;python&#34;``
+    
+    delim_whitespace : bool, default False
+        Specifies whether or not whitespace (e.g. ``&#39; &#39;`` or ``&#39;    &#39;``) will be
+        used as the sep. Equivalent to setting ``sep=&#39;\s+&#39;``. If this option
+        is set to True, nothing should be passed in for the ``delimiter``
+        parameter.
+    low_memory : bool, default True
+        Internally process the file in chunks, resulting in lower memory use
+        while parsing, but possibly mixed type inference.  To ensure no mixed
+        types either set False, or specify the type with the `dtype` parameter.
+        Note that the entire file is read into a single DataFrame regardless,
+        use the `chunksize` or `iterator` parameter to return the data in chunks.
+        (Only valid with C parser).
+    memory_map : bool, default False
+        If a filepath is provided for `filepath_or_buffer`, map the file object
+        directly onto memory and access the data directly from there. Using this
+        option can improve performance because there is no longer any I/O overhead.
+    float_precision : str, optional
+        Specifies which converter the C engine should use for floating-point
+        values. The options are ``None`` or &#39;high&#39; for the ordinary converter,
+        &#39;legacy&#39; for the original lower precision pandas converter, and
+        &#39;round_trip&#39; for the round-trip converter.
+    
+        .. versionchanged:: 1.2
+    
+    storage_options : dict, optional
+        Extra options that make sense for a particular storage connection, e.g.
+        host, port, username, password, etc. For HTTP(S) URLs the key-value pairs
+        are forwarded to ``urllib.request.Request`` as header options. For other
+        URLs (e.g. starting with &#34;s3://&#34;, and &#34;gcs://&#34;) the key-value pairs are
+        forwarded to ``fsspec.open``. Please see ``fsspec`` and ``urllib`` for more
+        details, and for more examples on storage options refer `here
+        &lt;https://pandas.pydata.org/docs/user_guide/io.html?
+        highlight=storage_options#reading-writing-remote-files&gt;`_.
+    
+        .. versionadded:: 1.2
+    
+    Returns
+    -------
+    DataFrame or TextParser
+        A comma-separated values (csv) file is returned as two-dimensional
+        data structure with labeled axes.
+    
+    See Also
+    --------
+    DataFrame.to_csv : Write DataFrame to a comma-separated values (csv) file.
+    read_csv : Read a comma-separated values (csv) file into DataFrame.
+    read_fwf : Read a table of fixed-width formatted lines into DataFrame.
+    
+    Examples
+    --------
+    &gt;&gt;&gt; pd.read_csv(&#39;data.csv&#39;)  # doctest: +SKIP
+
+</pre>
+</div>
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[15]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># my answer</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"WorldCupMatches.csv"</span><span class="p">,</span> 
+            <span class="n">sep</span> <span class="o">=</span> <span class="s2">","</span><span class="p">,</span> <span class="c1"># Separator in the data</span>
+            <span class="n">index_col</span><span class="o">=</span><span class="s2">"Year"</span><span class="p">,</span> <span class="c1"># Set a variable to the index</span>
+            <span class="n">usecols</span> <span class="o">=</span> <span class="p">[</span><span class="s2">"Year"</span><span class="p">,</span> <span class="s2">"Stage"</span><span class="p">,</span> <span class="s2">"Stadium"</span><span class="p">],</span> <span class="c1"># Only request specific columns</span>
+            <span class="n">nrows</span> <span class="o">=</span> <span class="mi">10</span><span class="p">,</span> <span class="c1"># only read in n-rows of the data </span>
+            <span class="n">na_values</span> <span class="o">=</span> <span class="s2">"nan"</span><span class="p">,</span>
+            <span class="n">skiprows</span> <span class="o">=</span> <span class="n">np</span><span class="o">.</span><span class="n">arange</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="mi">50</span><span class="p">),</span>
+            <span class="n">parse_dates</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="c1"># Parse all date features as datatime</span>
+            <span class="n">low_memory</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># read the file in chunks for lower memory use (useful on large data)</span>
 </pre></div>
 
     </div>
@@ -14037,13 +14658,336 @@ alphanumerics and underscores, no Stata reserved words)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[9]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># load the csv</span>
+<span class="c1"># notice this is a different dataset</span>
 <span class="n">d_wc</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"WorldCups.csv"</span><span class="p">)</span> 
+<span class="n">d_wc</span>
+</pre></div>
 
-<span class="c1"># let's first see what a json looks like. It is a dictionary!</span>
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[9]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Year</th>
+      <th>Country</th>
+      <th>Winner</th>
+      <th>Runners-Up</th>
+      <th>Third</th>
+      <th>Fourth</th>
+      <th>GoalsScored</th>
+      <th>QualifiedTeams</th>
+      <th>MatchesPlayed</th>
+      <th>Attendance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1930</td>
+      <td>Uruguay</td>
+      <td>Uruguay</td>
+      <td>Argentina</td>
+      <td>USA</td>
+      <td>Yugoslavia</td>
+      <td>70</td>
+      <td>13</td>
+      <td>18</td>
+      <td>590.549</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1934</td>
+      <td>Italy</td>
+      <td>Italy</td>
+      <td>Czechoslovakia</td>
+      <td>Germany</td>
+      <td>Austria</td>
+      <td>70</td>
+      <td>16</td>
+      <td>17</td>
+      <td>363.000</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1938</td>
+      <td>France</td>
+      <td>Italy</td>
+      <td>Hungary</td>
+      <td>Brazil</td>
+      <td>Sweden</td>
+      <td>84</td>
+      <td>15</td>
+      <td>18</td>
+      <td>375.700</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1950</td>
+      <td>Brazil</td>
+      <td>Uruguay</td>
+      <td>Brazil</td>
+      <td>Sweden</td>
+      <td>Spain</td>
+      <td>88</td>
+      <td>13</td>
+      <td>22</td>
+      <td>1.045.246</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1954</td>
+      <td>Switzerland</td>
+      <td>Germany FR</td>
+      <td>Hungary</td>
+      <td>Austria</td>
+      <td>Uruguay</td>
+      <td>140</td>
+      <td>16</td>
+      <td>26</td>
+      <td>768.607</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>1958</td>
+      <td>Sweden</td>
+      <td>Brazil</td>
+      <td>Sweden</td>
+      <td>France</td>
+      <td>Germany FR</td>
+      <td>126</td>
+      <td>16</td>
+      <td>35</td>
+      <td>819.810</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>1962</td>
+      <td>Chile</td>
+      <td>Brazil</td>
+      <td>Czechoslovakia</td>
+      <td>Chile</td>
+      <td>Yugoslavia</td>
+      <td>89</td>
+      <td>16</td>
+      <td>32</td>
+      <td>893.172</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>1966</td>
+      <td>England</td>
+      <td>England</td>
+      <td>Germany FR</td>
+      <td>Portugal</td>
+      <td>Soviet Union</td>
+      <td>89</td>
+      <td>16</td>
+      <td>32</td>
+      <td>1.563.135</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>1970</td>
+      <td>Mexico</td>
+      <td>Brazil</td>
+      <td>Italy</td>
+      <td>Germany FR</td>
+      <td>Uruguay</td>
+      <td>95</td>
+      <td>16</td>
+      <td>32</td>
+      <td>1.603.975</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>1974</td>
+      <td>Germany</td>
+      <td>Germany FR</td>
+      <td>Netherlands</td>
+      <td>Poland</td>
+      <td>Brazil</td>
+      <td>97</td>
+      <td>16</td>
+      <td>38</td>
+      <td>1.865.753</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>1978</td>
+      <td>Argentina</td>
+      <td>Argentina</td>
+      <td>Netherlands</td>
+      <td>Brazil</td>
+      <td>Italy</td>
+      <td>102</td>
+      <td>16</td>
+      <td>38</td>
+      <td>1.545.791</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>1982</td>
+      <td>Spain</td>
+      <td>Italy</td>
+      <td>Germany FR</td>
+      <td>Poland</td>
+      <td>France</td>
+      <td>146</td>
+      <td>24</td>
+      <td>52</td>
+      <td>2.109.723</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>1986</td>
+      <td>Mexico</td>
+      <td>Argentina</td>
+      <td>Germany FR</td>
+      <td>France</td>
+      <td>Belgium</td>
+      <td>132</td>
+      <td>24</td>
+      <td>52</td>
+      <td>2.394.031</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>1990</td>
+      <td>Italy</td>
+      <td>Germany FR</td>
+      <td>Argentina</td>
+      <td>Italy</td>
+      <td>England</td>
+      <td>115</td>
+      <td>24</td>
+      <td>52</td>
+      <td>2.516.215</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>1994</td>
+      <td>USA</td>
+      <td>Brazil</td>
+      <td>Italy</td>
+      <td>Sweden</td>
+      <td>Bulgaria</td>
+      <td>141</td>
+      <td>24</td>
+      <td>52</td>
+      <td>3.587.538</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>1998</td>
+      <td>France</td>
+      <td>France</td>
+      <td>Brazil</td>
+      <td>Croatia</td>
+      <td>Netherlands</td>
+      <td>171</td>
+      <td>32</td>
+      <td>64</td>
+      <td>2.785.100</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>2002</td>
+      <td>Korea/Japan</td>
+      <td>Brazil</td>
+      <td>Germany</td>
+      <td>Turkey</td>
+      <td>Korea Republic</td>
+      <td>161</td>
+      <td>32</td>
+      <td>64</td>
+      <td>2.705.197</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>2006</td>
+      <td>Germany</td>
+      <td>Italy</td>
+      <td>France</td>
+      <td>Germany</td>
+      <td>Portugal</td>
+      <td>147</td>
+      <td>32</td>
+      <td>64</td>
+      <td>3.359.439</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>2010</td>
+      <td>South Africa</td>
+      <td>Spain</td>
+      <td>Netherlands</td>
+      <td>Germany</td>
+      <td>Uruguay</td>
+      <td>145</td>
+      <td>32</td>
+      <td>64</td>
+      <td>3.178.856</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>2014</td>
+      <td>Brazil</td>
+      <td>Germany</td>
+      <td>Argentina</td>
+      <td>Netherlands</td>
+      <td>Brazil</td>
+      <td>171</td>
+      <td>32</td>
+      <td>64</td>
+      <td>3.386.810</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># let's first see what a json looks like. It is a dictionary!</span>
 <span class="n">d_wc</span><span class="o">.</span><span class="n">to_json</span><span class="p">()</span>
 </pre></div>
 
@@ -14057,7 +15001,7 @@ alphanumerics and underscores, no Stata reserved words)
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[17]:</div>
+    <div class="prompt output_prompt">Out[10]:</div>
 
 
 
@@ -14074,10 +15018,431 @@ alphanumerics and underscores, no Stata reserved words)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># you can also save a json by record (row-wise as we learned)</span>
+<span class="n">d_wc</span><span class="o">.</span><span class="n">to_json</span><span class="p">(</span><span class="n">orient</span><span class="o">=</span><span class="s2">"records"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[11]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;[{&#34;Year&#34;:1930,&#34;Country&#34;:&#34;Uruguay&#34;,&#34;Winner&#34;:&#34;Uruguay&#34;,&#34;Runners-Up&#34;:&#34;Argentina&#34;,&#34;Third&#34;:&#34;USA&#34;,&#34;Fourth&#34;:&#34;Yugoslavia&#34;,&#34;GoalsScored&#34;:70,&#34;QualifiedTeams&#34;:13,&#34;MatchesPlayed&#34;:18,&#34;Attendance&#34;:&#34;590.549&#34;},{&#34;Year&#34;:1934,&#34;Country&#34;:&#34;Italy&#34;,&#34;Winner&#34;:&#34;Italy&#34;,&#34;Runners-Up&#34;:&#34;Czechoslovakia&#34;,&#34;Third&#34;:&#34;Germany&#34;,&#34;Fourth&#34;:&#34;Austria&#34;,&#34;GoalsScored&#34;:70,&#34;QualifiedTeams&#34;:16,&#34;MatchesPlayed&#34;:17,&#34;Attendance&#34;:&#34;363.000&#34;},{&#34;Year&#34;:1938,&#34;Country&#34;:&#34;France&#34;,&#34;Winner&#34;:&#34;Italy&#34;,&#34;Runners-Up&#34;:&#34;Hungary&#34;,&#34;Third&#34;:&#34;Brazil&#34;,&#34;Fourth&#34;:&#34;Sweden&#34;,&#34;GoalsScored&#34;:84,&#34;QualifiedTeams&#34;:15,&#34;MatchesPlayed&#34;:18,&#34;Attendance&#34;:&#34;375.700&#34;},{&#34;Year&#34;:1950,&#34;Country&#34;:&#34;Brazil&#34;,&#34;Winner&#34;:&#34;Uruguay&#34;,&#34;Runners-Up&#34;:&#34;Brazil&#34;,&#34;Third&#34;:&#34;Sweden&#34;,&#34;Fourth&#34;:&#34;Spain&#34;,&#34;GoalsScored&#34;:88,&#34;QualifiedTeams&#34;:13,&#34;MatchesPlayed&#34;:22,&#34;Attendance&#34;:&#34;1.045.246&#34;},{&#34;Year&#34;:1954,&#34;Country&#34;:&#34;Switzerland&#34;,&#34;Winner&#34;:&#34;Germany FR&#34;,&#34;Runners-Up&#34;:&#34;Hungary&#34;,&#34;Third&#34;:&#34;Austria&#34;,&#34;Fourth&#34;:&#34;Uruguay&#34;,&#34;GoalsScored&#34;:140,&#34;QualifiedTeams&#34;:16,&#34;MatchesPlayed&#34;:26,&#34;Attendance&#34;:&#34;768.607&#34;},{&#34;Year&#34;:1958,&#34;Country&#34;:&#34;Sweden&#34;,&#34;Winner&#34;:&#34;Brazil&#34;,&#34;Runners-Up&#34;:&#34;Sweden&#34;,&#34;Third&#34;:&#34;France&#34;,&#34;Fourth&#34;:&#34;Germany FR&#34;,&#34;GoalsScored&#34;:126,&#34;QualifiedTeams&#34;:16,&#34;MatchesPlayed&#34;:35,&#34;Attendance&#34;:&#34;819.810&#34;},{&#34;Year&#34;:1962,&#34;Country&#34;:&#34;Chile&#34;,&#34;Winner&#34;:&#34;Brazil&#34;,&#34;Runners-Up&#34;:&#34;Czechoslovakia&#34;,&#34;Third&#34;:&#34;Chile&#34;,&#34;Fourth&#34;:&#34;Yugoslavia&#34;,&#34;GoalsScored&#34;:89,&#34;QualifiedTeams&#34;:16,&#34;MatchesPlayed&#34;:32,&#34;Attendance&#34;:&#34;893.172&#34;},{&#34;Year&#34;:1966,&#34;Country&#34;:&#34;England&#34;,&#34;Winner&#34;:&#34;England&#34;,&#34;Runners-Up&#34;:&#34;Germany FR&#34;,&#34;Third&#34;:&#34;Portugal&#34;,&#34;Fourth&#34;:&#34;Soviet Union&#34;,&#34;GoalsScored&#34;:89,&#34;QualifiedTeams&#34;:16,&#34;MatchesPlayed&#34;:32,&#34;Attendance&#34;:&#34;1.563.135&#34;},{&#34;Year&#34;:1970,&#34;Country&#34;:&#34;Mexico&#34;,&#34;Winner&#34;:&#34;Brazil&#34;,&#34;Runners-Up&#34;:&#34;Italy&#34;,&#34;Third&#34;:&#34;Germany FR&#34;,&#34;Fourth&#34;:&#34;Uruguay&#34;,&#34;GoalsScored&#34;:95,&#34;QualifiedTeams&#34;:16,&#34;MatchesPlayed&#34;:32,&#34;Attendance&#34;:&#34;1.603.975&#34;},{&#34;Year&#34;:1974,&#34;Country&#34;:&#34;Germany&#34;,&#34;Winner&#34;:&#34;Germany FR&#34;,&#34;Runners-Up&#34;:&#34;Netherlands&#34;,&#34;Third&#34;:&#34;Poland&#34;,&#34;Fourth&#34;:&#34;Brazil&#34;,&#34;GoalsScored&#34;:97,&#34;QualifiedTeams&#34;:16,&#34;MatchesPlayed&#34;:38,&#34;Attendance&#34;:&#34;1.865.753&#34;},{&#34;Year&#34;:1978,&#34;Country&#34;:&#34;Argentina&#34;,&#34;Winner&#34;:&#34;Argentina&#34;,&#34;Runners-Up&#34;:&#34;Netherlands&#34;,&#34;Third&#34;:&#34;Brazil&#34;,&#34;Fourth&#34;:&#34;Italy&#34;,&#34;GoalsScored&#34;:102,&#34;QualifiedTeams&#34;:16,&#34;MatchesPlayed&#34;:38,&#34;Attendance&#34;:&#34;1.545.791&#34;},{&#34;Year&#34;:1982,&#34;Country&#34;:&#34;Spain&#34;,&#34;Winner&#34;:&#34;Italy&#34;,&#34;Runners-Up&#34;:&#34;Germany FR&#34;,&#34;Third&#34;:&#34;Poland&#34;,&#34;Fourth&#34;:&#34;France&#34;,&#34;GoalsScored&#34;:146,&#34;QualifiedTeams&#34;:24,&#34;MatchesPlayed&#34;:52,&#34;Attendance&#34;:&#34;2.109.723&#34;},{&#34;Year&#34;:1986,&#34;Country&#34;:&#34;Mexico&#34;,&#34;Winner&#34;:&#34;Argentina&#34;,&#34;Runners-Up&#34;:&#34;Germany FR&#34;,&#34;Third&#34;:&#34;France&#34;,&#34;Fourth&#34;:&#34;Belgium&#34;,&#34;GoalsScored&#34;:132,&#34;QualifiedTeams&#34;:24,&#34;MatchesPlayed&#34;:52,&#34;Attendance&#34;:&#34;2.394.031&#34;},{&#34;Year&#34;:1990,&#34;Country&#34;:&#34;Italy&#34;,&#34;Winner&#34;:&#34;Germany FR&#34;,&#34;Runners-Up&#34;:&#34;Argentina&#34;,&#34;Third&#34;:&#34;Italy&#34;,&#34;Fourth&#34;:&#34;England&#34;,&#34;GoalsScored&#34;:115,&#34;QualifiedTeams&#34;:24,&#34;MatchesPlayed&#34;:52,&#34;Attendance&#34;:&#34;2.516.215&#34;},{&#34;Year&#34;:1994,&#34;Country&#34;:&#34;USA&#34;,&#34;Winner&#34;:&#34;Brazil&#34;,&#34;Runners-Up&#34;:&#34;Italy&#34;,&#34;Third&#34;:&#34;Sweden&#34;,&#34;Fourth&#34;:&#34;Bulgaria&#34;,&#34;GoalsScored&#34;:141,&#34;QualifiedTeams&#34;:24,&#34;MatchesPlayed&#34;:52,&#34;Attendance&#34;:&#34;3.587.538&#34;},{&#34;Year&#34;:1998,&#34;Country&#34;:&#34;France&#34;,&#34;Winner&#34;:&#34;France&#34;,&#34;Runners-Up&#34;:&#34;Brazil&#34;,&#34;Third&#34;:&#34;Croatia&#34;,&#34;Fourth&#34;:&#34;Netherlands&#34;,&#34;GoalsScored&#34;:171,&#34;QualifiedTeams&#34;:32,&#34;MatchesPlayed&#34;:64,&#34;Attendance&#34;:&#34;2.785.100&#34;},{&#34;Year&#34;:2002,&#34;Country&#34;:&#34;Korea\\/Japan&#34;,&#34;Winner&#34;:&#34;Brazil&#34;,&#34;Runners-Up&#34;:&#34;Germany&#34;,&#34;Third&#34;:&#34;Turkey&#34;,&#34;Fourth&#34;:&#34;Korea Republic&#34;,&#34;GoalsScored&#34;:161,&#34;QualifiedTeams&#34;:32,&#34;MatchesPlayed&#34;:64,&#34;Attendance&#34;:&#34;2.705.197&#34;},{&#34;Year&#34;:2006,&#34;Country&#34;:&#34;Germany&#34;,&#34;Winner&#34;:&#34;Italy&#34;,&#34;Runners-Up&#34;:&#34;France&#34;,&#34;Third&#34;:&#34;Germany&#34;,&#34;Fourth&#34;:&#34;Portugal&#34;,&#34;GoalsScored&#34;:147,&#34;QualifiedTeams&#34;:32,&#34;MatchesPlayed&#34;:64,&#34;Attendance&#34;:&#34;3.359.439&#34;},{&#34;Year&#34;:2010,&#34;Country&#34;:&#34;South Africa&#34;,&#34;Winner&#34;:&#34;Spain&#34;,&#34;Runners-Up&#34;:&#34;Netherlands&#34;,&#34;Third&#34;:&#34;Germany&#34;,&#34;Fourth&#34;:&#34;Uruguay&#34;,&#34;GoalsScored&#34;:145,&#34;QualifiedTeams&#34;:32,&#34;MatchesPlayed&#34;:64,&#34;Attendance&#34;:&#34;3.178.856&#34;},{&#34;Year&#34;:2014,&#34;Country&#34;:&#34;Brazil&#34;,&#34;Winner&#34;:&#34;Germany&#34;,&#34;Runners-Up&#34;:&#34;Argentina&#34;,&#34;Third&#34;:&#34;Netherlands&#34;,&#34;Fourth&#34;:&#34;Brazil&#34;,&#34;GoalsScored&#34;:171,&#34;QualifiedTeams&#34;:32,&#34;MatchesPlayed&#34;:64,&#34;Attendance&#34;:&#34;3.386.810&#34;}]&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[27]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># see dictionary here</span>
+<span class="n">d_wc</span><span class="o">.</span><span class="n">to_dict</span><span class="p">(</span><span class="n">orient</span><span class="o">=</span><span class="s1">'records'</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[27]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[{&#39;Year&#39;: 1930,
+  &#39;Country&#39;: &#39;Uruguay&#39;,
+  &#39;Winner&#39;: &#39;Uruguay&#39;,
+  &#39;Runners-Up&#39;: &#39;Argentina&#39;,
+  &#39;Third&#39;: &#39;USA&#39;,
+  &#39;Fourth&#39;: &#39;Yugoslavia&#39;,
+  &#39;GoalsScored&#39;: 70,
+  &#39;QualifiedTeams&#39;: 13,
+  &#39;MatchesPlayed&#39;: 18,
+  &#39;Attendance&#39;: &#39;590.549&#39;},
+ {&#39;Year&#39;: 1934,
+  &#39;Country&#39;: &#39;Italy&#39;,
+  &#39;Winner&#39;: &#39;Italy&#39;,
+  &#39;Runners-Up&#39;: &#39;Czechoslovakia&#39;,
+  &#39;Third&#39;: &#39;Germany&#39;,
+  &#39;Fourth&#39;: &#39;Austria&#39;,
+  &#39;GoalsScored&#39;: 70,
+  &#39;QualifiedTeams&#39;: 16,
+  &#39;MatchesPlayed&#39;: 17,
+  &#39;Attendance&#39;: &#39;363.000&#39;},
+ {&#39;Year&#39;: 1938,
+  &#39;Country&#39;: &#39;France&#39;,
+  &#39;Winner&#39;: &#39;Italy&#39;,
+  &#39;Runners-Up&#39;: &#39;Hungary&#39;,
+  &#39;Third&#39;: &#39;Brazil&#39;,
+  &#39;Fourth&#39;: &#39;Sweden&#39;,
+  &#39;GoalsScored&#39;: 84,
+  &#39;QualifiedTeams&#39;: 15,
+  &#39;MatchesPlayed&#39;: 18,
+  &#39;Attendance&#39;: &#39;375.700&#39;},
+ {&#39;Year&#39;: 1950,
+  &#39;Country&#39;: &#39;Brazil&#39;,
+  &#39;Winner&#39;: &#39;Uruguay&#39;,
+  &#39;Runners-Up&#39;: &#39;Brazil&#39;,
+  &#39;Third&#39;: &#39;Sweden&#39;,
+  &#39;Fourth&#39;: &#39;Spain&#39;,
+  &#39;GoalsScored&#39;: 88,
+  &#39;QualifiedTeams&#39;: 13,
+  &#39;MatchesPlayed&#39;: 22,
+  &#39;Attendance&#39;: &#39;1.045.246&#39;},
+ {&#39;Year&#39;: 1954,
+  &#39;Country&#39;: &#39;Switzerland&#39;,
+  &#39;Winner&#39;: &#39;Germany FR&#39;,
+  &#39;Runners-Up&#39;: &#39;Hungary&#39;,
+  &#39;Third&#39;: &#39;Austria&#39;,
+  &#39;Fourth&#39;: &#39;Uruguay&#39;,
+  &#39;GoalsScored&#39;: 140,
+  &#39;QualifiedTeams&#39;: 16,
+  &#39;MatchesPlayed&#39;: 26,
+  &#39;Attendance&#39;: &#39;768.607&#39;},
+ {&#39;Year&#39;: 1958,
+  &#39;Country&#39;: &#39;Sweden&#39;,
+  &#39;Winner&#39;: &#39;Brazil&#39;,
+  &#39;Runners-Up&#39;: &#39;Sweden&#39;,
+  &#39;Third&#39;: &#39;France&#39;,
+  &#39;Fourth&#39;: &#39;Germany FR&#39;,
+  &#39;GoalsScored&#39;: 126,
+  &#39;QualifiedTeams&#39;: 16,
+  &#39;MatchesPlayed&#39;: 35,
+  &#39;Attendance&#39;: &#39;819.810&#39;},
+ {&#39;Year&#39;: 1962,
+  &#39;Country&#39;: &#39;Chile&#39;,
+  &#39;Winner&#39;: &#39;Brazil&#39;,
+  &#39;Runners-Up&#39;: &#39;Czechoslovakia&#39;,
+  &#39;Third&#39;: &#39;Chile&#39;,
+  &#39;Fourth&#39;: &#39;Yugoslavia&#39;,
+  &#39;GoalsScored&#39;: 89,
+  &#39;QualifiedTeams&#39;: 16,
+  &#39;MatchesPlayed&#39;: 32,
+  &#39;Attendance&#39;: &#39;893.172&#39;},
+ {&#39;Year&#39;: 1966,
+  &#39;Country&#39;: &#39;England&#39;,
+  &#39;Winner&#39;: &#39;England&#39;,
+  &#39;Runners-Up&#39;: &#39;Germany FR&#39;,
+  &#39;Third&#39;: &#39;Portugal&#39;,
+  &#39;Fourth&#39;: &#39;Soviet Union&#39;,
+  &#39;GoalsScored&#39;: 89,
+  &#39;QualifiedTeams&#39;: 16,
+  &#39;MatchesPlayed&#39;: 32,
+  &#39;Attendance&#39;: &#39;1.563.135&#39;},
+ {&#39;Year&#39;: 1970,
+  &#39;Country&#39;: &#39;Mexico&#39;,
+  &#39;Winner&#39;: &#39;Brazil&#39;,
+  &#39;Runners-Up&#39;: &#39;Italy&#39;,
+  &#39;Third&#39;: &#39;Germany FR&#39;,
+  &#39;Fourth&#39;: &#39;Uruguay&#39;,
+  &#39;GoalsScored&#39;: 95,
+  &#39;QualifiedTeams&#39;: 16,
+  &#39;MatchesPlayed&#39;: 32,
+  &#39;Attendance&#39;: &#39;1.603.975&#39;},
+ {&#39;Year&#39;: 1974,
+  &#39;Country&#39;: &#39;Germany&#39;,
+  &#39;Winner&#39;: &#39;Germany FR&#39;,
+  &#39;Runners-Up&#39;: &#39;Netherlands&#39;,
+  &#39;Third&#39;: &#39;Poland&#39;,
+  &#39;Fourth&#39;: &#39;Brazil&#39;,
+  &#39;GoalsScored&#39;: 97,
+  &#39;QualifiedTeams&#39;: 16,
+  &#39;MatchesPlayed&#39;: 38,
+  &#39;Attendance&#39;: &#39;1.865.753&#39;},
+ {&#39;Year&#39;: 1978,
+  &#39;Country&#39;: &#39;Argentina&#39;,
+  &#39;Winner&#39;: &#39;Argentina&#39;,
+  &#39;Runners-Up&#39;: &#39;Netherlands&#39;,
+  &#39;Third&#39;: &#39;Brazil&#39;,
+  &#39;Fourth&#39;: &#39;Italy&#39;,
+  &#39;GoalsScored&#39;: 102,
+  &#39;QualifiedTeams&#39;: 16,
+  &#39;MatchesPlayed&#39;: 38,
+  &#39;Attendance&#39;: &#39;1.545.791&#39;},
+ {&#39;Year&#39;: 1982,
+  &#39;Country&#39;: &#39;Spain&#39;,
+  &#39;Winner&#39;: &#39;Italy&#39;,
+  &#39;Runners-Up&#39;: &#39;Germany FR&#39;,
+  &#39;Third&#39;: &#39;Poland&#39;,
+  &#39;Fourth&#39;: &#39;France&#39;,
+  &#39;GoalsScored&#39;: 146,
+  &#39;QualifiedTeams&#39;: 24,
+  &#39;MatchesPlayed&#39;: 52,
+  &#39;Attendance&#39;: &#39;2.109.723&#39;},
+ {&#39;Year&#39;: 1986,
+  &#39;Country&#39;: &#39;Mexico&#39;,
+  &#39;Winner&#39;: &#39;Argentina&#39;,
+  &#39;Runners-Up&#39;: &#39;Germany FR&#39;,
+  &#39;Third&#39;: &#39;France&#39;,
+  &#39;Fourth&#39;: &#39;Belgium&#39;,
+  &#39;GoalsScored&#39;: 132,
+  &#39;QualifiedTeams&#39;: 24,
+  &#39;MatchesPlayed&#39;: 52,
+  &#39;Attendance&#39;: &#39;2.394.031&#39;},
+ {&#39;Year&#39;: 1990,
+  &#39;Country&#39;: &#39;Italy&#39;,
+  &#39;Winner&#39;: &#39;Germany FR&#39;,
+  &#39;Runners-Up&#39;: &#39;Argentina&#39;,
+  &#39;Third&#39;: &#39;Italy&#39;,
+  &#39;Fourth&#39;: &#39;England&#39;,
+  &#39;GoalsScored&#39;: 115,
+  &#39;QualifiedTeams&#39;: 24,
+  &#39;MatchesPlayed&#39;: 52,
+  &#39;Attendance&#39;: &#39;2.516.215&#39;},
+ {&#39;Year&#39;: 1994,
+  &#39;Country&#39;: &#39;USA&#39;,
+  &#39;Winner&#39;: &#39;Brazil&#39;,
+  &#39;Runners-Up&#39;: &#39;Italy&#39;,
+  &#39;Third&#39;: &#39;Sweden&#39;,
+  &#39;Fourth&#39;: &#39;Bulgaria&#39;,
+  &#39;GoalsScored&#39;: 141,
+  &#39;QualifiedTeams&#39;: 24,
+  &#39;MatchesPlayed&#39;: 52,
+  &#39;Attendance&#39;: &#39;3.587.538&#39;},
+ {&#39;Year&#39;: 1998,
+  &#39;Country&#39;: &#39;France&#39;,
+  &#39;Winner&#39;: &#39;France&#39;,
+  &#39;Runners-Up&#39;: &#39;Brazil&#39;,
+  &#39;Third&#39;: &#39;Croatia&#39;,
+  &#39;Fourth&#39;: &#39;Netherlands&#39;,
+  &#39;GoalsScored&#39;: 171,
+  &#39;QualifiedTeams&#39;: 32,
+  &#39;MatchesPlayed&#39;: 64,
+  &#39;Attendance&#39;: &#39;2.785.100&#39;},
+ {&#39;Year&#39;: 2002,
+  &#39;Country&#39;: &#39;Korea/Japan&#39;,
+  &#39;Winner&#39;: &#39;Brazil&#39;,
+  &#39;Runners-Up&#39;: &#39;Germany&#39;,
+  &#39;Third&#39;: &#39;Turkey&#39;,
+  &#39;Fourth&#39;: &#39;Korea Republic&#39;,
+  &#39;GoalsScored&#39;: 161,
+  &#39;QualifiedTeams&#39;: 32,
+  &#39;MatchesPlayed&#39;: 64,
+  &#39;Attendance&#39;: &#39;2.705.197&#39;},
+ {&#39;Year&#39;: 2006,
+  &#39;Country&#39;: &#39;Germany&#39;,
+  &#39;Winner&#39;: &#39;Italy&#39;,
+  &#39;Runners-Up&#39;: &#39;France&#39;,
+  &#39;Third&#39;: &#39;Germany&#39;,
+  &#39;Fourth&#39;: &#39;Portugal&#39;,
+  &#39;GoalsScored&#39;: 147,
+  &#39;QualifiedTeams&#39;: 32,
+  &#39;MatchesPlayed&#39;: 64,
+  &#39;Attendance&#39;: &#39;3.359.439&#39;},
+ {&#39;Year&#39;: 2010,
+  &#39;Country&#39;: &#39;South Africa&#39;,
+  &#39;Winner&#39;: &#39;Spain&#39;,
+  &#39;Runners-Up&#39;: &#39;Netherlands&#39;,
+  &#39;Third&#39;: &#39;Germany&#39;,
+  &#39;Fourth&#39;: &#39;Uruguay&#39;,
+  &#39;GoalsScored&#39;: 145,
+  &#39;QualifiedTeams&#39;: 32,
+  &#39;MatchesPlayed&#39;: 64,
+  &#39;Attendance&#39;: &#39;3.178.856&#39;},
+ {&#39;Year&#39;: 2014,
+  &#39;Country&#39;: &#39;Brazil&#39;,
+  &#39;Winner&#39;: &#39;Germany&#39;,
+  &#39;Runners-Up&#39;: &#39;Argentina&#39;,
+  &#39;Third&#39;: &#39;Netherlands&#39;,
+  &#39;Fourth&#39;: &#39;Brazil&#39;,
+  &#39;GoalsScored&#39;: 171,
+  &#39;QualifiedTeams&#39;: 32,
+  &#39;MatchesPlayed&#39;: 64,
+  &#39;Attendance&#39;: &#39;3.386.810&#39;}]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># save and look in the file</span>
+<span class="n">d_wc</span><span class="o">.</span><span class="n">to_json</span><span class="p">(</span><span class="s2">"worldcup.json"</span><span class="p">,</span> <span class="n">orient</span><span class="o">=</span><span class="s2">"records"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># load</span>
+<span class="n">d</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_json</span><span class="p">(</span><span class="s2">"worldcup.json"</span><span class="p">)</span>
+
+<span class="c1"># see </span>
+<span class="n">d</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[13]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Year</th>
+      <th>Country</th>
+      <th>Winner</th>
+      <th>Runners-Up</th>
+      <th>Third</th>
+      <th>Fourth</th>
+      <th>GoalsScored</th>
+      <th>QualifiedTeams</th>
+      <th>MatchesPlayed</th>
+      <th>Attendance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1930</td>
+      <td>Uruguay</td>
+      <td>Uruguay</td>
+      <td>Argentina</td>
+      <td>USA</td>
+      <td>Yugoslavia</td>
+      <td>70</td>
+      <td>13</td>
+      <td>18</td>
+      <td>590.549</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1934</td>
+      <td>Italy</td>
+      <td>Italy</td>
+      <td>Czechoslovakia</td>
+      <td>Germany</td>
+      <td>Austria</td>
+      <td>70</td>
+      <td>16</td>
+      <td>17</td>
+      <td>363.000</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1938</td>
+      <td>France</td>
+      <td>Italy</td>
+      <td>Hungary</td>
+      <td>Brazil</td>
+      <td>Sweden</td>
+      <td>84</td>
+      <td>15</td>
+      <td>18</td>
+      <td>375.700</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1950</td>
+      <td>Brazil</td>
+      <td>Uruguay</td>
+      <td>Brazil</td>
+      <td>Sweden</td>
+      <td>Spain</td>
+      <td>88</td>
+      <td>13</td>
+      <td>22</td>
+      <td>1.045.246</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1954</td>
+      <td>Switzerland</td>
+      <td>Germany FR</td>
+      <td>Hungary</td>
+      <td>Austria</td>
+      <td>Uruguay</td>
+      <td>140</td>
+      <td>16</td>
+      <td>26</td>
+      <td>768.607</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h3 id="Data-Type-Conversion">Data Type Conversion<a class="anchor-link" href="#Data-Type-Conversion">&#182;</a></h3><p>Pandas also provides methods to convert your data frame in native Python Data structures. Those can be useful tool for accessing your dataframe in different format, for example, as a dictionary or a list.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># to a dictionary</span>
 <span class="n">d_wc</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
 </pre></div>
 
@@ -14310,213 +15675,6 @@ alphanumerics and underscores, no Stata reserved words)
 <div class="prompt input_prompt">In&nbsp;[15]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># save and look in the file</span>
-<span class="n">d_wc</span><span class="o">.</span><span class="n">to_json</span><span class="p">(</span><span class="s2">"worldcup.json"</span><span class="p">,</span> <span class="n">orient</span><span class="o">=</span><span class="s2">"records"</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># load</span>
-<span class="n">d</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_json</span><span class="p">(</span><span class="s2">"worldcup.json"</span><span class="p">)</span>
-
-<span class="c1"># see </span>
-<span class="n">d</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[16]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Year</th>
-      <th>Country</th>
-      <th>Winner</th>
-      <th>Runners-Up</th>
-      <th>Third</th>
-      <th>Fourth</th>
-      <th>GoalsScored</th>
-      <th>QualifiedTeams</th>
-      <th>MatchesPlayed</th>
-      <th>Attendance</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>1930</td>
-      <td>Uruguay</td>
-      <td>Uruguay</td>
-      <td>Argentina</td>
-      <td>USA</td>
-      <td>Yugoslavia</td>
-      <td>70</td>
-      <td>13</td>
-      <td>18</td>
-      <td>590.549</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>1934</td>
-      <td>Italy</td>
-      <td>Italy</td>
-      <td>Czechoslovakia</td>
-      <td>Germany</td>
-      <td>Austria</td>
-      <td>70</td>
-      <td>16</td>
-      <td>17</td>
-      <td>363.000</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>1938</td>
-      <td>France</td>
-      <td>Italy</td>
-      <td>Hungary</td>
-      <td>Brazil</td>
-      <td>Sweden</td>
-      <td>84</td>
-      <td>15</td>
-      <td>18</td>
-      <td>375.700</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>1950</td>
-      <td>Brazil</td>
-      <td>Uruguay</td>
-      <td>Brazil</td>
-      <td>Sweden</td>
-      <td>Spain</td>
-      <td>88</td>
-      <td>13</td>
-      <td>22</td>
-      <td>1.045.246</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>1954</td>
-      <td>Switzerland</td>
-      <td>Germany FR</td>
-      <td>Hungary</td>
-      <td>Austria</td>
-      <td>Uruguay</td>
-      <td>140</td>
-      <td>16</td>
-      <td>26</td>
-      <td>768.607</td>
-    </tr>
-  </tbody>
-</table>
-</div></div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h3 id="Data-Type-Conversion">Data Type Conversion<a class="anchor-link" href="#Data-Type-Conversion">&#182;</a></h3><p>Pandas also provides methods to convert your data frame in native Python Data structures. Those can be useful tool for accessing your dataframe in different format, for example, as a dictionary or a list.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[67]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># to a dictionary</span>
-<span class="n">d_wc</span><span class="o">.</span><span class="n">to_dict</span><span class="p">()</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[67]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>{0: 1930,
- 1: 1934,
- 2: 1938,
- 3: 1950,
- 4: 1954,
- 5: 1958,
- 6: 1962,
- 7: 1966,
- 8: 1970,
- 9: 1974,
- 10: 1978,
- 11: 1982,
- 12: 1986,
- 13: 1990,
- 14: 1994,
- 15: 1998,
- 16: 2002,
- 17: 2006,
- 18: 2010,
- 19: 2014}</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[19]:</div>
-<div class="inner_cell">
-    <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># to a numpy array</span>
 <span class="n">d_wc</span><span class="o">.</span><span class="n">values</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span>
 </pre></div>
@@ -14531,7 +15689,7 @@ alphanumerics and underscores, no Stata reserved words)
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[19]:</div>
+    <div class="prompt output_prompt">Out[15]:</div>
 
 
 
@@ -14549,7 +15707,7 @@ alphanumerics and underscores, no Stata reserved words)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># To a nested list (which is a method from numpy)</span>
@@ -14566,7 +15724,7 @@ alphanumerics and underscores, no Stata reserved words)
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[20]:</div>
+    <div class="prompt output_prompt">Out[16]:</div>
 
 
 
@@ -14607,10 +15765,10 @@ alphanumerics and underscores, no Stata reserved words)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">d_wc</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">d_wc</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -14623,7 +15781,7 @@ alphanumerics and underscores, no Stata reserved words)
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[21]:</div>
+    <div class="prompt output_prompt">Out[17]:</div>
 
 
 
@@ -14742,10 +15900,10 @@ alphanumerics and underscores, no Stata reserved words)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">d</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">d_wc</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14758,7 +15916,7 @@ alphanumerics and underscores, no Stata reserved words)
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[22]:</div>
+    <div class="prompt output_prompt">Out[18]:</div>
 
 
 
@@ -14942,10 +16100,10 @@ alphanumerics and underscores, no Stata reserved words)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">d</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">d_wc</span><span class="o">.</span><span class="n">sample</span><span class="p">(</span><span class="mi">5</span><span class="p">)</span>
 </pre></div>
 
     </div>
@@ -14958,7 +16116,7 @@ alphanumerics and underscores, no Stata reserved words)
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[27]:</div>
+    <div class="prompt output_prompt">Out[19]:</div>
 
 
 
@@ -14994,30 +16152,56 @@ alphanumerics and underscores, no Stata reserved words)
   </thead>
   <tbody>
     <tr>
-      <th>7</th>
-      <td>1966</td>
-      <td>England</td>
-      <td>England</td>
+      <th>13</th>
+      <td>1990</td>
+      <td>Italy</td>
       <td>Germany FR</td>
-      <td>Portugal</td>
-      <td>Soviet Union</td>
-      <td>89</td>
-      <td>16</td>
-      <td>32</td>
-      <td>1.563.135</td>
+      <td>Argentina</td>
+      <td>Italy</td>
+      <td>England</td>
+      <td>115</td>
+      <td>24</td>
+      <td>52</td>
+      <td>2.516.215</td>
     </tr>
     <tr>
-      <th>15</th>
-      <td>1998</td>
-      <td>France</td>
-      <td>France</td>
+      <th>16</th>
+      <td>2002</td>
+      <td>Korea/Japan</td>
       <td>Brazil</td>
-      <td>Croatia</td>
-      <td>Netherlands</td>
-      <td>171</td>
+      <td>Germany</td>
+      <td>Turkey</td>
+      <td>Korea Republic</td>
+      <td>161</td>
       <td>32</td>
       <td>64</td>
-      <td>2.785.100</td>
+      <td>2.705.197</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>2006</td>
+      <td>Germany</td>
+      <td>Italy</td>
+      <td>France</td>
+      <td>Germany</td>
+      <td>Portugal</td>
+      <td>147</td>
+      <td>32</td>
+      <td>64</td>
+      <td>3.359.439</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1950</td>
+      <td>Brazil</td>
+      <td>Uruguay</td>
+      <td>Brazil</td>
+      <td>Sweden</td>
+      <td>Spain</td>
+      <td>88</td>
+      <td>13</td>
+      <td>22</td>
+      <td>1.045.246</td>
     </tr>
     <tr>
       <th>10</th>
@@ -15031,32 +16215,6 @@ alphanumerics and underscores, no Stata reserved words)
       <td>16</td>
       <td>38</td>
       <td>1.545.791</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>1962</td>
-      <td>Chile</td>
-      <td>Brazil</td>
-      <td>Czechoslovakia</td>
-      <td>Chile</td>
-      <td>Yugoslavia</td>
-      <td>89</td>
-      <td>16</td>
-      <td>32</td>
-      <td>893.172</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>1982</td>
-      <td>Spain</td>
-      <td>Italy</td>
-      <td>Germany FR</td>
-      <td>Poland</td>
-      <td>France</td>
-      <td>146</td>
-      <td>24</td>
-      <td>52</td>
-      <td>2.109.723</td>
     </tr>
   </tbody>
 </table>
@@ -15077,10 +16235,10 @@ alphanumerics and underscores, no Stata reserved words)
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[28]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">d</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">d_wc</span><span class="o">.</span><span class="n">info</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -15131,10 +16289,10 @@ memory usage: 1.7+ KB
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">d</span><span class="o">.</span><span class="n">dtypes</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">d_wc</span><span class="o">.</span><span class="n">dtypes</span>
 </pre></div>
 
     </div>
@@ -15147,7 +16305,7 @@ memory usage: 1.7+ KB
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[29]:</div>
+    <div class="prompt output_prompt">Out[21]:</div>
 
 
 
@@ -15181,10 +16339,10 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[22]:</div>
 <div class="inner_cell">
     <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">d</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">d_wc</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -15197,7 +16355,7 @@ dtype: object</pre>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[30]:</div>
+    <div class="prompt output_prompt">Out[22]:</div>
 
 
 
@@ -15295,9 +16453,54 @@ dtype: object</pre>
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Practice">Practice<a class="anchor-link" href="#Practice">&#182;</a></h2><ul>
-<li>Which two teams played the last world cup game in the data?</li>
-<li>Which Country hosted more worldcups?</li>
+<h4 id="pandas.describe()-:-Summarize-a-particular-column"><code>pandas.describe()</code> : Summarize a particular column<a class="anchor-link" href="#pandas.describe()-:-Summarize-a-particular-column">&#182;</a></h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">d_wc</span><span class="p">[</span><span class="s2">"Third"</span><span class="p">]</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[23]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>count          20
+unique         14
+top       Germany
+freq            3
+Name: Third, dtype: object</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Practice">Practice<a class="anchor-link" href="#Practice">&#182;</a></h2><p>Using the "WorldCups.csv" data, answer the following:</p>
+<ul>
+<li>Which two teams played the last game in the data?</li>
+<li>Which Country hosted more Worldcups editions?</li>
 <li>How many different countries have won a Worldcup?</li>
 <li>What is the range of years to which we have data for?</li>
 </ul>
@@ -15307,13 +16510,332 @@ dtype: object</pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="prompt input_prompt">In&nbsp;[62]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Add your response here</span>
+<span class="n">d</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"WorldCups.csv"</span><span class="p">)</span>
+<span class="c1"># last world cup game is always the final. Germany vs Argentina</span>
+<span class="n">d</span><span class="o">.</span><span class="n">tail</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span>
+<span class="c1"># host</span>
+<span class="n">d</span><span class="o">.</span><span class="n">Country</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+<span class="c1"># winner unique</span>
+<span class="n">d</span><span class="o">.</span><span class="n">Winner</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
+<span class="c1"># range</span>
+<span class="n">d</span><span class="o">.</span><span class="n">Year</span><span class="o">.</span><span class="n">describe</span><span class="p">()</span>
 </pre></div>
 
     </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[62]:</div>
+
+
+
+<div class="output_html rendered_html output_subarea output_execute_result"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Year</th>
+      <th>Country</th>
+      <th>Winner</th>
+      <th>Runners-Up</th>
+      <th>Third</th>
+      <th>Fourth</th>
+      <th>GoalsScored</th>
+      <th>QualifiedTeams</th>
+      <th>MatchesPlayed</th>
+      <th>Attendance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1930</td>
+      <td>Uruguay</td>
+      <td>Uruguay</td>
+      <td>Argentina</td>
+      <td>USA</td>
+      <td>Yugoslavia</td>
+      <td>70</td>
+      <td>13</td>
+      <td>18</td>
+      <td>590.549</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>1934</td>
+      <td>Italy</td>
+      <td>Italy</td>
+      <td>Czechoslovakia</td>
+      <td>Germany</td>
+      <td>Austria</td>
+      <td>70</td>
+      <td>16</td>
+      <td>17</td>
+      <td>363.000</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>1938</td>
+      <td>France</td>
+      <td>Italy</td>
+      <td>Hungary</td>
+      <td>Brazil</td>
+      <td>Sweden</td>
+      <td>84</td>
+      <td>15</td>
+      <td>18</td>
+      <td>375.700</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>1950</td>
+      <td>Brazil</td>
+      <td>Uruguay</td>
+      <td>Brazil</td>
+      <td>Sweden</td>
+      <td>Spain</td>
+      <td>88</td>
+      <td>13</td>
+      <td>22</td>
+      <td>1.045.246</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>1954</td>
+      <td>Switzerland</td>
+      <td>Germany FR</td>
+      <td>Hungary</td>
+      <td>Austria</td>
+      <td>Uruguay</td>
+      <td>140</td>
+      <td>16</td>
+      <td>26</td>
+      <td>768.607</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>1958</td>
+      <td>Sweden</td>
+      <td>Brazil</td>
+      <td>Sweden</td>
+      <td>France</td>
+      <td>Germany FR</td>
+      <td>126</td>
+      <td>16</td>
+      <td>35</td>
+      <td>819.810</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>1962</td>
+      <td>Chile</td>
+      <td>Brazil</td>
+      <td>Czechoslovakia</td>
+      <td>Chile</td>
+      <td>Yugoslavia</td>
+      <td>89</td>
+      <td>16</td>
+      <td>32</td>
+      <td>893.172</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>1966</td>
+      <td>England</td>
+      <td>England</td>
+      <td>Germany FR</td>
+      <td>Portugal</td>
+      <td>Soviet Union</td>
+      <td>89</td>
+      <td>16</td>
+      <td>32</td>
+      <td>1.563.135</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>1970</td>
+      <td>Mexico</td>
+      <td>Brazil</td>
+      <td>Italy</td>
+      <td>Germany FR</td>
+      <td>Uruguay</td>
+      <td>95</td>
+      <td>16</td>
+      <td>32</td>
+      <td>1.603.975</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>1974</td>
+      <td>Germany</td>
+      <td>Germany FR</td>
+      <td>Netherlands</td>
+      <td>Poland</td>
+      <td>Brazil</td>
+      <td>97</td>
+      <td>16</td>
+      <td>38</td>
+      <td>1.865.753</td>
+    </tr>
+    <tr>
+      <th>10</th>
+      <td>1978</td>
+      <td>Argentina</td>
+      <td>Argentina</td>
+      <td>Netherlands</td>
+      <td>Brazil</td>
+      <td>Italy</td>
+      <td>102</td>
+      <td>16</td>
+      <td>38</td>
+      <td>1.545.791</td>
+    </tr>
+    <tr>
+      <th>11</th>
+      <td>1982</td>
+      <td>Spain</td>
+      <td>Italy</td>
+      <td>Germany FR</td>
+      <td>Poland</td>
+      <td>France</td>
+      <td>146</td>
+      <td>24</td>
+      <td>52</td>
+      <td>2.109.723</td>
+    </tr>
+    <tr>
+      <th>12</th>
+      <td>1986</td>
+      <td>Mexico</td>
+      <td>Argentina</td>
+      <td>Germany FR</td>
+      <td>France</td>
+      <td>Belgium</td>
+      <td>132</td>
+      <td>24</td>
+      <td>52</td>
+      <td>2.394.031</td>
+    </tr>
+    <tr>
+      <th>13</th>
+      <td>1990</td>
+      <td>Italy</td>
+      <td>Germany FR</td>
+      <td>Argentina</td>
+      <td>Italy</td>
+      <td>England</td>
+      <td>115</td>
+      <td>24</td>
+      <td>52</td>
+      <td>2.516.215</td>
+    </tr>
+    <tr>
+      <th>14</th>
+      <td>1994</td>
+      <td>USA</td>
+      <td>Brazil</td>
+      <td>Italy</td>
+      <td>Sweden</td>
+      <td>Bulgaria</td>
+      <td>141</td>
+      <td>24</td>
+      <td>52</td>
+      <td>3.587.538</td>
+    </tr>
+    <tr>
+      <th>15</th>
+      <td>1998</td>
+      <td>France</td>
+      <td>France</td>
+      <td>Brazil</td>
+      <td>Croatia</td>
+      <td>Netherlands</td>
+      <td>171</td>
+      <td>32</td>
+      <td>64</td>
+      <td>2.785.100</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>2002</td>
+      <td>Korea/Japan</td>
+      <td>Brazil</td>
+      <td>Germany</td>
+      <td>Turkey</td>
+      <td>Korea Republic</td>
+      <td>161</td>
+      <td>32</td>
+      <td>64</td>
+      <td>2.705.197</td>
+    </tr>
+    <tr>
+      <th>17</th>
+      <td>2006</td>
+      <td>Germany</td>
+      <td>Italy</td>
+      <td>France</td>
+      <td>Germany</td>
+      <td>Portugal</td>
+      <td>147</td>
+      <td>32</td>
+      <td>64</td>
+      <td>3.359.439</td>
+    </tr>
+    <tr>
+      <th>18</th>
+      <td>2010</td>
+      <td>South Africa</td>
+      <td>Spain</td>
+      <td>Netherlands</td>
+      <td>Germany</td>
+      <td>Uruguay</td>
+      <td>145</td>
+      <td>32</td>
+      <td>64</td>
+      <td>3.178.856</td>
+    </tr>
+    <tr>
+      <th>19</th>
+      <td>2014</td>
+      <td>Brazil</td>
+      <td>Germany</td>
+      <td>Argentina</td>
+      <td>Netherlands</td>
+      <td>Brazil</td>
+      <td>171</td>
+      <td>32</td>
+      <td>64</td>
+      <td>3.386.810</td>
+    </tr>
+  </tbody>
+</table>
+</div></div>
+
+</div>
+
 </div>
 </div>
 
