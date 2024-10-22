@@ -2041,7 +2041,7 @@
     "href": "slides/week-7.html#plans-for-today",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Plans for Today",
-    "text": "Plans for Today\n\nLogistics: Problem Sets and Mid-Semester Survey.\nJoining and Tidying Data\nData Visualization: Principles and Practice"
+    "text": "Plans for Today\n\nLogistics: Problem Sets and Mid-Semester Survey.\nTidying and Joining Data\nData Visualization: Principles and Practice"
   },
   {
     "objectID": "slides/week-7.html#datacamp",
@@ -2139,7 +2139,7 @@
     "href": "slides/week-7.html#section-2",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "",
-    "text": "# build in plotnine graph\n\n# step 1: data\n(\nggplot(data=gapminder) + \n\n# step 2: geom\n geom_point(\n\n# step 3: aesthethics\n     aes(x=\"lngdpPercap\", y=\"lifeExp\"))\n)\n\n&lt;Figure Size: (1280 x 960)&gt;"
+    "text": "# build in plotnine graph\n\n# step 1: data\n(\nggplot(data=gapminder) + \n\n# step 2: geom\n geom_point(\n\n# step 3: aesthethics\n     aes(x=\"lngdpPercap\", y=\"lifeExp\"))\n)\n\n&lt;Figure Size: (640 x 480)&gt;"
   },
   {
     "objectID": "slides/week-7.html#section-3",
@@ -2223,6 +2223,6 @@
     "href": "slides/week-7.html#mid-semester-surveycontinue-doing",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Mid-Semester Survey:Continue Doing",
-    "text": "Mid-Semester Survey:Continue Doing\n\nComparison between Python and R\n“more in-class assignments - we are already started and I like that. And of course, the break in between helps too.”\n“I find the in-class exercises and structure of the lecture notes really helpful! The lecture notes are particularly helpful because they’re so hands-on and explicit.”\n“Increasing the frequency of problem sets”\n“Being the best professor” - :’)"
+    "text": "Mid-Semester Survey:Continue Doing\n\nComparisons between Python and R\n“more in-class assignments - we are already started and I like that. And of course, the break in between helps too.”\n“I find the in-class exercises and structure of the lecture notes really helpful! The lecture notes are particularly helpful because they’re so hands-on and explicit.”\n“Increasing the frequency of problem sets”\n“Being the best professor” - :’)"
   }
 ]

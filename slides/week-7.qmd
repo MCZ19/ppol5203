@@ -1,6 +1,6 @@
 ---
 title: "<span style = 'font-size: 100%;'> PPOL 5203 - Data Science I: Foundations </span>"
-subtitle: "<span style = 'font-size: 100%;'> Week 7: Joining, Tidying and Visualizing Data </span>"
+subtitle: "<span style = 'font-size: 100%;'> Week 7: Tidying, Joining and Visualizing Data </span>"
 author: "Professor: Tiago Ventura"
 date: "10/22/2024"
 execute: 
@@ -27,7 +27,7 @@ format:
 
 -   Logistics: Problem Sets and Mid-Semester Survey.
 
--   Joining and Tidying Data
+-   Tidying and Joining Data
 
 -   Data Visualization: Principles and Practice
 
@@ -66,7 +66,7 @@ format:
 
 ## Mid-Semester Survey:Continue Doing
 
--   Comparison between Python and R
+-   Comparisons between Python and R
 
 -   "more in-class assignments - we are already started and I like that. And of course, the break in between helps too."
 
@@ -76,6 +76,7 @@ format:
 
 - "Being the best professor" - :’)
 
+# Tidying, Joining and Visualizing Data
 
 # Readings for this week are very important!!
 
