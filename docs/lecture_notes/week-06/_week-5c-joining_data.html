@@ -14630,6 +14630,67 @@ world
 <div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Practice">Practice<a class="anchor-link" href="#Practice">&#182;</a></h2><p>Using both the World Cup Datasets from the Data Wrangling Notebook:</p>
+<ol>
+<li><p>Select the following columns: MatchID, Year, Stage, Home Team Name, Away Team Name, Home Team Goals, Away Team Goals.</p>
+</li>
+<li><p>Clean the column names converting all to lower case and removing spaces.</p>
+</li>
+<li><p>Convert this data to the long format, having: a) a column indicating if the team played home or away,  b) a single for the team</p>
+</li>
+<li><p>Which team have played more games in the history of the world cup?</p>
+</li>
+<li><p>Which team have played more games as home, and more games as away team?</p>
+</li>
+</ol>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># open datasets</span>
+<span class="n">wc</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"WorldCups.csv"</span><span class="p">)</span>
+<span class="n">wc_matches</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">"WorldCupMatches.csv"</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># answer</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
+</div><div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Joining-Methods">Joining Methods<a class="anchor-link" href="#Joining-Methods">&#182;</a></h2><p>It is unlikely that your work as a data scientist will be restricted to analyze one isolated data frame -- or table in the <code>SQL</code>/Database lingo. Most often you have multiple tables of data, and your work will consist of combining them to answer the questions that you’re interested in.</p>
 <p>There two major reasons for why complex datasets are often stored across multiple tables:</p>
 <ul>
@@ -16032,8 +16093,6 @@ merge(left: &#39;DataFrame | Series&#39;, right: &#39;DataFrame | Series&#39;, h
 </li>
 <li><p>Convert this data to the long format, having: a) a single column for the teams playing; b) a single column for the goals scored.</p>
 </li>
-<li><p>Which team have played more games in the history of the world cup?</p>
-</li>
 <li><p>Which team have the higher average of goals in the history of the world cup?</p>
 </li>
 </ol>
@@ -16071,7 +16130,7 @@ merge(left: &#39;DataFrame | Series&#39;, right: &#39;DataFrame | Series&#39;, h
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>jupyter<span class="w"> </span>nbconvert<span class="w"> </span>_week-5c-joining_data.ipynb<span class="w"> </span>--to<span class="w"> </span>html<span class="w"> </span>--template<span class="w"> </span>classic
@@ -16092,7 +16151,7 @@ merge(left: &#39;DataFrame | Series&#39;, right: &#39;DataFrame | Series&#39;, h
 
 <div class="output_subarea output_stream output_stdout output_text">
 <pre>[NbConvertApp] Converting notebook _week-5c-joining_data.ipynb to html
-[NbConvertApp] Writing 364757 bytes to _week-5c-joining_data.html
+[NbConvertApp] Writing 365345 bytes to _week-5c-joining_data.html
 </pre>
 </div>
 </div>

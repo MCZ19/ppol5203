@@ -2041,7 +2041,7 @@
     "href": "slides/week-7.html#plans-for-today",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Plans for Today",
-    "text": "Plans for Today\n\nGo over quickly through the mid-semester survey\nJoining and Tidying Data\nData Visualization: Principles and Practice"
+    "text": "Plans for Today\n\nLogistics: Problem Sets and Mid-Semester Survey.\nJoining and Tidying Data\nData Visualization: Principles and Practice"
   },
   {
     "objectID": "slides/week-7.html#datacamp",
@@ -2055,14 +2055,14 @@
     "href": "slides/week-7.html#tldr",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "TLDR",
-    "text": "TLDR\n\nVisualization matters! A figure is almost always better than a table\nYou have a full-semester ahead of you for Data Visualization\nHere -&gt; cover the basics.\n\nfocus more on grammar of graphics and plotnine - a ggplot2 implementation in Python\nskimp through native Python libraries (matplotlib and seaborn)"
+    "text": "TLDR\n\nVisualization matters! A figure is almost always better than a table\nYou have a full-semester ahead of you for Data Visualization\nWe will cover the basics:\n\nFocus more on grammar of graphics and plotnine - a ggplot2 implementation in Python\nSkim through native Python libraries (matplotlib and seaborn)"
   },
   {
     "objectID": "slides/week-7.html#what-do-you-see",
     "href": "slides/week-7.html#what-do-you-see",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "What do you see?",
-    "text": "What do you see?\n\nHow many variables?\nHow are these variables represented in the figure?\nWhat are the non-data related information presented in the graph?"
+    "text": "What do you see?\n\nHow many variables (data) are mapped in this graph?\nHow are these variables (non-constant) represented in the figure?\nWhat are the non-data (constant) related information presented in the graph?"
   },
   {
     "objectID": "slides/week-7.html#aesthetics",
@@ -2083,7 +2083,7 @@
     "href": "slides/week-7.html#more-dimensions",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "More dimensions",
-    "text": "More dimensions\n\nWe often want map more variables into the graph. We do this exploring new aesthetics."
+    "text": "More dimensions\nWe often want map more variables into the graph. We do this exploring new aesthetics."
   },
   {
     "objectID": "slides/week-7.html#color-aesthetics-to-distinguish",
@@ -2118,7 +2118,7 @@
     "href": "slides/week-7.html#major-components-of-the-grammar-of-graphics",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Major Components of the Grammar of Graphics",
-    "text": "Major Components of the Grammar of Graphics\n\nplotnine/ggplot2 graphs have three key steps\n\nData Step: The raw data that you want to plot.\nGeometries step: The geometric shapes that will represent the data.\nAesthetics &lt;aes()&gt; step: Aesthetics of the geometric and statistical objects, such as position, color, size, shape, and transparency\n\n\n\nAdditional Components of the Grammar of Graphics:\n\nFacets: to produce create subplots based on specific variable\nannotations: labels, titles, subtitles, captions.\nCoordinates & Scales: some additional functions to adjust aesthetics you are mapping (change colors, size, alpha, scale of x and y coordinates)\n\n-   Theme: Control the finer presentation details like font size, background color, grid line styles, etc."
+    "text": "Major Components of the Grammar of Graphics\n\nplotnine/ggplot2 graphs have three key steps\n\nData Step: The raw data that you want to plot.\nGeometries step: The geometric shapes that will represent the data.\nAesthetics &lt;aes()&gt; step: Aesthetics of the geometric and statistical objects, such as position, color, size, shape, and transparency\n\n\nAdditional Components of the Grammar of Graphics:\n\nFacets: to produce create subplots based on specific variable\nannotations: labels, titles, subtitles, captions.\nCoordinates & Scales: some additional functions to adjust aesthetics you are mapping (change colors, size, alpha, scale of x and y coordinates)\n\n-   Theme: Control the finer presentation details like font size, background color, grid line styles, etc."
   },
   {
     "objectID": "slides/week-7.html#gapminder",
@@ -2132,7 +2132,7 @@
     "href": "slides/week-7.html#section",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "",
-    "text": "ggplot (data = &lt;DATA&gt;)\n\n\n+\n\n\ngeom_&lt;representation&gt; (aes (&lt;aesthethics&gt;) )"
+    "text": "ggplot (data = &lt;DATA&gt;)\n+\ngeom_&lt;representation&gt; (aes (&lt;aesthethics&gt;) )"
   },
   {
     "objectID": "slides/week-7.html#section-2",
@@ -2146,14 +2146,14 @@
     "href": "slides/week-7.html#section-3",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "",
-    "text": "ggplot(data = &lt;DATA&gt;)\n\n\n+\n\n\ngeom_&lt;representation&gt;(aes(&lt;aesthethics&gt;))\n\n\n+\n\n\ngeom_&lt;representation&gt;(aes(&lt;aesthethics&gt;))\n\n\n+\n\n\nscale_&lt;aesthetics&gt;()\n\n\n+\n\n\ntheme_&lt;&gt;\n\n\n+\n\n\nfacet_&lt;&gt;\n\n\n+\n\n\nlabels"
+    "text": "ggplot(data = &lt;DATA&gt;)\n+\ngeom_&lt;representation&gt;(aes(&lt;aesthethics&gt;))\n+\ngeom_&lt;representation&gt;(aes(&lt;aesthethics&gt;))\n+\nscale_&lt;aesthetics&gt;()\n+\ntheme_&lt;&gt;\n+\nfacet_&lt;&gt;\n+\nlabels"
   },
   {
     "objectID": "slides/week-7.html#where-we-are",
     "href": "slides/week-7.html#where-we-are",
     "title": " PPOL 5203 - Data Science I: Foundations ",
-    "section": "",
-    "text": "We started with the basics of being a data scientist\nWe moved over to the primitives of Python as your main DS tool\nThen we started our journey working with tabular data:\n\nNumpy for matrices\nPandas for heterogeneous dataframes\nPandas Data Wrangling Methods"
+    "section": "Where we are…",
+    "text": "Where we are…\n\nWe started with the basics of being a data scientist\nWe moved over to the primitives of Python as your main DS tool\nThen we started our journey working with tabular data:\n\nNumpy for matrices\nPandas for heterogeneous dataframes\nPandas Data Wrangling Methods"
   },
   {
     "objectID": "slides/week-7.html#mid-semester-survey",
@@ -2167,21 +2167,21 @@
     "href": "slides/week-7.html#mid-semester-survey-1",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Mid-Semester Survey",
-    "text": "Mid-Semester Survey\nStop Doing \n\nMostly “NAs” – Great!\nMore short breaks instead of a long break"
+    "text": "Mid-Semester Survey\nStop Doing\n\nMostly “NAs” – Great!\nMore short breaks instead of a long break\nSome of you prefer the biweekly classes. I will consider this for next year! Thanks for the feedback!"
   },
   {
     "objectID": "slides/week-7.html#mid-semester-survey-2",
     "href": "slides/week-7.html#mid-semester-survey-2",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Mid-Semester Survey",
-    "text": "Mid-Semester Survey\nStop Doing \n\nMostly “NAs” – Great!\nMore short breaks instead of a long break"
+    "text": "Mid-Semester Survey\nContinue Doing\n\nComparison between Python and R\n“more in-class assignments - we are already started and I like that. And of course, the break in between helps too.”\n“I find the in-class exercises and structure of the lecture notes really helpful! The lecture notes are particularly helpful because they’re so hands-on and explicit.”\n“Increasing the frequency of problem sets”\n“Being the best professor” - :’)"
   },
   {
     "objectID": "slides/week-7.html#mid-semester-survey-3",
     "href": "slides/week-7.html#mid-semester-survey-3",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Mid-Semester Survey",
-    "text": "Mid-Semester Survey\nContinue Doing \n\nIn class exercise\nComparison between Python and R\n“more in-class assignments - we are already started and I like that. And of course, the break in between helps too.”"
+    "text": "Mid-Semester Survey\nContinue Doing\n\nIn class exercise\nComparison between Python and R\n“more in-class assignments - we are already started and I like that. And of course, the break in between helps too.”"
   },
   {
     "objectID": "slides/week-7.html",
@@ -2189,5 +2189,40 @@
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "",
     "text": "We started with the basics of being a data scientist\nWe moved over to the primitives of Python as your main DS tool\nThen we started our journey working with tabular data:\n\nNumpy for matrices\nPandas for heterogeneous dataframes\nPandas Data Wrangling Methods"
+  },
+  {
+    "objectID": "slides/week-7.html#tidy-join",
+    "href": "slides/week-7.html#tidy-join",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Tidy + Join",
+    "text": "Tidy + Join\nOn a higher level, we will learn:\n\nConcept of tidy data (Wickham, 2014):\n\nTLDR: a way to standardize your datasets\nEach variable must have its own column.\nEach observation must have its own row.\nEach value must have its own cell.\n\nAdvantages: sits well with grammar of graphics + facilitates split-aply-combine\nJoining Methods: Ways to connect related tables."
+  },
+  {
+    "objectID": "slides/week-7.html#problem-sets",
+    "href": "slides/week-7.html#problem-sets",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Problem Sets",
+    "text": "Problem Sets\n\nProblem set II\n\nMost of you made some mistake on question 5.\nWhen you are not sure on how to answer the question, come to my office hours, or just ask on slack! Happy to give more guidance on what I am expecting.\nI am happy to show you my solutions during the office hours or TAs office hours\nYou also lost points for not fully explaining your answer. Just the code is not enough. Explain you findings. This is really important for Problem set 3\n\nProblem Set III is REALLY long. Please, start working on your solutions!"
+  },
+  {
+    "objectID": "slides/week-7.html#mid-semester-survey-start-doing",
+    "href": "slides/week-7.html#mid-semester-survey-start-doing",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Mid-Semester Survey: Start Doing",
+    "text": "Mid-Semester Survey: Start Doing\n\n“More in class exercises”\n“More practice during class!”\n“I was going to say maybe more in-class exercises but it sounds like that’s where we’re heading!”\n“Hold a lab” – sorry, not on me. I will raise this issue with Professor Bailey."
+  },
+  {
+    "objectID": "slides/week-7.html#mid-semester-survey-stop-doing",
+    "href": "slides/week-7.html#mid-semester-survey-stop-doing",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Mid-Semester Survey: Stop Doing",
+    "text": "Mid-Semester Survey: Stop Doing\n\nMostly “NAs” – Great!\nMore short breaks instead of a long break\nSome of you prefer the biweekly classes. I will consider this for next year! Thanks for the feedback!"
+  },
+  {
+    "objectID": "slides/week-7.html#mid-semester-surveycontinue-doing",
+    "href": "slides/week-7.html#mid-semester-surveycontinue-doing",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Mid-Semester Survey:Continue Doing",
+    "text": "Mid-Semester Survey:Continue Doing\n\nComparison between Python and R\n“more in-class assignments - we are already started and I like that. And of course, the break in between helps too.”\n“I find the in-class exercises and structure of the lecture notes really helpful! The lecture notes are particularly helpful because they’re so hands-on and explicit.”\n“Increasing the frequency of problem sets”\n“Being the best professor” - :’)"
   }
 ]

@@ -23,71 +23,79 @@ format:
     theme: [simple, custom.scss]
 ---
 
-## Where we are...
-
--   We started with the basics of being a data scientist
-
--   We moved over to the primitives of Python as your main DS tool
-
--   Then we started our journey working with tabular data:
-
-    - Numpy for matrices
-    
-    - Pandas for heterogeneous dataframes
-    
-    - Pandas Data Wrangling Methods
-
-
 ## Plans for Today
 
--   Go over quickly through the mid-semester survey
+-   Logistics: Problem Sets and Mid-Semester Survey.
 
 -   Joining and Tidying Data
 
 -   Data Visualization: Principles and Practice
 
 
-## Mid-Semester Survey
+## Problem Sets
 
-**Start Doing**
+- **Problem set II** 
 
-- "More in class exercises"
+   - Most of you made some mistake on question 5. 
 
-- "More practice during class!"
+   - When you are not sure on how to answer the question, come to my office hours, or just ask on slack! Happy to give more guidance on what I am expecting. 
+   
+   - I am happy to show you my solutions during the office hours or TAs office hours
+   
+   - You also lost points for not fully explaining your answer. Just the code is not enough. Explain you findings. This is really important for Problem set 3
+   
+- **Problem Set III is REALLY long.** Please, start working on your solutions!    
 
-- "I was going to say maybe more in-class exercises but it sounds like that's where we're heading!"
+## Mid-Semester Survey: Start Doing
 
-- "Hold a lab" -- sorry, not on me!
+-   "More in class exercises"
 
-## Mid-Semester Survey
+-   "More practice during class!"
 
-**Stop Doing **
+-   "I was going to say maybe more in-class exercises but it sounds like that's where we're heading!"
 
-- Mostly "NAs" -- Great!
+-   "Hold a lab" -- sorry, not on me. I will raise this issue with Professor Bailey.
 
-- More short breaks instead of a long break
+## Mid-Semester Survey: Stop Doing
 
+-   Mostly "NAs" -- Great!
 
+-   More short breaks instead of a long break
 
-## Mid-Semester Survey
+-   Some of you prefer the biweekly classes. I will consider this for next year! Thanks for the feedback!
 
-**Stop Doing **
+## Mid-Semester Survey:Continue Doing
 
-- Mostly "NAs" -- Great!
+-   Comparison between Python and R
 
-- More short breaks instead of a long break
+-   "more in-class assignments - we are already started and I like that. And of course, the break in between helps too."
 
-## Mid-Semester Survey
+- "I find the in-class exercises and structure of the lecture notes really helpful! The lecture notes are particularly helpful because they're so hands-on and explicit."
 
-**Continue Doing **
+- "Increasing the frequency of problem sets"
 
-- In class exercise
+- "Being the best professor" - :’)
 
-- Comparison between Python and R
-
-- "more in-class assignments - we are already started and I like that. And of course, the break in between helps too."
 
 # Readings for this week are very important!!
+
+## Tidy + Join
+
+On a higher level, we will learn: 
+
+- Concept of tidy data [(Wickham, 2014)](https://vita.had.co.nz/papers/tidy-data.pdf):
+
+   - **TLDR:** a way to standardize your datasets
+   
+   - **Each variable must have its own column.**
+    
+   - **Each observation must have its own row.**
+   
+   - **Each value must have its own cell.**
+
+- Advantages: sits well with grammar of graphics + facilitates split-aply-combine
+
+- Joining Methods: Ways to connect related tables.
 
 # [Pandas Notebook Join and Tidy](%22https://tiagoventura.github.io/ppol5203/weeks/week-07.html%22)
 
@@ -99,19 +107,19 @@ format:
 
 -   You have a full-semester ahead of you for Data Visualization
 
--   Here -\> cover the basics.
+-   We will cover the basics:
 
-    -   focus more on grammar of graphics and `plotnine` - a ggplot2 implementation in Python
+    -   Focus more on grammar of graphics and `plotnine` - a ggplot2 implementation in Python
 
-    -   skimp through native Python libraries (`matplotlib` and `seaborn`)
+    -   Skim through native Python libraries (`matplotlib` and `seaborn`)
 
 ## What do you see?
 
--   How many variables?
+-   How many variables (data) are mapped in this graph?
 
--   How are these variables represented in the figure?
+-   How are these **variables (non-constant)** represented in the figure?
 
--   What are the non-data related information presented in the graph?
+-   What are the non-data (constant) related information presented in the graph?
 
 ```{r}
 knitr::include_graphics("week7_figs/global_res_no_band.png")
@@ -183,13 +191,15 @@ knitr::include_graphics("week7_figs/global_color_to_values.png")
 
 ### Additional Components of the Grammar of Graphics:
 
-  -   Facets: to produce create subplots based on specific variable
+-   Facets: to produce create subplots based on specific variable
 
-  -   annotations: labels, titles, subtitles, captions.
+-   annotations: labels, titles, subtitles, captions.
 
-  -   Coordinates & Scales: some additional functions to adjust aesthetics you are mapping (change colors, size, alpha, scale of x and y coordinates)
+-   Coordinates & Scales: some additional functions to adjust aesthetics you are mapping (change colors, size, alpha, scale of x and y coordinates)
 
-    -   Theme: Control the finer presentation details like font size, background color, grid line styles, etc.
+```         
+-   Theme: Control the finer presentation details like font size, background color, grid line styles, etc.
+```
 
 ## Gapminder
 
