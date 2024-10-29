@@ -23,7 +23,7 @@ format:
     theme: [simple, custom.scss]
 ---
 
-# Final Project: <https://tiagoventura.github.io/ppol5203/finalproject.html>.  Take 5 min, read through. 
+# Final Project: <https://tiagoventura.github.io/ppol5203/finalproject.html>. <br> Take 2 min to read through. 
 
 ## You Project Proposal
 
@@ -33,8 +33,10 @@ format:
 | Presentation     | December 10     | 10-15 minutes | 10%            |
 | Project Report   | December 17     | 10 pages      | 25%            |
 
+<br>
+
 ::: incremental
--   Groups of three students. You pick your groups. Add your groups here: https://docs.google.com/spreadsheets/d/1tXCNbAV-vpCMA96OZ0yy_E1quHUhSPuwSrFZ6_SafDk/edit?gid=0#gid=0
+-   Groups of three students. You pick your groups. Add your groups here: [https://docs.google.com/spreadsheets/d/1tXCNbAV-vpCMA96OZ0yy_E1quHUhSPuwSrFZ6_SafDk/edit?gid=0#gid=0](https://docs.google.com/spreadsheets/d/1tXCNbAV-vpCMA96OZ0yy_E1quHUhSPuwSrFZ6_SafDk/edit?gid=0#gid=0)
 
 -   You should have meet with me to discuss your proposal.
 
@@ -169,7 +171,7 @@ A website in general is a combination of HTML, CSS, Javascript and PHP.
 
 # Scraping is all about finding tags and collecting the data associated with them
 
-## Understanding the Tags
+## Tags + HTML Elements
 
 ```{r}
 knitr::include_graphics("https://static.semrush.com/blog/uploads/media/59/fc/59fc528eecc00e43b1a3ed5d9b9933ee/4YA3vCJ_Hw6DucoVZ40FbKFRppAReJVOkLKHcZlDkO-9geydLO6tw9uzFJFZf5nam3QcT7p0hRdpFyL2uPhoDISD8CPZwfPE5GTqgpH53q9M99QWgDVhjgQrCMOlQI9fA1T2dCxJ5T2goCV3k1wo-Jc.webp")
