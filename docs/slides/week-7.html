@@ -422,7 +422,7 @@ Professor: Tiago Ventura
 <li><p>Most of you made some mistake on question 5.</p></li>
 <li><p>When you are not sure on how to answer the question, come to my office hours, or just ask on slack! Happy to give more guidance on what I am expecting.</p></li>
 <li><p>I am happy to show you my solutions during the office hours or TAs office hours</p></li>
-<li><p>You also lost points for not fully explaining your answer. Just the code is not enough. Explain you findings. This is really important for Problem set 3</p></li>
+<li><p>You also lost points for not fully explaining your answers. Just the code is not enough, particularly on more complicated questions. Explain you findings. This is really important for Problem set 3</p></li>
 </ul></li>
 <li><p><strong>Problem Set III is REALLY long.</strong> Please, start working on your solutions!</p></li>
 </ul>
@@ -433,7 +433,7 @@ Professor: Tiago Ventura
 <li><p>“More in class exercises”</p></li>
 <li><p>“More practice during class!”</p></li>
 <li><p>“I was going to say maybe more in-class exercises but it sounds like that’s where we’re heading!”</p></li>
-<li><p>“Hold a lab” – sorry, not on me. I will raise this issue with Professor Bailey.</p></li>
+<li><p>“Hold a lab” – I will raise this issue with Professor Bailey. Meanwhile, use the office hours.</p></li>
 </ul>
 </section>
 <section id="mid-semester-survey-stop-doing" class="slide level2 center">
@@ -503,13 +503,13 @@ Professor: Tiago Ventura
 </section>
 <section id="what-do-you-see" class="slide level2 center">
 <h2>What do you see?</h2>
-<ul>
+
+<img data-src="week7_figs/global_res_no_band.png" width="600" class="r-stretch"><ul>
 <li><p>How many variables (data) are mapped in this graph?</p></li>
 <li><p>How are these <strong>variables (non-constant)</strong> represented in the figure?</p></li>
 <li><p>What are the non-data (constant) related information presented in the graph?</p></li>
 </ul>
-
-<img data-src="week7_figs/global_res_no_band.png" width="600" class="r-stretch"></section>
+</section>
 <section id="aesthetics" class="slide level2 center">
 <h2>Aesthetics</h2>
 <p>The key aspect on data visualization is <strong>to take data points</strong> and convert them <strong>visual elements</strong>.</p>
@@ -587,12 +587,11 @@ Professor: Tiago Ventura
 </section>
 <section id="section" class="slide level2 centered center">
 <h2></h2>
-<p><br> <br> <br> <br> <br> <br> <br> <br></p>
 <h3 class="centered" id="ggplot-data-data"><code>ggplot</code> (data = <code>&lt;DATA&gt;</code>)</h3>
 <h3 id="section-1"><code class="centered">+</code></h3>
 <h3 class="centered" id="geom_representation-aes-aesthethics"><code>geom_&lt;representation&gt;</code> (aes (<code>&lt;aesthethics&gt;</code>) )</h3>
 </section>
-<section id="section-2" class="slide level2 center">
+<section id="section-2" class="slide level2 centered center">
 <h2></h2>
 <div class="cell">
 <div class="sourceCode cell-code" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># build in plotnine graph</span></span>
@@ -608,14 +607,13 @@ Professor: Tiago Ventura
 <span id="cb3-11"><a href="#cb3-11" aria-hidden="true" tabindex="-1"></a>     aes(x<span class="op">=</span><span class="st">"lngdpPercap"</span>, y<span class="op">=</span><span class="st">"lifeExp"</span>))</span>
 <span id="cb3-12"><a href="#cb3-12" aria-hidden="true" tabindex="-1"></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>&lt;Figure Size: (640 x 480)&gt;</code></pre>
+<pre><code>&lt;Figure Size: (1280 x 960)&gt;</code></pre>
 </div>
 
 </div>
 <img data-src="week-7_files/figure-revealjs/unnamed-chunk-9-1.png" width="614" class="r-stretch"></section>
 <section id="section-3" class="slide level2 centered center">
 <h2></h2>
-<p><br> <br></p>
 <h3 id="ggplotdata-data"><code>ggplot</code>(data = <code>&lt;DATA&gt;</code>)</h3>
 <h3 id="section-4"><code>+</code></h3>
 <h3 id="geom_representationaesaesthethics"><code>geom_&lt;representation&gt;</code>(aes(<code>&lt;aesthethics&gt;</code>))</h3>
@@ -818,7 +816,7 @@ Professor: Tiago Ventura
         // specified using percentage units.
         width: 1600,
 
-        height: 1200,
+        height: 1000,
 
         // Factor of the display size that should remain empty around the content
         margin: 0.1,

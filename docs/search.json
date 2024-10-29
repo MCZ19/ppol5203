@@ -192,8 +192,8 @@
     "objectID": "slides/week-1.html#plans-for-today",
     "href": "slides/week-1.html#plans-for-today",
     "title": " PPOL 5203 - Data Science I: Foundations ",
-    "section": "",
-    "text": "Motivating Data Science for Public Policy, or Computational Social Science.\nGoals of the course\nIntroductions\nCourse Logistics\nIDEs\n\nJupyter\nQuarto\n\nIntroduction to commandline"
+    "section": "Plans for Today",
+    "text": "Plans for Today\n\nMotivating Data Science for Public Policy, or Computational Social Science.\nGoals of the course\nIntroductions\nCourse Logistics\nIDEs\n\nJupyter\nQuarto\n\nIntroduction to commandline"
   },
   {
     "objectID": "slides/week-1.html#rise-of-the-digital-information-age",
@@ -291,7 +291,7 @@
     "href": "slides/week-1.html#logistics",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Logistics",
-    "text": "Logistics\n\n\nCommunication: via slack. Join the workspace!\nAll materials: hosted on the class website: https://tiagoventura.github.io/ppol5203/\nSyllabus: also on the website.\nMy Office Hours: Every tuesday from 4 to 6pm. Just stop by!\nCanvas: Only for official communication! Materials will be hosted in the website!\nDatacamp: Additional exercises! I will assign modules for you! Access our free account here\n\n\nlibrary(countdown)\ncountdown(minutes = 5, seconds = 0, \n          right = 0, , top=0, \n          font_size = \"2em\")\n\n\n−+\n05:00"
+    "text": "Logistics\n\n\nCommunication: via slack. Join the workspace!\nAll materials: hosted on the class website: https://tiagoventura.github.io/ppol5203/\nSyllabus: also on the website.\nMy Office Hours: Every tuesday from 4 to 6pm. Just stop by!\nCanvas: Only for official communication! Materials will be hosted in the website!\nDatacamp: Additional exercises! I will assign modules for you! Access our free account here\n\n\n\n\n−+\n05:00"
   },
   {
     "objectID": "slides/week-1.html#ta",
@@ -347,7 +347,7 @@
     "href": "slides/week-1.html#quiz",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Quiz!",
-    "text": "Quiz!\n\nWhich programming language did I use the most at?\n\nPhD\nPostdoc\nTwitter\nAs a Faculty"
+    "text": "Quiz!\nWhich programming language did I use the most at?\n\nPhD\nPostdoc\nTwitter\nAs a Faculty"
   },
   {
     "objectID": "slides/week-1.html#a-comment-from-the-pre-course-survey",
@@ -2006,7 +2006,7 @@
     "href": "slides/week-6.html#loadingwriting-data-in-pandas",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Loading/Writing Data in Pandas",
-    "text": "Loading/Writing Data in Pandas\n\n\n\nFormat Type\nData Description\nReader\nWriter\n\n\n\n\ntext\nCSV\nread_csv\nto_csv\n\n\ntext\nJSON\nread_json\nto_json\n\n\ntext\nHTML\nread_html\nto_html\n\n\ntext\nLocal clipboard\nread_clipboard\nto_clipboard\n\n\nbinary\nMS Excel\nread_excel\nto_excel\n\n\nbinary\nHDF5 Format\nread_hdf\nto_hdf\n\n\nbinary\nFeather Format\nread_feather\nto_feather\n\n\nbinary\nParquet Format\nread_parquet\nto_parquet\n\n\nbinary\nMsgpack\nread_msgpack\nto_msgpack\n\n\nbinary\nStata\nread_stata\nto_stata\n\n\nbinary\nSAS\nread_sas\n\n\n\nbinary\nPython Pickle Format\nread_pickle\nto_pickle\n\n\nSQL\nSQL\nread_sql\nto_sql\n\n\nSQL\nGoogle Big Query\nread_gbq\nto_gbq\n\n\n\nRead more about all the input/output methods here."
+    "text": "Loading/Writing Data in Pandas\n\n\n\n\n\n\n\n\n\nFormat Type\nData Description\nReader\nWriter\n\n\n\n\ntext\nCSV\nread_csv\nto_csv\n\n\ntext\nJSON\nread_json\nto_json\n\n\ntext\nHTML\nread_html\nto_html\n\n\ntext\nLocal clipboard\nread_clipboard\nto_clipboard\n\n\nbinary\nMS Excel\nread_excel\nto_excel\n\n\nbinary\nHDF5 Format\nread_hdf\nto_hdf\n\n\nbinary\nFeather Format\nread_feather\nto_feather\n\n\nbinary\nParquet Format\nread_parquet\nto_parquet\n\n\nbinary\nMsgpack\nread_msgpack\nto_msgpack\n\n\nbinary\nStata\nread_stata\nto_stata\n\n\nbinary\nSAS\nread_sas\n\n\n\nbinary\nPython Pickle Format\nread_pickle\nto_pickle\n\n\nSQL\nSQL\nread_sql\nto_sql\n\n\nSQL\nGoogle Big Query\nread_gbq\nto_gbq\n\n\n\nRead more about all the input/output methods here."
   },
   {
     "objectID": "slides/week-6.html#data-wrangling",
@@ -2062,7 +2062,7 @@
     "href": "slides/week-7.html#what-do-you-see",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "What do you see?",
-    "text": "What do you see?\n\nHow many variables (data) are mapped in this graph?\nHow are these variables (non-constant) represented in the figure?\nWhat are the non-data (constant) related information presented in the graph?"
+    "text": "What do you see?\n\n\nHow many variables (data) are mapped in this graph?\nHow are these variables (non-constant) represented in the figure?\nWhat are the non-data (constant) related information presented in the graph?"
   },
   {
     "objectID": "slides/week-7.html#aesthetics",
@@ -2139,7 +2139,7 @@
     "href": "slides/week-7.html#section-2",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "",
-    "text": "# build in plotnine graph\n\n# step 1: data\n(\nggplot(data=gapminder) + \n\n# step 2: geom\n geom_point(\n\n# step 3: aesthethics\n     aes(x=\"lngdpPercap\", y=\"lifeExp\"))\n)\n\n&lt;Figure Size: (640 x 480)&gt;"
+    "text": "# build in plotnine graph\n\n# step 1: data\n(\nggplot(data=gapminder) + \n\n# step 2: geom\n geom_point(\n\n# step 3: aesthethics\n     aes(x=\"lngdpPercap\", y=\"lifeExp\"))\n)\n\n&lt;Figure Size: (1280 x 960)&gt;"
   },
   {
     "objectID": "slides/week-7.html#section-3",
@@ -2202,14 +2202,14 @@
     "href": "slides/week-7.html#problem-sets",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Problem Sets",
-    "text": "Problem Sets\n\nProblem set II\n\nMost of you made some mistake on question 5.\nWhen you are not sure on how to answer the question, come to my office hours, or just ask on slack! Happy to give more guidance on what I am expecting.\nI am happy to show you my solutions during the office hours or TAs office hours\nYou also lost points for not fully explaining your answer. Just the code is not enough. Explain you findings. This is really important for Problem set 3\n\nProblem Set III is REALLY long. Please, start working on your solutions!"
+    "text": "Problem Sets\n\nProblem set II\n\nMost of you made some mistake on question 5.\nWhen you are not sure on how to answer the question, come to my office hours, or just ask on slack! Happy to give more guidance on what I am expecting.\nI am happy to show you my solutions during the office hours or TAs office hours\nYou also lost points for not fully explaining your answers. Just the code is not enough, particularly on more complicated questions. Explain you findings. This is really important for Problem set 3\n\nProblem Set III is REALLY long. Please, start working on your solutions!"
   },
   {
     "objectID": "slides/week-7.html#mid-semester-survey-start-doing",
     "href": "slides/week-7.html#mid-semester-survey-start-doing",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Mid-Semester Survey: Start Doing",
-    "text": "Mid-Semester Survey: Start Doing\n\n“More in class exercises”\n“More practice during class!”\n“I was going to say maybe more in-class exercises but it sounds like that’s where we’re heading!”\n“Hold a lab” – sorry, not on me. I will raise this issue with Professor Bailey."
+    "text": "Mid-Semester Survey: Start Doing\n\n“More in class exercises”\n“More practice during class!”\n“I was going to say maybe more in-class exercises but it sounds like that’s where we’re heading!”\n“Hold a lab” – I will raise this issue with Professor Bailey. Meanwhile, use the office hours."
   },
   {
     "objectID": "slides/week-7.html#mid-semester-survey-stop-doing",
@@ -2224,5 +2224,82 @@
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Mid-Semester Survey:Continue Doing",
     "text": "Mid-Semester Survey:Continue Doing\n\nComparisons between Python and R\n“more in-class assignments - we are already started and I like that. And of course, the break in between helps too.”\n“I find the in-class exercises and structure of the lecture notes really helpful! The lecture notes are particularly helpful because they’re so hands-on and explicit.”\n“Increasing the frequency of problem sets”\n“Being the best professor” - :’)"
+  },
+  {
+    "objectID": "slides/week-8.html#where-we-are",
+    "href": "slides/week-8.html#where-we-are",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Where we are…",
+    "text": "Where we are…\n\nWe started with the basics of being a data scientist\nWe moved over to the primitives of Python as your main DS tool\nThen we started our journey working with tabular data.\nNow we will learn how to collect/parse with unstructure data sources:\n\nScrapping websites (today)\nWorking with APIs and Dynamic Websites (next week)"
+  },
+  {
+    "objectID": "slides/week-8.html#plans-for-today",
+    "href": "slides/week-8.html#plans-for-today",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Plans for Today",
+    "text": "Plans for Today\n\nScraping Static Websites\n\nDifferent strategies to acquire digital data\nHtml data structure\nScrape static websites\nBuild a scraper programmatically"
+  },
+  {
+    "objectID": "slides/week-8.html#why-digital-era",
+    "href": "slides/week-8.html#why-digital-era",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Why? Digital Era",
+    "text": "Why? Digital Era"
+  },
+  {
+    "objectID": "slides/week-8.html#why-post-api-era",
+    "href": "slides/week-8.html#why-post-api-era",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Why? Post-Api Era",
+    "text": "Why? Post-Api Era\nConsider the following developments from the past year or so months:\n\nElon Musk has eliminated free access to Twitter’s API, and the only academically useful paid tiers far exceed most researchers’ budgets.\nMusk has also demanded that Decahose users delete all Twitter data acquired under previous agreements–whether this demand will be extended to Academic API users is currently unknown.\nReddit has denied access to its API for Pushshift, a popular service used by researchers to collect Reddit data. Popular Reddit app Apollo is facing API charges of $1.7M per month to continue operating.\nTikTok released a new API for researchers, which among other things requires them “to regularly refresh TikTok Research API Data at least every fifteen (15) days, and delete data that is not available from the TikTok Research API at the time of each refresh.”\nCrowdtangle, Meta’s researcher tool for acquiring data from Facebook and Instagram, still exists as of this writing. But rumors of its imminent demise have been reported in multiple reputable outlets.\nThis was last year. Crowdtangle has been closed this year."
+  },
+  {
+    "objectID": "slides/week-8.html#what-does-it-mean-to-scrape-something-off-the-web",
+    "href": "slides/week-8.html#what-does-it-mean-to-scrape-something-off-the-web",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "What does it mean to “scrape” something off the web?",
+    "text": "What does it mean to “scrape” something off the web?\n\nLeveraging the structure of a website to grab it’s contents\nUsing a programming environment (such as R, Python, Java, etc.) to systematically extract that content.\nAccomplishing the above in an “unobtrusive” and legal way."
+  },
+  {
+    "objectID": "slides/week-8.html#what-have-i-scraped",
+    "href": "slides/week-8.html#what-have-i-scraped",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "What have I scraped?",
+    "text": "What have I scraped?\n\nElectoral data from many different countries;\nComposition of elites around the world;\nWikipedia;\nToutiao, a news aggregation from China;\nPolitical Manifestos in Brazil\nFact-Checking News\nFacebook and Youtube Live Chats.\nProperty Prices from Zillow.\nNews in Latin American"
+  },
+  {
+    "objectID": "slides/week-8.html#what-is-a-website",
+    "href": "slides/week-8.html#what-is-a-website",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "What is a website?",
+    "text": "What is a website?\nA website in general is a combination of HTML, CSS, XML, PHP, and Javascript.\n&lt;html&gt;\n&lt;head&gt;\n  &lt;title&gt; Michael Cohen's Email &lt;/title&gt;\n  &lt;script&gt;\n    var foot = bar;\n  &lt;script&gt;\n&lt;/head&gt;\n&lt;body&gt;\n  &lt;div id=\"payments\"&gt;\n  &lt;h2&gt;Second heading&lt;/h2&gt;\n  &lt;p class='slick'&gt;information about &lt;br/&gt;&lt;i&gt;payments&lt;/i&gt;&lt;/p&gt;\n  &lt;p&gt;Just &lt;a href=\"http://www.google.com\"&gt;google it!&lt;/a&gt;&lt;/p&gt;\n&lt;/body&gt;\n&lt;/html&gt;\n We will care mostly about HTMLs and CSSs."
+  },
+  {
+    "objectID": "slides/week-8.html#understanding-the-tags",
+    "href": "slides/week-8.html#understanding-the-tags",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Understanding the Tags",
+    "text": "Understanding the Tags"
+  },
+  {
+    "objectID": "slides/week-8.html#most-common-tags",
+    "href": "slides/week-8.html#most-common-tags",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Most common tags",
+    "text": "Most common tags\n\np – paragraphs\na href – links\ndiv – divisions\nh – headings\ntable – tables\n\nSee here for more about html tags"
+  },
+  {
+    "objectID": "slides/week-8.html#scraping-routine",
+    "href": "slides/week-8.html#scraping-routine",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Scraping Routine",
+    "text": "Scraping Routine\nScraping often involves the following routine:\n\nStep 1: Find a website with information you want to collect\nStep 2: Understand and decipher the website\nStep 3: Write code to collect **one* realization of the data\nStep 4: Build a scraper – generalize you code into a function.\n\nWe will cover these steps with code!!"
+  },
+  {
+    "objectID": "slides/week-8.html#ethical-challenges-on-scraping",
+    "href": "slides/week-8.html#ethical-challenges-on-scraping",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Ethical Challenges on scraping",
+    "text": "Ethical Challenges on scraping\nWebscraping is legal as long as the scraped data is publicly available and the scraping activity does not harm the website and the people from whom information is being scraped.\nHere is a list of good practices for scraping:\n\nDon’t hit servers too often and on peak hours\nSlow down your code to the speed humans would manually do\nUse data responsibly (As academics often do)\nRespect robots.txt\n\n\n# Put the system to sleep by that random unit\nimport time\ntime.sleep(random.uniform(1,5))"
   }
 ]

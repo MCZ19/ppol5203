@@ -12,7 +12,7 @@ format:
     background-transition: fade
     code-line-numbers: false
     width: 1600
-    height: 1200
+    height: 1000
     center: true
     slide-number: true
     incremental: false
@@ -42,7 +42,7 @@ format:
    
    - I am happy to show you my solutions during the office hours or TAs office hours
    
-   - You also lost points for not fully explaining your answer. Just the code is not enough. Explain you findings. This is really important for Problem set 3
+   - You also lost points for not fully explaining your answers. Just the code is not enough, particularly on more complicated questions. Explain you findings. This is really important for Problem set 3
    
 - **Problem Set III is REALLY long.** Please, start working on your solutions!    
 
@@ -54,7 +54,7 @@ format:
 
 -   "I was going to say maybe more in-class exercises but it sounds like that's where we're heading!"
 
--   "Hold a lab" -- sorry, not on me. I will raise this issue with Professor Bailey.
+-   "Hold a lab" -- I will raise this issue with Professor Bailey. Meanwhile, use the office hours. 
 
 ## Mid-Semester Survey: Stop Doing
 
@@ -68,7 +68,7 @@ format:
 
 -   Comparisons between Python and R
 
--   "more in-class assignments - we are already started and I like that. And of course, the break in between helps too."
+-  "more in-class assignments - we are already started and I like that. And of course, the break in between helps too."
 
 - "I find the in-class exercises and structure of the lecture notes really helpful! The lecture notes are particularly helpful because they're so hands-on and explicit."
 
@@ -116,15 +116,17 @@ On a higher level, we will learn:
 
 ## What do you see?
 
+```{r}
+knitr::include_graphics("week7_figs/global_res_no_band.png")
+```
+
+
 -   How many variables (data) are mapped in this graph?
 
 -   How are these **variables (non-constant)** represented in the figure?
 
 -   What are the non-data (constant) related information presented in the graph?
 
-```{r}
-knitr::include_graphics("week7_figs/global_res_no_band.png")
-```
 
 ## Aesthetics
 
@@ -225,15 +227,13 @@ gapminder = (gapminder
 
 ##  {.centered}
 
-<br> <br> <br> <br> <br> <br> <br> <br>
-
 ### `ggplot` (data = `<DATA>`) {.centered}
 
 ### `+`{.centered}
 
 ### `geom_<representation>` (aes (`<aesthethics>`) ) {.centered}
 
-## 
+## {.centered}
 
 ```{python}
 #| echo: true
@@ -253,9 +253,7 @@ ggplot(data=gapminder) +
 
 ```
 
-##  {.centered}
-
-<br> <br>
+##   {.centered}
 
 ### `ggplot`(data = `<DATA>`)
 
