@@ -2343,5 +2343,61 @@
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Tags + HTML Elements",
     "text": "Tags + HTML Elements"
+  },
+  {
+    "objectID": "slides/week-9.html#plans-for-today",
+    "href": "slides/week-9.html#plans-for-today",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Plans for Today",
+    "text": "Plans for Today\n\nAPIs\n\nA simple API - Bored API\nMore complex with Credentials: Yelp\nCredentials + Wrapper: Youtube\n\nSelenium for Dynamic Websites and Audit Studies\n\nExample of my own research: algorithmic bias in chinese social media websites"
+  },
+  {
+    "objectID": "slides/week-9.html#apis-101",
+    "href": "slides/week-9.html#apis-101",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "APIs 101",
+    "text": "APIs 101\n\nAPIs: Application Programming Interface\nHow does it work: online server created to facilitate information exchange between data users and the data holders\nUse Cases:\n\nAccess data shared by Companies and NGOs\nProcess our data with model developed by third party organizations\n\nWe will focus today on the first component."
+  },
+  {
+    "objectID": "slides/week-9.html#api-components",
+    "href": "slides/week-9.html#api-components",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "API Components",
+    "text": "API Components\nAn API is just an URL. See the example below:\nhttp://mywebsite.com/endpoint?key&param_1&param_2\n\nMain Components:\nhttp://mywebsite.com//: API root. The domain of your api/\nendpoint: An endpoint is a server route for retrieving specific data from an API\nkey: credentials that some websites ask for you to create before you can query the api.\n?param_1&param_2. Those are filters that you can input in apis requests. We call these filters parameters"
+  },
+  {
+    "objectID": "slides/week-9.html#making-an-api-request",
+    "href": "slides/week-9.html#making-an-api-request",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Making an API Request",
+    "text": "Making an API Request\nIn order to work with APIs, we need tools to access the web. In Python, the most common library for making requests and working with APIs is the requests library.\n\nget(): to receive information from the API\npost(): to send information to the API – think about the use of ChatGPT for classification of text."
+  },
+  {
+    "objectID": "slides/week-9.html#step-by-step",
+    "href": "slides/week-9.html#step-by-step",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Step-by-Step",
+    "text": "Step-by-Step\nWhen using an API, our work will often involve the following steps:\n\nStep 1: Look at the API documentation and endpoints, and construct a query of interest\nStep 2: Use requests.get(querystring) to call the API\nStep 3: Examine the response\nStep 4: Extract your data and save it."
+  },
+  {
+    "objectID": "slides/week-9.html#in-class-example",
+    "href": "slides/week-9.html#in-class-example",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "In-Class Example",
+    "text": "In-Class Example\nWe will work with three different types of APIs today:\n\nBored API: API that does not require authentication and does not have a wrapper\nYelp API: API that does require authentication and does not have a wrapper\nYoutube API: API that does require authentication and does have a wrapper\nWrapper:a set of functions or methods (full library) that provide a simplified interface to interact with an underlying API."
+  },
+  {
+    "objectID": "slides/week-9.html#static-vs-dynamic-websites",
+    "href": "slides/week-9.html#static-vs-dynamic-websites",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Static vs Dynamic Websites",
+    "text": "Static vs Dynamic Websites\n\nStatic web pages: when the browser and the source code content match each other. Collect data via:\n\nstring methods and regex\nbeautifulsoup\nscrapy\n\nDynamic web pages: when the content we are viewing in our browser does not match the content we see in the HTML source code we are retrieving from the site. How to scrape?\n\nScrape the website as we view it in our browser — using Python packages capable of executing the JavaScript."
+  },
+  {
+    "objectID": "slides/week-9.html#selenium-1",
+    "href": "slides/week-9.html#selenium-1",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Selenium",
+    "text": "Selenium\nSelenium is an open source tool which is used for automating web browser.\n\nworks by automating browsers to execute JavaScript to display a web page\nallow us to interact with web pages programmatically\ncollect data as we see in the web (after running the correspondin java script)\n\nDrawback: selenium is a bit of a pain to install. So part of your homework will simply be to go over the selenium setup!"
   }
 ]

@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.3.450">
 
   <meta name="author" content="Professor: Tiago Ventura">
-  <meta name="dcterms.date" content="2024-10-29">
+  <meta name="dcterms.date" content="2024-11-05">
   <title>PPOL 5203 - Data Science I: Foundations -  PPOL 5203 - Data Science I: Foundations </title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -30,71 +30,6 @@
       margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
       vertical-align: middle;
     }
-    /* CSS for syntax highlighting */
-    pre > code.sourceCode { white-space: pre; position: relative; }
-    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-    pre > code.sourceCode > span:empty { height: 1.2em; }
-    .sourceCode { overflow: visible; }
-    code.sourceCode > span { color: inherit; text-decoration: inherit; }
-    div.sourceCode { margin: 1em 0; }
-    pre.sourceCode { margin: 0; }
-    @media screen {
-    div.sourceCode { overflow: auto; }
-    }
-    @media print {
-    pre > code.sourceCode { white-space: pre-wrap; }
-    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-    }
-    pre.numberSource code
-      { counter-reset: source-line 0; }
-    pre.numberSource code > span
-      { position: relative; left: -4em; counter-increment: source-line; }
-    pre.numberSource code > span > a:first-child::before
-      { content: counter(source-line);
-        position: relative; left: -1em; text-align: right; vertical-align: baseline;
-        border: none; display: inline-block;
-        -webkit-touch-callout: none; -webkit-user-select: none;
-        -khtml-user-select: none; -moz-user-select: none;
-        -ms-user-select: none; user-select: none;
-        padding: 0 4px; width: 4em;
-        color: #aaaaaa;
-      }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
-    div.sourceCode
-      { color: #003b4f; background-color: #f1f3f5; }
-    @media screen {
-    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-    }
-    code span { color: #003b4f; } /* Normal */
-    code span.al { color: #ad0000; } /* Alert */
-    code span.an { color: #5e5e5e; } /* Annotation */
-    code span.at { color: #657422; } /* Attribute */
-    code span.bn { color: #ad0000; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; } /* ControlFlow */
-    code span.ch { color: #20794d; } /* Char */
-    code span.cn { color: #8f5902; } /* Constant */
-    code span.co { color: #5e5e5e; } /* Comment */
-    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-    code span.dt { color: #ad0000; } /* DataType */
-    code span.dv { color: #ad0000; } /* DecVal */
-    code span.er { color: #ad0000; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #ad0000; } /* Float */
-    code span.fu { color: #4758ab; } /* Function */
-    code span.im { color: #00769e; } /* Import */
-    code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; } /* Keyword */
-    code span.op { color: #5e5e5e; } /* Operator */
-    code span.ot { color: #003b4f; } /* Other */
-    code span.pp { color: #ad0000; } /* Preprocessor */
-    code span.sc { color: #5e5e5e; } /* SpecialChar */
-    code span.ss { color: #20794d; } /* SpecialString */
-    code span.st { color: #20794d; } /* String */
-    code span.va { color: #111111; } /* Variable */
-    code span.vs { color: #20794d; } /* VerbatimString */
-    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -394,7 +329,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title"><span style="font-size: 100%;"> PPOL 5203 - Data Science I: Foundations </span></h1>
-  <p class="subtitle"><span style="font-size: 100%;"> Week 8: Parsing Unstructured Data: Scraping Static Websites </span></p>
+  <p class="subtitle"><span style="font-size: 100%;"> Week 09: Acquiring Digital Data: APIs and Selenium </span></p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -404,215 +339,118 @@ Professor: Tiago Ventura
 </div>
 </div>
 
-  <p class="date">2024-10-29</p>
-</section>
-<section>
-<section id="final-project-httpstiagoventura.github.ioppol5203finalproject.html.-take-2-min-to-read-through." class="title-slide slide level1 center">
-<h1>Final Project: <a href="https://tiagoventura.github.io/ppol5203/finalproject.html" class="uri">https://tiagoventura.github.io/ppol5203/finalproject.html</a>. <br> Take 2 min to read through.</h1>
-
-</section>
-<section id="you-project-proposal" class="slide level2 center">
-<h2>You Project Proposal</h2>
-<table>
-<thead>
-<tr class="header">
-<th><strong>Requirement</strong></th>
-<th><strong>Due</strong></th>
-<th><strong>Length</strong></th>
-<th><strong>Percentage</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Project Proposal</td>
-<td><strong>November 15</strong></td>
-<td>2 pages</td>
-<td>5%</td>
-</tr>
-<tr class="even">
-<td>Presentation</td>
-<td>December 10</td>
-<td>10-15 minutes</td>
-<td>10%</td>
-</tr>
-<tr class="odd">
-<td>Project Report</td>
-<td>December 17</td>
-<td>10 pages</td>
-<td>25%</td>
-</tr>
-</tbody>
-</table>
-<p><br></p>
-<div>
-<ul>
-<li class="fragment"><p>Groups of three students. You pick your groups. Add your groups here: <a href="https://docs.google.com/spreadsheets/d/1tXCNbAV-vpCMA96OZ0yy_E1quHUhSPuwSrFZ6_SafDk/edit?gid=0#gid=0">https://docs.google.com/spreadsheets/d/1tXCNbAV-vpCMA96OZ0yy_E1quHUhSPuwSrFZ6_SafDk/edit?gid=0#gid=0</a></p></li>
-<li class="fragment"><p>You should have meet with me to discuss your proposal.</p></li>
-<li class="fragment"><p>At lest one hour before our meeting, send me a draft of your proposal.</p></li>
-<li class="fragment"><p>Send me an email with your group and when you are going to my office hours.</p></li>
-<li class="fragment"><p>Our meeting should happen before November 12. You have three office hours to go!</p></li>
-</ul>
-</div>
-</section></section>
-<section>
-<section id="questions" class="title-slide slide level1 center">
-<h1>Questions?</h1>
-
-</section>
-<section id="where-we-are" class="slide level2 center">
-<h2>Where we are…</h2>
-<ul>
-<li><p>We started with the basics of being a data scientist</p></li>
-<li><p>We moved over to the primitives of Python as your main DS tool</p></li>
-<li><p>Then we started our journey working with tabular data.</p></li>
-<li><p>Now we will learn how to collect/parse with unstructure data sources:</p>
-<ul>
-<li><p>Scrapping websites (today)</p></li>
-<li><p>Working with APIs and Dynamic Websites (next week)</p></li>
-</ul></li>
-</ul>
+  <p class="date">2024-11-05</p>
 </section>
 <section id="plans-for-today" class="slide level2 center">
 <h2>Plans for Today</h2>
 <ul>
-<li><p>Scraping Static Websites</p>
+<li class="fragment"><p>APIs</p>
 <ul>
-<li>Different strategies to acquire digital data</li>
-<li>Html data structure</li>
-<li>Scrape static websites</li>
-<li>Build a scraper programmatically</li>
+<li class="fragment"><p>A simple API - Bored API</p></li>
+<li class="fragment"><p>More complex with Credentials: Yelp</p></li>
+<li class="fragment"><p>Credentials + Wrapper: Youtube</p></li>
+</ul></li>
+<li class="fragment"><p>Selenium for Dynamic Websites and Audit Studies</p>
+<ul>
+<li class="fragment">Example of my own research: algorithmic bias in chinese social media websites</li>
 </ul></li>
 </ul>
-</section></section>
+</section>
 <section>
-<section id="acquiring-digital-data" class="title-slide slide level1 center">
-<h1>Acquiring Digital Data</h1>
+<section id="apis" class="title-slide slide level1 center">
+<h1>APIs</h1>
 
 </section>
-<section id="why-digital-era" class="slide level2 center">
-<h2>Why? Digital Era</h2>
-
-<img data-src="http://media3.washingtonpost.com/wp-dyn/content/graphic/2011/02/11/GR2011021100614.jpg" class="r-stretch"></section>
-<section id="two-ways-to-access-data-from-the-web" class="slide level2 center">
-<h2>Two ways to access data from the web</h2>
+<section id="apis-101" class="slide level2 center">
+<h2>APIs 101</h2>
 <ul>
-<li><p><strong>Scraping:</strong> grab information available on websites (Today)</p>
+<li class="fragment"><p><strong>APIs</strong>: Application Programming Interface</p></li>
+<li class="fragment"><p><strong>How does it work:</strong> online server created to facilitate information exchange between data users and the data holders</p></li>
+<li class="fragment"><p><strong>Use Cases:</strong></p>
 <ul>
-<li><p>Leveraging the structure of a website to grab it’s contents</p></li>
-<li><p>Using a programming environment (such as R, Python, Java, etc.) to systematically extract that content.</p></li>
-<li><p>Accomplishing the above in an “unobtrusive” and legal way.</p></li>
+<li class="fragment">Access data shared by Companies and NGOs</li>
+<li class="fragment">Process our data with model developed by third party organizations</li>
 </ul></li>
-<li><p><strong>APIs:</strong> Data transfer portals built by companies to allow people to access data programmatically. (Next week)</p>
-<ul>
-<li>When available, we will always prefer APIs</li>
-</ul></li>
+<li class="fragment"><p>We will focus today on the first component.</p></li>
 </ul>
 </section>
-<section id="post-api-era" class="slide level2 center">
-<h2>Post-Api Era</h2>
-<p>Consider the following developments from the past year or so months:</p>
+<section id="api-components" class="slide level2 center">
+<h2>API Components</h2>
+<p>An API is just an URL. See the example below:</p>
+<p>http://mywebsite.com/endpoint?key&amp;param_1&amp;param_2</p>
 <ul>
-<li><p>Elon Musk has eliminated free access to Twitter’s API, and <a href="https://www.theverge.com/2023/3/30/23662832/twitter-api-tiers-free-bot-novelty-accounts-basic-enterprice-monthly-price">the only academically useful paid tiers far exceed most researchers’ budgets</a>.</p></li>
-<li><p><a href="https://inews.co.uk/news/twitter-researchers-delete-data-unless-pay-2364535">Musk has also demanded that Decahose users delete all Twitter data acquired under previous agreements</a>–whether this demand will be extended to Academic API users is currently unknown.</p></li>
-<li><p><a href="https://www.reddit.com/r/modnews/comments/134tjpe/reddit_data_api_update_changes_to_pushshift_access/">Reddit has denied access to its API for Pushshift</a>, a popular service used by researchers to collect Reddit data. Popular Reddit app Apollo is facing API charges of $1.7M per month to continue operating.</p></li>
-<li><p>TikTok released a new API for researchers, which among other things requires them <a href="https://www.tiktok.com/legal/page/global/terms-of-service-research-api/en">“to regularly refresh TikTok Research API Data at least every fifteen (15) days, and delete data that is not available from the TikTok Research API at the time of each refresh.”</a></p></li>
-<li><p>Crowdtangle, Meta’s researcher tool for acquiring data from Facebook and Instagram, still exists as of this writing. <a href="https://www.bloomberg.com/news/articles/2022-06-23/meta-pulls-support-for-tool-used-to-keep-misinformation-in-check?leadSource=uverify%20wall">But rumors of its imminent demise have been reported in multiple reputable outlets.</a></p>
-<ul>
-<li>This was last year. Crowdtangle has been closed this year.</li>
-</ul></li>
+<li class="fragment"><p>Main Components:</p></li>
+<li class="fragment"><p><strong>http://mywebsite.com//</strong>: API root. The domain of your api/</p></li>
+<li class="fragment"><p><strong>endpoint</strong>: An endpoint is a server route for retrieving specific data from an API</p></li>
+<li class="fragment"><p><strong>key</strong>: credentials that some websites ask for you to create before you can query the api.</p></li>
+<li class="fragment"><p><strong>?param_1&amp;param_2</strong>. Those are filters that you can input in apis requests. We call these filters parameters</p></li>
 </ul>
 </section>
-<section id="what-have-i-scraped" class="slide level2 center">
-<h2>What have I scraped?</h2>
+<section id="making-an-api-request" class="slide level2 center">
+<h2>Making an API Request</h2>
+<p>In order to work with APIs, we need tools to access the web. In Python, the most common library for making requests and working with APIs is the <code>requests</code> library.</p>
 <ul>
-<li><p>Electoral data from many different countries;</p></li>
-<li><p>Composition of elites around the world;</p></li>
-<li><p>Wikipedia;</p></li>
-<li><p>Toutiao, a news aggregation from China;</p></li>
-<li><p>Political Manifestos in Brazil</p></li>
-<li><p>Fact-Checking News</p></li>
-<li><p>Facebook and Youtube Live Chats.</p></li>
-<li><p>Property Prices from Zillow.</p></li>
-<li><p>News in Latin American</p></li>
+<li class="fragment"><p><code>get()</code>: to receive information from the API</p></li>
+<li class="fragment"><p><code>post()</code>: to send information to the API – think about the use of ChatGPT for classification of text.</p></li>
 </ul>
 </section>
-<section id="what-is-a-website" class="slide level2 center">
-<h2>What is a website?</h2>
-<p>A website in general is a combination of HTML, CSS, Javascript and PHP.</p>
+<section id="step-by-step" class="slide level2 center">
+<h2>Step-by-Step</h2>
+<p>When using an API, our work will often involve the following steps:</p>
 <ul>
-<li><p><strong>HTML</strong> provides the structure of the website.</p></li>
-<li><p><strong>CSS</strong> makes that structure visually appealing by controlling the design and layout.</p></li>
-<li><p><strong>JavaScript</strong> adds interactivity and makes the website dynamic on the client side.</p></li>
-<li><p><strong>PHP</strong> handles server-side tasks like generating dynamic HTML content or interacting with a database.</p></li>
+<li class="fragment"><strong>Step 1:</strong> Look at the API documentation and endpoints, and construct a query of interest</li>
+<li class="fragment"><strong>Step 2:</strong> Use requests.get(querystring) to call the API</li>
+<li class="fragment"><strong>Step 3:</strong> Examine the response</li>
+<li class="fragment"><strong>Step 4:</strong> Extract your data and save it.</li>
 </ul>
 </section>
-<section id="a-simple-example" class="slide level2 center">
-<h2>A simple example</h2>
-<pre><code>&lt;html&gt;
-&lt;head&gt;
-  &lt;title&gt; Michael Cohen's Email &lt;/title&gt;
-  &lt;script&gt;
-    var foot = bar;
-  &lt;script&gt;
-&lt;/head&gt;
-&lt;body&gt;
-  &lt;div id="payments"&gt;
-  &lt;h2&gt;Second heading&lt;/h2&gt;
-  &lt;p class='slick'&gt;information about &lt;br/&gt;&lt;i&gt;payments&lt;/i&gt;&lt;/p&gt;
-  &lt;p&gt;Just &lt;a href="http://www.google.com"&gt;google it!&lt;/a&gt;&lt;/p&gt;
-&lt;/body&gt;
-&lt;/html&gt;</code></pre>
-<p><strong>We will care mostly about HTMLs and CSSs for static websites.</strong></p>
+<section id="in-class-example" class="slide level2 center">
+<h2>In-Class Example</h2>
+<p>We will work with three different types of APIs today:</p>
+<ul>
+<li class="fragment"><p>Bored API: API that does <strong>not</strong> require authentication and does <strong>not</strong> have a wrapper</p></li>
+<li class="fragment"><p>Yelp API: API that <strong>does</strong> require authentication and does <strong>not</strong> have a wrapper</p></li>
+<li class="fragment"><p>Youtube API: API that <strong>does</strong> require authentication and <strong>does</strong> have a wrapper</p></li>
+<li class="fragment"><p><strong>Wrapper:</strong>a set of functions or methods (full library) that provide a simplified interface to interact with an underlying API.</p></li>
+</ul>
 </section></section>
+<section id="notebook-for-apis" class="title-slide slide level1 center">
+<h1><a href="../lecture_notes/week-09/_week-08_selenium.html">Notebook for APIs</a></h1>
+
+</section>
+
 <section>
-<section id="scraping-is-all-about-finding-tags-and-collecting-the-data-associated-with-them" class="title-slide slide level1 center">
-<h1>Scraping is all about finding tags and collecting the data associated with them</h1>
+<section id="selenium" class="title-slide slide level1 center">
+<h1>Selenium</h1>
 
 </section>
-<section id="tags-html-elements" class="slide level2 center">
-<h2>Tags + HTML Elements</h2>
-
-<img data-src="https://static.semrush.com/blog/uploads/media/59/fc/59fc528eecc00e43b1a3ed5d9b9933ee/4YA3vCJ_Hw6DucoVZ40FbKFRppAReJVOkLKHcZlDkO-9geydLO6tw9uzFJFZf5nam3QcT7p0hRdpFyL2uPhoDISD8CPZwfPE5GTqgpH53q9M99QWgDVhjgQrCMOlQI9fA1T2dCxJ5T2goCV3k1wo-Jc.webp" class="r-stretch"></section>
-<section id="most-common-tags" class="slide level2 center">
-<h2>Most common tags</h2>
+<section id="static-vs-dynamic-websites" class="slide level2 center">
+<h2>Static vs Dynamic Websites</h2>
 <ul>
-<li><strong>p</strong> – paragraphs</li>
-<li><strong>a href</strong> – links</li>
-<li><strong>div</strong> – divisions</li>
-<li><strong>h</strong> – headings</li>
-<li><strong>table</strong> – tables</li>
+<li class="fragment"><p><strong>Static web pages:</strong> when the browser and the source code content match each other. Collect data via:</p>
+<ul>
+<li class="fragment">string methods and regex</li>
+<li class="fragment">beautifulsoup</li>
+<li class="fragment">scrapy</li>
+</ul></li>
+<li class="fragment"><p><strong>Dynamic web pages:</strong> when the content we are viewing in our browser does not match the content we see in the HTML source code we are retrieving from the site. How to scrape?</p>
+<ul>
+<li class="fragment">Scrape the website as we view it in our browser — using Python packages capable of executing the JavaScript.</li>
+</ul></li>
 </ul>
-<p>See <a href="https://betterprogramming.pub/understanding-html-basics-for-web-scraping-ae351ee0b3f9">here for more about html tags</a></p>
 </section>
-<section id="scraping-routine" class="slide level2 center">
-<h2>Scraping Routine</h2>
-<p>Scraping often involves the following routine:</p>
+<section id="selenium-1" class="slide level2 center">
+<h2>Selenium</h2>
+<p>Selenium is an open source tool which is used for automating web browser.</p>
 <ul>
-<li><p><strong>Step 1:</strong> Find a website with information you want to collect</p></li>
-<li><p><strong>Step 2:</strong> Understand and decipher the website</p></li>
-<li><p><strong>Step 3:</strong> Write code to collect **one* realization of the data</p></li>
-<li><p><strong>Step 4:</strong> Build a scraper – generalize you code into a function.</p></li>
+<li class="fragment"><p>works by automating browsers to execute JavaScript to display a web page</p></li>
+<li class="fragment"><p>allow us to interact with web pages programmatically</p></li>
+<li class="fragment"><p>collect data as we see in the web (after running the correspondin java script)</p></li>
 </ul>
-<p>We will cover these steps with code!!</p>
-</section>
-<section id="ethical-challenges-on-scraping" class="slide level2 center">
-<h2>Ethical Challenges on scraping</h2>
-<p>Webscraping is legal as long as the <strong>scraped data is publicly available</strong> and the scraping activity <strong>does not harm the website and the people from whom information is being scraped.</strong></p>
-<p>Here is a list of good practices for scraping:</p>
-<ul>
-<li><p>Don’t hit servers too often and on peak hours</p></li>
-<li><p>Slow down your code to the speed humans would manually do</p></li>
-<li><p>Use data responsibly (As academics often do)</p></li>
-<li><p>Respect robots.txt</p></li>
-</ul>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Put the system to sleep by that random unit</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> time</span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>time.sleep(random.uniform(<span class="dv">1</span>,<span class="dv">5</span>))</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
+<p><strong>Drawback:</strong> selenium is a bit of a pain to install. So part of your homework will simply be to go over the selenium setup!</p>
 </section></section>
-<section id="notebook-on-scraping" class="title-slide slide level1 center">
-<h1><a href="../lecture_notes/week-08/_week-07_scraping_static.html">Notebook on Scraping</a></h1>
+<section id="notebook-selenium" class="title-slide slide level1 center">
+<h1><a href="../lecture_notes/week-09/_week-08_selenium.html">Notebook Selenium</a></h1>
 
 <div class="footer footer-default">
 <p>Data science I: Foundations</p>
@@ -831,44 +669,6 @@ Professor: Tiago Ventura
         ]
       });
     </script>
-    
-    <script>
-      // htmlwidgets need to know to resize themselves when slides are shown/hidden.
-      // Fire the "slideenter" event (handled by htmlwidgets.js) when the current
-      // slide changes (different for each slide format).
-      (function () {
-        // dispatch for htmlwidgets
-        function fireSlideEnter() {
-          const event = window.document.createEvent("Event");
-          event.initEvent("slideenter", true, true);
-          window.document.dispatchEvent(event);
-        }
-
-        function fireSlideChanged(previousSlide, currentSlide) {
-          fireSlideEnter();
-
-          // dispatch for shiny
-          if (window.jQuery) {
-            if (previousSlide) {
-              window.jQuery(previousSlide).trigger("hidden");
-            }
-            if (currentSlide) {
-              window.jQuery(currentSlide).trigger("shown");
-            }
-          }
-        }
-
-        // hookup for slidy
-        if (window.w3c_slidy) {
-          window.w3c_slidy.add_observer(function (slide_num) {
-            // slide_num starts at position 1
-            fireSlideChanged(null, w3c_slidy.slides[slide_num - 1]);
-          });
-        }
-
-      })();
-    </script>
-
     <script id="quarto-html-after-body" type="application/javascript">
     window.document.addEventListener("DOMContentLoaded", function (event) {
       const toggleBodyColorMode = (bsSheetEl) => {

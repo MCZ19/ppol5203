@@ -2,7 +2,7 @@
 title: "<span style = 'font-size: 100%;'> PPOL 5203 - Data Science I: Foundations </span>"
 subtitle: "<span style = 'font-size: 100%;'> Week 8: Parsing Unstructured Data: Scraping Static Websites </span>"
 author: "Professor: Tiago Ventura"
-date: "10/29/2023"
+date: "10/29/2024"
 execute: 
   echo: false
   error: true
@@ -23,7 +23,7 @@ format:
     theme: [simple, custom.scss]
 ---
 
-# Final Project: <https://tiagoventura.github.io/ppol5203/finalproject.html>. <br> Take 2 min to read through. 
+# Final Project: <https://tiagoventura.github.io/ppol5203/finalproject.html>. <br> Take 2 min to read through.
 
 ## You Project Proposal
 
@@ -36,7 +36,7 @@ format:
 <br>
 
 ::: incremental
--   Groups of three students. You pick your groups. Add your groups here: [https://docs.google.com/spreadsheets/d/1tXCNbAV-vpCMA96OZ0yy_E1quHUhSPuwSrFZ6_SafDk/edit?gid=0#gid=0](https://docs.google.com/spreadsheets/d/1tXCNbAV-vpCMA96OZ0yy_E1quHUhSPuwSrFZ6_SafDk/edit?gid=0#gid=0)
+-   Groups of three students. You pick your groups. Add your groups here: <https://docs.google.com/spreadsheets/d/1tXCNbAV-vpCMA96OZ0yy_E1quHUhSPuwSrFZ6_SafDk/edit?gid=0#gid=0>
 
 -   You should have meet with me to discuss your proposal.
 
@@ -49,7 +49,6 @@ format:
 
 # Questions?
 
-
 ## Where we are...
 
 -   We started with the basics of being a data scientist
@@ -59,12 +58,10 @@ format:
 -   Then we started our journey working with tabular data.
 
 -   Now we will learn how to collect/parse with unstructure data sources:
-   
-    - Scrapping websites (today)
-    
-    - Working with APIs and Dynamic Websites (next week)
-   
 
+    -   Scrapping websites (today)
+
+    -   Working with APIs and Dynamic Websites (next week)
 
 ## Plans for Today
 
@@ -74,7 +71,6 @@ format:
     -   Html data structure
     -   Scrape static websites
     -   Build a scraper programmatically
-
 
 # Acquiring Digital Data
 
@@ -86,17 +82,17 @@ knitr::include_graphics("http://media3.washingtonpost.com/wp-dyn/content/graphic
 
 ## Two ways to access data from the web
 
-- **Scraping:** grab information available on websites (Today)
+-   **Scraping:** grab information available on websites (Today)
 
-   -   Leveraging the structure of a website to grab it's contents
+    -   Leveraging the structure of a website to grab it's contents
 
-  -   Using a programming environment (such as R, Python, Java, etc.) to systematically extract that content.
+    -   Using a programming environment (such as R, Python, Java, etc.) to systematically extract that content.
 
-  -   Accomplishing the above in an "unobtrusive" and legal way.
+    -   Accomplishing the above in an "unobtrusive" and legal way.
 
-- **APIs:** Data transfer portals built by companies to allow people to access data programmatically. (Next week)
+-   **APIs:** Data transfer portals built by companies to allow people to access data programmatically. (Next week)
 
-  - When available, we will always prefer APIs
+    -   When available, we will always prefer APIs
 
 ## Post-Api Era
 
@@ -112,8 +108,7 @@ Consider the following developments from the past year or so months:
 
 -   Crowdtangle, Meta's researcher tool for acquiring data from Facebook and Instagram, still exists as of this writing. [But rumors of its imminent demise have been reported in multiple reputable outlets.](https://www.bloomberg.com/news/articles/2022-06-23/meta-pulls-support-for-tool-used-to-keep-misinformation-in-check?leadSource=uverify%20wall)
 
-    - This was last year. Crowdtangle has been closed this year. 
-
+    -   This was last year. Crowdtangle has been closed this year.
 
 ## What have I scraped?
 
@@ -139,14 +134,13 @@ Consider the following developments from the past year or so months:
 
 A website in general is a combination of HTML, CSS, Javascript and PHP.
 
-- **HTML** provides the structure of the website.
+-   **HTML** provides the structure of the website.
 
-- **CSS** makes that structure visually appealing by controlling the design and layout.
+-   **CSS** makes that structure visually appealing by controlling the design and layout.
 
-- **JavaScript** adds interactivity and makes the website dynamic on the client side.
+-   **JavaScript** adds interactivity and makes the website dynamic on the client side.
 
-- **PHP** handles server-side tasks like generating dynamic HTML content or interacting with a database.
-
+-   **PHP** handles server-side tasks like generating dynamic HTML content or interacting with a database.
 
 ## A simple example
 
