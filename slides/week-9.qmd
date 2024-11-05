@@ -39,14 +39,26 @@ format:
 
     -   Example of my own research: algorithmic bias in chinese social media websites
 
-
 # Office hours today: from 3pm to 5pm. <br> Reason? I am too anxious about the election!
 
-
-# Last week's in class exercise!
-
+# Last week's in-class exercise!
 
 # APIs
+
+## Two ways to access data from the web
+
+-   **Scraping:** grab information available on websites (Last Week)
+
+    -   Leveraging the structure of a website to grab it's contents
+
+    -   Using a programming environment (such as R, Python, Java, etc.) to systematically extract that content.
+
+    -   Accomplishing the above in an "unobtrusive" and legal way.
+
+-   **APIs:** Data transfer portals built by companies to allow people to access data programmatically. (Today)
+
+    -   When available, we will always prefer APIs
+
 
 ## APIs 101
 
@@ -98,7 +110,7 @@ When using an API, our work will often involve the following steps:
 
 We will work with three different types of APIs today:
 
--   Bored API: API that does **not** require authentication and does **not** have a wrapper
+-   Trivia API: API that does **not** require authentication and does **not** have a wrapper
 
 -   Yelp API: API that **does** require authentication and does **not** have a wrapper
 
