@@ -2349,7 +2349,7 @@
     "href": "slides/week-9.html#plans-for-today",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Plans for Today",
-    "text": "Plans for Today\n\nAPIs\n\nA simple API - Bored API\nMore complex with Credentials: Yelp\nCredentials + Wrapper: Youtube\n\nSelenium for Dynamic Websites and Audit Studies\n\nExample of my own research: algorithmic bias in chinese social media websites"
+    "text": "Plans for Today\n\nSolution from last week in class exercise\nAPIs\n\nA simple API - Trivia API\nMore complex with Credentials: Yelp\nCredentials + Wrapper: Youtube\n\nSelenium for Dynamic Websites and Audit Studies\n\nExample of my own research: algorithmic bias in chinese social media websites"
   },
   {
     "objectID": "slides/week-9.html#apis-101",

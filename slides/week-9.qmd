@@ -25,6 +25,8 @@ format:
 
 ## Plans for Today
 
+-   Solution from last week in class exercise
+
 -   APIs
 
     -   A simple API - Trivia API
@@ -36,6 +38,13 @@ format:
 -   Selenium for Dynamic Websites and Audit Studies
 
     -   Example of my own research: algorithmic bias in chinese social media websites
+
+
+# Office hours today: from 3pm to 5pm. <br> Reason? I am too anxious about the election!
+
+
+# Last week's in class exercise!
+
 
 # APIs
 
@@ -50,7 +59,7 @@ format:
     -   Access data shared by Companies and NGOs
     -   Process our data with model developed by third party organizations
 
--   We will focus today on the first component. 
+-   We will focus today on the first component.
 
 ## API Components
 

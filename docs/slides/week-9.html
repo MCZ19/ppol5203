@@ -344,18 +344,29 @@ Professor: Tiago Ventura
 <section id="plans-for-today" class="slide level2 center">
 <h2>Plans for Today</h2>
 <ul>
-<li class="fragment"><p>APIs</p>
+<li><p>Solution from last week in class exercise</p></li>
+<li><p>APIs</p>
 <ul>
-<li class="fragment"><p>A simple API - Bored API</p></li>
-<li class="fragment"><p>More complex with Credentials: Yelp</p></li>
-<li class="fragment"><p>Credentials + Wrapper: Youtube</p></li>
+<li><p>A simple API - Trivia API</p></li>
+<li><p>More complex with Credentials: Yelp</p></li>
+<li><p>Credentials + Wrapper: Youtube</p></li>
 </ul></li>
-<li class="fragment"><p>Selenium for Dynamic Websites and Audit Studies</p>
+<li><p>Selenium for Dynamic Websites and Audit Studies</p>
 <ul>
-<li class="fragment">Example of my own research: algorithmic bias in chinese social media websites</li>
+<li>Example of my own research: algorithmic bias in chinese social media websites</li>
 </ul></li>
 </ul>
 </section>
+<section id="office-hours-today-from-3pm-to-5pm.-reason-i-am-too-anxious-about-the-election" class="title-slide slide level1 center">
+<h1>Office hours today: from 3pm to 5pm. <br> Reason? I am too anxious about the election!</h1>
+
+</section>
+
+<section id="last-weeks-in-class-exercise" class="title-slide slide level1 center">
+<h1>Last week’s in class exercise!</h1>
+
+</section>
+
 <section>
 <section id="apis" class="title-slide slide level1 center">
 <h1>APIs</h1>
@@ -364,14 +375,14 @@ Professor: Tiago Ventura
 <section id="apis-101" class="slide level2 center">
 <h2>APIs 101</h2>
 <ul>
-<li class="fragment"><p><strong>APIs</strong>: Application Programming Interface</p></li>
-<li class="fragment"><p><strong>How does it work:</strong> online server created to facilitate information exchange between data users and the data holders</p></li>
-<li class="fragment"><p><strong>Use Cases:</strong></p>
+<li><p><strong>APIs</strong>: Application Programming Interface</p></li>
+<li><p><strong>How does it work:</strong> online server created to facilitate information exchange between data users and the data holders</p></li>
+<li><p><strong>Use Cases:</strong></p>
 <ul>
-<li class="fragment">Access data shared by Companies and NGOs</li>
-<li class="fragment">Process our data with model developed by third party organizations</li>
+<li>Access data shared by Companies and NGOs</li>
+<li>Process our data with model developed by third party organizations</li>
 </ul></li>
-<li class="fragment"><p>We will focus today on the first component.</p></li>
+<li><p>We will focus today on the first component.</p></li>
 </ul>
 </section>
 <section id="api-components" class="slide level2 center">
@@ -379,39 +390,39 @@ Professor: Tiago Ventura
 <p>An API is just an URL. See the example below:</p>
 <p>http://mywebsite.com/endpoint?key&amp;param_1&amp;param_2</p>
 <ul>
-<li class="fragment"><p>Main Components:</p></li>
-<li class="fragment"><p><strong>http://mywebsite.com//</strong>: API root. The domain of your api/</p></li>
-<li class="fragment"><p><strong>endpoint</strong>: An endpoint is a server route for retrieving specific data from an API</p></li>
-<li class="fragment"><p><strong>key</strong>: credentials that some websites ask for you to create before you can query the api.</p></li>
-<li class="fragment"><p><strong>?param_1&amp;param_2</strong>. Those are filters that you can input in apis requests. We call these filters parameters</p></li>
+<li><p>Main Components:</p></li>
+<li><p><strong>http://mywebsite.com//</strong>: API root. The domain of your api/</p></li>
+<li><p><strong>endpoint</strong>: An endpoint is a server route for retrieving specific data from an API</p></li>
+<li><p><strong>key</strong>: credentials that some websites ask for you to create before you can query the api.</p></li>
+<li><p><strong>?param_1&amp;param_2</strong>. Those are filters that you can input in apis requests. We call these filters parameters</p></li>
 </ul>
 </section>
 <section id="making-an-api-request" class="slide level2 center">
 <h2>Making an API Request</h2>
 <p>In order to work with APIs, we need tools to access the web. In Python, the most common library for making requests and working with APIs is the <code>requests</code> library.</p>
 <ul>
-<li class="fragment"><p><code>get()</code>: to receive information from the API</p></li>
-<li class="fragment"><p><code>post()</code>: to send information to the API – think about the use of ChatGPT for classification of text.</p></li>
+<li><p><code>get()</code>: to receive information from the API</p></li>
+<li><p><code>post()</code>: to send information to the API – think about the use of ChatGPT for classification of text.</p></li>
 </ul>
 </section>
 <section id="step-by-step" class="slide level2 center">
 <h2>Step-by-Step</h2>
 <p>When using an API, our work will often involve the following steps:</p>
 <ul>
-<li class="fragment"><strong>Step 1:</strong> Look at the API documentation and endpoints, and construct a query of interest</li>
-<li class="fragment"><strong>Step 2:</strong> Use requests.get(querystring) to call the API</li>
-<li class="fragment"><strong>Step 3:</strong> Examine the response</li>
-<li class="fragment"><strong>Step 4:</strong> Extract your data and save it.</li>
+<li><strong>Step 1:</strong> Look at the API documentation and endpoints, and construct a query of interest</li>
+<li><strong>Step 2:</strong> Use requests.get(querystring) to call the API</li>
+<li><strong>Step 3:</strong> Examine the response</li>
+<li><strong>Step 4:</strong> Extract your data and save it.</li>
 </ul>
 </section>
 <section id="in-class-example" class="slide level2 center">
 <h2>In-Class Example</h2>
 <p>We will work with three different types of APIs today:</p>
 <ul>
-<li class="fragment"><p>Bored API: API that does <strong>not</strong> require authentication and does <strong>not</strong> have a wrapper</p></li>
-<li class="fragment"><p>Yelp API: API that <strong>does</strong> require authentication and does <strong>not</strong> have a wrapper</p></li>
-<li class="fragment"><p>Youtube API: API that <strong>does</strong> require authentication and <strong>does</strong> have a wrapper</p></li>
-<li class="fragment"><p><strong>Wrapper:</strong>a set of functions or methods (full library) that provide a simplified interface to interact with an underlying API.</p></li>
+<li><p>Bored API: API that does <strong>not</strong> require authentication and does <strong>not</strong> have a wrapper</p></li>
+<li><p>Yelp API: API that <strong>does</strong> require authentication and does <strong>not</strong> have a wrapper</p></li>
+<li><p>Youtube API: API that <strong>does</strong> require authentication and <strong>does</strong> have a wrapper</p></li>
+<li><p><strong>Wrapper:</strong>a set of functions or methods (full library) that provide a simplified interface to interact with an underlying API.</p></li>
 </ul>
 </section></section>
 <section id="notebook-for-apis" class="title-slide slide level1 center">
@@ -427,15 +438,15 @@ Professor: Tiago Ventura
 <section id="static-vs-dynamic-websites" class="slide level2 center">
 <h2>Static vs Dynamic Websites</h2>
 <ul>
-<li class="fragment"><p><strong>Static web pages:</strong> when the browser and the source code content match each other. Collect data via:</p>
+<li><p><strong>Static web pages:</strong> when the browser and the source code content match each other. Collect data via:</p>
 <ul>
-<li class="fragment">string methods and regex</li>
-<li class="fragment">beautifulsoup</li>
-<li class="fragment">scrapy</li>
+<li>string methods and regex</li>
+<li>beautifulsoup</li>
+<li>scrapy</li>
 </ul></li>
-<li class="fragment"><p><strong>Dynamic web pages:</strong> when the content we are viewing in our browser does not match the content we see in the HTML source code we are retrieving from the site. How to scrape?</p>
+<li><p><strong>Dynamic web pages:</strong> when the content we are viewing in our browser does not match the content we see in the HTML source code we are retrieving from the site. How to scrape?</p>
 <ul>
-<li class="fragment">Scrape the website as we view it in our browser — using Python packages capable of executing the JavaScript.</li>
+<li>Scrape the website as we view it in our browser — using Python packages capable of executing the JavaScript.</li>
 </ul></li>
 </ul>
 </section>
@@ -443,9 +454,9 @@ Professor: Tiago Ventura
 <h2>Selenium</h2>
 <p>Selenium is an open source tool which is used for automating web browser.</p>
 <ul>
-<li class="fragment"><p>works by automating browsers to execute JavaScript to display a web page</p></li>
-<li class="fragment"><p>allow us to interact with web pages programmatically</p></li>
-<li class="fragment"><p>collect data as we see in the web (after running the correspondin java script)</p></li>
+<li><p>works by automating browsers to execute JavaScript to display a web page</p></li>
+<li><p>allow us to interact with web pages programmatically</p></li>
+<li><p>collect data as we see in the web (after running the correspondin java script)</p></li>
 </ul>
 <p><strong>Drawback:</strong> selenium is a bit of a pain to install. So part of your homework will simply be to go over the selenium setup!</p>
 </section></section>
