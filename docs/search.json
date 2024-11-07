@@ -2306,8 +2306,8 @@
     "objectID": "slides/week-8.html#you-project-proposal",
     "href": "slides/week-8.html#you-project-proposal",
     "title": " PPOL 5203 - Data Science I: Foundations ",
-    "section": "",
-    "text": "Requirement\nDue\nLength\nPercentage\n\n\n\n\nProject Proposal\nNovember 15\n2 pages\n5%\n\n\nPresentation\nDecember 10\n10-15 minutes\n10%\n\n\nProject Report\nDecember 17\n10 pages\n25%\n\n\n\n\n\n\nGroups of three students. You pick your groups. Add your groups here: https://docs.google.com/spreadsheets/d/1tXCNbAV-vpCMA96OZ0yy_E1quHUhSPuwSrFZ6_SafDk/edit?gid=0#gid=0\nYou should have meet with me to discuss your proposal.\nAt lest one hour before our meeting, send me a draft of your proposal.\nSend me an email with your group and when you are going to my office hours.\nOur meeting should happen before November 12. You have three office hours to go!"
+    "section": "You Project Proposal",
+    "text": "You Project Proposal\n\n\n\nRequirement\nDue\nLength\nPercentage\n\n\n\n\nProject Proposal\nNovember 15\n2 pages\n5%\n\n\nPresentation\nDecember 10\n10-15 minutes\n10%\n\n\nProject Report\nDecember 17\n10 pages\n25%\n\n\n\n\n\n\nGroups of three students. You pick your groups. Add your groups here: https://docs.google.com/spreadsheets/d/1tXCNbAV-vpCMA96OZ0yy_E1quHUhSPuwSrFZ6_SafDk/edit?gid=0#gid=0\nYou should have meet with me to discuss your proposal.\nAt lest one hour before our meeting, send me a draft of your proposal.\nSend me an email with your group and when you are going to my office hours.\nOur meeting should happen before November 12. You have three office hours to go!"
   },
   {
     "objectID": "slides/week-8.html#two-ways-to-access-data-from-the-web",
@@ -2413,5 +2413,19 @@
     "title": "PPOL 5203 - Data Science I: Foundations",
     "section": "",
     "text": "from selenium import webdriver\nfrom webdriver_manager.chrome import ChromeDriverManager\n\n\n# selenium 4\nfrom selenium import webdriver\nfrom selenium.webdriver.firefox.service import Service as FirefoxService\nfrom webdriver_manager.firefox import GeckoDriverManager\n\ndriver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))\n\nWebDriverException: Message: Service /Users/tb186/.wdm/drivers/chromedriver/mac64/118.0.5993.70/chromedriver-mac-arm64/chromedriver unexpectedly exited. Status code was: -9\n\n\n\n!pip install webdriver-manager\n\nRequirement already satisfied: webdriver-manager in /Users/tb186/anaconda3/lib/python3.11/site-packages (4.0.1)\nRequirement already satisfied: requests in /Users/tb186/anaconda3/lib/python3.11/site-packages (from webdriver-manager) (2.31.0)\nRequirement already satisfied: python-dotenv in /Users/tb186/anaconda3/lib/python3.11/site-packages (from webdriver-manager) (1.0.0)\nRequirement already satisfied: packaging in /Users/tb186/anaconda3/lib/python3.11/site-packages (from webdriver-manager) (23.0)\nRequirement already satisfied: charset-normalizer&lt;4,&gt;=2 in /Users/tb186/anaconda3/lib/python3.11/site-packages (from requests-&gt;webdriver-manager) (2.0.4)\nRequirement already satisfied: idna&lt;4,&gt;=2.5 in /Users/tb186/anaconda3/lib/python3.11/site-packages (from requests-&gt;webdriver-manager) (3.4)\nRequirement already satisfied: urllib3&lt;3,&gt;=1.21.1 in /Users/tb186/anaconda3/lib/python3.11/site-packages (from requests-&gt;webdriver-manager) (1.26.16)\nRequirement already satisfied: certifi&gt;=2017.4.17 in /Users/tb186/anaconda3/lib/python3.11/site-packages (from requests-&gt;webdriver-manager) (2023.7.22)"
+  },
+  {
+    "objectID": "lecture_notes/week-10/solution_in_class.html",
+    "href": "lecture_notes/week-10/solution_in_class.html",
+    "title": "Practice",
+    "section": "",
+    "text": "import matplotlib.pyplot as plt\n\ndiabetes[\"ols_pred\"] = model_ols.fittedvalues\n\n# plot\n(ggplot(diabetes, aes(y=\"ols_pred\", x=\"target\")) +\n geom_point() +\n geom_abline(intercept = 0, slope = 1, size = 0.5)\n \n)\nIn groups, read the sklearn documentation or check the slide with models I show you in class.\nPick a additional model from the sklearn. Compare this model with the three models I showed you in this notebook\nFeel free to copy and paste the code above, and add your new model and compare the results."
+  },
+  {
+    "objectID": "lecture_notes/week-10/solution_in_class.html#add-your-code",
+    "href": "lecture_notes/week-10/solution_in_class.html#add-your-code",
+    "title": "Practice",
+    "section": "add your code",
+    "text": "add your code"
   }
 ]

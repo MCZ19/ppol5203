@@ -20942,7 +20942,26 @@ https://www.latinnews.com/latinnews-country-database.html?country=2156
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[5]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># setup</span>
+<span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">requests</span> <span class="c1"># For downloading the website</span>
+<span class="kn">from</span> <span class="nn">bs4</span> <span class="kn">import</span> <span class="n">BeautifulSoup</span> <span class="c1"># For parsing the website</span>
+<span class="kn">import</span> <span class="nn">time</span> <span class="c1"># To put the system to sleep</span>
+<span class="kn">import</span> <span class="nn">random</span> <span class="c1"># for random numbers</span>
+<span class="kn">import</span> <span class="nn">re</span> <span class="c1"># regular expressions</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">scrape_latin_news</span><span class="p">(</span><span class="n">url</span><span class="p">):</span>
@@ -20992,17 +21011,17 @@ https://www.latinnews.com/latinnews-country-database.html?country=2156
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[9]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Let's write the above as a single function</span>
 <span class="k">def</span> <span class="nf">collect_links_latin</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="kc">None</span><span class="p">):</span>
-<span class="w">    </span><span class="sd">"""Scrape multiple CNN URLS.</span>
+<span class="w">    </span><span class="sd">"""Scrape multiple Latin News URLS.</span>
 
 <span class="sd">    Args:</span>
-<span class="sd">        url (list): list of valid CNN page to collect links.</span>
+<span class="sd">        url (list): list of valid Latin NEws page to collect links.</span>
 <span class="sd">    Returns:</span>
-<span class="sd">        DataFrame: frame containing headline, date, and content fields</span>
+<span class="sd">        List: frame containing headline, date, and content fields</span>
 <span class="sd">    """</span>
     
     <span class="c1"># Get access to the website</span>
@@ -21031,7 +21050,7 @@ https://www.latinnews.com/latinnews-country-database.html?country=2156
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">url_brazil</span> <span class="o">=</span><span class="s2">"https://www.latinnews.com/latinnews-country-database.html?country=2156"</span>
@@ -21044,7 +21063,7 @@ https://www.latinnews.com/latinnews-country-database.html?country=2156
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">links_brazil</span> <span class="o">=</span> <span class="n">collect_links_latin</span><span class="p">(</span><span class="n">url</span><span class="o">=</span><span class="n">url_brazil</span><span class="p">)</span>
@@ -21057,7 +21076,40 @@ https://www.latinnews.com/latinnews-country-database.html?country=2156
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">len</span><span class="p">(</span><span class="n">links_brazil</span><span class="p">)</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[10]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>593</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># iterate</span>
@@ -21073,7 +21125,79 @@ https://www.latinnews.com/latinnews-country-database.html?country=2156
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[14]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">out</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[12]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>[{&#39;url&#39;: &#39;https://www.latinnews.com//component/k2/item/103556.html?period=2024&amp;archive=3&amp;Itemid=6&amp;cat_id=835066:brazil-police-concludes-probe-on-high-profile-amazon-murders&#39;,
+  &#39;title&#39;: &#39;BRAZIL: Police concludes probe on high-profile Amazon murders&#39;,
+  &#39;text&#39;: &#39;On 4 November Brazil’s federal police (PF) announced it had concluded its investigations into the 2022 murders of Brazilian indigenous expert Bruno Pereira and British journalist Dom Phillips in the Vale do Javari demarcated indigenous territory, Amazonas state.Analysis:The murder of Pereira and Phillips on 5 June 2022 was one of the most high-profile incidents in recent years of an organised crime group in Brazil assassinating defenders of human rights and the environment. The conclusion of the PF’s probe marks some progress in the trudge towards justice for the victims, given the police force has recommended charges against the alleged mastermind of the killings and his suspected accomplices. However, some reports in the national media have highlighted that, while the PF has targeted suspected criminal actors, it has not indicted any officials or authority figures, such as the former head of the national indigenous affairs agency (Funai), Marcelo Xavier (2019-2022), who was accused last year of negligence in relation to the killings of\xa0Pereira and Phillips, in charges that have since been dropped.After more than two years of investigations, the PF has recommended charges against nine individuals, including Ruben Dario da Silva Villar, alias ‘Colômbia’. He is suspected of leading a local criminal group involved in illegal fishing and poaching in Amazonas.Villar was arrested in 2022 and the PF reportedly accused him last year of being the mastermind of the assassination plot. With the conclusion of their investigations, PF detectives have confirmed these suspicions. The police believe that the motivation of the murder was revenge against Pereira for his efforts to monitor environmental crimes in the remote regions of the Amazon rainforest.Pereira used to work for Funai, leading the agency’s division on uncontacted peoples, but was sacked during the administration of far-right former president Jair Bolsonaro (2019-2023). Even after his dismissal from Funai, Pereira continued his activism and work with indigenous communities in remote areas and was working on a research project with Phillips in 2022 when they were believed to have been killed by members of Villar’s criminal group.Looking Ahead: The environmental and security challenges facing indigenous communities in Brazil, such as those researched by Pereira and Phillips, are still key concerns today. Brazil will likely continue to face more pressure to address these issues, especially at international fora such as the United Nations climate change conference (COP29) starting next week in Azerbaijan. &#39;,
+  &#39;date&#39;: &#39;5 November 2024&#39;},
+ {&#39;url&#39;: &#39;https://www.latinnews.com//component/k2/item/103552.html?period=2024&amp;archive=3&amp;Itemid=6&amp;cat_id=835066:in-brief-brazil-s-itau-posts-higher-profits-in-q3&#39;,
+  &#39;title&#39;: &#39;In brief: Brazil’s Itaú posts higher profits in Q3&#39;,
+  &#39;text&#39;: &#39;*Brazilian private bank Itaú Unibanco has released its earnings report for the third quarter, which showed a net profit of R$10.7bn (US$1.8bn). This is up 6% from the previous quarter and up 18% compared to the same quarter last year. The bank’s net profits in the first three quarters of 2024 came to R$30.5bn, up 16% from January-September 2023. In its report, Itaú noted that all its products in its individual client portfolio registered quarterly increases, mainly driven by a rise in loans for vehicles, real estate, and personal credit. The banking giant also highlighted an expansion in its credit portfolio for small and medium-sized businesses, as well as slight reductions in the rates of delinquency and defaults on loans. &#39;,
+  &#39;date&#39;: &#39;5 November 2024&#39;},
+ {&#39;url&#39;: &#39;https://www.latinnews.com//component/k2/item/103534.html?period=2024&amp;archive=3&amp;Itemid=6&amp;cat_id=835056:brazil-tensions-with-venezuela-escalate&#39;,
+  &#39;title&#39;: &#39;BRAZIL: Tensions with Venezuela escalate&#39;,
+  &#39;text&#39;: &#39;On 2 November\xa0the Venezuelan foreign ministry accused Brazil of “meddling” in its affairs, in response to a statement from Itamaraty, the Brazilian foreign ministry, expressing “surprise” at Venezuelan authorities’ “offensive tone”.\xa0Analysis:Itamaraty’s statement followed days of escalating attacks from Venezuela against Brazilian public officials, including Celso Amorim, a former foreign minister (1993-1994; 2003-2010) and special adviser to President Luiz Inácio Lula da Silva. Last month, Brazil blocked Venezuela’s entry to the Brics group of developing countries, which has been adding new members, provoking the ire of the increasingly isolated South American nation. Relations between the two countries have cooled since Venezuela’s disputed July elections in which President Nicolás Maduro claimed victory, not recognised by Brazil.In a statement published on its Telegram account over the weekend, the Venezuelan foreign ministry described Itamaraty’s position as “incomprehensible”. “The Bolivarian government urges Itamaraty’s bureaucracy to stop meddling in affairs that only concern Venezuelans, to avoid deteriorating diplomatic relations,” the note said.\xa0The offending note from Itamaraty, issued on 1 November, had criticised Venezuelan authorities’ “personal attacks and rhetorical escalation” against Brazil and reaffirmed the country’s commitment to non-alignment. “The Brazilian government’s interest in the Venezuelan electoral process stems, among other factors, from its role as a witness to the Barbados Agreements,” Itamaraty said, in reference to the October 2023 agreement that paved the way for the easing of US sanctions in return for democratic concessions from Maduro.\xa0Speaking to a congressional committee last week, Amorim defended Brazil’s decision to not support Venezuela’s entry to the Brics and lamented the current “unease” between the two countries, which he said stemmed from Maduro’s failure to present proof that he had won the July elections, as he had promised to do. This prompted Venezuela to recall its ambassador to Brazil, summon the Brazilian chargé d’affaires in Caracas, and brand Amorim “a messenger of US imperialism”.\xa0Itamaraty had informed it would not react, but it was reportedly forced out of its diplomatic silence by a since-deleted social media post, published by the account of the Bolivarian police, which appeared to be threatening Lula himself.\xa0Looking Ahead: Venezuela has threatened to declare Amorim persona non grata. The spiralling attacks smack of desperation in the face of increasing isolation and the loss of a historical ally like Lula. &#39;,
+  &#39;date&#39;: &#39;4 November 2024&#39;},
+ {&#39;url&#39;: &#39;https://www.latinnews.com//component/k2/item/103528.html?period=2024&amp;archive=3&amp;Itemid=6&amp;cat_id=835056:in-brief-brazil-s-industrial-production-up-in-september&#39;,
+  &#39;title&#39;: &#39;In brief: Brazil’s industrial production up in September&#39;,
+  &#39;text&#39;: &#39;*Brazil’s national statistics institute (Ibge) has released its latest figures for the country’s industrial production, which showed a monthly rise of 1.1% in September and a 3.4% rise compared to September last year. The accumulated industrial production for the 12 months until September this year was up 2.6% from the previous 12-month period. The latest monthly increase in production comes after a very slight rise in production in August and a monthly decline in July. Of the 25 product categories measured, 12 registered a monthly rise in production in September. The greatest increases were registered in smoking products (+36.5%), printing &amp; recording equipment (+6.9%), and coke, petroleum products, and biofuels (+4.3%). &#39;,
+  &#39;date&#39;: &#39;4 November 2024&#39;},
+ {&#39;url&#39;: &#39;https://www.latinnews.com//component/k2/item/103522.html?period=2024&amp;archive=3&amp;Itemid=6&amp;cat_id=835042:in-brief-brazil-s-unemployment-down-in-q3&#39;,
+  &#39;title&#39;: &#39;In brief: Brazil’s unemployment down in Q3&#39;,
+  &#39;text&#39;: &#39;*Brazil’s national statistics institute (Ibge) has released its latest unemployment figures, showing a jobless rate of 6.4% for the third quarter of 2024. This is down from 6.9% in Q2 2024 and from 7.7% in Q3 2023. In a press release, the Ibge noted that this latest figure is the lowest unemployment rate on record since Q4 2013. The total number of unemployed people in Q3 this year came to 7m, the lowest figure registered since the rolling quarter ending in January 2015. The number of people in employment stood at a record 103m. The Ibge attributed the overall rise in the total employed population to a rise in employment in the industrial sector, which registered a quarterly increase of 3.2%. &#39;,
+  &#39;date&#39;: &#39;1 November 2024&#39;},
+ {&#39;url&#39;: &#39;https://www.latinnews.com//component/k2/item/103523.html?period=2024&amp;archive=3&amp;Itemid=6&amp;cat_id=835042:brazil-court-convicts-killers-of-marielle-franco&#39;,
+  &#39;title&#39;: &#39;BRAZIL: Court convicts killers of Marielle Franco&#39;,
+  &#39;text&#39;: &#39;On 31 October former policemen Ronnie Lessa and Élcio Vieira de Queiroz were found guilty of committing one of Brazil’s most high-profile political assassinations in recent years, the 2018 killing of Rio de Janeiro city councillor Marielle Franco.\xa0Analysis:Civil society groups have long expressed concern over systemic impunity in Brazil for assassinations motivated by the business interests of criminal organisations perpetrated against social activists and human rights defenders. Franco, affiliated with the left-wing Partido Socialismo e Liberdade (PSOL), was seen as a rising star in Rio’s local political scene for standing up for women’s rights, LGBTQIA+ communities, and people living in favelas, among other traditionally marginalised groups in Rio de Janeiro. Authorities believe that her murder was the result of her resistance to local planning reforms to facilitate real estate deals that would have favoured the interests of paramilitary gangs known as ‘milícias’ and allegedly corrupt politicians. The conviction of Franco’s killers yesterday has been celebrated as a significant milestone in the process towards justice for Franco but calls for justice are likely to continue until the other suspected participants and masterminds of the assassination plot are convicted as well.The Fourth Jury Court in Rio de Janeiro sentenced Lessa, who fired the shots that killed Franco and her driver Anderson Gomes, to 78 years in prison, while De Queiroz, who drove the car during the ambush, was sentenced to 59 years.The pair was found guilty of double homicide with aggravating factors; the attempted homicide of Franco’s former aide, Fernanda Chaves, who was with Franco during the murder and was the only survivor of the attack; and using a stolen vehicle.The court’s ruling yesterday was welcomed by friends, family, and political allies of Franco and the PSOL, including members of the ruling left-wing Partido dos Trabalhadores (PT), such as Franco’s sister, Anielle Franco, the federal minister for racial equality; and Franco’s political mentor Marcelo Freixo, currently the head of the national tourism agency (Embratur) and formerly a Rio state deputy (2007-2019) and federal deputy (2019-2023). Before winning a seat in the Rio city council in the 2016 municipal elections, Marielle Franco worked as an aide in Freixo’s office.The PSOL’s leader in the lower house of congress, federal deputy Erika Hilton, also celebrated the ruling yesterday but she highlighted on social media that this is just one step towards holding the rest of the conspirators to justice. Earlier this year, the federal police (PF) arrested Domingos Brazão, a former Rio state deputy (1999-2015), and his brother, federal deputy João ‘Chiquinho’ Brazão, who served as a Rio city councillor (2005-2019) at the same time as Franco.These suspects are believed by investigators to be the masterminds who planned Franco’s assassination. Both Brazão brothers have moved between centrist and centre-right parties during their political careers, including the Movimento Democrático Brasileiro (MDB) and União Brasil (União). While campaigning for his seat in the Rio state legislative assembly, Domingos Brazão is suspected of having built alliances with milícia gangs in the western zone of Rio. On the Rio city council, tensions reportedly ran high between Chiquinho Brazão and PSOL-affiliated councillors such as Franco when they opposed an initiative he proposed to change local property regulations to allow the construction of luxury condominiums.Looking Ahead: Further investigations and legal proceedings in the Franco murder case will likely involve other suspected accomplices and allies of the Brazão brothers who might also have ties to Rio’s milícias. &#39;,
+  &#39;date&#39;: &#39;1 November 2024&#39;},
+ {&#39;url&#39;: &#39;https://www.latinnews.com//component/k2/item/103500.html?period=2024&amp;archive=26&amp;Itemid=6&amp;cat_id=835049:violence-and-crime-mark-brazil-s-local-elections&#39;,
+  &#39;title&#39;: &#39;Violence and crime mark Brazil’s local elections&#39;,
+  &#39;text&#39;: &#39;Ahead of the first round of Brazil’s municipal elections on 6 October, the president of the superior electoral court (TSE), Cármen Lúcia Antunes Rocha, warned that criminal organisations were trying to “shape our laws”. Authorities such as the TSE have expressed concern over the influence of organised crime over local politics, with some of the candidates running for mayorships or city council seats suspected of having ties to gangs, while other candidates have faced the threat of violence or assassination if they defy the interests of powerful criminal groups.Researchers from the federal university of the state of Rio de Janeiro (Unirio) reported on 19 October that the 2024 local election campaign season has been the most violent on record. From July-September, Unirio’s study counted 338 incidents of violence against candidates and their families. This tally was up 115.3% compared to the previous quarter. Of these incidents 179 cases involved physical violence, 88 involved attempted murder, and 33 were assassinations.The states with the most cases of violence from July-September were the south-eastern states of São Paulo, with 58 incidents, and Rio de Janeiro, with 47. Other states with notable levels of electoral violence were the north-eastern states of Bahia, Ceará, and Paraíba – each registered 23 cases during the quarter. The study showed that candidates across the political spectrum faced the threat of violence. Centre-right party União Brazil (União) faced the most violent incidents, with 41 registered against its candidates; in second place was the left-wing Partido dos Trabalhadores (PT), the party of President Luiz Inácio Lula da Silva, with 39 incidents.Figures collected by Brazilian human rights NGOs Justiça Global and Terra de Direitos also noted that political violence rose significantly after the municipal election campaigns officially began on 16 August. From 1 January-6 October, the NGOs registered 518 incidents of political violence such as threats, assaults, and assassinations, with 373 of these incidents occurring from 16 August-6 October.The human rights groups also noted that 2024 was more violent than the 2022 general election campaign season, which saw the election of a new president, state governors, and legislators in the federal congress. In the 52 days before the first round in 2022, there was an average of two cases of political violence per day, but during the same period in 2024, there was an average of seven incidents per day.Authorities such as the federal police (PF) have been on alert for the risk of violence during the local elections. On 24 September the TSE authorised the deployment of federal security forces, including military units, to bolster security in 12 states on the day of the first-round vote. In addition to violence, security personnel were also on the lookout for coercion or corruption. The PF registered more than 300 incidents of electoral crimes on polling day, including breaches of political advertising rules as well as vote buying.Prior to election day, police detectives investigated suspected corruption schemes involving politicians and criminal gangs. One prominent investigation took place in Paraíba, where the PF launched Operation ‘Território Livre’ (‘Free Territory’) in the state capital, João Pessoa. On 28 September the police arrested Lauremília Lucena, the wife of Cícero Lucena, the mayor of the city of João Pessoa. She has since been released, but still must wear an electronic ankle tag and comply with other restrictions. The mayor’s wife is suspected of participating in a plot involving local organised crime groups to coerce residents in gang-controlled neighbourhoods into supporting her husband’s re-election bid.João Pessoa is not the only mayoral race that has seen candidates faced with allegations of organised crime links. In the country’s largest city, São Paulo, a far-right candidate running in the first round of the mayoral election, Pablo Marçal (Partido Renovador Trabalhista Brasileiro, PRTB), was accused of having ties to one of Brazil’s most powerful drug trafficking organisations (DTOs), the Primeiro Comando da Capital (PCC). However, these links are more in relation to other members of Marçal’s party who have been investigated by the São Paulo state police for allegedly engaging in business deals and schemes with the PCC. Marçal was ultimately knocked out in the first round.The issue of the PCC’s influence on local politics in São Paulo has been a major security concern during the election campaign. One of the alleged PCC-related schemes that gained the most media attention this year was a corruption scandal involving a bus company called Transwolff. The local transport services provider operates buses in the Greater São Paulo metropolitan region. State prosecutors suspect that the PCC has been laundering money through the company since 2015.In April this year, São Paulo state police arrested Transwolff employees suspected of involvement in the money laundering scheme. The municipal government led by Ricardo Nunes (Movimento Democrático Brasileiro, MDB) has faced criticisms for insufficient oversight regarding the Transwolff’s contrct, but he has sought to shift blame onto previous administrations, such as that of former mayor Fernando Haddad (PT, 2013-2017), who is currently Brazil’s finance minister.Pressure on Nunes allyNational media outlets have reported that a company owned by the president of the São Paulo city council, Milton Leite (União), is believed to have received suspicious monthly payments from Transwolff. A key ally of Ricardo Nunes, Leite is regarded as one of the most influential figures in São Paulo’s local politics, and so the suspicions that one of his companies might be part of a web of corruption involving the PCC has raised significant concerns over the power that the DTO holds in the city.Federal political violenceAssassination attempts by gang hitmen against candidates running for higher office, such as the presidency, governorships, or seats in the federal congress and state assemblies, are much less common in Brazil.One of the more memorable incidents in the past decade was the attack against former president Jair Bolsonaro (2019-2023) in September 2018. He was stabbed while on the campaign trail just weeks before the first round of the presidential election, although this attack had no connection to organised crime.The stabbing of the then-presidential candidate was a major story that was covered by national and international media outlets, while an attack against a mayoral candidate in a small city or town would be unlikely to generate the same level of media attention or scrutiny.Although it was not related to an election campaign, the only other act of political violence in 2018 that gained a comparable level of media attention was the killing of Rio de Janeiro city councillor Marielle Franco (2017-2018); an assassination which is suspected to have involved organised crime. Although 2018 saw two high-profile acts of political violence, Terra de Direitas noted that 2022 was worse in terms of the quantity of incidents. January-October 2022 had over 400% more incidents of political violence compared to the whole of 2018. &#39;,
+  &#39;date&#39;: &#39;Security &amp; Strategic Review - November 2024&#39;},
+ {&#39;url&#39;: &#39;https://www.latinnews.com//component/k2/item/103488.html?period=2024&amp;archive=33&amp;Itemid=6&amp;cat_id=835034:brazil-bolsonaro-and-lula-suffer-electoral-setbacks&#39;,
+  &#39;title&#39;: &#39;BRAZIL: Bolsonaro and Lula suffer electoral setbacks&#39;,
+  &#39;text&#39;: &#39;Since the first round of Brazil’s municipal elections on 6 October, the Brazilian media has highlighted the strong results for centrist and conservative parties and the disappointing performances of left-wing mayoral candidates. The second round on 27 October has shown a continuation of victories for moderate conservative candidates in major cities, some of whom defeated far-right rivals.Two notable mayoral races contested between centre-right and far-right candidates were those of Curitiba, the capital of the southern state of Paraná, and Goiânia, the capital of the central state of Goiás. In Curitiba, the victor of the run-off vote was Eduardo Pimentel, the current deputy of incumbent mayor Rafael Greca. Both Pimentel and Greca are affiliated with the big tent party Partido Social Democrático (PSD). The centrist party has this year overtaken another big tent party, the Movimento Democrático Brasileiro (MDB), as the party with the most mayorships in Brazil [WR-24-40]. The PSD’s victory in Curitiba solidifies the party’s presence in Paraná state, the governor of which, Carlos Massa Ratinho Júnior, is also a member of the party.Pimentel won 57.6% of the vote share, defeating Cristina Graeml, of the right-wing Partido da Mulher Brasileira (PMB), who won 42.4%. The right-wing Partido Liberal (PL) of former president Jair Bolsonaro (2019-2023) backed Pimentel’s campaign. However, Bolsonaro himself has a greater affinity with more radical right-wing figures than moderate conservative politicians with centrist inclinations. The far-right former president had previously expressed approval for Graeml, an unofficial endorsement which her campaign team sought to use to her advantage. In October, when PMB members and political canvassers were handing out Graeml flyers and other campaign material in Curitiba, their leaflets and banners included images of both Graeml and Bolsonaro.Graeml’s loss in Curitiba suggests that aligning one’s reputation to the figure of Bolsonaro might not be such an effective vote-winning strategy even in cities like Curitiba which have traditionally favoured conservative politicians at the local and national level. In the second round of the 2022 presidential race, in which Bolsonaro narrowly lost to Luiz Inácio Lula da Silva, he won 64.8% of the vote share in the city of Curitiba. Bolsonaro won a similar level of support in the city of Goiânia in 2022 (around 64% of the second-round vote share). But, in 2024, the right-wing mayoral candidate endorsed by Bolsonaro, the PL’s Fred Rodrigues, lost in the run-off to centre-right rival Sandro Mabel, of União Brasil (União). Mabel, who won 55.5% of the votes, had the backing of the União-affiliated governor of Goiás state, Ronaldo Caiado.Fractures in the Brazilian rightThe mayoral races in Curitiba and Goiânia illustrate the divisions on the Brazilian right. Political pundits describe two types of conservative politicians in Brazil today. On the one hand, there are figures labelled as part of the ‘direita das redes’ (‘social media right-wing’) and, on the other hand, there is the ‘direita da máquina’ (‘the establishment right-wing’). The 2024 municipal elections represented a boost for the direita da máquina, with victories for moderate conservative mayors of a more technocratic profile, with strong ties to the incumbent mayor or the right-of-centre governors of their states.The mayoral race in the country’s largest city, São Paulo, was an emblematic case showing the strength of the direita da máquina. The main figure associated with the direita das redes was far-right candidate Pablo Marçal (Partido Renovador Trabalhista Brasileiro, PRTB), an online influencer with a bombastic, provocative personal style resembling that of Bolsonaro. Marçal finished in third place in the first round, behind left-wing candidate Guilherme Boulos (Partido Socialismo e Liberdade, PSOL) and the centre-right incumbent Ricardo Nunes (MDB). Even though Nunes had the backing of the PL, Bolsonaro was not his main political patron. It was the governor of São Paulo state, Tarcísio de Freitas, of the conservative Republicanos party, who most enthusiastically backed the mayor’s re-election bid.On 27 October Nunes won re-election with 59.35% of the votes, while Boulos, who had President Lula’s endorsement, won only 40.65%. Much like Nunes, De Freitas is an ally of Bolsonaro but has a less confrontational and more pragmatic style; his state government has been willing to cooperate with Lula’s left-of-centre federal government on certain issues. Nunes’ victory has to some extent been attributed to the active support of the governor, unlike Bolsonaro, who only made one in-person appearance with Nunes in October, at a campaign event less than a week before the run-off vote.The victories of direita da máquina mayoral candidates, such as the MDB’s Nunes and the PSD’s Pimentel, has raised questions about the future complexion of the Brazilian right. Some media commentators have speculated whether this signals the decline of the figures associated with Bolsonaro and the direita das redes, while others have argued that the far-right populist ‘Bolsonarismo’ movement is still an influential force in the political mainstream, that centre-right establishment candidates greatly benefited from forging alliances with the PL or taking on board more radical Bolsonarista figures as their running mates. For example, Nunes’ new deputy mayor will be the PL-affiliated former police officer Ricardo Mello Araújo, who previously led the Rota special operations unit of the São Paulo military police force, a unit which has faced accusations of police brutality.Losses for the leftOf Brazil’s 26 state capitals, only one city elected a far-right mayor in the second round. In Cuiabá, the capital of the central-western state Mato Grosso, the PL’s Abílio Brunini won 53.8% of the vote share. He defeated Lúdio Cabral, a member of Lula’s left-wing Partido dos Trabalhadores (PT). Candidates affiliated with the PT made it to the second round in three other state capitals. They lost in Porto Alegre, the capital of the southern state of Rio Grande do Sul, and in Natal, the capital of the north-eastern state of Rio Grande do Norte. In Porto Alegre, the centre-right incumbent Sebastião Melo (MDB) was re-elected with 61.5% of the votes, while the PT’s Maria do Rosário only won 38.5%. In Natal, the PT’s Natália Bonavides won only 44.7% of the votes, losing to centre-right candidate Paulinho Freire (União).The only state capital which elected a PT-affiliated mayor was Fortaleza, the capital of the north-eastern state of Ceará. The city’s new mayor, Evandro Leitão, only narrowly won the run-off, with 50.4% of the vote share, against the PL’s André Fernandes. One of Leitão’s main political allies in his mayoral campaign was federal deputy José Guimarães (PT), the leader of the governing coalition in the lower chamber of congress.Leitão’s victory could boost Guimarães’ chances of succeeding Gleisi Hoffmann as the PT’s national party president next year. Guimarães’ main rival in the party leadership race is reportedly Edinho Silva, the outgoing mayor of Araraquara, a municipality in São Paulo state. However, the PT’s mayoral candidate in Araraquara chosen to be Silva’s successor, Eliana Honain, lost the election in the first round to the PL’s Luis Cláudio Lapena Barreto. His failure to secure the election of his handpicked successor could signal that Silva might have less political clout than previously expected.Northern capitalsIn the second round of the mayoral elections, the capital cities of Amazonas and Pará, the two largest states of northern Brazil, chose centrist candidates instead of their right-wing rivals. In Belém, the capital of Pará, the MDB’s Igor Normando (MDB) won 56.4% of the vote against the PL’s Éder Mauro. Meanwhile, in Manaus, the capital of Amazonas, the incumbent David Almeida, affiliated with the centrist Avante party, won re-election with 54.9% of the vote, defeating the PL’s Alberto Neto.PT factional rivalries \xa0The minister for institutional relations, Alexandre Padilha (PT), expressed disappointment on 28 October at the party’s performance in the municipal elections. However, the PT’s national party president, Gleisi Hoffmann, took to social media to criticise Padilha for making disrespectful comments about the party. According to reports in the national press, this public spat between Hoffmann and Padilha comes amid simmering tensions over the PT’s party leadership race next year. Hoffmann would reportedly prefer a successor who is from the northeast, such as federal deputy José Guimarães. Padilha, on the other hand, is aligned with a faction backing the bid of Edinho Silva, the outgoing mayor of Araraquara, São Paulo state. \xa0 &#39;,
+  &#39;date&#39;: &#39;Weekly Report - 31 October 2024 (WR-24-43)&#39;},
+ {&#39;url&#39;: &#39;https://www.latinnews.com//component/k2/item/103483.html?period=2024&amp;archive=3&amp;Itemid=6&amp;cat_id=835027:brazil-alleged-killers-of-marielle-franco-stand-trial&#39;,
+  &#39;title&#39;: &#39;BRAZIL: Alleged killers of Marielle Franco stand trial&#39;,
+  &#39;text&#39;: &#39;On 30 October a court in Brazil’s Rio de Janeiro state began the\xa0trial of\xa0Ronnie Lessa and Élcio Vieira de Queiroz, the alleged perpetrators of one of the country’s most high-profile political assassinations, that of Rio de Janeiro city councillor Marielle Franco in 2018.Analysis:Over six years after Franco and her driver Anderson Gomes were gunned down by Lessa, who has confessed to pulling the trigger, the start of the trial of her alleged killers has been hailed as a welcome step by Franco’s family and loved ones. At the end of September, another court in Rio convicted an accomplice in the assassination plot, but the trial of Lessa and De Queiroz has generated more attention, with a crowd of demonstrators outside the courthouse yesterday calling for “justice for Marielle and Anderson”. The trudge towards justice might be a slow process, though, given that one of the alleged masterminds behind the murder is federal deputy João\xa0‘Chiquinho’ Brazão, of the centre-right União Brasil party (União). The process for a member of congress to stand trial falls within the remit of the supreme court (STF). The lead judge of this highly politicised case, STF justice Alexandre de Moraes, is likely to face more hostility from Brazão’s allies and from right-wing figures if proceedings against him advance.Testifying remotely by video link in the court session yesterday, Lessa confirmed the testimony he provided as part of a plea bargain deal agreed earlier this year. He admitted again that, as a contract killer, he was hired to shoot Franco and Anderson, while De Queiroz drove the car to carry out the ambush.A friend and former colleague of Marielle Franco, Marcelo Freixo, currently serving as the head of national tourism agency (Embratur), expressed outrage yesterday at Lessa’s cold, casual tone, describing the assassination as if it were just another job.Yesterday Freixo highlighted the importance of the Franco case in the fight against impunity for organised crime. Formerly a Rio state deputy (2007-2019), Freixo rose to prominence when he led the state legislative assembly’s inquiry in 2008 into the activities of paramilitary gangs known as ‘milícias’. Lessa was a notorious hitman in Rio’s criminal underworld with ties to such groups.Looking Ahead: The trial is continuing today (31 October). For their alleged role in the plot, each defendant could reportedly face up to 84 years in prison. &#39;,
+  &#39;date&#39;: &#39;31 October 2024&#39;},
+ {&#39;url&#39;: &#39;https://www.latinnews.com//component/k2/item/103481.html?period=2024&amp;archive=3&amp;Itemid=6&amp;cat_id=835027:in-brief-brazil-s-gov-t-boosts-investment-for-industrial-sector&#39;,
+  &#39;title&#39;: &#39;In brief: Brazil’s gov’t boosts investment for industrial sector&#39;,
+  &#39;text&#39;: &#39;*Brazil’s President Luiz Inácio Lula da Silva and other cabinet ministers have announced that the government will invest R$1.6trn (US$278bn) in a programme aimed at revitalising the country’s industrial sector. The Nova Indústria Brasil (NIB) plan was first launched in January with an initial investment of R$300bn, but this latest investment marks a significant boost for the initiative and will largely contribute to ‘Mission 3’ of the NIB’s pillars, which covers housing, sewage, and other urban infrastructure. Of the R$1.6trn, 75% will come from private investment. Several Brazilian business associations confirmed that companies will invest over R$1trn over the next five years. Projects involving public transport, sanitation, ports, airports, and roads, among other infrastructure, will receive R$833bn, while housing will be allocated R$222.5bn. &#39;,
+  &#39;date&#39;: &#39;31 October 2024&#39;}]</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># conver to a dataframe</span>
@@ -21090,7 +21214,7 @@ https://www.latinnews.com/latinnews-country-database.html?country=2156
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[14]:</div>
+    <div class="prompt output_prompt">Out[13]:</div>
 
 
 
@@ -21122,72 +21246,72 @@ https://www.latinnews.com/latinnews-country-database.html?country=2156
     <tr>
       <th>0</th>
       <td>https://www.latinnews.com//component/k2/item/1...</td>
-      <td>BRAZIL: Tensions with Venezuela escalate</td>
-      <td>On 2 November the Venezuelan foreign ministr...</td>
-      <td>4 November 2024</td>
+      <td>BRAZIL: Police concludes probe on high-profile...</td>
+      <td>On 4 November Brazil’s federal police (PF) ann...</td>
+      <td>5 November 2024</td>
     </tr>
     <tr>
       <th>1</th>
+      <td>https://www.latinnews.com//component/k2/item/1...</td>
+      <td>In brief: Brazil’s Itaú posts higher profits i...</td>
+      <td>*Brazilian private bank Itaú Unibanco has rele...</td>
+      <td>5 November 2024</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>https://www.latinnews.com//component/k2/item/1...</td>
+      <td>BRAZIL: Tensions with Venezuela escalate</td>
+      <td>On 2 November the Venezuelan foreign ministry ...</td>
+      <td>4 November 2024</td>
+    </tr>
+    <tr>
+      <th>3</th>
       <td>https://www.latinnews.com//component/k2/item/1...</td>
       <td>In brief: Brazil’s industrial production up in...</td>
       <td>*Brazil’s national statistics institute (Ibge)...</td>
       <td>4 November 2024</td>
     </tr>
     <tr>
-      <th>2</th>
+      <th>4</th>
       <td>https://www.latinnews.com//component/k2/item/1...</td>
       <td>In brief: Brazil’s unemployment down in Q3</td>
       <td>*Brazil’s national statistics institute (Ibge)...</td>
       <td>1 November 2024</td>
     </tr>
     <tr>
-      <th>3</th>
+      <th>5</th>
       <td>https://www.latinnews.com//component/k2/item/1...</td>
       <td>BRAZIL: Court convicts killers of Marielle Franco</td>
-      <td>On 31 October former policemen Ronnie Lessa ...</td>
+      <td>On 31 October former policemen Ronnie Lessa an...</td>
       <td>1 November 2024</td>
     </tr>
     <tr>
-      <th>4</th>
+      <th>6</th>
       <td>https://www.latinnews.com//component/k2/item/1...</td>
       <td>Violence and crime mark Brazil’s local elections</td>
       <td>Ahead of the first round of Brazil’s municipal...</td>
       <td>Security &amp; Strategic Review - November 2024</td>
     </tr>
     <tr>
-      <th>5</th>
+      <th>7</th>
       <td>https://www.latinnews.com//component/k2/item/1...</td>
       <td>BRAZIL: Bolsonaro and Lula suffer electoral se...</td>
       <td>Since the first round of Brazil’s municipal el...</td>
       <td>Weekly Report - 31 October 2024 (WR-24-43)</td>
     </tr>
     <tr>
-      <th>6</th>
-      <td>https://www.latinnews.com//component/k2/item/1...</td>
-      <td>BRAZIL: Alleged killers of Marielle Franco sta...</td>
-      <td>On 30 October a court in Brazil’s Rio de Jan...</td>
-      <td>31 October 2024</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>https://www.latinnews.com//component/k2/item/1...</td>
-      <td>In brief: Brazil’s gov’t boosts investment for...</td>
-      <td>*Brazil’s President Luiz Inácio Lula da Silva ...</td>
-      <td>31 October 2024</td>
-    </tr>
-    <tr>
       <th>8</th>
       <td>https://www.latinnews.com//component/k2/item/1...</td>
-      <td>BRAZIL: Lower house president stalls bill to p...</td>
-      <td>On 29 October the president of Brazil’s lowe...</td>
-      <td>30 October 2024</td>
+      <td>BRAZIL: Alleged killers of Marielle Franco sta...</td>
+      <td>On 30 October a court in Brazil’s Rio de Janei...</td>
+      <td>31 October 2024</td>
     </tr>
     <tr>
       <th>9</th>
       <td>https://www.latinnews.com//component/k2/item/1...</td>
-      <td>In brief: Brazil’s current account deficit up ...</td>
-      <td>*Brazil’s central bank (BCB) has released its ...</td>
-      <td>30 October 2024</td>
+      <td>In brief: Brazil’s gov’t boosts investment for...</td>
+      <td>*Brazil’s President Luiz Inácio Lula da Silva ...</td>
+      <td>31 October 2024</td>
     </tr>
   </tbody>
 </table>
