@@ -2306,8 +2306,8 @@
     "objectID": "slides/week-8.html#you-project-proposal",
     "href": "slides/week-8.html#you-project-proposal",
     "title": " PPOL 5203 - Data Science I: Foundations ",
-    "section": "You Project Proposal",
-    "text": "You Project Proposal\n\n\n\nRequirement\nDue\nLength\nPercentage\n\n\n\n\nProject Proposal\nNovember 15\n2 pages\n5%\n\n\nPresentation\nDecember 10\n10-15 minutes\n10%\n\n\nProject Report\nDecember 17\n10 pages\n25%\n\n\n\n\n\n\nGroups of three students. You pick your groups. Add your groups here: https://docs.google.com/spreadsheets/d/1tXCNbAV-vpCMA96OZ0yy_E1quHUhSPuwSrFZ6_SafDk/edit?gid=0#gid=0\nYou should have meet with me to discuss your proposal.\nAt lest one hour before our meeting, send me a draft of your proposal.\nSend me an email with your group and when you are going to my office hours.\nOur meeting should happen before November 12. You have three office hours to go!"
+    "section": "",
+    "text": "Requirement\nDue\nLength\nPercentage\n\n\n\n\nProject Proposal\nNovember 15\n2 pages\n5%\n\n\nPresentation\nDecember 10\n10-15 minutes\n10%\n\n\nProject Report\nDecember 17\n10 pages\n25%\n\n\n\n\n\n\nGroups of three students. You pick your groups. Add your groups here: https://docs.google.com/spreadsheets/d/1tXCNbAV-vpCMA96OZ0yy_E1quHUhSPuwSrFZ6_SafDk/edit?gid=0#gid=0\nYou should have meet with me to discuss your proposal.\nAt lest one hour before our meeting, send me a draft of your proposal.\nSend me an email with your group and when you are going to my office hours.\nOur meeting should happen before November 12. You have three office hours to go!"
   },
   {
     "objectID": "slides/week-8.html#two-ways-to-access-data-from-the-web",
@@ -2419,7 +2419,7 @@
     "href": "lecture_notes/week-10/solution_in_class.html",
     "title": "Practice",
     "section": "",
-    "text": "import matplotlib.pyplot as plt\n\ndiabetes[\"ols_pred\"] = model_ols.fittedvalues\n\n# plot\n(ggplot(diabetes, aes(y=\"ols_pred\", x=\"target\")) +\n geom_point() +\n geom_abline(intercept = 0, slope = 1, size = 0.5)\n \n)\nIn groups, read the sklearn documentation or check the slide with models I show you in class.\nPick a additional model from the sklearn. Compare this model with the three models I showed you in this notebook\nFeel free to copy and paste the code above, and add your new model and compare the results."
+    "text": "import matplotlib.pyplot as plt\nmodel_ols_int2= smf.ols(formula='target ~ age + sex + bmi + bp + age*bmi + age*sex', data=diabetes).fit()\nprint(\"R2: \", model_ols_int2.rsquared)\n\ndiabetes[\"ols_pred\"] = model_ols_int2.fittedvalues\n\n# plot\n(ggplot(diabetes, aes(y=\"ols_pred\", x=\"target\")) +\n geom_point() +\n geom_abline(intercept = 0, slope = 1, size = 0.5) +\n ylim(0,350) +\n xlim(0,350)\n)\n\nNameError: name 'smf' is not defined\nIn groups, read the sklearn documentation or check the slide with models I show you in class.\nPick a additional model from the sklearn. Compare this model with the three models I showed you in this notebook\nFeel free to copy and paste the code above, and add your new model and compare the results."
   },
   {
     "objectID": "lecture_notes/week-10/solution_in_class.html#add-your-code",
@@ -2427,5 +2427,208 @@
     "title": "Practice",
     "section": "add your code",
     "text": "add your code"
+  },
+  {
+    "objectID": "slides/week-10.html#where-we-are",
+    "href": "slides/week-10.html#where-we-are",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Where we are…",
+    "text": "Where we are…\n\nWe started data science workflow (git) and best practices\nWe moved over to the primitives of Python as your main DS tool\nLearned how to work with tabular data using Numpy, Pandas and plotnine\nThen we moved to unestructured data sources:\n\nCollect/parse digital data (website, Apis, and dynamic websites)\n\nToday: we will learn how to build statistical models in Python.\n\nIntro do DS II x But important for you to build an foundation of Data Science."
+  },
+  {
+    "objectID": "slides/week-10.html#plans-for-today",
+    "href": "slides/week-10.html#plans-for-today",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Plans for Today",
+    "text": "Plans for Today\n\nIntroduction to Machine Learning\n\nStatistical Learning\nInference vs Predictive Modeling\nMachine Learning:\n\nSupervised vs Unsupervised\nTraining models\nBias and Variance Trade-off\n\nCoding"
+  },
+  {
+    "objectID": "slides/week-10.html#statistical-models",
+    "href": "slides/week-10.html#statistical-models",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Statistical Models",
+    "text": "Statistical Models\nSocial Scientists are often interested in very complex questions. To answer them, we build models:\n\nA model is “a simplified representation of the reality created to serve a purpose.” (Provost & Fawcett 2013)\n\nBy definition:\n\nmodels are a simplification.\nmodels highlight key aspects of our theory.\nmodels are all wrong, but some are useful."
+  },
+  {
+    "objectID": "slides/week-10.html#models-components",
+    "href": "slides/week-10.html#models-components",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Model’s Components",
+    "text": "Model’s Components\nThe aim is to model the relationship between the outcome and some set of variables:\n\\[ y = f(X) + \\sigma\\]\nWhere:\n\n\\(y\\) is the outcome/dependent/response variable\n\\(X\\) is a matrix of predictors/features/independent variables\n\\(f()\\) is some fixed but unknown function mapping X to y. The signal in the data\n\\(\\sigma\\) is some random error term. The “noise” in the data."
+  },
+  {
+    "objectID": "slides/week-10.html#statistical-learning-1",
+    "href": "slides/week-10.html#statistical-learning-1",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Statistical Learning",
+    "text": "Statistical Learning\nStatistical learning refers to a set of methods/approaches for estimating \\(f(.)\\)\n\\[ \\hat{y} = \\hat{f}(X)\\]\n\nWhere \\(\\hat{f}(X)\\) is an approximation of the “true” functional form, \\(f(X)\\)\n\\(\\hat{y}\\) is the predicted value of a true value y.\nWhen we build models, the aim is to find a \\(\\hat{f}(X)\\) that minimizes the error in the model."
+  },
+  {
+    "objectID": "slides/week-10.html#reducible-vs.-irreducible-error",
+    "href": "slides/week-10.html#reducible-vs.-irreducible-error",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Reducible vs. Irreducible Error",
+    "text": "Reducible vs. Irreducible Error\n\\[E(y - \\hat{y})^2\\] \\[E[f(X) + \\epsilon -  \\hat{f}(X) ]^2\\]\n\\[\\underbrace{E[f(X) -\\hat{f}(X)]^2}_{\\text{Reducible}} + \\underbrace{var(\\epsilon)}_{\\text{Irreducible}}\\]\n\nThe “reducible” error is the systematic signal. We can reduce this error by using different functional forms, better data, or a mixture of those two.\nThe “irreducible” error is associated with the random noise around \\(y\\).\nStatistical learning is concerned with minimizing the reducible error.\nOur predictions will never be perfect given the irreducible error."
+  },
+  {
+    "objectID": "slides/week-10.html#inference-social-science-vs-prediction-machine-learning",
+    "href": "slides/week-10.html#inference-social-science-vs-prediction-machine-learning",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Inference (Social Science) vs Prediction (Machine Learning)",
+    "text": "Inference (Social Science) vs Prediction (Machine Learning)\nTwo reasons we want to estimate \\(f(\\cdot)\\):\n\nInference\n\nGoal is interpretation\n\nWhich predictors are associated with the response?\nWhat is the relationship (parameters) between the response and the predictors?\nIs the relationship causal?\n\n Key limitation:\n\nusing functional forms that are easy to interpret (e.g. lines) might be far away from the true function form of \\(f(X)\\).\n\nClassic Social Science Approach:\n\nExample: Which socio and demographic features correlates with voting turnout? Education? Gender? Age?\n\n\n\n\\[ y_i = \\beta_1*education_i + beta_2*gender_i + \\sigma_i \\]"
+  },
+  {
+    "objectID": "slides/week-10.html#inference-social-science-vs-prediction-machine-learning-1",
+    "href": "slides/week-10.html#inference-social-science-vs-prediction-machine-learning-1",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Inference (Social Science) vs Prediction (Machine Learning)",
+    "text": "Inference (Social Science) vs Prediction (Machine Learning)\n\nPrediction\n\nGoal is to predict values of the outcome, \\(\\hat{y}\\)\n\\(\\hat{f}(X)\\) is treated as a black box\n\nmodel doesn’t need to be interpretable as long as it provides an accurate prediction of \\(y\\).\n\n Key limitation:\n\nInterpretation: it is difficult to know which variables are doing the heavy lifting and the exact influence of \\(x\\) on \\(y\\).\n\nExample: giving a k number of features, and all possible interactions between them,how likely is each voter i to turnout?\nThis is the machine learning tradition/predictive modeling/AI\n\n\n\\[ y_i = \\hat{f}(X) + \\sigma_i \\]"
+  },
+  {
+    "objectID": "slides/week-10.html#supervised-and-unsupervised-learning",
+    "href": "slides/week-10.html#supervised-and-unsupervised-learning",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Supervised and Unsupervised Learning",
+    "text": "Supervised and Unsupervised Learning\n\nSupervised Learning (DS II)\n\nfor each observation of the predictor measurement \\(x_i\\) there is an associated response measurement \\(y_i\\). In essence, there is an outcome we are aiming to accurately predict or understand.\nQuantitative outcome: Regression Models ~ linear, penalization, generalized additive models\nQualitative Outcomes: Classification methods ~ logistic regression, naive Bayes, support vector machines, neural networks"
+  },
+  {
+    "objectID": "slides/week-10.html#unsupervised",
+    "href": "slides/week-10.html#unsupervised",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Unsupervised",
+    "text": "Unsupervised\n\nUnsupervised Learning (DS III)\n\nwe observe a vector of measurements \\(x_i\\) but no associated response \\(y_i\\).\n“unsupervised” because we lack a response variable that can supervise our analysis."
+  },
+  {
+    "objectID": "slides/week-10.html#supervised-learning-regression",
+    "href": "slides/week-10.html#supervised-learning-regression",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Supervised Learning: Regression",
+    "text": "Supervised Learning: Regression\nOutcomes come in many forms. How the outcome are distributed will determine the methods we use.\n\nQuantitative outcome\n\na continuous/interval-based outcome: e.g. housing price, number of bills passed, stock market prices, etc.\nRegression Methods: linear, penalization, generalized additive models (GAMs)\nBoth parametric and non-parametric ways of approximating \\(f(\\cdot)\\)"
+  },
+  {
+    "objectID": "slides/week-10.html#supervised-learning-classification",
+    "href": "slides/week-10.html#supervised-learning-classification",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Supervised Learning: Classification",
+    "text": "Supervised Learning: Classification\nOutcomes come in many forms. How the outcome is distributed will determine the methods we use.\n\nQualitative outcome\n\na discrete outcome\n\nBinary: War/No War; Sick/Not Sick\nOrdered: Don’t Support, Neutral, Support\nCategorical: Cat, Dog, Bus, …\n\nClassification Methods: logistic regression, naive Bayes, support vector machines, neural networks\n\nSome methods can be used on either outcome type\n\nK nearest neighbors\ntree-based methods (random forest, gradient boosting)\n\nEvery model has specific tuning parameters that we can use to optimize performance."
+  },
+  {
+    "objectID": "slides/week-10.html#interpretation-vs-flexibility",
+    "href": "slides/week-10.html#interpretation-vs-flexibility",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Interpretation vs Flexibility",
+    "text": "Interpretation vs Flexibility\n\n\n\n“There is no free lunch in statistics”\n\n\nNo one method dominates all others over all possible data sets.\nIt is an important task to decide for any given set of data which method produces the best results\nBalance between model interpretation and model flexibility"
+  },
+  {
+    "objectID": "slides/week-10.html#building-ml-model-what-does-learning-mean",
+    "href": "slides/week-10.html#building-ml-model-what-does-learning-mean",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Building ML Model: What does learning mean?",
+    "text": "Building ML Model: What does learning mean?\nFor inference work (in you stats class), you get some data, and you estimate a model using the entire data. This is not what we do in machine learning.\n\nMain objective: predict data accurately by learning from previously seen data\nGoal:\n\ncapture signal in the best way possible \\(f(X)\\)\nIgnore noise (irreducible error)"
+  },
+  {
+    "objectID": "slides/week-10.html#train-the-model",
+    "href": "slides/week-10.html#train-the-model",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Train the model",
+    "text": "Train the model\nThe purpose of training the model is to capture signal and ignore noise.\nTo do so:\n\nDefine a accuracy metric:\n\nIn the regression setting, the most common accuracy metric is mean squared error (MSE).\n\\(Mean Squared Error = \\frac{\\sum^N_{i=1} (y_i - \\hat{f}(X_i))^2}{N}\\)\n\nTrain-Test Split\n\nSplit your data between training and test\nTraining data: find the best model and tune the parameters of these models\nTest data: assess the accuracy of your model.\n\nSelect the model based on smaller out of sample predictive accuracy.\nWhat is learned?\n\nModel type\nFeatures (variables)\nHyper-Parameters"
+  },
+  {
+    "objectID": "slides/week-10.html#workflow",
+    "href": "slides/week-10.html#workflow",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Workflow",
+    "text": "Workflow\n\n\n\n\n\n\n\nsource: https://cimentadaj.github.io/ml_socsci/"
+  },
+  {
+    "objectID": "slides/week-10.html#challenge-avoid-overfitting-the-data",
+    "href": "slides/week-10.html#challenge-avoid-overfitting-the-data",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Challenge: avoid overfitting the data",
+    "text": "Challenge: avoid overfitting the data"
+  },
+  {
+    "objectID": "slides/week-10.html#mse-training-data",
+    "href": "slides/week-10.html#mse-training-data",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "MSE Training Data",
+    "text": "MSE Training Data"
+  },
+  {
+    "objectID": "slides/week-10.html#model-accuracy-out-sample-prediction",
+    "href": "slides/week-10.html#model-accuracy-out-sample-prediction",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Model Accuracy: Out-Sample Prediction",
+    "text": "Model Accuracy: Out-Sample Prediction"
+  },
+  {
+    "objectID": "slides/week-10.html#bias-and-variance-trade-off",
+    "href": "slides/week-10.html#bias-and-variance-trade-off",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Bias and Variance Trade-off",
+    "text": "Bias and Variance Trade-off\n\n\nBias: Difference \\(Y\\) and \\(\\hat{Y}\\)\n\nHigh Bias ~ Underfitting, rigid models\nLow Bias ~ Overfitting, flexible models\n\nVariance: Sensitivity to fluctuations in the training data\n\nHigh Variance ~ huge error when new data is seen (usually associated with low bias)\nLow Variance ~ Small error when new data is seen (usually associated with high bias)\n\nTrade-off: as we reduce bias, we risk overfiting. Training properly is key to find a middle-of-the-road solution."
+  },
+  {
+    "objectID": "slides/week-10.html#cross-validation",
+    "href": "slides/week-10.html#cross-validation",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Cross-Validation",
+    "text": "Cross-Validation\nIf you go back and forth between training and test to decide which model to use, you might also be over-fitting. This is the idea of data leakage.\n\nWe can use re-sampling techniques to generate estimates for the test error.\n“Re-sampling” involves repeatedly drawing samples from a training set and refitting a model of interest on each sample in order to obtain additional information about the fitted model.\nWe can use re-sampling techniques to generate estimates for the test error."
+  },
+  {
+    "objectID": "slides/week-10.html#k-fold-cross-validation",
+    "href": "slides/week-10.html#k-fold-cross-validation",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "K-Fold Cross Validation",
+    "text": "K-Fold Cross Validation\n\nK-Fold Cross Validation involves randomly dividing the data into \\(k\\) groups (or folds). Model is trained on \\(k-1\\) folds, then test on the remaining fold.\nProcess is repeated \\(k\\) times, each time using a new fold. Offers \\(k\\) estimates of the test error, which we average."
+  },
+  {
+    "objectID": "slides/week-10.html#important-concepts",
+    "href": "slides/week-10.html#important-concepts",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Important Concepts",
+    "text": "Important Concepts\n\nInference vs Prediction\nPrediction: black-box function, highly flexible to reduce error.\nLearning: train the model in seen data. Test and calculate metrics in seen\nAvoid overfitting and data leakage by using resampling methods."
+  },
+  {
+    "objectID": "slides/week-10.html#coding",
+    "href": "slides/week-10.html#coding",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Coding!",
+    "text": "Coding!\n\n\nData science I: Foundations"
+  },
+  {
+    "objectID": "slides/week-10.html#types-of-models",
+    "href": "slides/week-10.html#types-of-models",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Types of Models",
+    "text": "Types of Models"
+  },
+  {
+    "objectID": "slides/week-10.html#machine-learning-what-doeslearning-mean",
+    "href": "slides/week-10.html#machine-learning-what-doeslearning-mean",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Machine Learning: what doeslearning mean?",
+    "text": "Machine Learning: what doeslearning mean?\nFor inferential work (in your stats class), you get some data, and you estimate a model using the entire data. This is not what we do in machine learning.\n\nMain objective: predict data accurately by learning from previously seen data\nGoal:\n\ncapture signal in the best way possible \\(f(X)\\)\nIgnore noise (irreducible error)\n\nWhere learning happens?\n\nModel type\nFeatures (variables)\nHyper-Parameters"
+  },
+  {
+    "objectID": "slides/week-10.html#workflow-inference-vs-ml",
+    "href": "slides/week-10.html#workflow-inference-vs-ml",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Workflow: Inference vs ML",
+    "text": "Workflow: Inference vs ML\n\n\n\n\n\n\n\nsource: https://cimentadaj.github.io/ml_socsci/"
+  },
+  {
+    "objectID": "slides/week-10.html#a-machine-learning-pipeline",
+    "href": "slides/week-10.html#a-machine-learning-pipeline",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "A Machine Learning Pipeline",
+    "text": "A Machine Learning Pipeline\nThe purpose of training the model is to capture signal and ignore noise.\nTo do so:\n\nDefine a accuracy metric:\n\nIn the regression setting, the most common accuracy metric is mean squared error (MSE).\nMean Squared Error = \\(\\frac{\\sum^N_{i=1} (y_i - \\hat{f}(X_i))^2}{N}\\)\n\nTrain-Test Split\n\nSplit your data between training and test\nTraining data: find the best model and tune the parameters of these models\nTest data: assess the accuracy of your model.\n\nSelect the model based on smaller out of sample predictive accuracy, using UNSEEN data."
+  },
+  {
+    "objectID": "slides/week-10.html#machine-learning-what-does-learning-mean",
+    "href": "slides/week-10.html#machine-learning-what-does-learning-mean",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Machine Learning: what does learning mean?",
+    "text": "Machine Learning: what does learning mean?\nFor inferential work (in your stats class), you get some data, and you estimate a model using the entire data. This is not what we do in machine learning.\n\nMain objective: predict responses (from new data) accurately by learning from previously seen data\nGoal:\n\ncapture signal in the best way possible \\(f(X)\\)\nIgnore noise (irreducible error)\n\nWhere learning happens?\n\nModel type\nFeatures (variables)\nHyper-Parameters"
   }
 ]
