@@ -15,37 +15,47 @@ format:
     height: 1200
     center: true
     slide-number: true
-    incremental: false
+    incremental: true
     chalkboard: 
       buttons: false
     preview-links: auto
     footer: "Data science I: Foundations"
     theme: [simple, custom.scss]
+    html-math-method:
+      method: mathjax
+      url: "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"
 ---
 
 ## Where we are...
 
+::: nonincremental
 -   We started data science workflow (git) and best practices
 
 -   We moved over to the primitives of Python as your main DS tool
 
 -   Learned how to work with tabular data using Numpy, Pandas and plotnine
 
--   Then we moved to unestructured data sources: 
+-   Then we moved to unestructured data sources:
 
     -   Collect/parse digital data (website, Apis, and dynamic websites)
-    
+
 -   [Today: we will learn how to build statistical models in Python]{.red}.
 
-    - Intro do DS II x But important for you to build an foundation of Data Science. 
+    -   Intro to DS II.
+
+    -   Foundational DS Knowledge.
+
+    -   Basis for the last two lecture on working with textual data.
+:::
 
 ## Plans for Today
 
+::: nonincremental
 -   Introduction to Machine Learning
 
     -   Statistical Learning
 
-    -   Inference vs Predictive Modeling
+    -   Inferential Models vs Predictive Models
 
     -   Machine Learning:
 
@@ -54,29 +64,49 @@ format:
         -   Bias and Variance Trade-off
 
     -   Coding
+:::
 
+## Logistics
 
-# Statistical Learning
+::: nonincremental
+-   Your problem set 3 has been graded.
 
-## Statistical Models
+    -   Comments on GitHub
 
-Social Scientists are often interested in very complex questions. To answer them, we build models:
+    -   Grades on Canvas
+
+-   The problem set 5 will be posted today, it is due next Friday, Nov 22.
+
+-   Your project proposal is due this Friday, Nov 15.
+
+    -   If you still have not done, remember we should meet and discuss your draft before submission.
+
+    -   Ideally at office hours today!
+:::
+
+# Introduction to Machine Learning
+
+## What is a Model?
 
 > A model is "a simplified representation of the reality created to serve a purpose." (Provost & Fawcett 2013)
 
-By definition:
+-   As social scientists, we are often interested in answering **complex** questions about human behavior. To answer them, we build models (theoretical and statistical).
 
--   models are a simplification.
+-   By definition:
 
--   models highlight key aspects of our theory.
+    -   Models are always a simplification of reality.
 
--   models are all wrong, but some are useful.
+        -   We simplify so that we can understand and generalize a complex social process.
 
-## Model's Components
+    -   Models' components come from assumptions we make about the world.
 
-The aim is to model the relationship between the outcome and some set of variables:
+    -   Models are all wrong, but some are useful.
 
-$$ y = f(X) + \sigma$$
+## An Statistical Model
+
+The aim of statistical models is to estimate the relationship between the outcome and some set of variables:
+
+$$ y = f(X) + \epsilon$$
 
 **Where:**
 
@@ -84,9 +114,9 @@ $$ y = f(X) + \sigma$$
 
 -   $X$ is a matrix of predictors/features/independent variables
 
--   $f()$ is some fixed but unknown function mapping X to y. The signal in the data
+-   $f()$ is some fixed but unknown function mapping X to y. The "signal" in the data
 
--   $\sigma$ is some random error term. The "noise" in the data.
+-   $\epsilon$ is some random error term. The "noise" in the data.
 
 ## Statistical Learning
 
@@ -98,13 +128,15 @@ $$ \hat{y} = \hat{f}(X)$$
 
 -   $\hat{y}$ is the predicted value of a true value y.
 
--   When we build models, the aim is to find a $\hat{f}(X)$ that minimizes the error in the model.
-
 ## Reducible vs. Irreducible Error
 
+-   When we build models, the aim is to find a $\hat{f}(X)$ that minimizes the error in the model.
+
+::: fragment
 $$E(y - \hat{y})^2$$ $$E[f(X) + \epsilon -  \hat{f}(X) ]^2$$
 
 $$\underbrace{E[f(X) -\hat{f}(X)]^2}_{\text{Reducible}} + \underbrace{var(\epsilon)}_{\text{Irreducible}}$$
+:::
 
 -   The **"reducible" error** is the systematic **signal**. We can reduce this error by using different functional forms, better data, or a mixture of those two.
 
@@ -131,10 +163,12 @@ Two reasons we want to estimate $f(\cdot)$:
         -   using functional forms that are easy to interpret (e.g. lines) might be far away from the true function form of $f(X)$.
 
     -   <font color = "darkred">Classic Social Science Approach</font>:
-    
+
         -   Example: Which socio and demographic features correlates with voting turnout? Education? Gender? Age?
 
+::: fragment
 $$ y_i = \beta_1*education_i + beta_2*gender_i + \sigma_i $$
+:::
 
 ## Inference (Social Science) vs Prediction (Machine Learning)
 
@@ -149,15 +183,44 @@ $$ y_i = \beta_1*education_i + beta_2*gender_i + \sigma_i $$
     -   <font color = "darkred"> Key limitation</font>:
 
         -   *Interpretation*: it is difficult to know which variables are doing the heavy lifting and the exact influence of $x$ on $y$.
-        
-    -  Example: giving a k number of features, and all possible interactions between them,how likely is each voter i to turnout?   
+
+    -   Example: giving a k number of features, and all possible interactions between them,how likely is each voter i to turnout?
 
     -   **This is the machine learning tradition/predictive modeling/AI**
-    
-$$ y_i = \hat{f}(X) + \sigma_i $$
 
+::: fragment
+$$ y_i = \hat{f}(X) + \sigma_i $$
+:::
 
 # Machine Learning
+
+## Supervised and Unsupervised Learning
+
+-   <u>**Unsupervised Learning (DS III)**</u>
+
+    -   we observe a vector of measurements $x_i$ but *no* associated response $y_i$.
+
+    -   "unsupervised" because we lack a response variable that can supervise our analysis.
+
+::: fragment
+```{r,echo=F,fig.align="center",fig.width=12}
+require(tidyverse)
+require(caret)
+require(recipes)
+set.seed(123)
+n = 50
+sigma = matrix(c(1,0,0,1),ncol=2,nrow=2)
+x1 <- MASS::mvrnorm(n,c(0,0),Sigma = sigma) %>% as_tibble() %>% mutate(group=1)
+x2 <- MASS::mvrnorm(n,c(-3,-3),Sigma = sigma) %>% as_tibble() %>% mutate(group=2)
+x3 <- MASS::mvrnorm(n,c(-3,3),Sigma = sigma) %>% as_tibble() %>% mutate(group=3)
+bind_rows(x1,x2,x3) %>% 
+  ggplot(aes(V1,V2,color=factor(group),pch=factor(group))) +
+  geom_point(size=3) +
+  theme_minimal() +
+  theme(legend.position = "none",
+        axis.title = element_text(size=18))
+```
+:::
 
 ## Supervised and Unsupervised Learning
 
@@ -165,9 +228,9 @@ $$ y_i = \hat{f}(X) + \sigma_i $$
 
     -   for each observation of the predictor measurement $x_i$ there is an associated response measurement $y_i$. In essence, there is an *outcome* we are aiming to accurately predict or understand.
 
-    -   **Quantitative** outcome: Regression Models ~ linear, penalization, generalized additive models
-    
-    -    **Qualitative Outcomes**: Classification methods ~ logistic regression, naive Bayes, support vector machines, neural networks
+    -   **Quantitative** outcome: Regression Models \~ linear, penalization, generalized additive models
+
+    -   **Qualitative Outcomes**: Classification methods \~ logistic regression, naive Bayes, support vector machines, neural networks
 
 ::: fragment
 ```{r,echo=F,fig.align="center",fig.width=12}
@@ -187,31 +250,7 @@ tibble(x,y) %>%
 ```
 :::
 
-## Unsupervised
-
--   <u>**Unsupervised Learning (DS III)**</u>
-
-    -   we observe a vector of measurements $x_i$ but *no* associated response $y_i$.
-
-    -   "unsupervised" because we lack a response variable that can supervise our analysis.
-
-::: fragment
-```{r,echo=F,fig.align="center",fig.width=12}
-set.seed(123)
-n = 50
-sigma = matrix(c(1,0,0,1),ncol=2,nrow=2)
-x1 <- MASS::mvrnorm(n,c(0,0),Sigma = sigma) %>% as_tibble() %>% mutate(group=1)
-x2 <- MASS::mvrnorm(n,c(-3,-3),Sigma = sigma) %>% as_tibble() %>% mutate(group=2)
-x3 <- MASS::mvrnorm(n,c(-3,3),Sigma = sigma) %>% as_tibble() %>% mutate(group=3)
-bind_rows(x1,x2,x3) %>% 
-  ggplot(aes(V1,V2,color=factor(group),pch=factor(group))) +
-  geom_point(size=3) +
-  theme_minimal() +
-  theme(legend.position = "none",
-        axis.title = element_text(size=18))
-```
-:::
-
+```{=html}
 <!-- ## Supervised Learning: Regression
 
 *Outcomes* come in many forms. How the outcome are distributed will determine the methods we use.
@@ -250,7 +289,7 @@ bind_rows(x1,x2,x3) %>%
 -   Every model has specific **tuning parameters** that we can use to optimize performance.
 
 -->
-
+```
 ## Types of Models
 
 ```{r out.width="100%"}
@@ -268,25 +307,14 @@ For inferential work (in your stats class), you get some data, and you estimate 
     -   capture signal in the best way possible $f(X)$
 
     -   Ignore noise (irreducible error)
-    
-- **Where learning happens?**    
+
+-   **Where learning happens?**
 
     -   Model type
 
     -   Features (variables)
 
     -   Hyper-Parameters
-
-## Workflow: Inference vs ML
-
-```{r}
-knitr::include_graphics("https://cimentadaj.github.io/ml_socsci/img/socsci_wflow3_smaller.svg")
-```
-
-::: aside
-source: https://cimentadaj.github.io/ml_socsci/
-:::
-
 
 ## A Machine Learning Pipeline
 
@@ -308,6 +336,16 @@ To do so:
     -   Test data: assess the accuracy of your model.
 
 -   Select the model based on smaller **out of sample predictive accuracy**, using **UNSEEN** data.
+
+## Workflow: Inference vs ML
+
+```{r}
+knitr::include_graphics("https://cimentadaj.github.io/ml_socsci/img/socsci_wflow3_smaller.svg")
+```
+
+::: aside
+source: https://cimentadaj.github.io/ml_socsci/
+:::
 
 ## Challenge: avoid overfitting the data
 
@@ -370,21 +408,19 @@ bad_fit + overfit + goodfit
 knitr::include_graphics("week10_figs/interpret-vs-flexible.png")
 ```
 
-- **Bias**: Difference $Y$ and $\hat{Y}$
-    
-    - High Bias ~ Underfitting, rigid models
-    
-    - Low Bias ~  Overfitting, flexible models
-    
-    
-- **Variance**: Sensitivity to fluctuations in the training data    
+-   **Bias**: Difference $Y$ and $\hat{Y}$
 
-    - High Variance ~ huge error when new data is seen (usually associated with low bias)
-    
-    - Low Variance ~ Small error when new data is seen (usually associated with high bias)
+    -   High Bias \~ Underfitting, rigid models
+
+    -   Low Bias \~ Overfitting, flexible models
+
+-   **Variance**: Sensitivity to fluctuations in the training data
+
+    -   High Variance \~ huge error when new data is seen (usually associated with low bias)
+
+    -   Low Variance \~ small error when new data is seen (usually associated with high bias)
 
 -   **Trade-off**: as we reduce bias, we risk overfiting. Training properly is key to find a middle-of-the-road solution.
-
 
 ## MSE Training Data
 
@@ -429,7 +465,6 @@ D %>%
 
 ```
 
-
 ## Model Accuracy: Out-Sample Prediction
 
 ```{r}
@@ -471,23 +506,23 @@ D2 %>%
 
 ```
 
-
-
 ## Cross-Validation
 
-If you go back and forth between training and test to decide which model to use, you might also be over-fitting. This is the idea of data leakage.
+-   If you go back and forth between training and test to decide which model to use, you might also be over-fitting. This is concept known as **data leakage**.
 
--   We can use re-sampling techniques to generate estimates for the test error.
+    -   We can use re-sampling techniques to generate estimates for the test error.
 
--   "Re-sampling" involves repeatedly drawing samples from a training set and refitting a model of interest on each sample in order to obtain additional information about the fitted model.
+    -   "Re-sampling" involves repeatedly drawing samples from a training set and refitting a model of interest on each sample in order to obtain additional information about the fitted model.
 
--   We can use re-sampling techniques to generate estimates for the test error.
+    -   We can use re-sampling techniques to generate estimates for the test error.
 
 ## K-Fold Cross Validation
 
 -   K-Fold Cross Validation involves randomly dividing the data into $k$ groups (or folds). Model is trained on $k-1$ folds, then test on the remaining fold.
 
--   Process is repeated $k$ times, each time using a new fold. Offers $k$ estimates of the test error, which we average.
+-   Process is repeated $k$ times, each time using a new fold.
+
+-   Offers $k$ estimates of the test error, which we average to calculate the error
 
 ::: fragment
 ```{r out.width="100%"}
@@ -505,5 +540,6 @@ knitr::include_graphics("week10_figs/KfoldCV.gif")
 
 -   Avoid overfitting and data leakage by using resampling methods.
 
-
 ## Coding!
+
+<https://tiagoventura.github.io/ppol5203/weeks/week-10.html>

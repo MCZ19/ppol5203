@@ -2433,21 +2433,21 @@
     "href": "slides/week-10.html#where-we-are",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Where we are…",
-    "text": "Where we are…\n\nWe started data science workflow (git) and best practices\nWe moved over to the primitives of Python as your main DS tool\nLearned how to work with tabular data using Numpy, Pandas and plotnine\nThen we moved to unestructured data sources:\n\nCollect/parse digital data (website, Apis, and dynamic websites)\n\nToday: we will learn how to build statistical models in Python.\n\nIntro do DS II x But important for you to build an foundation of Data Science."
+    "text": "Where we are…\n\n\nWe started data science workflow (git) and best practices\nWe moved over to the primitives of Python as your main DS tool\nLearned how to work with tabular data using Numpy, Pandas and plotnine\nThen we moved to unestructured data sources:\n\nCollect/parse digital data (website, Apis, and dynamic websites)\n\nToday: we will learn how to build statistical models in Python.\n\nIntro to DS II.\nFoundational DS Knowledge.\nBasis for the last two lecture on working with textual data."
   },
   {
     "objectID": "slides/week-10.html#plans-for-today",
     "href": "slides/week-10.html#plans-for-today",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Plans for Today",
-    "text": "Plans for Today\n\nIntroduction to Machine Learning\n\nStatistical Learning\nInference vs Predictive Modeling\nMachine Learning:\n\nSupervised vs Unsupervised\nTraining models\nBias and Variance Trade-off\n\nCoding"
+    "text": "Plans for Today\n\n\nIntroduction to Machine Learning\n\nStatistical Learning\nInferential Models vs Predictive Models\nMachine Learning:\n\nSupervised vs Unsupervised\nTraining models\nBias and Variance Trade-off\n\nCoding"
   },
   {
     "objectID": "slides/week-10.html#statistical-models",
     "href": "slides/week-10.html#statistical-models",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Statistical Models",
-    "text": "Statistical Models\nSocial Scientists are often interested in very complex questions. To answer them, we build models:\n\nA model is “a simplified representation of the reality created to serve a purpose.” (Provost & Fawcett 2013)\n\nBy definition:\n\nmodels are a simplification.\nmodels highlight key aspects of our theory.\nmodels are all wrong, but some are useful."
+    "text": "Statistical Models\nAs social scientists, we are often interested in answering complex questions about human behavior. To answer them, we build models:\n\nA model is “a simplified representation of the reality created to serve a purpose.” (Provost & Fawcett 2013)\n\nBy definition:\n\nModels are always a simplification.\n\nWe simplify so that we can understand and generalize a complex social process.\n\nModels’ components come from assumptions we make about the world.\nModels are all wrong, but some are useful."
   },
   {
     "objectID": "slides/week-10.html#models-components",
@@ -2461,35 +2461,35 @@
     "href": "slides/week-10.html#statistical-learning-1",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Statistical Learning",
-    "text": "Statistical Learning\nStatistical learning refers to a set of methods/approaches for estimating \\(f(.)\\)\n\\[ \\hat{y} = \\hat{f}(X)\\]\n\nWhere \\(\\hat{f}(X)\\) is an approximation of the “true” functional form, \\(f(X)\\)\n\\(\\hat{y}\\) is the predicted value of a true value y.\nWhen we build models, the aim is to find a \\(\\hat{f}(X)\\) that minimizes the error in the model."
+    "text": "Statistical Learning\nStatistical learning refers to a set of methods/approaches for estimating \\(f(.)\\)\n\\[ \\hat{y} = \\hat{f}(X)\\]\n\nWhere \\(\\hat{f}(X)\\) is an approximation of the “true” functional form, \\(f(X)\\)\n\\(\\hat{y}\\) is the predicted value of a true value y."
   },
   {
     "objectID": "slides/week-10.html#reducible-vs.-irreducible-error",
     "href": "slides/week-10.html#reducible-vs.-irreducible-error",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Reducible vs. Irreducible Error",
-    "text": "Reducible vs. Irreducible Error\n\\[E(y - \\hat{y})^2\\] \\[E[f(X) + \\epsilon -  \\hat{f}(X) ]^2\\]\n\\[\\underbrace{E[f(X) -\\hat{f}(X)]^2}_{\\text{Reducible}} + \\underbrace{var(\\epsilon)}_{\\text{Irreducible}}\\]\n\nThe “reducible” error is the systematic signal. We can reduce this error by using different functional forms, better data, or a mixture of those two.\nThe “irreducible” error is associated with the random noise around \\(y\\).\nStatistical learning is concerned with minimizing the reducible error.\nOur predictions will never be perfect given the irreducible error."
+    "text": "Reducible vs. Irreducible Error\n\nWhen we build models, the aim is to find a \\(\\hat{f}(X)\\) that minimizes the error in the model.\n\n\n\\[E(y - \\hat{y})^2\\] \\[E[f(X) + \\epsilon -  \\hat{f}(X) ]^2\\]\n\\[\\underbrace{E[f(X) -\\hat{f}(X)]^2}_{\\text{Reducible}} + \\underbrace{var(\\epsilon)}_{\\text{Irreducible}}\\]\n\n\nThe “reducible” error is the systematic signal. We can reduce this error by using different functional forms, better data, or a mixture of those two.\nThe “irreducible” error is associated with the random noise around \\(y\\).\nStatistical learning is concerned with minimizing the reducible error.\nOur predictions will never be perfect given the irreducible error."
   },
   {
     "objectID": "slides/week-10.html#inference-social-science-vs-prediction-machine-learning",
     "href": "slides/week-10.html#inference-social-science-vs-prediction-machine-learning",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Inference (Social Science) vs Prediction (Machine Learning)",
-    "text": "Inference (Social Science) vs Prediction (Machine Learning)\nTwo reasons we want to estimate \\(f(\\cdot)\\):\n\nInference\n\nGoal is interpretation\n\nWhich predictors are associated with the response?\nWhat is the relationship (parameters) between the response and the predictors?\nIs the relationship causal?\n\n Key limitation:\n\nusing functional forms that are easy to interpret (e.g. lines) might be far away from the true function form of \\(f(X)\\).\n\nClassic Social Science Approach:\n\nExample: Which socio and demographic features correlates with voting turnout? Education? Gender? Age?\n\n\n\n\\[ y_i = \\beta_1*education_i + beta_2*gender_i + \\sigma_i \\]"
+    "text": "Inference (Social Science) vs Prediction (Machine Learning)\nTwo reasons we want to estimate \\(f(\\cdot)\\):\n\nInference\n\nGoal is interpretation\n\nWhich predictors are associated with the response?\nWhat is the relationship (parameters) between the response and the predictors?\nIs the relationship causal?\n\n Key limitation:\n\nusing functional forms that are easy to interpret (e.g. lines) might be far away from the true function form of \\(f(X)\\).\n\nClassic Social Science Approach:\n\nExample: Which socio and demographic features correlates with voting turnout? Education? Gender? Age?\n\n\n\n\n\\[ y_i = \\beta_1*education_i + beta_2*gender_i + \\sigma_i \\]"
   },
   {
     "objectID": "slides/week-10.html#inference-social-science-vs-prediction-machine-learning-1",
     "href": "slides/week-10.html#inference-social-science-vs-prediction-machine-learning-1",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Inference (Social Science) vs Prediction (Machine Learning)",
-    "text": "Inference (Social Science) vs Prediction (Machine Learning)\n\nPrediction\n\nGoal is to predict values of the outcome, \\(\\hat{y}\\)\n\\(\\hat{f}(X)\\) is treated as a black box\n\nmodel doesn’t need to be interpretable as long as it provides an accurate prediction of \\(y\\).\n\n Key limitation:\n\nInterpretation: it is difficult to know which variables are doing the heavy lifting and the exact influence of \\(x\\) on \\(y\\).\n\nExample: giving a k number of features, and all possible interactions between them,how likely is each voter i to turnout?\nThis is the machine learning tradition/predictive modeling/AI\n\n\n\\[ y_i = \\hat{f}(X) + \\sigma_i \\]"
+    "text": "Inference (Social Science) vs Prediction (Machine Learning)\n\nPrediction\n\nGoal is to predict values of the outcome, \\(\\hat{y}\\)\n\\(\\hat{f}(X)\\) is treated as a black box\n\nmodel doesn’t need to be interpretable as long as it provides an accurate prediction of \\(y\\).\n\n Key limitation:\n\nInterpretation: it is difficult to know which variables are doing the heavy lifting and the exact influence of \\(x\\) on \\(y\\).\n\nExample: giving a k number of features, and all possible interactions between them,how likely is each voter i to turnout?\nThis is the machine learning tradition/predictive modeling/AI\n\n\n\n\\[ y_i = \\hat{f}(X) + \\sigma_i \\]"
   },
   {
     "objectID": "slides/week-10.html#supervised-and-unsupervised-learning",
     "href": "slides/week-10.html#supervised-and-unsupervised-learning",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Supervised and Unsupervised Learning",
-    "text": "Supervised and Unsupervised Learning\n\nSupervised Learning (DS II)\n\nfor each observation of the predictor measurement \\(x_i\\) there is an associated response measurement \\(y_i\\). In essence, there is an outcome we are aiming to accurately predict or understand.\nQuantitative outcome: Regression Models ~ linear, penalization, generalized additive models\nQualitative Outcomes: Classification methods ~ logistic regression, naive Bayes, support vector machines, neural networks"
+    "text": "Supervised and Unsupervised Learning\n\nUnsupervised Learning (DS III)\n\nwe observe a vector of measurements \\(x_i\\) but no associated response \\(y_i\\).\n“unsupervised” because we lack a response variable that can supervise our analysis."
   },
   {
     "objectID": "slides/week-10.html#unsupervised",
@@ -2566,21 +2566,21 @@
     "href": "slides/week-10.html#bias-and-variance-trade-off",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Bias and Variance Trade-off",
-    "text": "Bias and Variance Trade-off\n\n\nBias: Difference \\(Y\\) and \\(\\hat{Y}\\)\n\nHigh Bias ~ Underfitting, rigid models\nLow Bias ~ Overfitting, flexible models\n\nVariance: Sensitivity to fluctuations in the training data\n\nHigh Variance ~ huge error when new data is seen (usually associated with low bias)\nLow Variance ~ Small error when new data is seen (usually associated with high bias)\n\nTrade-off: as we reduce bias, we risk overfiting. Training properly is key to find a middle-of-the-road solution."
+    "text": "Bias and Variance Trade-off\n\n\nBias: Difference \\(Y\\) and \\(\\hat{Y}\\)\n\nHigh Bias ~ Underfitting, rigid models\nLow Bias ~ Overfitting, flexible models\n\nVariance: Sensitivity to fluctuations in the training data\n\nHigh Variance ~ huge error when new data is seen (usually associated with low bias)\nLow Variance ~ small error when new data is seen (usually associated with high bias)\n\nTrade-off: as we reduce bias, we risk overfiting. Training properly is key to find a middle-of-the-road solution."
   },
   {
     "objectID": "slides/week-10.html#cross-validation",
     "href": "slides/week-10.html#cross-validation",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Cross-Validation",
-    "text": "Cross-Validation\nIf you go back and forth between training and test to decide which model to use, you might also be over-fitting. This is the idea of data leakage.\n\nWe can use re-sampling techniques to generate estimates for the test error.\n“Re-sampling” involves repeatedly drawing samples from a training set and refitting a model of interest on each sample in order to obtain additional information about the fitted model.\nWe can use re-sampling techniques to generate estimates for the test error."
+    "text": "Cross-Validation\n\nIf you go back and forth between training and test to decide which model to use, you might also be over-fitting. This is concept known as data leakage.\n\nWe can use re-sampling techniques to generate estimates for the test error.\n“Re-sampling” involves repeatedly drawing samples from a training set and refitting a model of interest on each sample in order to obtain additional information about the fitted model.\nWe can use re-sampling techniques to generate estimates for the test error."
   },
   {
     "objectID": "slides/week-10.html#k-fold-cross-validation",
     "href": "slides/week-10.html#k-fold-cross-validation",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "K-Fold Cross Validation",
-    "text": "K-Fold Cross Validation\n\nK-Fold Cross Validation involves randomly dividing the data into \\(k\\) groups (or folds). Model is trained on \\(k-1\\) folds, then test on the remaining fold.\nProcess is repeated \\(k\\) times, each time using a new fold. Offers \\(k\\) estimates of the test error, which we average."
+    "text": "K-Fold Cross Validation\n\nK-Fold Cross Validation involves randomly dividing the data into \\(k\\) groups (or folds). Model is trained on \\(k-1\\) folds, then test on the remaining fold.\nProcess is repeated \\(k\\) times, each time using a new fold.\nOffers \\(k\\) estimates of the test error, which we average to calculate the error"
   },
   {
     "objectID": "slides/week-10.html#important-concepts",
@@ -2594,7 +2594,7 @@
     "href": "slides/week-10.html#coding",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Coding!",
-    "text": "Coding!\n\n\nData science I: Foundations"
+    "text": "Coding!\nhttps://tiagoventura.github.io/ppol5203/weeks/week-10.html\n\n\nData science I: Foundations"
   },
   {
     "objectID": "slides/week-10.html#types-of-models",
@@ -2630,5 +2630,47 @@
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Machine Learning: what does learning mean?",
     "text": "Machine Learning: what does learning mean?\nFor inferential work (in your stats class), you get some data, and you estimate a model using the entire data. This is not what we do in machine learning.\n\nMain objective: predict responses (from new data) accurately by learning from previously seen data\nGoal:\n\ncapture signal in the best way possible \\(f(X)\\)\nIgnore noise (irreducible error)\n\nWhere learning happens?\n\nModel type\nFeatures (variables)\nHyper-Parameters"
+  },
+  {
+    "objectID": "slides/week-10.html#statistical-learning",
+    "href": "slides/week-10.html#statistical-learning",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Statistical Learning",
+    "text": "Statistical Learning\nStatistical learning refers to a set of methods/approaches for estimating \\(f(.)\\)\n\\[ \\hat{y} = \\hat{f}(X)\\]\n\nWhere \\(\\hat{f}(X)\\) is an approximation of the “true” functional form, \\(f(X)\\)\n\\(\\hat{y}\\) is the predicted value of a true value y."
+  },
+  {
+    "objectID": "slides/week-10.html#an-empirical-model",
+    "href": "slides/week-10.html#an-empirical-model",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "An Empirical Model",
+    "text": "An Empirical Model\nThe aim is to model the relationship between the outcome and some set of variables:\n\\[ y = f(X) + \\sigma\\]\nWhere:\n\n\\(y\\) is the outcome/dependent/response variable\n\\(X\\) is a matrix of predictors/features/independent variables\n\\(f()\\) is some fixed but unknown function mapping X to y. The “signal” in the data\n\\(\\sigma\\) is some random error term. The “noise” in the data."
+  },
+  {
+    "objectID": "slides/week-10.html#supervised-and-unsupervised-learning-1",
+    "href": "slides/week-10.html#supervised-and-unsupervised-learning-1",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Supervised and Unsupervised Learning",
+    "text": "Supervised and Unsupervised Learning\n\nSupervised Learning (DS II)\n\nfor each observation of the predictor measurement \\(x_i\\) there is an associated response measurement \\(y_i\\). In essence, there is an outcome we are aiming to accurately predict or understand.\nQuantitative outcome: Regression Models ~ linear, penalization, generalized additive models\nQualitative Outcomes: Classification methods ~ logistic regression, naive Bayes, support vector machines, neural networks"
+  },
+  {
+    "objectID": "slides/week-10.html#what-is-a-model",
+    "href": "slides/week-10.html#what-is-a-model",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "What is a Model?",
+    "text": "What is a Model?\n\nA model is “a simplified representation of the reality created to serve a purpose.” (Provost & Fawcett 2013)\n\n\nAs social scientists, we are often interested in answering complex questions about human behavior. To answer them, we build models (theoretical and statistical).\nBy definition:\n\nModels are always a simplification of reality.\n\nWe simplify so that we can understand and generalize a complex social process.\n\nModels’ components come from assumptions we make about the world.\nModels are all wrong, but some are useful."
+  },
+  {
+    "objectID": "slides/week-10.html#an-statistical-model",
+    "href": "slides/week-10.html#an-statistical-model",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "An Statistical Model",
+    "text": "An Statistical Model\nThe aim of statistical models is to estimate the relationship between the outcome and some set of variables:\n\\[ y = f(X) + \\epsilon\\]\nWhere:\n\n\\(y\\) is the outcome/dependent/response variable\n\\(X\\) is a matrix of predictors/features/independent variables\n\\(f()\\) is some fixed but unknown function mapping X to y. The “signal” in the data\n\\(\\epsilon\\) is some random error term. The “noise” in the data."
+  },
+  {
+    "objectID": "slides/week-10.html#logistics",
+    "href": "slides/week-10.html#logistics",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Logistics",
+    "text": "Logistics\n\n\nYour problem set 3 has been graded.\n\nComments on GitHub\nGrades on Canvas\n\nThe problem set 5 will be posted today, it is due next Friday, Nov 22.\nYour project proposal is due this Friday, Nov 15.\n\nIf you still have not done, remember we should meet and discuss your draft before submission.\nIdeally at office hours today!"
   }
 ]
