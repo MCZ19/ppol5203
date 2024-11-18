@@ -2916,7 +2916,7 @@
     "href": "slides/week-11.html#intuition",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Intuition",
-    "text": "Intuition\n\nCapture words that are more likely to occur together across a set of documents.\nAssign these words a probability of being part of a cluster (topic).\nAssign documents a probability of being associated of these clusters.\n\nDocuments: formed from probability distribution of topics\n\na speech can be 40% about trade, 30% about sports, 10% about health, and 20% spread across topics you don’t think make much sense\n\nTopics: fromed from probability distribution over words\n\nthe topic health will have words like hospital, clinic, dr., sick, cancer"
+    "text": "Intuition\nTopic models are a unsupervised statistical model: purpose of finding a hidden structure in the corpus, across many different documents\n\nCapture words that are more likely to occur together across a set of documents.\nAssign these words a probability of being part of a cluster (topic).\nAssign documents a probability of being associated of these clusters.\n\nDocuments: emerge from probability distribution of topics\n\na speech can be 40% about trade, 30% about sports, 10% about health, and 20% spread across topics you don’t think make much sense\n\nTopics: emerge from probability distributions over words\n\nthe topic health will have words like hospital, clinic, dr., sick, cancer"
   },
   {
     "objectID": "slides/week-11.html#blei-2012",
@@ -2958,13 +2958,48 @@
     "href": "slides/week-11.html#from-text-to-numbers-representing-texts-as-data.",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "From Text-to-Numbers: Representing Texts as Data.",
-    "text": "From Text-to-Numbers: Representing Texts as Data.\nWhen working with text, we have two critical challenges:\n\nReduce Complexity of Text (Think about every work as a variable. This is huge matrix!!)\n\nPre-Processing steps\n\nConvert unstructured text to numbers ~ that we can feed in to a statistical model\n\nDocument Feature Matrix/Bag-of-Words"
+    "text": "From Text-to-Numbers: Representing Texts as Data.\nWhen working with text, we have two critical challenges:\n\nReduce Complexity of Text (Think about every word as a variable. This is huge matrix!!)\n\nPre-Processing steps\n\nConvert unstructured text to numbers ~ that we can feed in to a statistical model\n\nDocument Feature Matrix/Bag-of-Words"
   },
   {
     "objectID": "slides/week-11.html#text-representation",
     "href": "slides/week-11.html#text-representation",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Text Representation",
-    "text": "Text Representation\n\nRepresent text as an unordered set of tokens in a document. Bag-of-Words Assumption\nWhile order is ignored, frequency matters!\nTo represent documents as numbers, we will use the vector space model representation:\n\nA document \\(D_i\\) is represented as a collection of features \\(W\\) (words, tokens, n-grams..)\nEach feature \\(w_i\\) can be placed in a real line, then a document \\(D_i\\) is a point with \\(W\\) dimensional space\n\n\n\nImagine the sentence below: “If that is a joke, I love it. If not, can’t wait to unpack that with you later.”\n\nSorted Vocabulary =(a, can’t, i, if, is, it, joke, later, love, not, that, to, unpack, wait, with, you”)\nFeature Representation = (1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1)\nFeatures will typically be the n-gram (mostly unigram) frequencies of the tokens in the document, or some function of those frequencies\n\n\n\nEach document becomes a numerica vector (vector space model)\n\nstacking these vectors will give you our workhose representation for text: Document Feature Matrix"
+    "text": "Text Representation\n\nRepresent text as an unordered set of tokens in a document. Bag-of-Words Assumption\nWhile order is ignored, frequency matters!\nTo represent documents as numbers, we will use the vector space model representation:\n\nA document \\(D_i\\) is represented as a collection of features \\(W\\) (words, tokens, n-grams..)\nEach feature \\(w_i\\) can be placed in a real line, then a document \\(D_i\\) is a vector with \\(W\\) dimensions\n\n\n\nImagine the sentence below: “If that is a joke, I love it. If not, can’t wait to unpack that with you later.”\n\nSorted Vocabulary =(a, can’t, i, if, is, it, joke, later, love, not, that, to, unpack, wait, with, you”)\nFeature Representation = (1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1)\nFeatures will typically be the n-gram (mostly unigram) frequencies of the tokens in the document, or some function of those frequencies\n\n\n\nEach document becomes a numerica vector (vector space model)\n\nstacking these vectors will give you our workhose representation for text: Document Feature Matrix"
+  },
+  {
+    "objectID": "slides/week-11.html#why-do-we-need-model-to-analyze-text-data",
+    "href": "slides/week-11.html#why-do-we-need-model-to-analyze-text-data",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Why do we need model to analyze text data?",
+    "text": "Why do we need model to analyze text data?\nScalability! and Dimensionality Reduction\n\nHumans are great at understanding the meaning of a sentence or a document in-depth\nComputers are better at understanding patterns, classify and describe content across millions of subjects\nComputational Text analysis augments humans – does not replace us\nWe know “All text models are wrong” – This is particularly true with text!\nThe best method depends on the task\nAlways validate your models!"
+  },
+  {
+    "objectID": "slides/week-11.html#why-do-we-need-models-to-analyze-text-data",
+    "href": "slides/week-11.html#why-do-we-need-models-to-analyze-text-data",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Why do we need models to analyze text data?",
+    "text": "Why do we need models to analyze text data?\nScalability and Dimensionality Reduction\n\nHumans are great at understanding the meaning of a sentence or a document in-depth\nComputers are better at understanding patterns, classify and describe content across millions of subjects\nComputational Text analysis augments humans – does not replace us\nStatistical models + Powerful Computers allows us to process data at scale and understand common patterns\nWe know “All text models are wrong” – This is particularly true with text!"
+  },
+  {
+    "objectID": "slides/week-11.html#text-as-data-methods",
+    "href": "slides/week-11.html#text-as-data-methods",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Text-as-Data methods",
+    "text": "Text-as-Data methods\nComparing/Describing Documents\nTopic Models: Finding hidden structures in a corpus"
+  },
+  {
+    "objectID": "slides/week-11.html#language-model-generative-probabilistic-modeling",
+    "href": "slides/week-11.html#language-model-generative-probabilistic-modeling",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Language Model + Generative Probabilistic Modeling",
+    "text": "Language Model + Generative Probabilistic Modeling\n\nStep 1: For each document:\n\nRandomly choose a distribution over topics. That is, choose one of many multinomial distributions, each which mixes the topics in different proportions.\n\nStep 2: Then, for every word position in the document\n\nRandomly choose a topic from the distribution over topics from step 1.\nRandomly choose a word from the distribution over the vocabulary that the topic implies."
+  },
+  {
+    "objectID": "slides/week-11.html#inference-how-to-estimate-these-models",
+    "href": "slides/week-11.html#inference-how-to-estimate-these-models",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Inference: How to estimate these models?",
+    "text": "Inference: How to estimate these models?\nUsing the observed data, the words, we can estimate latent parameters. We start with the joint distribution implied by our language model (Blei, 2012):\n\\[\np(\\beta_{1:K}, \\theta_{1:D}, z_{1:D}, w_{1:D})= \\prod_{K}^{i=1}p(\\beta_i)\\prod_{D}^{d=1}p(\\theta_d)(\\prod_{N}^{n=1}p(z_{d,n}|\\theta_d)p(w_{d,n}|\\beta_{1:K},z_{d,n})\n\\]\nTo get to the conditional:\n\\[\np(\\beta_{1:K}, \\theta_{1:D}, z_{1:D}|w_{1:D})=\\frac{p(\\beta_{1:K}, \\theta_{1:D}, z_{1:D}, w_{1:D})}{p(w_{1:D})}\n\\]\nThe denominator is hard complicate to be estimate (requires integration for every word for every topic):\n\nSimulate with Gibbs Sampling or Variational Inference."
   }
 ]

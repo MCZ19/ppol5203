@@ -46,8 +46,8 @@ format:
 
 ## A significant part of how we produce and store data comes in text
 
-```{r}
-knitr::include_graphics("http://media3.washingtonpost.com/wp-dyn/content/graphic/2011/02/11/GR2011021100614.jpg")
+```{r  echo=FALSE, out.width = "100%", fig.align="center"}
+knitr::include_graphics("week1_figs/digital.jpeg") 
 ```
 
 ## Official Documents: Congressional Speeches, Bills, Press Releases, Transcripts, from all over the world!!
@@ -68,9 +68,12 @@ knitr::include_graphics("week1_figs/redes.png")
 knitr::include_graphics("https://miro.medium.com/v2/resize:fit:1400/1*t2u_0FHoQSpBK8i7j1NOBg.png") 
 ```
 
-## Using statistical models to analyze text?
 
-**Scalability!**
+# Using Statistical models to analyze data
+
+## Why do we need models to analyze text data?
+
+**Scalability** and **Dimensionality Reduction**
 
 -   Humans are great at understanding the meaning of a sentence or a document in-depth
 
@@ -78,11 +81,10 @@ knitr::include_graphics("https://miro.medium.com/v2/resize:fit:1400/1*t2u_0FHoQS
 
 -   Computational Text analysis augments humans -- does not replace us
 
--   We know "All text models are wrong"  -- This is particularly true with text!
+-   Statistical models + Powerful Computers allows us to process data at scale and understand common patterns
 
--   The best method depends on the task
+-   We know "All text models are wrong" -- This is particularly true with text!
 
--   Always validate your models!
 
 ## Workflow
 
@@ -118,8 +120,8 @@ knitr::include_graphics("https://miro.medium.com/v2/resize:fit:1400/1*t2u_0FHoQS
 
 -   **Preprocess the data:**
 
-    -   Convert text to numbers. 
-    -   Use the Bag-of-words assumption. 
+    -   Convert text to numbers.
+    -   Use the Bag-of-words assumption.
     -   Reduce noise, capture signal
 
 -   **Apply methods appropriate to research goal:**
@@ -138,18 +140,17 @@ knitr::include_graphics("https://miro.medium.com/v2/resize:fit:1400/1*t2u_0FHoQS
 
 # Very quick introdution! Want learn more? Take the Text-as-Data Class in the future.
 
-## From Text-to-Numbers: Representing Texts as Data. 
+## From Text-to-Numbers: Representing Texts as Data.
 
-When working with text, we have two critical challenges: 
+When working with text, we have two critical challenges:
 
-- Reduce Complexity of Text (Think about every work as a variable. This is huge matrix!!)
-  
-   - Pre-Processing steps
+-   Reduce Complexity of Text (Think about every word as a variable. This is huge matrix!!)
 
-- Convert unstructured text to numbers ~ that we can feed in to a statistical model
-   
-  - Document Feature Matrix/Bag-of-Words
+    -   Pre-Processing steps
 
+-   Convert unstructured text to numbers \~ that we can feed in to a statistical model
+
+    -   Document Feature Matrix/Bag-of-Words
 
 ## Reducing Complexity: Pre-Processing Steps
 
@@ -179,18 +180,17 @@ When working with text, we have two critical challenges:
 :::
 :::
 
-
 ## Text Representation
 
 -   Represent text as an **unordered** set of tokens in a document. [Bag-of-Words Assumption]{.red}
 
 -   While order is ignored, frequency matters!
 
--  To represent documents as numbers, we will use the [vector space model representation]{.red}:
+-   To represent documents as numbers, we will use the [vector space model representation]{.red}:
 
-   -   A document $D_i$ is represented as a collection of features $W$ (words, tokens, n-grams..)
+    -   A document $D_i$ is represented as a collection of features $W$ (words, tokens, n-grams..)
 
-   -   Each feature $w_i$ can be placed in a real line, then a document $D_i$ is a point with $W$ dimensional space
+    -   Each feature $w_i$ can be placed in a real line, then a document $D_i$ is a vector with $W$ dimensions
 
 ::: fragment
 Imagine the sentence below: *"If that is a joke, I love it. If not, can't wait to unpack that with you later."*
@@ -251,15 +251,18 @@ ggplot(df, aes(x = no, y = yes, label = document)) +
   theme_minimal()
 ```
 
-
 ## From Text to Numbers: Bag-of-Words & Document-Feature Matrix
 
 ```{r  echo=FALSE, out.width = "80%", fig.align="center"}
 knitr::include_graphics("https://www.mzes.uni-mannheim.de/socialsciencedatalab/article/advancing-text-mining/figures/dfm.png") 
 ```
 
+## Text-as-Data methods
 
-# Text-as-Data methods
+#### Comparing/Describing Documents
+
+#### Topic Models: Finding hidden structures in a corpus
+
 
 ## Comparing Documents: How \`far' is document a from document b?
 
@@ -489,9 +492,11 @@ annotate("text", x = 2.5, y = 1.0, label = paste("θ"), size=5) +
 
 ```
 
-## Topic Models: LDA Approach
+# Topic Models: LDA Approach
 
 ## Intuition
+
+Topic models are a unsupervised statistical model: purpose of finding a hidden structure in the corpus, across many different documents
 
 -   Capture words that are more likely to occur together across a set of documents.
 
@@ -499,11 +504,11 @@ annotate("text", x = 2.5, y = 1.0, label = paste("θ"), size=5) +
 
 -   Assign documents a probability of being associated of these clusters.
 
-    -   **Documents:** formed from probability distribution of topics
+    -   **Documents:** emerge from probability distribution of topics
 
         -   [a speech can be 40% about trade, 30% about sports, 10% about health, and 20% spread across topics you don't think make much sense]{.midgray}
 
-    -   **Topics:** fromed from probability distribution over words
+    -   **Topics:** emerge from probability distributions over words
 
         -   [the topic health will have words like hospital, clinic, dr., sick, cancer]{.midgray}
 
@@ -513,8 +518,7 @@ annotate("text", x = 2.5, y = 1.0, label = paste("θ"), size=5) +
 knitr::include_graphics("https://www.analyticsvidhya.com/wp-content/uploads/2016/08/Modeling1.png") 
 ```
 
-
-## Intuition: Language Model
+## Language Model + Generative Probabilistic Modeling
 
 -   **Step 1: For each [document]{.red}:**
 
@@ -525,7 +529,7 @@ knitr::include_graphics("https://www.analyticsvidhya.com/wp-content/uploads/2016
     -   Randomly choose a [topic]{.red} from the distribution over topics from step 1.
     -   Randomly choose a [word]{.red} from the distribution over the vocabulary that the topic implies.
 
-## Inference: How to est
+## Inference: How to estimate these models?
 
 Using the observed data, the words, we can estimate latent parameters. We start with the joint distribution implied by our language model (Blei, 2012):
 

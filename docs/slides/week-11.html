@@ -368,7 +368,7 @@ Professor: Tiago Ventura
 <section id="a-significant-part-of-how-we-produce-and-store-data-comes-in-text" class="slide level2">
 <h2>A significant part of how we produce and store data comes in text</h2>
 
-<img data-src="http://media3.washingtonpost.com/wp-dyn/content/graphic/2011/02/11/GR2011021100614.jpg" class="r-stretch"></section>
+<img data-src="week1_figs/digital.jpeg" style="width:100.0%" class="r-stretch quarto-figure-center"></section>
 <section id="official-documents-congressional-speeches-bills-press-releases-transcripts-from-all-over-the-world" class="slide level2">
 <h2>Official Documents: Congressional Speeches, Bills, Press Releases, Transcripts, from all over the world!!</h2>
 
@@ -381,16 +381,20 @@ Professor: Tiago Ventura
 <h2>Online Media: News, Comments, Blogs, etc…</h2>
 
 <img data-src="https://miro.medium.com/v2/resize:fit:1400/1*t2u_0FHoQSpBK8i7j1NOBg.png" style="width:80.0%" class="r-stretch quarto-figure-center"></section>
-<section id="using-statistical-models-to-analyze-text" class="slide level2">
-<h2>Using statistical models to analyze text?</h2>
-<p><strong>Scalability!</strong></p>
+<section>
+<section id="using-statistical-models-to-analyze-data" class="title-slide slide level1 center">
+<h1>Using Statistical models to analyze data</h1>
+
+</section>
+<section id="why-do-we-need-models-to-analyze-text-data" class="slide level2">
+<h2>Why do we need models to analyze text data?</h2>
+<p><strong>Scalability</strong> and <strong>Dimensionality Reduction</strong></p>
 <ul>
 <li class="fragment"><p>Humans are great at understanding the meaning of a sentence or a document in-depth</p></li>
 <li class="fragment"><p>Computers are better at understanding patterns, classify and describe content across millions of subjects</p></li>
 <li class="fragment"><p>Computational Text analysis augments humans – does not replace us</p></li>
+<li class="fragment"><p>Statistical models + Powerful Computers allows us to process data at scale and understand common patterns</p></li>
 <li class="fragment"><p>We know “All text models are wrong” – This is particularly true with text!</p></li>
-<li class="fragment"><p>The best method depends on the task</p></li>
-<li class="fragment"><p>Always validate your models!</p></li>
 </ul>
 </section>
 <section id="workflow" class="slide level2">
@@ -471,7 +475,7 @@ Professor: Tiago Ventura
 <li class="fragment">Transfer-Learning - use models trained in text for other purposes</li>
 </ul></li>
 </ul>
-</section>
+</section></section>
 <section>
 <section id="very-quick-introdution-want-learn-more-take-the-text-as-data-class-in-the-future." class="title-slide slide level1 center">
 <h1>Very quick introdution! Want learn more? Take the Text-as-Data Class in the future.</h1>
@@ -481,7 +485,7 @@ Professor: Tiago Ventura
 <h2>From Text-to-Numbers: Representing Texts as Data.</h2>
 <p>When working with text, we have two critical challenges:</p>
 <ul>
-<li class="fragment"><p>Reduce Complexity of Text (Think about every work as a variable. This is huge matrix!!)</p>
+<li class="fragment"><p>Reduce Complexity of Text (Think about every word as a variable. This is huge matrix!!)</p>
 <ul>
 <li class="fragment">Pre-Processing steps</li>
 </ul></li>
@@ -534,7 +538,7 @@ Professor: Tiago Ventura
 <li class="fragment"><p>To represent documents as numbers, we will use the <span class="red">vector space model representation</span>:</p>
 <ul>
 <li class="fragment"><p>A document <span class="math inline">\(D_i\)</span> is represented as a collection of features <span class="math inline">\(W\)</span> (words, tokens, n-grams..)</p></li>
-<li class="fragment"><p>Each feature <span class="math inline">\(w_i\)</span> can be placed in a real line, then a document <span class="math inline">\(D_i\)</span> is a point with <span class="math inline">\(W\)</span> dimensional space</p></li>
+<li class="fragment"><p>Each feature <span class="math inline">\(w_i\)</span> can be placed in a real line, then a document <span class="math inline">\(D_i\)</span> is a vector with <span class="math inline">\(W\)</span> dimensions</p></li>
 </ul></li>
 </ul>
 <div class="fragment">
@@ -570,11 +574,11 @@ Professor: Tiago Ventura
 <section id="from-text-to-numbers-bag-of-words-document-feature-matrix" class="slide level2">
 <h2>From Text to Numbers: Bag-of-Words &amp; Document-Feature Matrix</h2>
 
-<img data-src="https://www.mzes.uni-mannheim.de/socialsciencedatalab/article/advancing-text-mining/figures/dfm.png" style="width:80.0%" class="r-stretch quarto-figure-center"></section></section>
-<section>
-<section id="text-as-data-methods" class="title-slide slide level1 center">
-<h1>Text-as-Data methods</h1>
-
+<img data-src="https://www.mzes.uni-mannheim.de/socialsciencedatalab/article/advancing-text-mining/figures/dfm.png" style="width:80.0%" class="r-stretch quarto-figure-center"></section>
+<section id="text-as-data-methods" class="slide level2">
+<h2>Text-as-Data methods</h2>
+<h4 id="comparingdescribing-documents">Comparing/Describing Documents</h4>
+<h4 id="topic-models-finding-hidden-structures-in-a-corpus">Topic Models: Finding hidden structures in a corpus</h4>
 </section>
 <section id="comparing-documents-how-far-is-document-a-from-document-b" class="slide level2">
 <h2>Comparing Documents: How `far’ is document a from document b?</h2>
@@ -721,22 +725,25 @@ For vectors i and j, with distance $s_{ij}$:
 <li class="fragment">Consider: cos (0) = 1, cos (90) = 0, cos (180) = -1</li>
 </ul>
 
-<img data-src="week-11_files/figure-revealjs/unnamed-chunk-10-1.png" width="960" class="r-stretch"></section>
-<section id="topic-models-lda-approach" class="slide level2">
-<h2>Topic Models: LDA Approach</h2>
+<img data-src="week-11_files/figure-revealjs/unnamed-chunk-10-1.png" width="960" class="r-stretch"></section></section>
+<section>
+<section id="topic-models-lda-approach" class="title-slide slide level1 center">
+<h1>Topic Models: LDA Approach</h1>
+
 </section>
 <section id="intuition" class="slide level2">
 <h2>Intuition</h2>
+<p>Topic models are a unsupervised statistical model: purpose of finding a hidden structure in the corpus, across many different documents</p>
 <ul>
 <li class="fragment"><p>Capture words that are more likely to occur together across a set of documents.</p></li>
 <li class="fragment"><p>Assign these words a probability of being part of a cluster (topic).</p></li>
 <li class="fragment"><p>Assign documents a probability of being associated of these clusters.</p>
 <ul>
-<li class="fragment"><p><strong>Documents:</strong> formed from probability distribution of topics</p>
+<li class="fragment"><p><strong>Documents:</strong> emerge from probability distribution of topics</p>
 <ul>
 <li class="fragment"><span class="midgray">a speech can be 40% about trade, 30% about sports, 10% about health, and 20% spread across topics you don’t think make much sense</span></li>
 </ul></li>
-<li class="fragment"><p><strong>Topics:</strong> fromed from probability distribution over words</p>
+<li class="fragment"><p><strong>Topics:</strong> emerge from probability distributions over words</p>
 <ul>
 <li class="fragment"><span class="midgray">the topic health will have words like hospital, clinic, dr., sick, cancer</span></li>
 </ul></li>
@@ -747,8 +754,8 @@ For vectors i and j, with distance $s_{ij}$:
 <h2>Blei, 2012,</h2>
 
 <img data-src="https://www.analyticsvidhya.com/wp-content/uploads/2016/08/Modeling1.png" style="width:80.0%" class="r-stretch quarto-figure-center"></section>
-<section id="intuition-language-model" class="slide level2">
-<h2>Intuition: Language Model</h2>
+<section id="language-model-generative-probabilistic-modeling" class="slide level2">
+<h2>Language Model + Generative Probabilistic Modeling</h2>
 <ul>
 <li class="fragment"><p><strong>Step 1: For each <span class="red">document</span>:</strong></p>
 <ul>
@@ -761,8 +768,8 @@ For vectors i and j, with distance $s_{ij}$:
 </ul></li>
 </ul>
 </section>
-<section id="inference-how-to-est" class="slide level2">
-<h2>Inference: How to est</h2>
+<section id="inference-how-to-estimate-these-models" class="slide level2">
+<h2>Inference: How to estimate these models?</h2>
 <p>Using the observed data, the words, we can estimate latent parameters. We start with the joint distribution implied by our language model (Blei, 2012):</p>
 <p><span class="math display">\[
 p(\beta_{1:K}, \theta_{1:D}, z_{1:D}, w_{1:D})= \prod_{K}^{i=1}p(\beta_i)\prod_{D}^{d=1}p(\theta_d)(\prod_{N}^{n=1}p(z_{d,n}|\theta_d)p(w_{d,n}|\beta_{1:K},z_{d,n})
