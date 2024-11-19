@@ -3001,5 +3001,19 @@
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Inference: How to estimate these models?",
     "text": "Inference: How to estimate these models?\nUsing the observed data, the words, we can estimate latent parameters. We start with the joint distribution implied by our language model (Blei, 2012):\n\\[\np(\\beta_{1:K}, \\theta_{1:D}, z_{1:D}, w_{1:D})= \\prod_{K}^{i=1}p(\\beta_i)\\prod_{D}^{d=1}p(\\theta_d)(\\prod_{N}^{n=1}p(z_{d,n}|\\theta_d)p(w_{d,n}|\\beta_{1:K},z_{d,n})\n\\]\nTo get to the conditional:\n\\[\np(\\beta_{1:K}, \\theta_{1:D}, z_{1:D}|w_{1:D})=\\frac{p(\\beta_{1:K}, \\theta_{1:D}, z_{1:D}, w_{1:D})}{p(w_{1:D})}\n\\]\nThe denominator is hard complicate to be estimate (requires integration for every word for every topic):\n\nSimulate with Gibbs Sampling or Variational Inference."
+  },
+  {
+    "objectID": "slides/week-11.html#a-significant-part-of-how-we-produce-and-store-data-is-textual",
+    "href": "slides/week-11.html#a-significant-part-of-how-we-produce-and-store-data-is-textual",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "A significant part of how we produce and store data is textual",
+    "text": "A significant part of how we produce and store data is textual"
+  },
+  {
+    "objectID": "slides/week-11.html#euclidean-distance-example",
+    "href": "slides/week-11.html#euclidean-distance-example",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Euclidean Distance, example",
+    "text": "Euclidean Distance, example\n\n\n\nEuclidean Distance\n\n\n\\[\n||y_a - y_b|| = \\sqrt{\\sum^{j}(y_{aj} - y_{bj})^2}\n\\]\n\n\n\n\n\\(y_a\\) = [0, 2.51, 3.6, 0] and \\(y_b\\) = [0, 2.3, 3.1, 9.2]\n\\(\\sum_{j=1}^j (y_a - y_b)^2\\) = \\((0-0)^2 + (2.51-2.3)^2 + (3.6-3.1)^2 + (9-0)^2\\) = \\(84.9341\\)\n\\(\\sqrt{\\sum_{j=1}^j (y_a - y_b)^2}\\) = 9.21"
   }
 ]

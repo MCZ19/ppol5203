@@ -23,28 +23,7 @@ format:
     theme: [simple, custom.scss]
 ---
 
-## Plans for Today + Next Week
-
-<br>
-
-**Introduction to Text Analysis/Natural Language Processing**
-
--   Motivation
-
--   Workflow to work with Text
-
--   Overview of Text Analysis Methods
-
-    -   Pre-Process Text
-    -   Descriptive Analysis and Comparisons
-    -   Unsupervised Learning with Text:
-        -   Topic Models
-    -   Supervised Learning with Text (Next Week)
-        -   Dictionary Methods
-        -   Machine Learning Pre-Trained Models
-        -   Applications of LLMs (Large Languague models)
-
-## A significant part of how we produce and store data comes in text
+## A significant part of how we produce and store data is textual
 
 ```{r  echo=FALSE, out.width = "100%", fig.align="center"}
 knitr::include_graphics("week1_figs/digital.jpeg") 
@@ -69,7 +48,7 @@ knitr::include_graphics("https://miro.medium.com/v2/resize:fit:1400/1*t2u_0FHoQS
 ```
 
 
-# Using Statistical models to analyze data
+# Modeling Text as Data
 
 ## Why do we need models to analyze text data?
 
@@ -329,7 +308,7 @@ $$
 no negative distances: sij   0 2 distance between documents is zero () documents are identical 3 distance between documents is symmetric: sij = sji 4 measures satisfy triangle inequality. sik   sij + sjk
 :::
 
-## Euclidean Distance, w=2
+## Euclidean Distance, example
 
 ::: {.callout-note icon="false"}
 ## Euclidean Distance
