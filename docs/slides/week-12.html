@@ -11,7 +11,7 @@
   <meta name="generator" content="quarto-1.3.450">
 
   <meta name="author" content="Professor: Tiago Ventura">
-  <meta name="dcterms.date" content="2024-11-19">
+  <meta name="dcterms.date" content="2023-11-26">
   <title>PPOL 5203 - Data Science I: Foundations -  PPOL 5203 - Data Science I: Foundations </title>
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -329,7 +329,7 @@
 
 <section id="title-slide" class="quarto-title-block center">
   <h1 class="title"><span style="font-size: 100%;"> PPOL 5203 - Data Science I: Foundations </span></h1>
-  <p class="subtitle"><span style="font-size: 100%;"> Week 11: Text-As-Data I: Description and Topics </span></p>
+  <p class="subtitle"><span style="font-size: 100%;"> Week 11: Text-As-Data II: Classification </span></p>
 
 <div class="quarto-title-authors">
 <div class="quarto-title-author">
@@ -339,441 +339,253 @@ Professor: Tiago Ventura
 </div>
 </div>
 
-  <p class="date">2024-11-19</p>
+  <p class="date">2023-11-26</p>
 </section>
-<section id="a-significant-part-of-how-we-produce-and-store-data-is-textual" class="slide level2">
-<h2>A significant part of how we produce and store data is textual</h2>
+<section id="plans-for-today" class="slide level2 center">
+<h2>Plans for Today</h2>
+<p><strong>Introduction to Text Analysis/Natural Language Processing</strong></p>
+<ul>
+<li class="fragment">Supervised Learning with Text
+<ul>
+<li class="fragment">Dictionary Methods</li>
+<li class="fragment">Machine Learning Pre-Trained Models</li>
+<li class="fragment">Applications of LLMs (Large Languague models)</li>
+</ul></li>
+</ul>
+</section>
+<section id="in-two-weeks-project-presentations.-your-final-project-in-slides" class="title-slide slide level1 center" data-background-color="red">
+<h1>In two weeks: Project Presentations. Your final project in slides!</h1>
 
-<img data-src="week1_figs/digital.jpeg" style="width:100.0%" class="r-stretch quarto-figure-center"></section>
-<section id="official-documents-congressional-speeches-bills-press-releases-transcripts-from-all-over-the-world" class="slide level2">
-<h2>Official Documents: Congressional Speeches, Bills, Press Releases, Transcripts, from all over the world!!</h2>
+</section>
 
-<img data-src="https://www.brookings.edu/wp-content/uploads/2018/11/RTS10VM4.jpg" style="width:80.0%" class="r-stretch quarto-figure-center"></section>
-<section id="social-media" class="slide level2">
-<h2>Social Media</h2>
-
-<img data-src="week1_figs/redes.png" style="width:80.0%" class="r-stretch quarto-figure-center"></section>
-<section id="online-media-news-comments-blogs-etc" class="slide level2">
-<h2>Online Media: News, Comments, Blogs, etc…</h2>
-
-<img data-src="https://miro.medium.com/v2/resize:fit:1400/1*t2u_0FHoQSpBK8i7j1NOBg.png" style="width:80.0%" class="r-stretch quarto-figure-center"></section>
 <section>
-<section id="modeling-text-as-data" class="title-slide slide level1 center">
-<h1>Modeling Text as Data</h1>
+<section id="next-class-sql-time-for-you-to-talk-to-me-about-your-projects." class="title-slide slide level1 center">
+<h1>Next Class: SQL + time for you to talk to me about your projects.</h1>
 
 </section>
-<section id="why-do-we-need-models-to-analyze-text-data" class="slide level2">
-<h2>Why do we need models to analyze text data?</h2>
-<p><strong>Scalability</strong> and <strong>Dimensionality Reduction</strong></p>
+<section id="supervised-learning-with-text" class="slide level2 center">
+<h2>Supervised Learning with Text</h2>
+<p>When doing supervised learning with text, we have three basic pieces of the puzzle:</p>
 <ul>
-<li class="fragment"><p>Humans are great at understanding the meaning of a sentence or a document in-depth</p></li>
-<li class="fragment"><p>Computers are better at understanding patterns, classify and describe content across millions of subjects</p></li>
-<li class="fragment"><p>Computational Text analysis augments humans – does not replace us</p></li>
-<li class="fragment"><p>Statistical models + Powerful Computers allows us to process data at scale and understand common patterns</p></li>
-<li class="fragment"><p>We know “All text models are wrong” – This is particularly true with text!</p></li>
+<li class="fragment"><p><strong>Outcome</strong>: the content you want to classify.</p>
+<ul>
+<li class="fragment">Examples:
+<ul>
+<li class="fragment">Tone, Emotion, Topic, Misinformation, Quality… Anything you know what you want to classify</li>
+</ul></li>
+</ul></li>
+<li class="fragment"><p><strong>Input</strong>: this is your text. Often this will come from converting you text to a numerical representation. As we learned last week, most times this numerical representation will be a document feature matrix.</p></li>
+<li class="fragment"><p><strong>Model</strong>: An transformation function connecting your words with the outcome you want to predict.</p></li>
 </ul>
 </section>
-<section id="workflow" class="slide level2">
-<h2>Workflow</h2>
+<section id="three-types-of-supervised-learning-with-text" class="slide level2 center">
+<h2>Three types of Supervised Learning with Text</h2>
+<p>In class, we will see three distinct types of approaches to do supervised learning with text.</p>
 <ul>
-<li class="fragment"><p><strong>Acquire textual data:</strong></p>
-<ul>
-<li class="fragment">Existing corpora; scraped data; digitized text</li>
-</ul></li>
-<li class="fragment"><p><strong>Preprocess the data:</strong></p>
-<ul>
-<li class="fragment">Bag-of-words</li>
-<li class="fragment">Reduce noise, capture signal</li>
-</ul></li>
+<li class="fragment"><p>Dictionary Models.</p></li>
+<li class="fragment"><p>Classic Machine Learning with bag-of-words assumption.</p></li>
+<li class="fragment"><p>Pre-Trained Models Deep Learning Models.</p></li>
 </ul>
 </section>
-<section id="workflow-1" class="slide level2">
-<h2>Workflow</h2>
+<section id="dictionary-models" class="slide level2 center">
+<h2>Dictionary Models</h2>
 <ul>
-<li class="fragment"><p><strong>Apply method appropriate to research goal:</strong></p>
+<li class="fragment"><p>Use a set of pre-defined words that allow us to classify documents automatically, quickly and accurately.</p></li>
+<li class="fragment"><p>Instead of optimizing a transformation function using statistical assumption and seen data, in dictionaries we have a <span class="red">pre-assumed recipe</span> for the transformation function.</p></li>
+<li class="fragment"><p>A dictionary contains:</p>
 <ul>
-<li class="fragment">Descriptive Analysis:
+<li class="fragment">a list of words that corresponds to each category
 <ul>
-<li class="fragment">Count Words, Readability; similarity;</li>
-</ul></li>
-<li class="fragment">Classify documents into unknown categories
-<ul>
-<li class="fragment">Document clustering</li>
-<li class="fragment">Topic models</li>
-</ul></li>
-<li class="fragment">Classify documents into known categories
-<ul>
-<li class="fragment">Dictionary methods</li>
-<li class="fragment">Supervised machine learning</li>
-<li class="fragment">Transfer-Learning - use models trained in text for other purposes</li>
+<li class="fragment"><span class="midgray">positive and negative for sentiment</span></li>
+<li class="fragment"><span class="midgray">Sexism, homophobia, xenophobia, racism for hate speech</span></li>
 </ul></li>
 </ul></li>
+<li class="fragment"><p>Weights given to each word ~ same for all words or some continuous variation.</p></li>
 </ul>
 </section>
-<section id="already-did-it" class="slide level2">
-<h2>Already did it!</h2>
+<section id="more-specifically" class="slide level2 center">
+<h2>More specifically…</h2>
+<p>We have a set of <span class="red">key words</span> with weights,</p>
 <ul>
-<li class="fragment"><strong>Acquire textual data:</strong>
-<ul>
-<li class="fragment">Existing corpora; scraped data; digitized text</li>
-</ul></li>
+<li class="fragment"><p>e.g.&nbsp;for sentiment analysis: <strong>horrible</strong> is scored as <span class="math inline">\(-1\)</span> and <strong>beautiful</strong> as <span class="math inline">\(+1\)</span></p></li>
+<li class="fragment"><p>the relative rate of occurrence of these terms tells us about the overall tone or category that the document should be placed in.</p></li>
 </ul>
-</section>
-<section id="today" class="slide level2">
-<h2>Today:</h2>
+<div class="fragment">
+<p>For document <span class="math inline">\(i\)</span> and words <span class="math inline">\(m=1,\ldots, M\)</span> in the dictionary,</p>
+<p><span class="math display">\[\text{tone of document $i$}= \sum^M_{m=1} \frac{s_m w_{im}}{N_i}\]</span></p>
+<p>Where:</p>
 <ul>
-<li class="fragment"><p><strong>Preprocess the data:</strong></p>
-<ul>
-<li class="fragment">Convert text to numbers.</li>
-<li class="fragment">Use the Bag-of-words assumption.</li>
-<li class="fragment">Reduce noise, capture signal</li>
-</ul></li>
-<li class="fragment"><p><strong>Apply methods appropriate to research goal:</strong></p>
-<ul>
-<li class="fragment">Descriptive Analysis:
-<ul>
-<li class="fragment">Count Words, Readability; similarity;</li>
-</ul></li>
-<li class="fragment">Classify documents into unknown categories
-<ul>
-<li class="fragment">Topic models</li>
-</ul></li>
-</ul></li>
+<li class="fragment"><span class="math inline">\(s_m\)</span> is the score of word <span class="math inline">\(m\)</span></li>
+<li class="fragment"><span class="math inline">\(w_{im}\)</span> is the number of occurrences of the <span class="math inline">\(m_{th}\)</span> dictionary word in the document <span class="math inline">\(i\)</span></li>
+<li class="fragment"><span class="math inline">\(N_i\)</span> is the total number of all dictionary words in the document</li>
 </ul>
-</section>
-<section id="next-week" class="slide level2">
-<h2>Next Week:</h2>
-<ul>
-<li class="fragment">Classify documents into known categories
-<ul>
-<li class="fragment">Dictionary methods</li>
-<li class="fragment">Supervised machine learning</li>
-<li class="fragment">Transfer-Learning - use models trained in text for other purposes</li>
-</ul></li>
-</ul>
+</div>
 </section></section>
 <section>
-<section id="very-quick-introdution-want-learn-more-take-the-text-as-data-class-in-the-future." class="title-slide slide level1 center">
-<h1>Very quick introdution! Want learn more? Take the Text-as-Data Class in the future.</h1>
+<section id="quizz.-advantages-and-disadvantages-of-dictionaries" class="title-slide slide level1 center">
+<h1>Quizz. Advantages and Disadvantages of dictionaries?</h1>
 
 </section>
-<section id="from-text-to-numbers-representing-texts-as-data." class="slide level2">
-<h2>From Text-to-Numbers: Representing Texts as Data.</h2>
-<p>When working with text, we have two critical challenges:</p>
+<section id="classic-machine-learning-with-bag-of-words-assumption." class="slide level2 center">
+<h2>Classic Machine Learning with bag-of-words assumption.</h2>
+<p><strong>Pipeline:</strong></p>
 <ul>
-<li class="fragment"><p>Reduce Complexity of Text (Think about every word as a variable. This is huge matrix!!)</p>
-<ul>
-<li class="fragment">Pre-Processing steps</li>
-</ul></li>
-<li class="fragment"><p>Convert unstructured text to numbers ~ that we can feed in to a statistical model</p>
-<ul>
-<li class="fragment">Document Feature Matrix/Bag-of-Words</li>
-</ul></li>
+<li class="fragment"><p>Step 1: label some examples of the concept of we want to measure (output)</p></li>
+<li class="fragment"><p>Step 2: convert your data to a document-feature matrix (input)</p></li>
+<li class="fragment"><p>Step 3: train a statistical model on these set of label data using the document-feature matrix.</p></li>
+<li class="fragment"><p>Step 4: use the classifier - some f(x) - to predict unseen documents</p></li>
 </ul>
 </section>
-<section id="reducing-complexity-pre-processing-steps" class="slide level2">
-<h2>Reducing Complexity: Pre-Processing Steps</h2>
-<ul>
-<li class="fragment"><p><strong>Tokenize:</strong> break out larger chunks of text in words (unigram) or n-grams</p></li>
-<li class="fragment"><p><strong>Lowercase:</strong> convert all to lower case</p></li>
-<li class="fragment"><p><strong>Remove Noise:</strong> stopwords, numbers, punctuation, function words</p></li>
-<li class="fragment"><p><strong>Stemming:</strong> chops off the ends of words</p></li>
-<li class="fragment"><p><strong>Lemmatization:</strong> doing things properly with the use of a vocabulary and morphological analysis of words</p></li>
-</ul>
-</section>
-<section id="example" class="slide level2">
-<h2>Example</h2>
-<div class="callout callout-note no-icon callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>Text</strong></p>
-</div>
-<div class="callout-content">
-<p><em>We use a new dataset containing nearly 50 million historical newspaper pages from 2,700 local US newspapers over the years 1877–1977. We define and discuss a measure of power we develop based on observed word frequencies, and we validate it through a series of analyses. Overall, we find that the relative coverage of political actors and of political offices is a strong indicator of political power for the cases we study</em></p>
-</div>
-</div>
-</div>
-<div class="fragment">
-<div class="callout callout-note no-icon callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>After pre-processing</strong></p>
-</div>
-<div class="callout-content">
-<p><em>use new dataset contain near 50 million historical newspaper pag 2700 local u newspaper year 18771977 define discus measure power develop bas observ word frequenc validate ser analys overall find relat coverage political actor political offic strong indicator political power cas study</em></p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<section id="text-representation" class="slide level2">
-<h2>Text Representation</h2>
-<ul>
-<li class="fragment"><p>Represent text as an <strong>unordered</strong> set of tokens in a document. <span class="red">Bag-of-Words Assumption</span></p></li>
-<li class="fragment"><p>While order is ignored, frequency matters!</p></li>
-<li class="fragment"><p>To represent documents as numbers, we will use the <span class="red">vector space model representation</span>:</p>
-<ul>
-<li class="fragment"><p>A document <span class="math inline">\(D_i\)</span> is represented as a collection of features <span class="math inline">\(W\)</span> (words, tokens, n-grams..)</p></li>
-<li class="fragment"><p>Each feature <span class="math inline">\(w_i\)</span> can be placed in a real line, then a document <span class="math inline">\(D_i\)</span> is a vector with <span class="math inline">\(W\)</span> dimensions</p></li>
-</ul></li>
-</ul>
-<div class="fragment">
-<p>Imagine the sentence below: <em>“If that is a joke, I love it. If not, can’t wait to unpack that with you later.”</em></p>
-<ul>
-<li class="fragment"><p><strong>Sorted Vocabulary</strong> =(a, can’t, i, if, is, it, joke, later, love, not, that, to, unpack, wait, with, you”)</p></li>
-<li class="fragment"><p><strong>Feature Representation</strong> = (1, 1, 1, 2, 1, 1, 1, 1, 1, 1, 2, 1, 1, 1, 1, 1)</p></li>
-<li class="fragment"><p>Features will typically be the n-gram (mostly unigram) <span class="red">frequencies</span> of the tokens in the document, or some <span class="red">function</span> of those frequencies</p></li>
-</ul>
-</div>
-<div class="fragment">
-<p>Each document becomes a numerica vector (vector space model)</p>
-<ul>
-<li class="fragment">stacking these vectors will give you our workhose representation for text: <span class="red"><strong>Document Feature Matrix</strong></span></li>
-</ul>
-</div>
-</section>
-<section id="visualizing-vector-space-model" class="slide level2">
-<h2>Visualizing Vector Space Model</h2>
-<div class="callout callout-note no-icon callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>Documents</strong></p>
-</div>
-<div class="callout-content">
-<p>Document 1 = “yes yes yes no no no”</p>
-<p>Document 2 = “yes yes yes yes yes yes”</p>
-</div>
-</div>
-</div>
-
-<img data-src="week-11_files/figure-revealjs/unnamed-chunk-5-1.png" width="768" class="r-stretch quarto-figure-center"></section>
-<section id="from-text-to-numbers-bag-of-words-document-feature-matrix" class="slide level2">
-<h2>From Text to Numbers: Bag-of-Words &amp; Document-Feature Matrix</h2>
-
-<img data-src="https://www.mzes.uni-mannheim.de/socialsciencedatalab/article/advancing-text-mining/figures/dfm.png" style="width:80.0%" class="r-stretch quarto-figure-center"></section>
-<section id="text-as-data-methods" class="slide level2">
-<h2>Text-as-Data methods</h2>
-<h4 id="comparingdescribing-documents">Comparing/Describing Documents</h4>
-<h4 id="topic-models-finding-hidden-structures-in-a-corpus">Topic Models: Finding hidden structures in a corpus</h4>
-</section>
-<section id="comparing-documents-how-far-is-document-a-from-document-b" class="slide level2">
-<h2>Comparing Documents: How `far’ is document a from document b?</h2>
-<p>Using the vector space, we can use notions of geometry to build well-defined <span class="red">comparison/similarity</span> measures between the documents.</p>
+<section id="evaluating-the-performance" class="slide level2 center">
+<h2>Evaluating the Performance</h2>
+<table>
+<thead>
+<tr class="header">
+<th></th>
+<th></th>
+<th style="text-align: center;">Predicted</th>
+<th style="text-align: center;"></th>
+<th style="text-align: right;"></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td></td>
+<td></td>
+<td style="text-align: center;">J</td>
+<td style="text-align: center;">¬J</td>
+<td style="text-align: right;">Total</td>
+</tr>
+<tr class="even">
+<td><strong>Actual</strong></td>
+<td>J</td>
+<td style="text-align: center;">a (TP)</td>
+<td style="text-align: center;">b (FN)</td>
+<td style="text-align: right;">a+b</td>
+</tr>
+<tr class="odd">
+<td></td>
+<td>¬J</td>
+<td style="text-align: center;">c (FP)</td>
+<td style="text-align: center;">d (TN)</td>
+<td style="text-align: right;">c+d</td>
+</tr>
+<tr class="even">
+<td></td>
+<td>Total</td>
+<td style="text-align: center;">a+c</td>
+<td style="text-align: center;">b+d</td>
+<td style="text-align: right;">N</td>
+</tr>
+</tbody>
+</table>
 <div>
 <ul>
-<li class="fragment"><span class="red">in multiple dimensions!!</span></li>
+<li class="fragment"><p><strong>Accuracy</strong>: number correctly classified/total number of cases = (a+d)/(a+b+c+d)</p></li>
+<li class="fragment"><p><strong>Precision</strong> : number of TP / (number of TP+number of FP) = a/(a+c) .</p>
+<ul>
+<li class="fragment">Fraction of the documents predicted to be J, that were in fact J.</li>
+<li class="fragment">Think as a measure for the estimator</li>
+</ul></li>
+<li class="fragment"><p><strong>Recall</strong>: (number of TP) / (number of TP + number of FN) = a /(a+b)</p>
+<ul>
+<li class="fragment">Fraction of the documents that were in fact J, that method predicted were J.</li>
+<li class="fragment">Think as a measure for the data</li>
+</ul></li>
+<li class="fragment"><p><strong>F</strong> : 2 precision*recall / precision+recall</p>
+<ul>
+<li class="fragment">Harmonic mean of precision and recall.</li>
+</ul></li>
+</ul>
+</div>
+</section></section>
+<section>
+<section id="quizz.-advantages-and-disadvantages-of-classic-ml" class="title-slide slide level1 center">
+<h1>Quizz. Advantages and Disadvantages of Classic ML?</h1>
+
+</section>
+<section id="pre-trained-deep-learning-models" class="slide level2 center">
+<h2>Pre-Trained Deep Learning Models</h2>
+<p>In recent years, text-as-data/nlp tasks have been dominated by the use of deep learning models. Let’s try to understand a bit what these models are.</p>
+<ul>
+<li class="fragment"><p><span class="red">Components:</span> These text-based deep learning models have two major components</p>
+<ul>
+<li class="fragment">A dense representation of words (no bag of words!).
+<ul>
+<li class="fragment">Every word becomes a vector now</li>
+</ul></li>
+<li class="fragment">A deep architecture for model predictions ~ neural network</li>
+</ul></li>
+<li class="fragment"><p><span class="red">Definition:</span> Deep Learning Models are designed for general-purpose classification tasks or just simple next-word prediction tasks</p>
+<ul>
+<li class="fragment">In general those are models built on TONS of data and optimized for a particular task</li>
+</ul></li>
+<li class="fragment"><p><span class="red">Key Features:</span></p>
+<ul>
+<li class="fragment">Available for use, adaptation and experimentation</li>
+<li class="fragment">Ready to use</li>
+<li class="fragment">Low to zero cost</li>
+<li class="fragment">Deep ML architectures ~ High accuracy</li>
+<li class="fragment">Can be fine-tuned for your specific task</li>
+</ul></li>
+</ul>
+</section>
+<section id="dense-vector-representation" class="slide level2 center">
+<h2>Dense Vector Representation</h2>
+<p>In the vector space model, we learned:</p>
+<ul>
+<li class="fragment"><p>A document <span class="math inline">\(D_i\)</span> is represented as a collection of features <span class="math inline">\(W\)</span> (words, tokens, n-grams..)</p></li>
+<li class="fragment"><p>Each feature <span class="math inline">\(w_i\)</span> can be place in a real line, then a document <span class="math inline">\(D_i\)</span> is a point in a <span class="math inline">\(W\)</span> dimensional space.</p></li>
 </ul>
 <div class="fragment">
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="week-11_files/figure-revealjs/unnamed-chunk-7-1.png" width="768"></p>
-</figure>
-</div>
-</div>
-</div>
-</div>
-</div>
-<!-- ## Properties for Similarity Metrics
-
-For vectors i and j, with distance $s_{ij}$:
-
-- 1. no negative distances: $s_{ij}  \ge 0$
-
-- 2. when distance between documents is zero ~ documents are identical
-
-- 3. distance between documents is symmetric: sij = sji
-
-- 4 measures satisfy triangle inequality. sik > sij + sjk 
--->
-</section>
-<section id="euclidean-distance" class="slide level2">
-<h2>Euclidean Distance</h2>
-<p>The <em>ordinary</em>, <em>straight line</em> distance between two points in space. Using document vectors <span class="math inline">\(y_a\)</span> and <span class="math inline">\(y_b\)</span> with <span class="math inline">\(j\)</span> dimensions</p>
-<div class="callout callout-note no-icon callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>Euclidean Distance</strong></p>
-</div>
-<div class="callout-content">
-<p><span class="math display">\[
-||y_a - y_b|| = \sqrt{\sum^{j}(y_{aj} - y_{bj})^2}
-\]</span></p>
-</div>
-</div>
-</div>
-<h4 id="can-be-performed-for-any-number-of-features-j-has-nice-mathematical-properties">Can be performed for any number of features J ~ has nice mathematical properties</h4>
-<aside class="notes">
-<p>no negative distances: sij   0 2 distance between documents is zero () documents are identical 3 distance between documents is symmetric: sij = sji 4 measures satisfy triangle inequality. sik   sij + sjk</p>
-<style type="text/css">
-        span.MJX_Assistive_MathML {
-          position:absolute!important;
-          clip: rect(1px, 1px, 1px, 1px);
-          padding: 1px 0 0 0!important;
-          border: 0!important;
-          height: 1px!important;
-          width: 1px!important;
-          overflow: hidden!important;
-          display:block!important;
-      }</style></aside>
-</section>
-<section id="euclidean-distance-example" class="slide level2">
-<h2>Euclidean Distance, example</h2>
-<div class="callout callout-note no-icon callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>Euclidean Distance</strong></p>
-</div>
-<div class="callout-content">
-<p><span class="math display">\[
-||y_a - y_b|| = \sqrt{\sum^{j}(y_{aj} - y_{bj})^2}
-\]</span></p>
-</div>
-</div>
-</div>
+<p>Embedded in this model, there is the idea we represent <span class="red">words</span> as a <span class="red">one-hot encoding</span>.</p>
 <ul>
-<li class="fragment"><p><span class="math inline">\(y_a\)</span> = [0, 2.51, 3.6, 0] and <span class="math inline">\(y_b\)</span> = [0, 2.3, 3.1, 9.2]</p></li>
-<li class="fragment"><p><span class="math inline">\(\sum_{j=1}^j (y_a - y_b)^2\)</span> = <span class="math inline">\((0-0)^2 + (2.51-2.3)^2 + (3.6-3.1)^2 + (9-0)^2\)</span> = <span class="math inline">\(84.9341\)</span></p></li>
-<li class="fragment"><p><span class="math inline">\(\sqrt{\sum_{j=1}^j (y_a - y_b)^2}\)</span> = 9.21</p></li>
-</ul>
-</section>
-<section id="exercise" class="slide level2">
-<h2>Exercise</h2>
-<div class="callout callout-note no-icon callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<p><strong>Documents, W=3 {yes, no}</strong></p>
-</div>
-<div class="callout-content">
-<p>Document 1 = “yes yes yes no no no” (3, 3)</p>
-<p>Document 2 = “yes yes yes yes yes yes” (6,0)</p>
-<p>Document 3= “yes yes yes no no no yes yes yes no no no yes yes yes no no no yes yes yes no no no” (12, 12)</p>
-</div>
-</div>
-</div>
-<div class="columns">
-<div class="column" style="width:50%;">
-<div class="cell" data-layout-align="center">
-<div class="cell-output-display">
-<div class="quarto-figure quarto-figure-center">
-<figure>
-<p><img data-src="week-11_files/figure-revealjs/unnamed-chunk-9-1.png" width="768"></p>
-</figure>
-</div>
-</div>
-</div>
-</div><div class="column" style="width:50%;">
-<p><br><br></p>
-<ul>
-<li class="fragment">Which documents will the euclidean distance place closer together?</li>
-<li class="fragment">Does it look like a good measure for similarity?
-<ul>
-<li class="fragment">Doc C = Doc A * 3</li>
-</ul></li>
+<li class="fragment">“cat”: [0,0, 0, 0, 0, 0, 1, 0, ….., V] , on a V dimensional vector</li>
+<li class="fragment">“dog”: [0,0, 0, 0, 0, 0, 0, 1, …., V], on a V dimensional vector</li>
 </ul>
 </div>
+</section>
+<section id="sparse-vs-dense-vectors" class="slide level2 center">
+<h2>Sparse vs Dense Vectors</h2>
+<p><strong>One-hot encoding / Sparse Representation:</strong></p>
+<ul>
+<li class="fragment"><p>cat = <span class="math inline">\(\begin{bmatrix} 0,0, 0, 0, 0, 0, 1, 0, 0 \end{bmatrix}\)</span></p></li>
+<li class="fragment"><p>dog = <span class="math inline">\(\begin{bmatrix} 0,0, 0, 0, 0, 1, 0, 0, 0 \end{bmatrix}\)</span></p></li>
+</ul>
+<div class="fragment">
+<p><strong>Word Embedding / Dense Representation:</strong></p>
+<ul>
+<li class="fragment"><p>cat = <span class="math inline">\(\begin{bmatrix} 0.25, -0.75, 0.90, 0.12, -0.50, 0.33, 0.66, -0.88, 0.10, -0.45 \end{bmatrix}\)</span></p></li>
+<li class="fragment"><p>dog = <span class="math inline">\(\begin{bmatrix} 0.25, 1.75, 0.90, 0.12, -0.50, 0.33, 0.66, -0.88, 0.10, -0.45 \end{bmatrix}\)</span></p></li>
+<li class="fragment"><p>Dense representations are behind all recent advancements on NLP, including ChatGPT</p></li>
+</ul>
 </div>
 </section>
-<section id="cosine-similarity" class="slide level2">
-<h2>Cosine Similarity</h2>
-<p>Euclidean distance rewards <span class="red">magnitude</span>, rather than <span class="red">direction</span></p>
-<p><span class="math display">\[
-\text{cosine similarity}(\mathbf{y_a}, \mathbf{y_b}) = \frac{\mathbf{y_a} \cdot \mathbf{y_b}}{\|\mathbf{y_a}\| \|\mathbf{y_b}\|}
-\]</span></p>
-<p><span class="red">Unpacking the formula</span>:</p>
-<ul>
-<li class="fragment"><p><span class="math inline">\(\mathbf{y_a} \cdot \mathbf{y_b}\)</span> ~ dot product between vectors</p>
-<ul>
-<li class="fragment">projecting common magnitudes</li>
-<li class="fragment">measure of similarity (see textbook)</li>
-<li class="fragment"><span class="math inline">\(\sum_j{y_{aj}*y_{bj}}\)</span></li>
-</ul></li>
-<li class="fragment"><p><span class="math inline">\(||\mathbf{y_a}||\)</span> ~ vector magnitude, length ~ <span class="math inline">\(\sqrt{\sum{y_{aj}^2}}\)</span></p></li>
-<li class="fragment"><p>normalizes similarity by documents’ length ~ independent of document length be because it deals only with the <span class="red">angle of the vectors</span></p></li>
-<li class="fragment"><p>cosine similarity captures some notion of relative <em>direction</em> (e.g.&nbsp;style or topics in the document)</p></li>
-</ul>
-</section>
-<section id="cosine-similarity-1" class="slide level2">
-<h2>Cosine Similarity</h2>
-<p>Cosine function has a range between -1 and 1.</p>
-<ul>
-<li class="fragment">Consider: cos (0) = 1, cos (90) = 0, cos (180) = -1</li>
-</ul>
+<section id="embeddings-with-self-supervision" class="slide level2 center">
+<h2>Embeddings with Self-Supervision</h2>
 
-<img data-src="week-11_files/figure-revealjs/unnamed-chunk-10-1.png" width="960" class="r-stretch"></section></section>
-<section>
-<section id="topic-models-lda-approach" class="title-slide slide level1 center">
-<h1>Topic Models: LDA Approach</h1>
+<img data-src="skipgram_0.png" style="width:100.0%" class="r-stretch"><p>Source: <a href="https://web.stanford.edu/class/cs224n/index.html#schedule">CS224N</a></p>
+</section>
+<section id="transformers-architecture" class="slide level2 center">
+<h2>Transformers Architecture</h2>
 
-</section>
-<section id="intuition" class="slide level2">
-<h2>Intuition</h2>
-<p>Topic models are a unsupervised statistical model: purpose of finding a hidden structure in the corpus, across many different documents</p>
-<ul>
-<li class="fragment"><p>Capture words that are more likely to occur together across a set of documents.</p></li>
-<li class="fragment"><p>Assign these words a probability of being part of a cluster (topic).</p></li>
-<li class="fragment"><p>Assign documents a probability of being associated of these clusters.</p>
-<ul>
-<li class="fragment"><p><strong>Documents:</strong> emerge from probability distribution of topics</p>
-<ul>
-<li class="fragment"><span class="midgray">a speech can be 40% about trade, 30% about sports, 10% about health, and 20% spread across topics you don’t think make much sense</span></li>
-</ul></li>
-<li class="fragment"><p><strong>Topics:</strong> emerge from probability distributions over words</p>
-<ul>
-<li class="fragment"><span class="midgray">the topic health will have words like hospital, clinic, dr., sick, cancer</span></li>
-</ul></li>
-</ul></li>
-</ul>
-</section>
-<section id="blei-2012" class="slide level2">
-<h2>Blei, 2012,</h2>
+<img data-src="trans.png" style="width:100.0%" class="r-stretch"></section>
+<section id="neural-networks-with-dense-vectors." class="slide level2 center">
+<h2>Neural Networks with Dense Vectors.</h2>
 
-<img data-src="https://www.analyticsvidhya.com/wp-content/uploads/2016/08/Modeling1.png" style="width:80.0%" class="r-stretch quarto-figure-center"></section>
-<section id="language-model-generative-probabilistic-modeling" class="slide level2">
-<h2>Language Model + Generative Probabilistic Modeling</h2>
+<img data-src="full_nn_transformers.png" style="width:100.0%" class="r-stretch"></section>
+<section id="how-do-i-use-these-sophisticated-models" class="slide level2 center">
+<h2>How do I use these sophisticated models?</h2>
+<p>If you have enough computing power and knowledge of working with these models, you can train your own LLM models. It takes a LOT of data, time and money.</p>
+<p>Most people will:</p>
 <ul>
-<li class="fragment"><p><strong>Step 1: For each <span class="red">document</span>:</strong></p>
-<ul>
-<li class="fragment">Randomly choose a <span class="red">distribution</span> over topics. That is, choose one of many multinomial distributions, each which mixes the topics in different proportions.</li>
-</ul></li>
-<li class="fragment"><p><strong>Step 2: Then, for every <span class="red">word position</span> in the document</strong></p>
-<ul>
-<li class="fragment">Randomly choose a <span class="red">topic</span> from the distribution over topics from step 1.</li>
-<li class="fragment">Randomly choose a <span class="red">word</span> from the distribution over the vocabulary that the topic implies.</li>
-</ul></li>
-</ul>
-</section>
-<section id="inference-how-to-estimate-these-models" class="slide level2">
-<h2>Inference: How to estimate these models?</h2>
-<p>Using the observed data, the words, we can estimate latent parameters. We start with the joint distribution implied by our language model (Blei, 2012):</p>
-<p><span class="math display">\[
-p(\beta_{1:K}, \theta_{1:D}, z_{1:D}, w_{1:D})= \prod_{K}^{i=1}p(\beta_i)\prod_{D}^{d=1}p(\theta_d)(\prod_{N}^{n=1}p(z_{d,n}|\theta_d)p(w_{d,n}|\beta_{1:K},z_{d,n})
-\]</span></p>
-<p>To get to the conditional:</p>
-<p><span class="math display">\[
-p(\beta_{1:K}, \theta_{1:D}, z_{1:D}|w_{1:D})=\frac{p(\beta_{1:K}, \theta_{1:D}, z_{1:D}, w_{1:D})}{p(w_{1:D})}
-\]</span></p>
-<p>The denominator is hard complicate to be estimate (requires integration for every word for every topic):</p>
-<ul>
-<li class="fragment">Simulate with Gibbs Sampling or Variational Inference.</li>
-</ul>
-</section>
-<section id="show-me-results" class="slide level2">
-<h2>Show me results!</h2>
-
-<img data-src="topic_matrices.png" style="width:80.0%" class="r-stretch quarto-figure-center"></section>
-<section id="many-different-types-of-topic-models" class="slide level2">
-<h2>Many different types of topic models</h2>
-<ul>
-<li class="fragment"><p><strong>Structural topic model:</strong> allow (1) topic prevalence, (2) topic content to vary as a function of document-level covariates (e.g., how do topics vary over time or documents produced in 1990 talk about something differently than documents produced in 2020?); implemented in stm in R (Roberts, Stewart, Tingley, Benoit)</p></li>
-<li class="fragment"><p><strong>Correlated topic model:</strong> way to explore between-topic relationships (Blei and Lafferty, 2017); implemented in topicmodels in R; possibly somewhere in Python as well!</p></li>
-<li class="fragment"><p><strong>Keyword-assisted topic model:</strong> seed topic model with keywords to try to increase the face validity of topics to what you’re trying to measure; implemented in keyATM in R (Eshima, Imai, Sasaki, 2019)</p></li>
-<li class="fragment"><p><strong>BertTopic:</strong> BERTopic is a topic modeling technique that leverages transformers and TF-IDF to create dense clusters of words.</p></li>
+<li class="fragment"><p>use pre-trained models (transfer learning) available on the web.</p></li>
+<li class="fragment"><p>use pre-trained word embeddings, fine tune the model (retrain with new data), and improve the performance</p></li>
+<li class="fragment"><p>outsource tasks for generative models through prompting via APIs.</p></li>
 </ul>
 </section></section>
-<section id="notebooks" class="title-slide slide level1 center">
-<h1>Notebooks</h1>
+<section id="notebook-for-text-analysis" class="title-slide slide level1 center">
+<h1><a href="">Notebook for Text Analysis</a></h1>
 
 <div class="footer footer-default">
 <p>Data science I: Foundations</p>
@@ -862,7 +674,7 @@ p(\beta_{1:K}, \theta_{1:D}, z_{1:D}|w_{1:D})=\frac{p(\beta_{1:K}, \theta_{1:D},
         disableLayout: false,
 
         // Vertical centering of slides
-        center: false,
+        center: true,
 
         // Enables touch navigation on devices with touch input
         touch: true,

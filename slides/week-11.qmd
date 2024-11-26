@@ -12,7 +12,7 @@ format:
     background-transition: fade
     code-line-numbers: false
     width: 1600
-    height: 800
+    height: 1200
     center: false
     slide-number: true
     incremental: true
@@ -47,7 +47,6 @@ knitr::include_graphics("week1_figs/redes.png")
 knitr::include_graphics("https://miro.medium.com/v2/resize:fit:1400/1*t2u_0FHoQSpBK8i7j1NOBg.png") 
 ```
 
-
 # Modeling Text as Data
 
 ## Why do we need models to analyze text data?
@@ -63,7 +62,6 @@ knitr::include_graphics("https://miro.medium.com/v2/resize:fit:1400/1*t2u_0FHoQS
 -   Statistical models + Powerful Computers allows us to process data at scale and understand common patterns
 
 -   We know "All text models are wrong" -- This is particularly true with text!
-
 
 ## Workflow
 
@@ -241,7 +239,6 @@ knitr::include_graphics("https://www.mzes.uni-mannheim.de/socialsciencedatalab/a
 #### Comparing/Describing Documents
 
 #### Topic Models: Finding hidden structures in a corpus
-
 
 ## Comparing Documents: How \`far' is document a from document b?
 

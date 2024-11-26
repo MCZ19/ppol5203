@@ -1467,14 +1467,14 @@
     "href": "weeks/week-12.html",
     "title": "Week 12",
     "section": "",
-    "text": "Text analysis II:Unsupervised and Supervised models html –  Jupyter Notebook"
+    "text": "Text analysis II: Supervised models html –  Jupyter Notebook"
   },
   {
     "objectID": "weeks/week-12.html#lectures-notes",
     "href": "weeks/week-12.html#lectures-notes",
     "title": "Week 12",
     "section": "",
-    "text": "Text analysis II:Unsupervised and Supervised models html –  Jupyter Notebook"
+    "text": "Text analysis II: Supervised models html –  Jupyter Notebook"
   },
   {
     "objectID": "slides/week-3.html#github-remote-git-repositories",
@@ -2348,8 +2348,8 @@
     "objectID": "slides/week-9.html#plans-for-today",
     "href": "slides/week-9.html#plans-for-today",
     "title": " PPOL 5203 - Data Science I: Foundations ",
-    "section": "Plans for Today",
-    "text": "Plans for Today\n\nSolution from last week in class exercise\nAPIs\n\nA simple API - Trivia API\nMore complex with Credentials: Yelp\nCredentials + Wrapper: Youtube\n\nSelenium for Dynamic Websites and Audit Studies\n\nExample of my own research: algorithmic bias in chinese social media websites"
+    "section": "",
+    "text": "Solution from last week in class exercise\nAPIs\n\nA simple API - Trivia API\nMore complex with Credentials: Yelp\nCredentials + Wrapper: Youtube\n\nSelenium for Dynamic Websites and Audit Studies\n\nExample of my own research: algorithmic bias in chinese social media websites"
   },
   {
     "objectID": "slides/week-9.html#apis-101",
@@ -3015,5 +3015,194 @@
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Euclidean Distance, example",
     "text": "Euclidean Distance, example\n\n\n\nEuclidean Distance\n\n\n\\[\n||y_a - y_b|| = \\sqrt{\\sum^{j}(y_{aj} - y_{bj})^2}\n\\]\n\n\n\n\n\\(y_a\\) = [0, 2.51, 3.6, 0] and \\(y_b\\) = [0, 2.3, 3.1, 9.2]\n\\(\\sum_{j=1}^j (y_a - y_b)^2\\) = \\((0-0)^2 + (2.51-2.3)^2 + (3.6-3.1)^2 + (9-0)^2\\) = \\(84.9341\\)\n\\(\\sqrt{\\sum_{j=1}^j (y_a - y_b)^2}\\) = 9.21"
+  },
+  {
+    "objectID": "slides/week-12.html#plans-for-today",
+    "href": "slides/week-12.html#plans-for-today",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Plans for Today",
+    "text": "Plans for Today\nIntroduction to Text Analysis/Natural Language Processing\n\nSupervised Learning with Text\n\nDictionary Methods\nMachine Learning Pre-Trained Models\nApplications of LLMs (Large Languague models)"
+  },
+  {
+    "objectID": "slides/week-12.html#supervised-learning-with-text",
+    "href": "slides/week-12.html#supervised-learning-with-text",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Supervised Learning with Text",
+    "text": "Supervised Learning with Text\nWhen doing supervised learning with text, we have three basic pieces of the puzzle:\n\nOutcome: the content you want to classify.\n\nExamples:\n\nTone, Emotion, Topic, Misinformation, Quality… Anything you know what you want to classify\n\n\nInput: this is your text. Often this will come from converting you text to a numerical representation. As we learned last week, most times this numerical representation will be a document feature matrix.\nModel: An transformation function connecting your words with the outcome you want to predict."
+  },
+  {
+    "objectID": "slides/week-12.html#three-types-of-supervised-learning-with-text",
+    "href": "slides/week-12.html#three-types-of-supervised-learning-with-text",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Three types of Supervised Learning with Text",
+    "text": "Three types of Supervised Learning with Text\nIn class, we will see three distinct types of approaches to do supervised learning with text.\n\nDictionary Models.\nClassic Machine Learning with bag-of-words assumption.\nPre-Trained Models Deep Learning Models."
+  },
+  {
+    "objectID": "slides/week-12.html#dictionary-models",
+    "href": "slides/week-12.html#dictionary-models",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Dictionary Models",
+    "text": "Dictionary Models\n\nUse a set of pre-defined words that allow us to classify documents automatically, quickly and accurately.\nInstead of optimizing a transformation function using statistical assumption and seen data, in dictionaries we have a pre-assumed recipe for the transformation function.\nA dictionary contains:\n\na list of words that corresponds to each category\n\npositive and negative for sentiment\nSexism, homophobia, xenophobia, racism for hate speech\n\n\nWeights given to each word ~ same for all words or some continuous variation."
+  },
+  {
+    "objectID": "slides/week-12.html#more-specifically",
+    "href": "slides/week-12.html#more-specifically",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "More specifically…",
+    "text": "More specifically…\nWe have a set of key words with weights,\n\ne.g. for sentiment analysis: horrible is scored as \\(-1\\) and beautiful as \\(+1\\)\nthe relative rate of occurrence of these terms tells us about the overall tone or category that the document should be placed in.\n\n\nFor document \\(i\\) and words \\(m=1,\\ldots, M\\) in the dictionary,\n\\[\\text{tone of document $i$}= \\sum^M_{m=1} \\frac{s_m w_{im}}{N_i}\\]\nWhere:\n\n\\(s_m\\) is the score of word \\(m\\)\n\\(w_{im}\\) is the number of occurrences of the \\(m_{th}\\) dictionary word in the document \\(i\\)\n\\(N_i\\) is the total number of all dictionary words in the document"
+  },
+  {
+    "objectID": "slides/week-12.html#classic-machine-learning-with-bag-of-words-assumption.",
+    "href": "slides/week-12.html#classic-machine-learning-with-bag-of-words-assumption.",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Classic Machine Learning with bag-of-words assumption.",
+    "text": "Classic Machine Learning with bag-of-words assumption.\nPipeline:\n\nStep 1: label some examples of the concept of we want to measure (output)\nStep 2: convert your data to a document-feature matrix (input)\nStep 3: train a statistical model on these set of label data using the document-feature matrix.\nStep 4: use the classifier - some f(x) - to predict unseen documents"
+  },
+  {
+    "objectID": "slides/week-12.html#pre-trained-deep-learning-models",
+    "href": "slides/week-12.html#pre-trained-deep-learning-models",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Pre-Trained Deep Learning Models",
+    "text": "Pre-Trained Deep Learning Models\nIn recent years, text-as-data/nlp tasks have been dominated by the use of deep learning models. Let’s try to understand a bit what these models are.\n\nComponents: These text-based deep learning models have two major components\n\nA dense representation of words (no bag of words!).\n\nEvery word becomes a vector now\n\nA deep architecture for model predictions ~ neural network\n\nDefinition: Deep Learning Models are designed for general-purpose classification tasks or just simple next-word prediction tasks\n\nIn general those are models built on TONS of data and optimized for a particular task\n\nKey Features:\n\nAvailable for use, adaptation and experimentation\nReady to use\nLow to zero cost\nDeep ML architectures ~ High accuracy\nCan be fine-tuned for your specific task"
+  },
+  {
+    "objectID": "slides/week-12.html#dense-vector-representation",
+    "href": "slides/week-12.html#dense-vector-representation",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Dense Vector Representation",
+    "text": "Dense Vector Representation\nIn the vector space model, we learned:\n\nA document \\(D_i\\) is represented as a collection of features \\(W\\) (words, tokens, n-grams..)\nEach feature \\(w_i\\) can be place in a real line, then a document \\(D_i\\) is a point in a \\(W\\) dimensional space.\n\n\nEmbedded in this model, there is the idea we represent words as a one-hot encoding.\n\n“cat”: [0,0, 0, 0, 0, 0, 1, 0, ….., V] , on a V dimensional vector\n“dog”: [0,0, 0, 0, 0, 0, 0, 1, …., V], on a V dimensional vector"
+  },
+  {
+    "objectID": "slides/week-12.html#sparse-vs-dense-vectors",
+    "href": "slides/week-12.html#sparse-vs-dense-vectors",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Sparse vs Dense Vectors",
+    "text": "Sparse vs Dense Vectors\nOne-hot encoding / Sparse Representation:\n\ncat = \\(\\begin{bmatrix} 0,0, 0, 0, 0, 0, 1, 0, 0 \\end{bmatrix}\\)\ndog = \\(\\begin{bmatrix} 0,0, 0, 0, 0, 1, 0, 0, 0 \\end{bmatrix}\\)\n\n\nWord Embedding / Dense Representation:\n\ncat = \\(\\begin{bmatrix} 0.25, -0.75, 0.90, 0.12, -0.50, 0.33, 0.66, -0.88, 0.10, -0.45 \\end{bmatrix}\\)\ndog = \\(\\begin{bmatrix} 0.25, 1.75, 0.90, 0.12, -0.50, 0.33, 0.66, -0.88, 0.10, -0.45 \\end{bmatrix}\\)\nDense representations are behind all recent advancements on NLP, including ChatGPT"
+  },
+  {
+    "objectID": "slides/week-12.html#embeddings-with-self-supervision",
+    "href": "slides/week-12.html#embeddings-with-self-supervision",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Embeddings with Self-Supervision",
+    "text": "Embeddings with Self-Supervision\n\nSource: CS224N"
+  },
+  {
+    "objectID": "slides/week-12.html#transformers-architecture",
+    "href": "slides/week-12.html#transformers-architecture",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Transformers Architecture",
+    "text": "Transformers Architecture"
+  },
+  {
+    "objectID": "slides/week-12.html#neural-networks-with-dense-vectors.",
+    "href": "slides/week-12.html#neural-networks-with-dense-vectors.",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Neural Networks with Dense Vectors.",
+    "text": "Neural Networks with Dense Vectors."
+  },
+  {
+    "objectID": "slides/week-12.html#how-do-i-use-these-sophisticated-models",
+    "href": "slides/week-12.html#how-do-i-use-these-sophisticated-models",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "How do I use these sophisticated models?",
+    "text": "How do I use these sophisticated models?\nIf you have enough computing power and knowledge of working with these models, you can train your own LLM models. It takes a LOT of data, time and money.\nMost people will:\n\nuse pre-trained models (transfer learning) available on the web.\nuse pre-trained word embeddings, fine tune the model (retrain with new data), and improve the performance\noutsource tasks for generative models through prompting via APIs."
+  },
+  {
+    "objectID": "slides/week-13.html",
+    "href": "slides/week-13.html",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "",
+    "text": "Introduction to SQL\n\nMotivation\nWays to use SQL\nOverview of main functions\n\nDiscuss your projects"
+  },
+  {
+    "objectID": "slides/week-13.html#plans-for-today",
+    "href": "slides/week-13.html#plans-for-today",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "",
+    "text": "Introduction to SQL\n\nMotivation\nWays to use SQL\nOverview of main functions\n\nDiscuss your projects"
+  },
+  {
+    "objectID": "slides/week-13.html#database",
+    "href": "slides/week-13.html#database",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Database",
+    "text": "Database\nAssume you are starting a company collecting daily a high volume of data, you can:\n\nUse a File System store data as daily csvs, jsons, etc..\nOR build a structured, secured and efficient system to store and access the data\n\n\nDatabase A database is a structured collection of data designed to store, manage, and retrieve information efficiently.\nDatabase Management System serves as an interface between the database and its users or the application programs (MySQL, SQLite, Hive, BigQuery (Google), Presto (Meta), Redshift (Amazon) are all different DBMS.)\nRelational Databases are a type of database where data is represented as tables linked based on common keys (to avoid redundancy)"
+  },
+  {
+    "objectID": "slides/week-13.html#relational-databases",
+    "href": "slides/week-13.html#relational-databases",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Relational Databases",
+    "text": "Relational Databases"
+  },
+  {
+    "objectID": "slides/week-13.html#why-databases",
+    "href": "slides/week-13.html#why-databases",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Why Databases?",
+    "text": "Why Databases?\nAs Data Scientists, we will often use Databases, instead of building them. For our purposes, two main advantages:\n\nMemory efficient (relational component)\nRelies on Hard Drive memory for storage, not RAM!!\nDatabases are optimized to reduce the dependency on RAM when querying your data.\nDBMS enforces rules to maintain data integrity and consistency (stop you of adding corrupt data)"
+  },
+  {
+    "objectID": "slides/week-13.html#sql",
+    "href": "slides/week-13.html#sql",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "SQL",
+    "text": "SQL\n\nSQL (pronounced S-Q-L or SEQUEL) is a language designed to query relational databases\nWhile relatively uncommon in academia, many companies / governments expect data scientists to be able to write SQL queries\nThe result of an SQL query is always a table\nIt’s a nonprocedural language: define inputs and outputs; how the statement is executed is left to the optimizer\nSQL is a language that works with many types of databases. Nearly identical syntax but some small differences on the margins"
+  },
+  {
+    "objectID": "slides/week-13.html#how-to-interact-with-sql-ides",
+    "href": "slides/week-13.html#how-to-interact-with-sql-ides",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "How to interact with SQL: IDEs",
+    "text": "How to interact with SQL: IDEs"
+  },
+  {
+    "objectID": "slides/week-13.html#how-to-interact-with-sql-pythonr",
+    "href": "slides/week-13.html#how-to-interact-with-sql-pythonr",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "How to interact with SQL: Python/R",
+    "text": "How to interact with SQL: Python/R\n\nUse an R or Python package that helps you connect with a specific type of database (sqlite3 library in Python)\nEstablish a connection between your local computer and the database\nWrite a SQL query\nExecute the query\nPull the result and work with the result in that language"
+  },
+  {
+    "objectID": "slides/week-13.html#sql-query-example",
+    "href": "slides/week-13.html#sql-query-example",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "SQL Query: Example",
+    "text": "SQL Query: Example\n\n\nselect \n    country, \n    ccode, \n    year, \n    riots\nfrom conflict"
+  },
+  {
+    "objectID": "slides/week-13.html#sql-query-main-components",
+    "href": "slides/week-13.html#sql-query-main-components",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "SQL Query: Main Components",
+    "text": "SQL Query: Main Components\n\nSELECT columns\nFROM a table in a database\nWHERE rows meet a condition\nGROUP BY values of a column\nORDER BY values of a column when displaying results\nLIMIT to only X number of rows in resulting table\nAlways required: SELECT and FROM. Rest are optional."
+  },
+  {
+    "objectID": "slides/week-13.html#aggregate-functions",
+    "href": "slides/week-13.html#aggregate-functions",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Aggregate Functions",
+    "text": "Aggregate Functions\nSELECT can be combined with functions such as SUM, COUNT, AVG… including when using GROUP BY\n\nselect \n    country,  \n    year, \n    sum(riots) as riots,\n    sum(protests) as protests\nfrom conflict \ngroup by country, year"
+  },
+  {
+    "objectID": "slides/week-13.html#joins",
+    "href": "slides/week-13.html#joins",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Joins",
+    "text": "Joins\nRelational databases are all about joins. SQL offers the same type of joins as we saw in pandas\n\ninner join (default)\nleft join\nouter join\nUse join + on to define which column to join."
+  },
+  {
+    "objectID": "slides/week-12.html#evaluating-the-performance",
+    "href": "slides/week-12.html#evaluating-the-performance",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Evaluating the Performance",
+    "text": "Evaluating the Performance\n\n\n\n\n\nPredicted\n\n\n\n\n\n\n\n\nJ\n¬J\nTotal\n\n\nActual\nJ\na (TP)\nb (FN)\na+b\n\n\n\n¬J\nc (FP)\nd (TN)\nc+d\n\n\n\nTotal\na+c\nb+d\nN\n\n\n\n\n\nAccuracy: number correctly classified/total number of cases = (a+d)/(a+b+c+d)\nPrecision : number of TP / (number of TP+number of FP) = a/(a+c) .\n\nFraction of the documents predicted to be J, that were in fact J.\nThink as a measure for the estimator\n\nRecall: (number of TP) / (number of TP + number of FN) = a /(a+b)\n\nFraction of the documents that were in fact J, that method predicted were J.\nThink as a measure for the data\n\nF : 2 precision*recall / precision+recall\n\nHarmonic mean of precision and recall."
+  },
+  {
+    "objectID": "slides/week-9.html",
+    "href": "slides/week-9.html",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "",
+    "text": "Solution from last week in class exercise\nAPIs\n\nA simple API - Trivia API\nMore complex with Credentials: Yelp\nCredentials + Wrapper: Youtube\n\nSelenium for Dynamic Websites and Audit Studies\n\nExample of my own research: algorithmic bias in chinese social media websites"
   }
 ]

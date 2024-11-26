@@ -59,7 +59,6 @@ format:
 
     -   When available, we will always prefer APIs
 
-
 ## APIs 101
 
 -   **APIs**: Application Programming Interface
