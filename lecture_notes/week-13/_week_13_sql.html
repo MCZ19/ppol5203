@@ -13101,8 +13101,7 @@ Tiago Ventura </center> <h1></p>
 </div><div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Learning-Goals">Learning Goals<a class="anchor-link" href="#Learning-Goals">&#182;</a></h2><p>This notebook will cover the basics of working with databases.</p>
-<p>To do so, we will be working with a database called <code>country.sqlite</code> which you can download <a href="">here</a>. This database was developed by Dr. Eric Dunford for a previous iteration of this class. It contains a set of country-level information over years, and spread across different tables.</p>
-<p>These materials largely replication code from Dr. Dunford.</p>
+<p>To do so, we will be working with a database called <code>country.sqlite</code> which you can download <a href="https://www.dropbox.com/scl/fi/j6x5iykeudjyujp263sfz/country.sqlite?rlkey=g4ztum39u6pi74sp1f56rreir&amp;dl=0">here</a>. This database was developed by Dr. Eric Dunford for a previous iteration of this class. It contains a set of country-level information over years, and spread across different tables.</p>
 
 </div>
 </div>
@@ -13112,7 +13111,7 @@ Tiago Ventura </center> <h1></p>
 <div class="text_cell_render border-box-sizing rendered_html">
 <h3 id="Using-SQL-through-Pandas.">Using SQL through Pandas.<a class="anchor-link" href="#Using-SQL-through-Pandas.">&#182;</a></h3><p>As we saw in the slides, we can use SQL in Python and build a connection with database systems through pandas. Here are te steps:</p>
 <ul>
-<li><p>Establish a connection between your local computer and the database</p>
+<li><p>Establish a connection between your local python environment and the database stored locally</p>
 </li>
 <li><p>Write a SQL query</p>
 </li>
@@ -13143,7 +13142,7 @@ Tiago Ventura </center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[16]:</div>
+<div class="prompt input_prompt">In&nbsp;[2]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Establish a connection with the database</span>
@@ -13157,7 +13156,7 @@ Tiago Ventura </center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[4]:</div>
+<div class="prompt input_prompt">In&nbsp;[3]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># write a query</span>
@@ -13174,6 +13173,40 @@ Tiago Ventura </center> <h1></p>
 <div class="prompt input_prompt">In&nbsp;[5]:</div>
 <div class="inner_cell">
     <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># just text, wuery</span>
+<span class="n">query</span>
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt output_prompt">Out[5]:</div>
+
+
+
+
+<div class="output_text output_subarea output_execute_result">
+<pre>&#39;select * from econ&#39;</pre>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
+<div class="inner_cell">
+    <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># Use the connection with the read_sql() method</span>
 <span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">query</span><span class="p">,</span><span class="n">conn</span><span class="p">)</span>
 </pre></div>
@@ -13188,7 +13221,7 @@ Tiago Ventura </center> <h1></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[5]:</div>
+    <div class="prompt output_prompt">Out[13]:</div>
 
 
 
@@ -13334,7 +13367,7 @@ Tiago Ventura </center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[17]:</div>
+<div class="prompt input_prompt">In&nbsp;[6]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="s2">"select name from sqlite_master where type='table'"</span><span class="p">,</span><span class="n">conn</span><span class="p">)</span>
@@ -13350,7 +13383,7 @@ Tiago Ventura </center> <h1></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[17]:</div>
+    <div class="prompt output_prompt">Out[6]:</div>
 
 
 
@@ -13415,7 +13448,7 @@ Tiago Ventura </center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[18]:</div>
+<div class="prompt input_prompt">In&nbsp;[7]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># build query</span>
@@ -13439,7 +13472,7 @@ Tiago Ventura </center> <h1></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[18]:</div>
+    <div class="prompt output_prompt">Out[7]:</div>
 
 
 
@@ -13528,7 +13561,7 @@ Tiago Ventura </center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[87]:</div>
+<div class="prompt input_prompt">In&nbsp;[8]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># build query</span>
@@ -13550,7 +13583,7 @@ Tiago Ventura </center> <h1></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[87]:</div>
+    <div class="prompt output_prompt">Out[8]:</div>
 
 
 
@@ -13634,17 +13667,16 @@ Tiago Ventura </center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[88]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># build query</span>
-
 <span class="n">query</span> <span class="o">=</span> <span class="s2">"""select country, ccode,  year,  riots </span>
 <span class="s2">         from conflict </span>
-<span class="s2">         order by riots """</span>
+<span class="s2">         order by riots"""</span>
 
 <span class="c1">#query database</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">query</span><span class="p">,</span><span class="n">conn</span><span class="p">)</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">query</span><span class="p">,</span><span class="n">conn</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -13657,7 +13689,7 @@ Tiago Ventura </center> <h1></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[88]:</div>
+    <div class="prompt output_prompt">Out[11]:</div>
 
 
 
@@ -13721,51 +13753,8 @@ Tiago Ventura </center> <h1></p>
       <td>1997.0</td>
       <td>0</td>
     </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>8699</th>
-      <td>Kenya</td>
-      <td>501</td>
-      <td>2007.0</td>
-      <td>102</td>
-    </tr>
-    <tr>
-      <th>8700</th>
-      <td>Tunisia</td>
-      <td>616</td>
-      <td>2018.0</td>
-      <td>105</td>
-    </tr>
-    <tr>
-      <th>8701</th>
-      <td>Burundi</td>
-      <td>516</td>
-      <td>2015.0</td>
-      <td>120</td>
-    </tr>
-    <tr>
-      <th>8702</th>
-      <td>Egypt</td>
-      <td>651</td>
-      <td>2014.0</td>
-      <td>120</td>
-    </tr>
-    <tr>
-      <th>8703</th>
-      <td>Egypt</td>
-      <td>651</td>
-      <td>2013.0</td>
-      <td>124</td>
-    </tr>
   </tbody>
 </table>
-<p>8704 rows × 4 columns</p>
 </div></div>
 
 </div>
@@ -13783,7 +13772,7 @@ Tiago Ventura </center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[30]:</div>
+<div class="prompt input_prompt">In&nbsp;[12]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># build query</span>
@@ -13793,7 +13782,7 @@ Tiago Ventura </center> <h1></p>
 <span class="s2">            order by riots desc"""</span>
 
 <span class="c1">#query database</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">query</span><span class="p">,</span><span class="n">conn</span><span class="p">)</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">query</span><span class="p">,</span><span class="n">conn</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -13806,7 +13795,7 @@ Tiago Ventura </center> <h1></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[30]:</div>
+    <div class="prompt output_prompt">Out[12]:</div>
 
 
 
@@ -13870,51 +13859,8 @@ Tiago Ventura </center> <h1></p>
       <td>2007.0</td>
       <td>102</td>
     </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>8699</th>
-      <td>Zimbabwe</td>
-      <td>552</td>
-      <td>2014.0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>8700</th>
-      <td>Zimbabwe</td>
-      <td>552</td>
-      <td>2016.0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>8701</th>
-      <td>Zimbabwe</td>
-      <td>552</td>
-      <td>2018.0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>8702</th>
-      <td>Zimbabwe</td>
-      <td>552</td>
-      <td>2019.0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>8703</th>
-      <td>Zimbabwe</td>
-      <td>552</td>
-      <td>2019.0</td>
-      <td>0</td>
-    </tr>
   </tbody>
 </table>
-<p>8704 rows × 4 columns</p>
 </div></div>
 
 </div>
@@ -13932,7 +13878,7 @@ Tiago Ventura </center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[32]:</div>
+<div class="prompt input_prompt">In&nbsp;[13]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">"""select  country,  ccode,  year,  riots </span>
@@ -13940,7 +13886,7 @@ Tiago Ventura </center> <h1></p>
 <span class="s2">        where country = 'Nigeria' """</span>
 
 <span class="c1">#query database</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">query</span><span class="p">,</span><span class="n">conn</span><span class="p">)</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">query</span><span class="p">,</span><span class="n">conn</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -13953,7 +13899,7 @@ Tiago Ventura </center> <h1></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[32]:</div>
+    <div class="prompt output_prompt">Out[13]:</div>
 
 
 
@@ -14017,51 +13963,8 @@ Tiago Ventura </center> <h1></p>
       <td>1997.0</td>
       <td>4</td>
     </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>271</th>
-      <td>Nigeria</td>
-      <td>475</td>
-      <td>2019.0</td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <th>272</th>
-      <td>Nigeria</td>
-      <td>475</td>
-      <td>2019.0</td>
-      <td>23</td>
-    </tr>
-    <tr>
-      <th>273</th>
-      <td>Nigeria</td>
-      <td>475</td>
-      <td>2019.0</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>274</th>
-      <td>Nigeria</td>
-      <td>475</td>
-      <td>2019.0</td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <th>275</th>
-      <td>Nigeria</td>
-      <td>475</td>
-      <td>2019.0</td>
-      <td>8</td>
-    </tr>
   </tbody>
 </table>
-<p>276 rows × 4 columns</p>
 </div></div>
 
 </div>
@@ -14079,7 +13982,7 @@ Tiago Ventura </center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[90]:</div>
+<div class="prompt input_prompt">In&nbsp;[16]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">query</span><span class="o">=</span>  <span class="s2">"""</span>
@@ -14088,7 +13991,7 @@ Tiago Ventura </center> <h1></p>
 <span class="s2">            where country = 'Nigeria' and year &gt;= 2000 </span>
 <span class="s2">"""</span>
 <span class="c1">#query database</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">query</span><span class="p">,</span><span class="n">conn</span><span class="p">)</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">query</span><span class="p">,</span><span class="n">conn</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -14101,7 +14004,7 @@ Tiago Ventura </center> <h1></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[90]:</div>
+    <div class="prompt output_prompt">Out[16]:</div>
 
 
 
@@ -14165,51 +14068,8 @@ Tiago Ventura </center> <h1></p>
       <td>2000.0</td>
       <td>4</td>
     </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>235</th>
-      <td>Nigeria</td>
-      <td>475</td>
-      <td>2019.0</td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <th>236</th>
-      <td>Nigeria</td>
-      <td>475</td>
-      <td>2019.0</td>
-      <td>23</td>
-    </tr>
-    <tr>
-      <th>237</th>
-      <td>Nigeria</td>
-      <td>475</td>
-      <td>2019.0</td>
-      <td>6</td>
-    </tr>
-    <tr>
-      <th>238</th>
-      <td>Nigeria</td>
-      <td>475</td>
-      <td>2019.0</td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <th>239</th>
-      <td>Nigeria</td>
-      <td>475</td>
-      <td>2019.0</td>
-      <td>8</td>
-    </tr>
   </tbody>
 </table>
-<p>240 rows × 4 columns</p>
 </div></div>
 
 </div>
@@ -14227,7 +14087,7 @@ Tiago Ventura </center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[17]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">"select  country,  ccode,  year,  riots, protests </span><span class="se">\</span>
@@ -14235,7 +14095,7 @@ Tiago Ventura </center> <h1></p>
 <span class="s2">            where riots &gt; 20 or protests &gt; 20 "</span>
 
 <span class="c1">#query database</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">query</span><span class="p">,</span><span class="n">conn</span><span class="p">)</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">query</span><span class="p">,</span><span class="n">conn</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -14248,7 +14108,7 @@ Tiago Ventura </center> <h1></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[34]:</div>
+    <div class="prompt output_prompt">Out[17]:</div>
 
 
 
@@ -14318,57 +14178,8 @@ Tiago Ventura </center> <h1></p>
       <td>12</td>
       <td>23</td>
     </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>479</th>
-      <td>Uganda</td>
-      <td>500</td>
-      <td>2019.0</td>
-      <td>21</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>480</th>
-      <td>Zambia</td>
-      <td>551</td>
-      <td>2007.0</td>
-      <td>4</td>
-      <td>23</td>
-    </tr>
-    <tr>
-      <th>481</th>
-      <td>Zambia</td>
-      <td>551</td>
-      <td>2007.0</td>
-      <td>4</td>
-      <td>22</td>
-    </tr>
-    <tr>
-      <th>482</th>
-      <td>Zimbabwe</td>
-      <td>552</td>
-      <td>1998.0</td>
-      <td>22</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>483</th>
-      <td>Zimbabwe</td>
-      <td>552</td>
-      <td>2018.0</td>
-      <td>28</td>
-      <td>9</td>
-    </tr>
   </tbody>
 </table>
-<p>484 rows × 5 columns</p>
 </div></div>
 
 </div>
@@ -14393,7 +14204,7 @@ Tiago Ventura </center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[35]:</div>
+<div class="prompt input_prompt">In&nbsp;[18]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">"select </span><span class="se">\</span>
@@ -14417,7 +14228,7 @@ Tiago Ventura </center> <h1></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[35]:</div>
+    <div class="prompt output_prompt">Out[18]:</div>
 
 
 
@@ -14584,7 +14395,7 @@ Tiago Ventura </center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[37]:</div>
+<div class="prompt input_prompt">In&nbsp;[19]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">"select country, ccode, year, riots, protests, </span><span class="se">\</span>
@@ -14593,7 +14404,7 @@ Tiago Ventura </center> <h1></p>
 <span class="s2">         order by displays desc"</span>
 
 <span class="c1">#query database</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">query</span><span class="p">,</span><span class="n">conn</span><span class="p">)</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">query</span><span class="p">,</span><span class="n">conn</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -14606,7 +14417,7 @@ Tiago Ventura </center> <h1></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[37]:</div>
+    <div class="prompt output_prompt">Out[19]:</div>
 
 
 
@@ -14682,63 +14493,8 @@ Tiago Ventura </center> <h1></p>
       <td>253</td>
       <td>259</td>
     </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>8699</th>
-      <td>Zimbabwe</td>
-      <td>552</td>
-      <td>2009.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>8700</th>
-      <td>Zimbabwe</td>
-      <td>552</td>
-      <td>2010.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>8701</th>
-      <td>Zimbabwe</td>
-      <td>552</td>
-      <td>2010.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>8702</th>
-      <td>Zimbabwe</td>
-      <td>552</td>
-      <td>2011.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>8703</th>
-      <td>Zimbabwe</td>
-      <td>552</td>
-      <td>2016.0</td>
-      <td>0</td>
-      <td>0</td>
-      <td>0</td>
-    </tr>
   </tbody>
 </table>
-<p>8704 rows × 6 columns</p>
 </div></div>
 
 </div>
@@ -14756,12 +14512,11 @@ Tiago Ventura </center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[39]:</div>
+<div class="prompt input_prompt">In&nbsp;[20]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">"select  country, ccode, year, protests, </span><span class="se">\</span>
-<span class="s2">        (case </span><span class="se">\</span>
-<span class="s2">            when protests &gt; 0 then 'Protest' </span><span class="se">\</span>
+<span class="s2">        (case when protests &gt; 0 then 'Protest' </span><span class="se">\</span>
 <span class="s2">            else 'No Protest' end) as protest_onset </span><span class="se">\</span>
 <span class="s2">        from conflict "</span>
 
@@ -14779,7 +14534,7 @@ Tiago Ventura </center> <h1></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[39]:</div>
+    <div class="prompt output_prompt">Out[20]:</div>
 
 
 
@@ -14917,7 +14672,7 @@ Tiago Ventura </center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[53]:</div>
+<div class="prompt input_prompt">In&nbsp;[21]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">"select  country,  ccode, </span><span class="se">\</span>
@@ -14942,7 +14697,7 @@ Tiago Ventura </center> <h1></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[53]:</div>
+    <div class="prompt output_prompt">Out[21]:</div>
 
 
 
@@ -15038,7 +14793,7 @@ Tiago Ventura </center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="prompt input_prompt">In&nbsp;[23]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">"select  </span><span class="se">\</span>
@@ -15046,7 +14801,7 @@ Tiago Ventura </center> <h1></p>
 <span class="s2">         from econ "</span>
 
 <span class="c1">#query database</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">query</span><span class="p">,</span><span class="n">conn</span><span class="p">)</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">query</span><span class="p">,</span><span class="n">conn</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -15059,7 +14814,7 @@ Tiago Ventura </center> <h1></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[60]:</div>
+    <div class="prompt output_prompt">Out[23]:</div>
 
 
 
@@ -15105,170 +14860,6 @@ Tiago Ventura </center> <h1></p>
       <th>4</th>
       <td>Botswana</td>
     </tr>
-    <tr>
-      <th>5</th>
-      <td>Burundi</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>Cameroon</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>Central African Republic</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>Chad</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>Comoros</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>Djibouti</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>Egypt</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>Equatorial Guinea</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>Eritrea</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>Gabon</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>Gambia</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>Ghana</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>Guinea-Bissau</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>Guinea</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>Kenya</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>Liberia</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>Lesotho</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>Libya</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>Mauritania</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>Madagascar</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>Mauritius</td>
-    </tr>
-    <tr>
-      <th>26</th>
-      <td>Malawi</td>
-    </tr>
-    <tr>
-      <th>27</th>
-      <td>Mali</td>
-    </tr>
-    <tr>
-      <th>28</th>
-      <td>Morocco</td>
-    </tr>
-    <tr>
-      <th>29</th>
-      <td>Mozambique</td>
-    </tr>
-    <tr>
-      <th>30</th>
-      <td>Namibia</td>
-    </tr>
-    <tr>
-      <th>31</th>
-      <td>Nigeria</td>
-    </tr>
-    <tr>
-      <th>32</th>
-      <td>Niger</td>
-    </tr>
-    <tr>
-      <th>33</th>
-      <td>Rwanda</td>
-    </tr>
-    <tr>
-      <th>34</th>
-      <td>South Africa</td>
-    </tr>
-    <tr>
-      <th>35</th>
-      <td>Senegal</td>
-    </tr>
-    <tr>
-      <th>36</th>
-      <td>Sierra Leone</td>
-    </tr>
-    <tr>
-      <th>37</th>
-      <td>Somalia</td>
-    </tr>
-    <tr>
-      <th>38</th>
-      <td>Sudan</td>
-    </tr>
-    <tr>
-      <th>39</th>
-      <td>Swaziland</td>
-    </tr>
-    <tr>
-      <th>40</th>
-      <td>Tanzania</td>
-    </tr>
-    <tr>
-      <th>41</th>
-      <td>Togo</td>
-    </tr>
-    <tr>
-      <th>42</th>
-      <td>Tunisia</td>
-    </tr>
-    <tr>
-      <th>43</th>
-      <td>Uganda</td>
-    </tr>
-    <tr>
-      <th>44</th>
-      <td>Zambia</td>
-    </tr>
-    <tr>
-      <th>45</th>
-      <td>Zimbabwe</td>
-    </tr>
   </tbody>
 </table>
 </div></div>
@@ -15288,7 +14879,7 @@ Tiago Ventura </center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[61]:</div>
+<div class="prompt input_prompt">In&nbsp;[24]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">"select </span><span class="se">\</span>
@@ -15309,7 +14900,7 @@ Tiago Ventura </center> <h1></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[61]:</div>
+    <div class="prompt output_prompt">Out[24]:</div>
 
 
 
@@ -15358,7 +14949,7 @@ Tiago Ventura </center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[62]:</div>
+<div class="prompt input_prompt">In&nbsp;[25]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">"select </span><span class="se">\</span>
@@ -15379,7 +14970,7 @@ Tiago Ventura </center> <h1></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[62]:</div>
+    <div class="prompt output_prompt">Out[25]:</div>
 
 
 
@@ -15428,7 +15019,7 @@ Tiago Ventura </center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[63]:</div>
+<div class="prompt input_prompt">In&nbsp;[26]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">"select </span><span class="se">\</span>
@@ -15452,7 +15043,7 @@ Tiago Ventura </center> <h1></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[63]:</div>
+    <div class="prompt output_prompt">Out[26]:</div>
 
 
 
@@ -15507,7 +15098,7 @@ Tiago Ventura </center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[64]:</div>
+<div class="prompt input_prompt">In&nbsp;[28]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">"select </span><span class="se">\</span>
@@ -15519,7 +15110,7 @@ Tiago Ventura </center> <h1></p>
 <span class="s2">group by country, year "</span>
 
 <span class="c1">#query database</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">query</span><span class="p">,</span><span class="n">conn</span><span class="p">)</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">query</span><span class="p">,</span><span class="n">conn</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -15532,7 +15123,7 @@ Tiago Ventura </center> <h1></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[64]:</div>
+    <div class="prompt output_prompt">Out[28]:</div>
 
 
 
@@ -15596,51 +15187,8 @@ Tiago Ventura </center> <h1></p>
       <td>95</td>
       <td>17</td>
     </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>1098</th>
-      <td>eSwatini</td>
-      <td>2015.0</td>
-      <td>1</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>1099</th>
-      <td>eSwatini</td>
-      <td>2016.0</td>
-      <td>2</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>1100</th>
-      <td>eSwatini</td>
-      <td>2017.0</td>
-      <td>1</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>1101</th>
-      <td>eSwatini</td>
-      <td>2018.0</td>
-      <td>3</td>
-      <td>4</td>
-    </tr>
-    <tr>
-      <th>1102</th>
-      <td>eSwatini</td>
-      <td>2019.0</td>
-      <td>11</td>
-      <td>15</td>
-    </tr>
   </tbody>
 </table>
-<p>1103 rows × 4 columns</p>
 </div></div>
 
 </div>
@@ -15658,7 +15206,7 @@ Tiago Ventura </center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[65]:</div>
+<div class="prompt input_prompt">In&nbsp;[30]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">"select country, count(*) as n </span><span class="se">\</span>
@@ -15666,7 +15214,7 @@ Tiago Ventura </center> <h1></p>
 <span class="s2">        group by country "</span>
 
 <span class="c1">#query database</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">query</span><span class="p">,</span><span class="n">conn</span><span class="p">)</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">query</span><span class="p">,</span><span class="n">conn</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -15679,7 +15227,7 @@ Tiago Ventura </center> <h1></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[65]:</div>
+    <div class="prompt output_prompt">Out[30]:</div>
 
 
 
@@ -15731,226 +15279,6 @@ Tiago Ventura </center> <h1></p>
       <td>Burkina Faso</td>
       <td>146</td>
     </tr>
-    <tr>
-      <th>5</th>
-      <td>Burundi</td>
-      <td>263</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>Cameroon</td>
-      <td>170</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>Central African Republic</td>
-      <td>248</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>Chad</td>
-      <td>192</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>Democratic Republic of Congo</td>
-      <td>275</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>Djibouti</td>
-      <td>68</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>Egypt</td>
-      <td>225</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>Equatorial Guinea</td>
-      <td>44</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>Eritrea</td>
-      <td>101</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>Ethiopia</td>
-      <td>258</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>Gabon</td>
-      <td>88</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>Gambia</td>
-      <td>108</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>Ghana</td>
-      <td>158</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>Guinea</td>
-      <td>182</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>Guinea-Bissau</td>
-      <td>94</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>Ivory Coast</td>
-      <td>216</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>Kenya</td>
-      <td>276</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>Lesotho</td>
-      <td>59</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>Liberia</td>
-      <td>217</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>Libya</td>
-      <td>152</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>Madagascar</td>
-      <td>153</td>
-    </tr>
-    <tr>
-      <th>26</th>
-      <td>Malawi</td>
-      <td>149</td>
-    </tr>
-    <tr>
-      <th>27</th>
-      <td>Mali</td>
-      <td>171</td>
-    </tr>
-    <tr>
-      <th>28</th>
-      <td>Mauritania</td>
-      <td>154</td>
-    </tr>
-    <tr>
-      <th>29</th>
-      <td>Morocco</td>
-      <td>218</td>
-    </tr>
-    <tr>
-      <th>30</th>
-      <td>Mozambique</td>
-      <td>185</td>
-    </tr>
-    <tr>
-      <th>31</th>
-      <td>Namibia</td>
-      <td>175</td>
-    </tr>
-    <tr>
-      <th>32</th>
-      <td>Niger</td>
-      <td>188</td>
-    </tr>
-    <tr>
-      <th>33</th>
-      <td>Nigeria</td>
-      <td>276</td>
-    </tr>
-    <tr>
-      <th>34</th>
-      <td>Republic of Congo</td>
-      <td>122</td>
-    </tr>
-    <tr>
-      <th>35</th>
-      <td>Rwanda</td>
-      <td>167</td>
-    </tr>
-    <tr>
-      <th>36</th>
-      <td>Senegal</td>
-      <td>225</td>
-    </tr>
-    <tr>
-      <th>37</th>
-      <td>Sierra Leone</td>
-      <td>182</td>
-    </tr>
-    <tr>
-      <th>38</th>
-      <td>Somalia</td>
-      <td>269</td>
-    </tr>
-    <tr>
-      <th>39</th>
-      <td>South Africa</td>
-      <td>275</td>
-    </tr>
-    <tr>
-      <th>40</th>
-      <td>South Sudan</td>
-      <td>102</td>
-    </tr>
-    <tr>
-      <th>41</th>
-      <td>Sudan</td>
-      <td>276</td>
-    </tr>
-    <tr>
-      <th>42</th>
-      <td>Tanzania</td>
-      <td>193</td>
-    </tr>
-    <tr>
-      <th>43</th>
-      <td>Togo</td>
-      <td>108</td>
-    </tr>
-    <tr>
-      <th>44</th>
-      <td>Tunisia</td>
-      <td>142</td>
-    </tr>
-    <tr>
-      <th>45</th>
-      <td>Uganda</td>
-      <td>275</td>
-    </tr>
-    <tr>
-      <th>46</th>
-      <td>Zambia</td>
-      <td>201</td>
-    </tr>
-    <tr>
-      <th>47</th>
-      <td>Zimbabwe</td>
-      <td>263</td>
-    </tr>
-    <tr>
-      <th>48</th>
-      <td>eSwatini</td>
-      <td>94</td>
-    </tr>
   </tbody>
 </table>
 </div></div>
@@ -15971,7 +15299,7 @@ Tiago Ventura </center> <h1></p>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[66]:</div>
+<div class="prompt input_prompt">In&nbsp;[32]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">" WITH algeria_a as ( </span><span class="se">\</span>
@@ -15995,7 +15323,7 @@ Tiago Ventura </center> <h1></p>
 <span class="s2">        select * from algeria_b</span><span class="se">\</span>
 <span class="s2">"</span>
 <span class="c1">#query database</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">query</span><span class="p">,</span><span class="n">conn</span><span class="p">)</span>
+<span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">query</span><span class="p">,</span><span class="n">conn</span><span class="p">)</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
 </pre></div>
 
     </div>
@@ -16008,7 +15336,7 @@ Tiago Ventura </center> <h1></p>
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[66]:</div>
+    <div class="prompt output_prompt">Out[32]:</div>
 
 
 
@@ -16072,631 +15400,10 @@ Tiago Ventura </center> <h1></p>
       <td>bombings</td>
       <td>1</td>
     </tr>
-    <tr>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th>539</th>
-      <td>Algeria</td>
-      <td>2019.0</td>
-      <td>vac</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>540</th>
-      <td>Algeria</td>
-      <td>2019.0</td>
-      <td>vac</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>541</th>
-      <td>Algeria</td>
-      <td>2019.0</td>
-      <td>vac</td>
-      <td>0</td>
-    </tr>
-    <tr>
-      <th>542</th>
-      <td>Algeria</td>
-      <td>2019.0</td>
-      <td>vac</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>543</th>
-      <td>Algeria</td>
-      <td>2019.0</td>
-      <td>vac</td>
-      <td>0</td>
-    </tr>
-  </tbody>
-</table>
-<p>544 rows × 4 columns</p>
-</div></div>
-
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Temporary-tables">Temporary tables<a class="anchor-link" href="#Temporary-tables">&#182;</a></h2>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="Create-a-temporary-table-for-the-aggregated-version-of-the-conflict-data.">Create a temporary table for the aggregated version of the conflict data.<a class="anchor-link" href="#Create-a-temporary-table-for-the-aggregated-version-of-the-conflict-data.">&#182;</a></h4>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[85]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">"""</span>
-<span class="s2">create temp table conflict_cy  AS </span>
-<span class="s2">select country, year, </span>
-<span class="s2">sum(riots) as riots,</span>
-<span class="s2">sum(protests) as protests </span>
-<span class="s2">from conflict </span>
-<span class="s2">group by country</span>
-<span class="s2">"""</span>
-
-<span class="c1">#query database</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">query</span><span class="p">,</span><span class="n">conn</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[85], line 11</span>
-<span class="ansi-green-intense-fg ansi-bold">      1</span> query <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(175,0,0)">&#34;&#34;&#34;</span>
-<span class="ansi-green-intense-fg ansi-bold">      2</span> <span style="color: rgb(175,0,0)">create temp table conflict_cy  AS </span>
-<span class="ansi-green-intense-fg ansi-bold">      3</span> <span style="color: rgb(175,0,0)">select country, year, </span>
-<span class="ansi-green-fg">   (...)</span>
-<span class="ansi-green-intense-fg ansi-bold">      7</span> <span style="color: rgb(175,0,0)">group by country</span>
-<span class="ansi-green-intense-fg ansi-bold">      8</span> <span style="color: rgb(175,0,0)">&#34;&#34;&#34;</span>
-<span class="ansi-green-intense-fg ansi-bold">     10</span> <span style="color: rgb(95,135,135)">#query database</span>
-<span class="ansi-green-fg">---&gt; 11</span> pd<span style="color: rgb(98,98,98)">.</span>read_sql(query,conn)
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.11/site-packages/pandas/io/sql.py:564</span>, in <span class="ansi-cyan-fg">read_sql</span><span class="ansi-blue-fg">(sql, con, index_col, coerce_float, params, parse_dates, columns, chunksize)</span>
-<span class="ansi-green-intense-fg ansi-bold">    561</span> pandas_sql <span style="color: rgb(98,98,98)">=</span> pandasSQL_builder(con)
-<span class="ansi-green-intense-fg ansi-bold">    563</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">isinstance</span>(pandas_sql, SQLiteDatabase):
-<span class="ansi-green-fg">--&gt; 564</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> pandas_sql<span style="color: rgb(98,98,98)">.</span>read_query(
-<span class="ansi-green-intense-fg ansi-bold">    565</span>         sql,
-<span class="ansi-green-intense-fg ansi-bold">    566</span>         index_col<span style="color: rgb(98,98,98)">=</span>index_col,
-<span class="ansi-green-intense-fg ansi-bold">    567</span>         params<span style="color: rgb(98,98,98)">=</span>params,
-<span class="ansi-green-intense-fg ansi-bold">    568</span>         coerce_float<span style="color: rgb(98,98,98)">=</span>coerce_float,
-<span class="ansi-green-intense-fg ansi-bold">    569</span>         parse_dates<span style="color: rgb(98,98,98)">=</span>parse_dates,
-<span class="ansi-green-intense-fg ansi-bold">    570</span>         chunksize<span style="color: rgb(98,98,98)">=</span>chunksize,
-<span class="ansi-green-intense-fg ansi-bold">    571</span>     )
-<span class="ansi-green-intense-fg ansi-bold">    573</span> <span class="ansi-bold" style="color: rgb(0,135,0)">try</span>:
-<span class="ansi-green-intense-fg ansi-bold">    574</span>     _is_table_name <span style="color: rgb(98,98,98)">=</span> pandas_sql<span style="color: rgb(98,98,98)">.</span>has_table(sql)
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.11/site-packages/pandas/io/sql.py:2079</span>, in <span class="ansi-cyan-fg">SQLiteDatabase.read_query</span><span class="ansi-blue-fg">(self, sql, index_col, coerce_float, params, parse_dates, chunksize, dtype)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2077</span> args <span style="color: rgb(98,98,98)">=</span> _convert_params(sql, params)
-<span class="ansi-green-intense-fg ansi-bold">   2078</span> cursor <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>execute(<span style="color: rgb(98,98,98)">*</span>args)
-<span class="ansi-green-fg">-&gt; 2079</span> columns <span style="color: rgb(98,98,98)">=</span> [col_desc[<span style="color: rgb(98,98,98)">0</span>] <span class="ansi-bold" style="color: rgb(0,135,0)">for</span> col_desc <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> cursor<span style="color: rgb(98,98,98)">.</span>description]
-<span class="ansi-green-intense-fg ansi-bold">   2081</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> chunksize <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>:
-<span class="ansi-green-intense-fg ansi-bold">   2082</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_query_iterator(
-<span class="ansi-green-intense-fg ansi-bold">   2083</span>         cursor,
-<span class="ansi-green-intense-fg ansi-bold">   2084</span>         chunksize,
-<span class="ansi-green-fg">   (...)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2089</span>         dtype<span style="color: rgb(98,98,98)">=</span>dtype,
-<span class="ansi-green-intense-fg ansi-bold">   2090</span>     )
-
-<span class="ansi-red-fg">TypeError</span>: &#39;NoneType&#39; object is not iterable</pre>
-</div>
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<p>we can then later call this table when need be.</p>
-
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[86]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">"""select * from conflict_cy """</span>
-
-<span class="c1">#query database</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">query</span><span class="p">,</span><span class="n">conn</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt output_prompt">Out[86]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result"><div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>country</th>
-      <th>year</th>
-      <th>riots</th>
-      <th>protests</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>Algeria</td>
-      <td>1997.0</td>
-      <td>754</td>
-      <td>3910</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>Angola</td>
-      <td>1997.0</td>
-      <td>33</td>
-      <td>251</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>Benin</td>
-      <td>1997.0</td>
-      <td>35</td>
-      <td>117</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>Botswana</td>
-      <td>1997.0</td>
-      <td>18</td>
-      <td>40</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>Burkina Faso</td>
-      <td>1997.0</td>
-      <td>313</td>
-      <td>630</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>Burundi</td>
-      <td>1997.0</td>
-      <td>450</td>
-      <td>601</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>Cameroon</td>
-      <td>1997.0</td>
-      <td>106</td>
-      <td>193</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>Central African Republic</td>
-      <td>1997.0</td>
-      <td>327</td>
-      <td>272</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>Chad</td>
-      <td>1997.0</td>
-      <td>50</td>
-      <td>92</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>Democratic Republic of Congo</td>
-      <td>1997.0</td>
-      <td>910</td>
-      <td>1414</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>Djibouti</td>
-      <td>1997.0</td>
-      <td>11</td>
-      <td>28</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>Egypt</td>
-      <td>1997.0</td>
-      <td>1788</td>
-      <td>3769</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>Equatorial Guinea</td>
-      <td>1997.0</td>
-      <td>3</td>
-      <td>11</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>Eritrea</td>
-      <td>1997.0</td>
-      <td>5</td>
-      <td>9</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>Ethiopia</td>
-      <td>1997.0</td>
-      <td>400</td>
-      <td>1847</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>Gabon</td>
-      <td>1997.0</td>
-      <td>55</td>
-      <td>120</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>Gambia</td>
-      <td>1997.0</td>
-      <td>43</td>
-      <td>66</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>Ghana</td>
-      <td>1997.0</td>
-      <td>220</td>
-      <td>321</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>Guinea</td>
-      <td>1997.0</td>
-      <td>371</td>
-      <td>339</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>Guinea-Bissau</td>
-      <td>1997.0</td>
-      <td>15</td>
-      <td>62</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>Ivory Coast</td>
-      <td>1997.0</td>
-      <td>441</td>
-      <td>472</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>Kenya</td>
-      <td>1997.0</td>
-      <td>1765</td>
-      <td>1601</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>Lesotho</td>
-      <td>1997.0</td>
-      <td>18</td>
-      <td>26</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>Liberia</td>
-      <td>1997.0</td>
-      <td>208</td>
-      <td>295</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>Libya</td>
-      <td>1997.0</td>
-      <td>227</td>
-      <td>1061</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>Madagascar</td>
-      <td>1997.0</td>
-      <td>315</td>
-      <td>338</td>
-    </tr>
-    <tr>
-      <th>26</th>
-      <td>Malawi</td>
-      <td>1997.0</td>
-      <td>258</td>
-      <td>172</td>
-    </tr>
-    <tr>
-      <th>27</th>
-      <td>Mali</td>
-      <td>1997.0</td>
-      <td>140</td>
-      <td>292</td>
-    </tr>
-    <tr>
-      <th>28</th>
-      <td>Mauritania</td>
-      <td>1997.0</td>
-      <td>63</td>
-      <td>480</td>
-    </tr>
-    <tr>
-      <th>29</th>
-      <td>Morocco</td>
-      <td>1997.0</td>
-      <td>224</td>
-      <td>1849</td>
-    </tr>
-    <tr>
-      <th>30</th>
-      <td>Mozambique</td>
-      <td>1997.0</td>
-      <td>241</td>
-      <td>149</td>
-    </tr>
-    <tr>
-      <th>31</th>
-      <td>Namibia</td>
-      <td>1997.0</td>
-      <td>67</td>
-      <td>490</td>
-    </tr>
-    <tr>
-      <th>32</th>
-      <td>Niger</td>
-      <td>1997.0</td>
-      <td>91</td>
-      <td>126</td>
-    </tr>
-    <tr>
-      <th>33</th>
-      <td>Nigeria</td>
-      <td>1997.0</td>
-      <td>1739</td>
-      <td>3788</td>
-    </tr>
-    <tr>
-      <th>34</th>
-      <td>Republic of Congo</td>
-      <td>1997.0</td>
-      <td>34</td>
-      <td>52</td>
-    </tr>
-    <tr>
-      <th>35</th>
-      <td>Rwanda</td>
-      <td>1997.0</td>
-      <td>8</td>
-      <td>58</td>
-    </tr>
-    <tr>
-      <th>36</th>
-      <td>Senegal</td>
-      <td>1997.0</td>
-      <td>186</td>
-      <td>419</td>
-    </tr>
-    <tr>
-      <th>37</th>
-      <td>Sierra Leone</td>
-      <td>1997.0</td>
-      <td>120</td>
-      <td>91</td>
-    </tr>
-    <tr>
-      <th>38</th>
-      <td>Somalia</td>
-      <td>1997.0</td>
-      <td>525</td>
-      <td>1404</td>
-    </tr>
-    <tr>
-      <th>39</th>
-      <td>South Africa</td>
-      <td>1997.0</td>
-      <td>4996</td>
-      <td>5928</td>
-    </tr>
-    <tr>
-      <th>40</th>
-      <td>South Sudan</td>
-      <td>2011.0</td>
-      <td>105</td>
-      <td>203</td>
-    </tr>
-    <tr>
-      <th>41</th>
-      <td>Sudan</td>
-      <td>1997.0</td>
-      <td>448</td>
-      <td>2232</td>
-    </tr>
-    <tr>
-      <th>42</th>
-      <td>Tanzania</td>
-      <td>1997.0</td>
-      <td>198</td>
-      <td>159</td>
-    </tr>
-    <tr>
-      <th>43</th>
-      <td>Togo</td>
-      <td>1997.0</td>
-      <td>88</td>
-      <td>189</td>
-    </tr>
-    <tr>
-      <th>44</th>
-      <td>Tunisia</td>
-      <td>1997.0</td>
-      <td>1188</td>
-      <td>3779</td>
-    </tr>
-    <tr>
-      <th>45</th>
-      <td>Uganda</td>
-      <td>1997.0</td>
-      <td>772</td>
-      <td>617</td>
-    </tr>
-    <tr>
-      <th>46</th>
-      <td>Zambia</td>
-      <td>1997.0</td>
-      <td>428</td>
-      <td>389</td>
-    </tr>
-    <tr>
-      <th>47</th>
-      <td>Zimbabwe</td>
-      <td>1997.0</td>
-      <td>540</td>
-      <td>863</td>
-    </tr>
-    <tr>
-      <th>48</th>
-      <td>eSwatini</td>
-      <td>1997.0</td>
-      <td>32</td>
-      <td>120</td>
-    </tr>
   </tbody>
 </table>
 </div></div>
 
-</div>
-
-</div>
-</div>
-
-</div>
-<div class="cell border-box-sizing text_cell rendered"><div class="prompt input_prompt">
-</div><div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h4 id="deleting-a-temp-table">deleting a temp table<a class="anchor-link" href="#deleting-a-temp-table">&#182;</a></h4>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In&nbsp;[91]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">"""drop table conflict_cy"""</span>
-
-<span class="c1">#query database</span>
-<span class="n">pd</span><span class="o">.</span><span class="n">read_sql</span><span class="p">(</span><span class="n">query</span><span class="p">,</span><span class="n">conn</span><span class="p">)</span>
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-    <div class="prompt"></div>
-
-
-<div class="output_subarea output_text output_error">
-<pre>
-<span class="ansi-red-fg">---------------------------------------------------------------------------</span>
-<span class="ansi-red-fg">TypeError</span>                                 Traceback (most recent call last)
-Cell <span class="ansi-green-fg">In[91], line 4</span>
-<span class="ansi-green-intense-fg ansi-bold">      1</span> query <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(175,0,0)">&#34;&#34;&#34;</span><span style="color: rgb(175,0,0)">drop table conflict_cy</span><span style="color: rgb(175,0,0)">&#34;&#34;&#34;</span>
-<span class="ansi-green-intense-fg ansi-bold">      3</span> <span style="color: rgb(95,135,135)">#query database</span>
-<span class="ansi-green-fg">----&gt; 4</span> pd<span style="color: rgb(98,98,98)">.</span>read_sql(query,conn)
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.11/site-packages/pandas/io/sql.py:564</span>, in <span class="ansi-cyan-fg">read_sql</span><span class="ansi-blue-fg">(sql, con, index_col, coerce_float, params, parse_dates, columns, chunksize)</span>
-<span class="ansi-green-intense-fg ansi-bold">    561</span> pandas_sql <span style="color: rgb(98,98,98)">=</span> pandasSQL_builder(con)
-<span class="ansi-green-intense-fg ansi-bold">    563</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> <span style="color: rgb(0,135,0)">isinstance</span>(pandas_sql, SQLiteDatabase):
-<span class="ansi-green-fg">--&gt; 564</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> pandas_sql<span style="color: rgb(98,98,98)">.</span>read_query(
-<span class="ansi-green-intense-fg ansi-bold">    565</span>         sql,
-<span class="ansi-green-intense-fg ansi-bold">    566</span>         index_col<span style="color: rgb(98,98,98)">=</span>index_col,
-<span class="ansi-green-intense-fg ansi-bold">    567</span>         params<span style="color: rgb(98,98,98)">=</span>params,
-<span class="ansi-green-intense-fg ansi-bold">    568</span>         coerce_float<span style="color: rgb(98,98,98)">=</span>coerce_float,
-<span class="ansi-green-intense-fg ansi-bold">    569</span>         parse_dates<span style="color: rgb(98,98,98)">=</span>parse_dates,
-<span class="ansi-green-intense-fg ansi-bold">    570</span>         chunksize<span style="color: rgb(98,98,98)">=</span>chunksize,
-<span class="ansi-green-intense-fg ansi-bold">    571</span>     )
-<span class="ansi-green-intense-fg ansi-bold">    573</span> <span class="ansi-bold" style="color: rgb(0,135,0)">try</span>:
-<span class="ansi-green-intense-fg ansi-bold">    574</span>     _is_table_name <span style="color: rgb(98,98,98)">=</span> pandas_sql<span style="color: rgb(98,98,98)">.</span>has_table(sql)
-
-File <span class="ansi-green-fg">~/anaconda3/lib/python3.11/site-packages/pandas/io/sql.py:2079</span>, in <span class="ansi-cyan-fg">SQLiteDatabase.read_query</span><span class="ansi-blue-fg">(self, sql, index_col, coerce_float, params, parse_dates, chunksize, dtype)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2077</span> args <span style="color: rgb(98,98,98)">=</span> _convert_params(sql, params)
-<span class="ansi-green-intense-fg ansi-bold">   2078</span> cursor <span style="color: rgb(98,98,98)">=</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>execute(<span style="color: rgb(98,98,98)">*</span>args)
-<span class="ansi-green-fg">-&gt; 2079</span> columns <span style="color: rgb(98,98,98)">=</span> [col_desc[<span style="color: rgb(98,98,98)">0</span>] <span class="ansi-bold" style="color: rgb(0,135,0)">for</span> col_desc <span class="ansi-bold" style="color: rgb(175,0,255)">in</span> cursor<span style="color: rgb(98,98,98)">.</span>description]
-<span class="ansi-green-intense-fg ansi-bold">   2081</span> <span class="ansi-bold" style="color: rgb(0,135,0)">if</span> chunksize <span class="ansi-bold" style="color: rgb(175,0,255)">is</span> <span class="ansi-bold" style="color: rgb(175,0,255)">not</span> <span class="ansi-bold" style="color: rgb(0,135,0)">None</span>:
-<span class="ansi-green-intense-fg ansi-bold">   2082</span>     <span class="ansi-bold" style="color: rgb(0,135,0)">return</span> <span style="color: rgb(0,135,0)">self</span><span style="color: rgb(98,98,98)">.</span>_query_iterator(
-<span class="ansi-green-intense-fg ansi-bold">   2083</span>         cursor,
-<span class="ansi-green-intense-fg ansi-bold">   2084</span>         chunksize,
-<span class="ansi-green-fg">   (...)</span>
-<span class="ansi-green-intense-fg ansi-bold">   2089</span>         dtype<span style="color: rgb(98,98,98)">=</span>dtype,
-<span class="ansi-green-intense-fg ansi-bold">   2090</span>     )
-
-<span class="ansi-red-fg">TypeError</span>: &#39;NoneType&#39; object is not iterable</pre>
-</div>
 </div>
 
 </div>
@@ -16719,7 +15426,7 @@ File <span class="ansi-green-fg">~/anaconda3/lib/python3.11/site-packages/pandas
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[92]:</div>
+<div class="prompt input_prompt">In&nbsp;[34]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">query</span> <span class="o">=</span> <span class="s2">"""select </span>
@@ -16742,7 +15449,7 @@ File <span class="ansi-green-fg">~/anaconda3/lib/python3.11/site-packages/pandas
 
 <div class="output_area">
 
-    <div class="prompt output_prompt">Out[92]:</div>
+    <div class="prompt output_prompt">Out[34]:</div>
 
 
 
@@ -17410,6 +16117,38 @@ File <span class="ansi-green-fg">~/anaconda3/lib/python3.11/site-packages/pandas
 <p>915 rows × 7 columns</p>
 </div></div>
 
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[1]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="o">!</span>jupyter<span class="w"> </span>nbconvert<span class="w"> </span>_week_13_sql.ipynb<span class="w"> </span>--to<span class="w"> </span>html<span class="w"> </span>--template<span class="w"> </span>classic
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+    <div class="prompt"></div>
+
+
+<div class="output_subarea output_stream output_stdout output_text">
+<pre>[NbConvertApp] Converting notebook _week_13_sql.ipynb to html
+[NbConvertApp] Writing 377641 bytes to _week_13_sql.html
+</pre>
+</div>
 </div>
 
 </div>

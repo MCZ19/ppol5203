@@ -3112,14 +3112,14 @@
     "href": "slides/week-13.html",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "",
-    "text": "Introduction to SQL\n\nMotivation\nWays to use SQL\nOverview of main functions\n\nDiscuss your projects"
+    "text": "Brief Discussion about your Presentations\nIntroduction to SQL\n\nMotivation\nWays to use SQL\nOverview of main functions\n\nDiscuss your projects"
   },
   {
     "objectID": "slides/week-13.html#plans-for-today",
     "href": "slides/week-13.html#plans-for-today",
     "title": " PPOL 5203 - Data Science I: Foundations ",
-    "section": "",
-    "text": "Introduction to SQL\n\nMotivation\nWays to use SQL\nOverview of main functions\n\nDiscuss your projects"
+    "section": "Plans for Today",
+    "text": "Plans for Today\n\nBrief Discussion about your Presentations\nIntroduction to SQL\n\nMotivation\nWays to use SQL\nOverview of main functions\n\nDiscuss your projects"
   },
   {
     "objectID": "slides/week-13.html#database",
@@ -3133,21 +3133,21 @@
     "href": "slides/week-13.html#relational-databases",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Relational Databases",
-    "text": "Relational Databases"
+    "text": "Relational Databases\n\nRelational Databases are a type of database where data is represented as tables linked based on common keys (to avoid redundancy)"
   },
   {
     "objectID": "slides/week-13.html#why-databases",
     "href": "slides/week-13.html#why-databases",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "Why Databases?",
-    "text": "Why Databases?\nAs Data Scientists, we will often use Databases, instead of building them. For our purposes, two main advantages:\n\nMemory efficient (relational component)\nRelies on Hard Drive memory for storage, not RAM!!\nDatabases are optimized to reduce the dependency on RAM when querying your data.\nDBMS enforces rules to maintain data integrity and consistency (stop you of adding corrupt data)"
+    "text": "Why Databases?\nAs Data Scientists, we will often use Databases, instead of building them. For our purposes, two main advantages:\n\nMemory efficient (relational component)\nRelies on Hard Drive memory for storage, not RAM!!!\nDatabases are optimized to reduce the dependency on RAM when querying your data.\nDBMS enforces rules to maintain data integrity and consistency (stop you of adding corrupt data)"
   },
   {
     "objectID": "slides/week-13.html#sql",
     "href": "slides/week-13.html#sql",
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "SQL",
-    "text": "SQL\n\nSQL (pronounced S-Q-L or SEQUEL) is a language designed to query relational databases\nWhile relatively uncommon in academia, many companies / governments expect data scientists to be able to write SQL queries\nThe result of an SQL query is always a table\nIt’s a nonprocedural language: define inputs and outputs; how the statement is executed is left to the optimizer\nSQL is a language that works with many types of databases. Nearly identical syntax but some small differences on the margins"
+    "text": "SQL\n\nSQL (pronounced S-Q-L or SEQUEL) is a language designed to query relational databases\nWhile relatively uncommon in academia, many companies / governments expect data scientists to be able to write SQL queries\nThe result of an SQL query is always a table\nIt’s a nonprocedural language: define inputs and outputs; how the statement is executed is left to the optimizer\nSQL is a language that works with many types of relational database systems. Nearly identical syntax but some small differences on the margins"
   },
   {
     "objectID": "slides/week-13.html#how-to-interact-with-sql-ides",
@@ -3204,5 +3204,33 @@
     "title": " PPOL 5203 - Data Science I: Foundations ",
     "section": "",
     "text": "Solution from last week in class exercise\nAPIs\n\nA simple API - Trivia API\nMore complex with Credentials: Yelp\nCredentials + Wrapper: Youtube\n\nSelenium for Dynamic Websites and Audit Studies\n\nExample of my own research: algorithmic bias in chinese social media websites"
+  },
+  {
+    "objectID": "slides/week-13.html#project-presentation",
+    "href": "slides/week-13.html#project-presentation",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Project Presentation",
+    "text": "Project Presentation\nYou should prepare a 10-12 minutes presentation. It should cover:\n\nMotivation or problem statement (THE LEAST IMPORTANT)\nData collection\nMethods\nResults (THE MOST IMPORTANT)\nLessons learned and next steps"
+  },
+  {
+    "objectID": "slides/week-13.html#database-motivation",
+    "href": "slides/week-13.html#database-motivation",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Database: Motivation",
+    "text": "Database: Motivation\nAssume you are starting a company collecting daily a high volume of data, you can:\n\nUse a File System store data as daily csvs, jsons, etc..\nOR build a structured, secured and efficient system to store and access the data\n\n\nWhile the first works at small scale (your computer and your policy reports), if you have a large scale data collection, OR continous insertion of data, thinking og a secured system is often the way to go.\n\nStructured Data Storage: Decide which variables to store.\nEnable Relationships: Build ids for your variables\nDefine types: pre-specify which types each columns is\nValidation Rules: define a set of rules to guarantee integrity of your data"
+  },
+  {
+    "objectID": "slides/week-13.html#database-definitions",
+    "href": "slides/week-13.html#database-definitions",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Database: Definitions",
+    "text": "Database: Definitions\n\nDatabase A database is a structured collection of data designed to store, manage, and retrieve information efficiently.\nDatabase Management System serves as an interface between the database and its users or the application programs (MySQL, SQLite, Hive, BigQuery (Google), Presto (Meta), Redshift (Amazon) are all different DBMS.)"
+  },
+  {
+    "objectID": "slides/week-13.html#database-systems-motivation",
+    "href": "slides/week-13.html#database-systems-motivation",
+    "title": " PPOL 5203 - Data Science I: Foundations ",
+    "section": "Database Systems: Motivation",
+    "text": "Database Systems: Motivation\nAssume you are starting a company collecting daily a high volume of data, you can:\n\nUse a file system to store data as daily csvs, jsons, etc..\nOR build a structured, secured and efficient system to store and access the data\n\n\nWhile the first works at small scale (your computer and your DS final projects), if you have a large scale data collection, OR continous insertion of data, thinking og a secured system is often the way to go.\n\nStructured Data Storage: Decide which variables to store.\nEnable Relationships: Build ids for your variables\nDefine types: pre-specify which types each columns is\nValidation Rules: define a set of rules to guarantee integrity of your data"
   }
 ]
