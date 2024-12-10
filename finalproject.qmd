@@ -118,19 +118,21 @@ The end product should be a github repository that contains:
 
 -   The raw source data you used for the project. If the data is too large for GitHub, talk with me, and we will find a solution
 
+-   All codes used to generate the results of your final project
+
 -   Your proposal
 
--   A README for the repository that, for each file, describes in detail:
+-   A README for the repository that describes in detail all files in the repository. The README should describe:
 
-    -   Inputs to the file: e.g., raw data; a file containing credentials needed to access an API
+    -   Inputs of your project: e.g., raw data; a file containing credentials needed to access an API
 
-    -   What the file does: describe major transformations.
+    -   What each code does: describe major transformations.
 
-    -   Output: if the file produces any outputs (e.g., a cleaned dataset; a figure or graph).
+    -   Main outputs: if the file produces any outputs (e.g., a cleaned dataset; a figure or graph).
 
-    -   A set of code files that transform that data into a form usable to answer the question you have posed in your descriptive research proposal.
+    -   Title and abstract of your project.
 
-    -   Your final 10 pages report (I will share a template later in the semester)
+Remember to check examples from the first class about a README for a published article should look like.
 
 Of course, no commits after the due date will be considered in the assessment.
 
